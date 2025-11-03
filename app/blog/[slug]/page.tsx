@@ -240,15 +240,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                       <span>Facebook</span>
                     </a>
                     <a
-                      href={`https://wa.me/?text=${encodeURIComponent(post.title + ' - https://travelbanyuwangi.id/blog/' + post.slug)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-green-600 transition-colors"
-                    >
-                      <MessageCircle className="w-5 h-5" />
-                      <span>WhatsApp</span>
-                    </a>
-                    <a
                       href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=https://travelbanyuwangi.id/blog/${post.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"

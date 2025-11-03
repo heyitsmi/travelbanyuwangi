@@ -122,7 +122,7 @@ export default function LayananPage() {
                 >
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/0099B8/FFFFFF?text=Tiket+Bus"
+                      src="/img/layanan/tiket-bus.webp"
                       alt="Layanan Tiket Bus Executive"
                       fill
                       className="object-cover"
@@ -194,7 +194,7 @@ export default function LayananPage() {
                 >
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/F79E1B/FFFFFF?text=Perjalanan+Dinas"
+                      src="/img/layanan/perjalanan-dinas.webp"
                       alt="Layanan Perjalanan Dinas dan Sewa Mobil"
                       fill
                       className="object-cover"

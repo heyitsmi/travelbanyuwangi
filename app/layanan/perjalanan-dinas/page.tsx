@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/layanan/perjalanan-dinas",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Perjalanan+Dinas",
+        url: "/img/layanan/perjalanan-dinas.webp",
         width: 1200,
         height: 630,
       },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Jasa Travel Perjalanan Dinas Banyuwangi | travelbanyuwangi.id",
     description:
       "Layanan carter mobil dan travel untuk kebutuhan dinas instansi/korporat dari Banyuwangi. Profesional dan Tepat Waktu.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Perjalanan+Dinas"],
+    images: ["/img/layanan/perjalanan-dinas.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/layanan/perjalanan-dinas",
@@ -184,7 +184,7 @@ export default function PerjalananDinasPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/0077B6/FFFFFF?text=Innova+Reborn+Dinas"
+                    src="/img/layanan/perjalanan-dinas.webp"
                     alt="Jasa travel perjalanan dinas Banyuwangi"
                     fill
                     className="rounded-lg shadow-xl object-cover"

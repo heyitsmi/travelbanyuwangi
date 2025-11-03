@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/layanan/tiket-bus",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Bus+Executive",
+        url: "/img/layanan/tiket-bus.webp",
         width: 1200,
         height: 630,
       },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | travelbanyuwangi.id",
     description:
       "Agen resmi tiket bus executive & malam dari Banyuwangi ke semua tujuan di Jawa & Bali. Pesan mudah via WA.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Bus+Executive"],
+    images: ["/img/layanan/tiket-bus.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/layanan/tiket-bus",
@@ -199,7 +199,7 @@ export default function TiketBusPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/0077B6/FFFFFF?text=Bus+Malam+Executive"
+                    src="/img/layanan/tiket-bus.webp"
                     alt="Agen tiket bus executive Banyuwangi"
                     fill
                     className="rounded-lg shadow-xl object-cover"

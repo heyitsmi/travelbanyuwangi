@@ -38,12 +38,12 @@ export default function Header() {
               Layanan
             </Link>
             <Link
-              href="/tentang-kami"
+              href="/blog"
               className={`${
-                pathname === "/tentang-kami" ? "text-primary font-semibold" : "text-gray-700"
+                pathname === "/blog" ? "text-primary font-semibold" : "text-gray-700"
               } hover:text-primary transition-colors`}
             >
-              Tentang Kami
+              Blog
             </Link>
             <Link
               href="/faq"
@@ -100,20 +100,24 @@ export default function Header() {
             >
               Layanan
             </Link>
-            <a
-              href="/#tentang"
-              className="block text-gray-700 hover:text-primary transition-colors"
+            <Link
+              href="/blog"
+              className={`block ${
+                pathname === "/blog" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Tentang Kami
-            </a>
-            <a
-              href="/#faq"
-              className="block text-gray-700 hover:text-primary transition-colors"
+              Blog
+            </Link>
+            <Link
+              href="/faq"
+              className={`block ${
+                pathname === "/faq" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
               onClick={() => setMobileMenuOpen(false)}
             >
               FAQ
-            </a>
+            </Link>
             <a
               href="https://wa.me/6282143258744"
               target="_blank"
