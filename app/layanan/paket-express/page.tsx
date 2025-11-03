@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/layanan/paket-express",
     images: [
       {
-        url: "https://placehold.co/1200x630/F79E1B/FFFFFF?text=Paket+Express+Cepat",
+        url: "/img/layanan/paket-express.webp",
         width: 1200,
         height: 630,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Pengiriman Paket Cepat Banyuwangi (Sehari Sampai) | travelbanyuwangi.id",
     description:
       "Layanan pengiriman paket express (same day) dari Banyuwangi ke Surabaya, Malang, Denpasar. Aman & terpercaya.",
-    images: ["https://placehold.co/1200x630/F79E1B/FFFFFF?text=Paket+Express+Cepat"],
+    images: ["/img/layanan/paket-express.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/layanan/paket-express",
@@ -212,7 +212,7 @@ export default function PaketExpressPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/F79E1B/FFFFFF?text=Paket+Express+Sehari+Sampai"
+                    src="/img/layanan/paket-express.webp"
                     alt="Layanan pengiriman paket cepat Banyuwangi"
                     fill
                     className="rounded-lg shadow-xl object-cover"

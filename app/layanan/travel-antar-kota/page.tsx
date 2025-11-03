@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/layanan/travel-antar-kota",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi-Surabaya",
+        url: "/img/layanan/travel.webp",
         width: 1200,
         height: 630,
       },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | travelbanyuwangi.id",
     description: "Jadwal travel Banyuwangi ke Surabaya, Malang, dan Denpasar (PP) setiap hari. Layanan door-to-door aman dan nyaman.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi-Surabaya"],
+    images: ["/img/layanan/travel.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/layanan/travel-antar-kota",
@@ -144,7 +144,7 @@ export default function TravelAntarKotaPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/0077B6/FFFFFF?text=Travel+Banyuwangi+Surabaya"
+                    src="/img/rute/banyuwangi-surabaya.webp"
                     alt="Armada travel Banyuwangi ke Surabaya via tol"
                     fill
                     className="rounded-lg shadow-xl object-cover"
@@ -188,7 +188,7 @@ export default function TravelAntarKotaPage() {
               <div className="flex flex-col md:flex-row-reverse items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/00B894/FFFFFF?text=Travel+Banyuwangi+Malang"
+                    src="/img/rute/banyuwangi-malang.webp"
                     alt="Armada travel Banyuwangi ke Malang"
                     fill
                     className="rounded-lg shadow-xl object-cover"
@@ -222,7 +222,7 @@ export default function TravelAntarKotaPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/F79E1B/FFFFFF?text=Travel+Banyuwangi+Denpasar"
+                    src="/img/rute/banyuwangi-denpasar.webp"
                     alt="Armada travel Banyuwangi ke Denpasar Bali"
                     fill
                     className="rounded-lg shadow-xl object-cover"

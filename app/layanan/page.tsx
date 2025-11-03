@@ -97,7 +97,7 @@ export default function LayananPage() {
                 >
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/0077B6/FFFFFF?text=Travel+Antar+Kota"
+                      src="/img/layanan/travel.webp"
                       alt="Layanan Travel Antar Kota Banyuwangi"
                       fill
                       className="object-cover"
@@ -111,30 +111,6 @@ export default function LayananPage() {
                     <p className="mt-2 text-gray-600">
                       Layanan door-to-door rute Banyuwangi ↔ Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota
                       lainnya.
-                    </p>
-                  </div>
-                </Link>
-
-                {/* Kartu Layanan 2: Tiket Pesawat */}
-                <Link
-                  href="/layanan/tiket-pesawat"
-                  className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
-                >
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="https://placehold.co/600x400/0088B7/FFFFFF?text=Tiket+Pesawat"
-                      alt="Layanan Tiket Pesawat"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Plane className="w-6 h-6 text-primary shrink-0" />
-                      <h3 className="text-xl font-bold text-primary">Tiket Pesawat</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">
-                      Pemesanan tiket pesawat rute domestik dan internasional dengan harga bersaing.
                     </p>
                   </div>
                 </Link>
@@ -159,30 +135,6 @@ export default function LayananPage() {
                     </div>
                     <p className="mt-2 text-gray-600">
                       Dapatkan tiket bus malam dan bus executive ke berbagai tujuan di Pulau Jawa.
-                    </p>
-                  </div>
-                </Link>
-
-                {/* Kartu Layanan 4: Tiket Kapal Laut */}
-                <Link
-                  href="/layanan/tiket-kapal"
-                  className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
-                >
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="https://placehold.co/600x400/00A9B9/FFFFFF?text=Tiket+Kapal"
-                      alt="Layanan Tiket Kapal Laut"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Ship className="w-6 h-6 text-primary shrink-0" />
-                      <h3 className="text-xl font-bold text-primary">Tiket Kapal Laut</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">
-                      Pemesanan tiket kapal PELNI dan kapal ferry antar pulau di seluruh Indonesia.
                     </p>
                   </div>
                 </Link>
@@ -218,7 +170,7 @@ export default function LayananPage() {
                 >
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/00A884/FFFFFF?text=Wisata+Wali"
+                      src="/img/layanan/wali-9.webp"
                       alt="Layanan Wisata Wali 5 dan Wali 9"
                       fill
                       className="object-cover"
@@ -231,30 +183,6 @@ export default function LayananPage() {
                     </div>
                     <p className="mt-2 text-gray-600">
                       Paket perjalanan rohani ziarah Wali Songo (Wali 5 dan Wali 9) lengkap dengan akomodasi.
-                    </p>
-                  </div>
-                </Link>
-
-                {/* Kartu Layanan 7: Umroh & Haji Khusus */}
-                <Link
-                  href="/layanan/umroh-haji"
-                  className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
-                >
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="https://placehold.co/600x400/009874/FFFFFF?text=Umroh+%26+Haji"
-                      alt="Layanan Umroh dan Haji Khusus"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Building className="w-6 h-6 text-secondary shrink-0" />
-                      <h3 className="text-xl font-bold text-secondary">Umroh & Haji Khusus</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">
-                      Penyelenggara perjalanan Umroh dan Haji Khusus/Furoda yang amanah dan pasti berangkat.
                     </p>
                   </div>
                 </Link>
@@ -290,7 +218,7 @@ export default function LayananPage() {
                 >
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/F88E0B/FFFFFF?text=Paket+Express"
+                      src="/img/layanan/paket-express.webp"
                       alt="Layanan Paket Express"
                       fill
                       className="object-cover"

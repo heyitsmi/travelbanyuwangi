@@ -389,7 +389,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/0077B6/FFFFFF?text=Travel+Antar+Kota"
+                      src="/img/layanan/travel.webp"
                       alt="Layanan Travel Antar Kota Banyuwangi"
                       fill
                       className="object-cover"
@@ -407,25 +407,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/0099B8/FFFFFF?text=Visa+%26+Paspor"
-                      alt="Layanan Pengurusan Visa dan Paspor"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Building className="w-6 h-6 text-primary shrink-0" />
-                      <h3 className="text-xl font-bold text-primary">Pengurusan Visa & Paspor</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">Cepat, mudah, dan terpercaya.</p>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="https://placehold.co/600x400/00B894/FFFFFF?text=Wisata+Wali"
+                      src="/img/layanan/wali-9.webp"
                       alt="Layanan Wisata Wali 5 dan Wali 9"
                       fill
                       className="object-cover"
@@ -440,46 +422,10 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="https://placehold.co/600x400/00A884/FFFFFF?text=Umroh+%26+Haji"
-                      alt="Layanan Umroh dan Haji Khusus"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Building className="w-6 h-6 text-secondary shrink-0" />
-                      <h3 className="text-xl font-bold text-secondary">Umroh & Haji Khusus</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">Layanan premium dan pasti berangkat.</p>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="https://placehold.co/600x400/F79E1B/FFFFFF?text=Perjalanan+Dinas"
-                      alt="Layanan Perjalanan Dinas dan Sewa Mobil"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Building className="w-6 h-6 text-accent shrink-0" />
-                      <h3 className="text-xl font-bold text-accent">Perjalanan Dinas</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">Sewa mobil / charter untuk instansi.</p>
-                  </div>
-                </div>
-
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 md:col-start-2 lg:col-start-auto">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/F88E0B/FFFFFF?text=Paket+Express"
+                      src="/img/layanan/paket-express.webp"
                       alt="Layanan Paket Express"
                       fill
                       className="object-cover"
@@ -512,7 +458,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row items-center gap-12">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/00B894/FFFFFF?text=[Foto+Tim+atau+Armada]"
+                    src="/img/armada.webp"
                     alt="Tim dan armada travelbanyuwangi.id"
                     fill
                     className="rounded-lg shadow-xl object-cover"
