@@ -171,6 +171,150 @@ npm run start
 
 © 2025 travelbanyuwangi.id - All rights reserved
 
+---
+
+## Blog System - Dynamic Content with Markdown
+
+**Implemented**: 2025-11-03
+
+### Overview
+Sistem blog dinamis yang membaca file Markdown dari folder `/content` dan menampilkannya secara otomatis di halaman blog.
+
+### Files Created:
+- `/app/blog/page.tsx` - Blog listing page
+- `/app/blog/[slug]/page.tsx` - Blog detail page with full template
+- `/lib/blog.ts` - Helper functions untuk membaca markdown files
+- `/content/example-post.md` - Contoh artikel 1
+- `/content/panduan-wisata-wali-5.md` - Contoh artikel 2
+- `BLOG-GUIDE.md` - Dokumentasi lengkap
+- `BLOG-README.md` - Quick start guide
+
+### Features Implemented:
+✅ **Dynamic Content** - Otomatis membaca semua file `.md` dari `/content`  
+✅ **Front-matter Parsing** - Metadata (title, date, category, image, etc)  
+✅ **Auto Filter** - Hanya tampilkan post dengan `published: true`  
+✅ **SEO Optimized** - Complete metadata + structured data  
+✅ **Share Buttons** - Facebook, WhatsApp, Twitter dengan proper URLs  
+✅ **Responsive Design** - 2-column layout (stacks on mobile)  
+✅ **Sidebar Widgets** - Categories, popular posts, CTA (sticky)  
+✅ **Rich Typography** - Tailwind prose classes untuk styling konten  
+✅ **Image Optimization** - Next.js Image component  
+✅ **Markdown Rendering** - react-markdown untuk konversi MD ke HTML  
+
+### Blog Detail Page Fix:
+
+**Problem**: Error 404 saat akses `/blog/example-post`
+
+**Root Cause**:
+- Next.js 16 menggunakan async params
+- Missing `dynamicParams` export
+- Improper async/await handling
+
+**Solution**:
+```typescript
+// Added dynamicParams export
+export const dynamicParams = true;
+
+// Fixed async params handling
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params; // ✅ Await params
+  const post = await getBlogPost(slug);
+  // ...
+}
+```
+
+### Template Implementation:
+
+**Layout Structure**:
+```
+┌─────────────────────────────────────┐
+│  Breadcrumb: Home / Blog / Title   │
+├──────────────────┬──────────────────┤
+│                  │                  │
+│  Article Content │   Sidebar        │
+│  - Category      │   - Categories   │
+│  - Title         │   - Popular      │
+│  - Date/Author   │   - CTA (sticky) │
+│  - Image         │                  │
+│  - Markdown      │                  │
+│  - Share Buttons │                  │
+│                  │                  │
+└──────────────────┴──────────────────┘
+│  Back to Blog Link                  │
+└─────────────────────────────────────┘
+```
+
+### Packages Installed:
+```bash
+npm install gray-matter react-markdown
+```
+
+- **gray-matter**: Parse YAML front-matter dari Markdown
+- **react-markdown**: Render Markdown ke React components
+
+### Usage:
+
+1. **Buat file markdown** di `/content/nama-artikel.md`
+2. **Tambahkan front-matter**:
+```markdown
+---
+title: "Judul Artikel"
+excerpt: "Ringkasan singkat"
+date: "2025-01-15"
+author: "Penulis"
+category: "Tips Travel"
+image: "https://url-gambar.jpg"
+published: true
+---
+
+# Konten artikel di sini...
+```
+3. **Simpan** - Artikel otomatis muncul di `/blog`
+
+### SEO Features:
+
+**Metadata**:
+- Title, description, keywords
+- OpenGraph (dengan article type)
+- Twitter Card
+- Canonical URL
+- Published time
+- Author information
+
+**Structured Data**:
+```json
+{
+  "@type": "BlogPosting",
+  "headline": "...",
+  "datePublished": "...",
+  "author": {...},
+  "publisher": {...}
+}
+```
+
+### Styling Classes:
+
+**Article Content** (Tailwind Typography):
+- Headings: Bold, proper sizing
+- Links: Primary color with hover effect
+- Lists: Proper indentation
+- Blockquotes: Left border, italic
+- Images: Rounded corners, shadow
+- Code: Monospace with background
+
+**Share Buttons**:
+- Facebook: Blue (#1877F2)
+- WhatsApp: Green (#25D366)
+- Twitter: Gray (#1DA1F2)
+
+### Documentation:
+
+Lihat dokumentasi lengkap di:
+- **BLOG-README.md** - Quick start
+- **BLOG-GUIDE.md** - Panduan lengkap dengan contoh
+
+---
+
 ## Credits
 
 Website by Josjis Studio

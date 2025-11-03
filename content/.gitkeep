@@ -1,0 +1,19 @@
+# Content Directory
+
+Place your markdown blog posts here.
+
+## Example Front Matter:
+
+```markdown
+---
+title: "Your Blog Post Title"
+excerpt: "A short description of your blog post"
+date: "2025-01-15"
+author: "Admin"
+category: "Tips Travel"
+image: "https://placehold.co/800x500/0077B6/FFFFFF?text=Your+Image"
+published: true
+---
+
+Your blog post content goes here...
+```
