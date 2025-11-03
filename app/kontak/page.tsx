@@ -48,7 +48,7 @@ const structuredData = {
   mainEntity: {
     '@type': 'TravelAgency',
     name: 'travelbanyuwangi.id',
-    telephone: '+6281234567890',
+    telephone: '+6282143258744',
     email: 'info@travelbanyuwangi.id',
     address: {
       '@type': 'PostalAddress',
@@ -62,7 +62,7 @@ const structuredData = {
     logo: 'https://placehold.co/32x32/0077B6/FFFFFF?text=T',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+6281234567890',
+      telephone: '+6282143258744',
       contactType: 'Customer Service',
       areaServed: 'ID',
       availableLanguage: 'Indonesian',
@@ -145,7 +145,7 @@ export default function KontakPage() {
 
                 {/* WhatsApp Button */}
                 <a
-                  href="https://wa.me/628123456789"
+                  href="https://wa.me/6282143258744"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center p-6 bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 transition-all text-left w-full"
@@ -155,7 +155,7 @@ export default function KontakPage() {
                     <span className="text-lg font-semibold">
                       Klik untuk WhatsApp (Respon Cepat)
                     </span>
-                    <span className="block text-2xl font-bold">0812-3456-7890</span>
+                    <span className="block text-2xl font-bold">0821-4325-8744</span>
                   </div>
                 </a>
 
@@ -306,33 +306,6 @@ export default function KontakPage() {
                     </button>
                   </div>
                 </form>
-              </div>
-            </div>
-
-            {/* Google Maps Embed */}
-            <div className="mt-16">
-              <h2 className="text-3xl font-bold text-dark text-center">
-                Lokasi Kami
-              </h2>
-              <div className="mt-8 h-96 w-full rounded-lg shadow-xl overflow-hidden bg-gray-200">
-                {/* Placeholder untuk Google Maps */}
-                <img
-                  src="https://placehold.co/1200x600/EEEEEE/333333?text=Embed+Google+Maps+Lokasi+Kantor+Di+Sini"
-                  alt="Peta lokasi kantor travelbanyuwangi.id"
-                  className="w-full h-full object-cover"
-                />
-                {/* 
-                Contoh Embed Google Maps Asli (uncomment dan ganti src):
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d... (link embed Anda)..." 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }}
-                  allowFullScreen 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade">
-                </iframe>
-                */}
               </div>
             </div>
           </div>

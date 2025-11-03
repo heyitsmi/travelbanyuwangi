@@ -47,7 +47,7 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "travelbanyuwangi.id",
     url: "https://travelbanyuwangi.id/",
-    telephone: "+6281234567890",
+    telephone: "+6282143258744",
     image: "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
   },
   departureBusStop: {
@@ -258,7 +258,7 @@ export default function BanyuwangiDenpasarPage() {
                           <td className="p-4 font-bold text-primary text-lg">{schedule.price}</td>
                           <td className="p-4">
                             <a
-                              href="https://wa.me/628123456789"
+                              href="https://wa.me/6282143258744"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
@@ -328,7 +328,7 @@ export default function BanyuwangiDenpasarPage() {
                 travel Banyuwangi Denpasar hari ini.
               </p>
               <a
-                href="https://wa.me/628123456789"
+                href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"

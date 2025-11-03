@@ -60,7 +60,7 @@ export default function HalamanTravel() {
     "@type": "TravelAgency",
     name: "travelbanyuwangi.id",
     description: "Deskripsi travel agency",
-    telephone: "+6281234567890",
+    telephone: "+6282143258744",
     url: "https://travelbanyuwangi.id/",
     // ... data lainnya
   };
@@ -86,7 +86,7 @@ export default function HalamanTravel() {
   "@type": "TravelAgency",
   "name": "travelbanyuwangi.id",
   "description": "Layanan travel...",
-  "telephone": "+6281234567890",
+  "telephone": "+6282143258744",
   "url": "https://travelbanyuwangi.id/",
   "address": {
     "@type": "PostalAddress",
@@ -283,7 +283,7 @@ const serviceData = {
   "provider": {
     "@type": "TravelAgency",
     "name": "travelbanyuwangi.id",
-    "telephone": "+6281234567890"
+    "telephone": "+6282143258744"
   },
   "areaServed": [
     {

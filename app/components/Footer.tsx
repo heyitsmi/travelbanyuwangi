@@ -88,7 +88,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 shrink-0 text-accent" />
-                <span>0812-3456-7890</span>
+                <span>0821-4325-8744</span>
               </li>
             </ul>
           </div>

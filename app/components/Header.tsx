@@ -56,7 +56,7 @@ export default function Header() {
           </div>
 
           <a
-            href="https://wa.me/628123456789"
+            href="https://wa.me/6282143258744"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-block bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all"
@@ -115,7 +115,7 @@ export default function Header() {
               FAQ
             </a>
             <a
-              href="https://wa.me/628123456789"
+              href="https://wa.me/6282143258744"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all text-center"

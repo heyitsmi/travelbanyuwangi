@@ -218,7 +218,7 @@ export default function FAQPage() {
                 Tim admin kami siap membantu Anda 24 jam. Jangan ragu untuk bertanya!
               </p>
               <a
-                href="https://wa.me/628123456789"
+                href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-block bg-secondary text-white px-8 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all"

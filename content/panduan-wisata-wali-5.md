@@ -139,7 +139,7 @@ Armada yang kami gunakan untuk wisata ziarah:
 
 ### Cara Booking:
 
-1. **Via WhatsApp**: 0812-3456-7890
+1. **Via WhatsApp**: 0821-4325-8744
 2. **Informasikan**:
    - Tanggal keberangkatan
    - Jumlah peserta
@@ -176,7 +176,7 @@ Armada yang kami gunakan untuk wisata ziarah:
 
 Hubungi kami sekarang untuk booking atau konsultasi GRATIS mengenai paket wisata ziarah Anda!
 
-**WhatsApp**: 0812-3456-7890  
+**WhatsApp**: 0821-4325-8744  
 **Website**: travelbanyuwangi.id
 
 *Jadikan perjalanan spiritual Anda lebih berkesan bersama kami!* 🕌

@@ -308,7 +308,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     Berangkat setiap hari ke Surabaya, Malang, Denpasar.
                   </p>
                   <a
-                    href="https://wa.me/628123456789"
+                    href="https://wa.me/6282143258744"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-4 inline-block bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all"

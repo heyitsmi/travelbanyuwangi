@@ -236,7 +236,7 @@ export default function TestimoniPage() {
                 Hubungi kami via WhatsApp untuk booking cepat dan rasakan layanan travel terbaik di Banyuwangi.
               </p>
               <a
-                href="https://wa.me/628123456789"
+                href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"

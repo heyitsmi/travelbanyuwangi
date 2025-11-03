@@ -246,7 +246,7 @@ export default function LayananPage() {
                 Hubungi tim kami. Kami siap membantu menyediakan solusi perjalanan custom untuk Anda.
               </p>
               <a
-                href="https://wa.me/628123456789"
+                href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"

@@ -63,7 +63,7 @@ const travelAgencyData = {
   name: "travelbanyuwangi.id",
   description:
     "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.",
-  telephone: "+6281234567890",
+  telephone: "+6282143258744",
   url: "https://travelbanyuwangi.id/",
   image: "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
   address: {
@@ -169,7 +169,7 @@ export default function Home() {
                 Layanan travel antar kota aman & nyaman, berangkat setiap hari.
               </p>
               <a
-                href="https://wa.me/628123456789"
+                href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
@@ -705,7 +705,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-center">
                       <Phone className="w-6 h-6 mr-3 text-accent" />
-                      <span className="text-lg">0812-3456-7890 (WhatsApp 24 Jam)</span>
+                      <span className="text-lg">0821-4325-8744 (WhatsApp 24 Jam)</span>
                     </div>
                     <div className="flex items-center">
                       <Clock className="w-6 h-6 mr-3 text-accent" />
@@ -713,7 +713,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    href="https://wa.me/628123456789"
+                    href="https://wa.me/6282143258744"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"

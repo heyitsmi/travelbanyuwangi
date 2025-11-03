@@ -45,7 +45,7 @@ const structuredData = {
     '@type': 'TravelAgency',
     name: 'travelbanyuwangi.id',
     description: 'Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.',
-    telephone: '+6281234567890',
+    telephone: '+6282143258744',
     url: 'https://travelbanyuwangi.id/',
     image: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id',
     address: {
@@ -221,42 +221,6 @@ export default function TentangKamiPage() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section id="tim" className="py-20 bg-white">
-          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            {/* Section Title */}
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
-                Tim Profesional Kami
-              </h2>
-              <p className="mt-4 text-lg text-gray-600">
-                Di balik layanan hebat, ada tim yang hebat.
-              </p>
-            </div>
-
-            {/* Team Grid */}
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              {teamMembers.map((member) => (
-                <div
-                  key={member.id}
-                  className="text-center bg-light p-6 rounded-lg shadow-lg group"
-                >
-                  <div className="relative w-40 h-40 mx-auto">
-                    <Image
-                      src={member.image}
-                      alt={member.alt}
-                      fill
-                      className="rounded-full border-4 border-white shadow-md transition-transform duration-300 group-hover:scale-105 object-cover"
-                    />
-                  </div>
-                  <h4 className="mt-4 text-xl font-bold text-dark">{member.name}</h4>
-                  <p className="text-primary font-medium">{member.position}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Fleet Gallery Section */}
         <section id="galeri-armada" className="py-20 bg-light">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -297,7 +261,7 @@ export default function TentangKamiPage() {
               agen travel Banyuwangi terpercaya.
             </p>
             <a
-              href="https://wa.me/628123456789"
+              href="https://wa.me/6282143258744"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
