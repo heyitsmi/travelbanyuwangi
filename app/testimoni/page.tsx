@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/testimoni",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Testimoni+Pelanggan",
+        url: "/img/hero.webp",
         width: 1200,
         height: 630,
       },

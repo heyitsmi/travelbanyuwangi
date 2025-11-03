@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://travelbanyuwangi.id/faq',
     images: [
       {
-        url: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=FAQ',
+        url: '/img/hero.webp',
         width: 1200,
         height: 630,
         alt: 'FAQ travelbanyuwangi.id',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'FAQ (Pertanyaan Umum) | travelbanyuwangi.id',
     description: 'Temukan jawaban atas pertanyaan umum seputar layanan travel Banyuwangi.',
-    images: ['https://placehold.co/1200x630/0077B6/FFFFFF?text=FAQ'],
+    images: ['/img/hero.webp'],
   },
   robots: {
     index: true,

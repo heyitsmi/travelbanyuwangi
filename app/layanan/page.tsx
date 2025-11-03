@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/layanan",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Layanan+Kami",
+        url: "/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Layanan Kami | Agen Travel Banyuwangi | travelbanyuwangi.id",
     description: "Jelajahi semua layanan travelbanyuwangi.id: Travel, Tiket, Visa, Wisata Wali, Umroh, dan Paket Express.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Layanan+Kami"],
+    images: ["/img/hero.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/layanan",
@@ -146,7 +146,7 @@ export default function LayananPage() {
                 >
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/00B894/FFFFFF?text=Visa+%26+Paspor"
+                      src="/img/layanan/jasa-paspor.webp"
                       alt="Layanan Pengurusan Visa dan Paspor"
                       fill
                       className="object-cover"

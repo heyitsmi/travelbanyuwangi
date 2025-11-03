@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
     images: [
       {
-        url: "https://placehold.co/1200x630/00B894/FFFFFF?text=Travel+Banyuwangi+Malang",
+        url: "/img/rute/banyuwangi-malang.webp",
         width: 1200,
         height: 630,
       },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Travel Banyuwangi Malang (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
     description:
       "Jadwal & harga travel Banyuwangi Malang (PP) terbaru. Layanan door-to-door, berangkat setiap hari.",
-    images: ["https://placehold.co/1200x630/00B894/FFFFFF?text=Travel+Banyuwangi+Malang"],
+    images: ["/img/rute/banyuwangi-malang.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
@@ -48,7 +48,7 @@ const busTripData = {
     name: "travelbanyuwangi.id",
     url: "https://travelbanyuwangi.id/",
     telephone: "+6282143258744",
-    image: "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
+    image: "/img/rute/banyuwangi-malang.webp",
   },
   departureBusStop: {
     "@type": "BusStop",

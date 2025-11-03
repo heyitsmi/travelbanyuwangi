@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://travelbanyuwangi.id/tentang-kami',
     images: [
       {
-        url: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Tentang+Kami',
+        url: '/img/hero.webp',
         width: 1200,
         height: 630,
         alt: 'Tentang Kami travelbanyuwangi.id',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tentang Kami | Agen Travel Banyuwangi Terpercaya | travelbanyuwangi.id',
     description: 'Kenali tim, visi, dan misi travelbanyuwangi.id, agen travel pilihan Anda di Banyuwangi.',
-    images: ['https://placehold.co/1200x630/0077B6/FFFFFF?text=Tentang+Kami'],
+    images: ['/img/hero.webp'],
   },
   alternates: {
     canonical: 'https://travelbanyuwangi.id/tentang-kami',
@@ -47,7 +47,7 @@ const structuredData = {
     description: 'Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.',
     telephone: '+6282143258744',
     url: 'https://travelbanyuwangi.id/',
-    image: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id',
+    image: '/img/hero.webp',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Jl. Raya Jember No. 1',
@@ -60,38 +60,6 @@ const structuredData = {
     priceRange: '$$',
   },
 };
-
-// Team members data
-const teamMembers = [
-  {
-    id: 1,
-    name: 'Budi Hartono',
-    position: 'Founder & CEO',
-    image: 'https://placehold.co/300x300/0077B6/FFFFFF?text=Foto+Tim',
-    alt: 'Founder travelbanyuwangi.id',
-  },
-  {
-    id: 2,
-    name: 'Siti Aminah',
-    position: 'Manajer Operasional',
-    image: 'https://placehold.co/300x300/00B894/FFFFFF?text=Foto+Tim',
-    alt: 'Manajer Operasional travelbanyuwangi.id',
-  },
-  {
-    id: 3,
-    name: 'Rian Hidayat',
-    position: 'Customer Service',
-    image: 'https://placehold.co/300x300/F79E1B/FFFFFF?text=Foto+Tim',
-    alt: 'Admin Customer Service travelbanyuwangi.id',
-  },
-  {
-    id: 4,
-    name: 'Eko Prasetiyo',
-    position: 'Koordinator Driver',
-    image: 'https://placehold.co/300x300/AAAAAA/FFFFFF?text=Foto+Tim',
-    alt: 'Koordinator Driver travelbanyuwangi.id',
-  },
-];
 
 // Fleet gallery data
 const fleetGallery = [

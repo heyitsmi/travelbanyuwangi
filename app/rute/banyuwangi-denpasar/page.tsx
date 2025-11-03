@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/rute/banyuwangi-denpasar",
     images: [
       {
-        url: "https://placehold.co/1200x630/F79E1B/FFFFFF?text=Travel+Banyuwangi+Denpasar",
+        url: "/img/rute/banyuwangi-denpasar.webp",
         width: 1200,
         height: 630,
       },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Travel Banyuwangi Denpasar (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
     description:
       "Jadwal & harga travel Banyuwangi Denpasar (PP) terbaru. Layanan door-to-door, sudah termasuk tiket kapal.",
-    images: ["https://placehold.co/1200x630/F79E1B/FFFFFF?text=Travel+Banyuwangi+Denpasar"],
+    images: ["/img/rute/banyuwangi-denpasar.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/rute/banyuwangi-denpasar",
@@ -48,7 +48,7 @@ const busTripData = {
     name: "travelbanyuwangi.id",
     url: "https://travelbanyuwangi.id/",
     telephone: "+6282143258744",
-    image: "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
+    image: "/img/hero.webp",
   },
   departureBusStop: {
     "@type": "BusStop",

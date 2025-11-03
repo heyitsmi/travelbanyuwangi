@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
+        url: "/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | travelbanyuwangi.id",
     description: "Layanan travel antar kota aman & nyaman. Berangkat setiap hari.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id"],
+    images: ["/img/hero.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/",
@@ -65,7 +65,7 @@ const travelAgencyData = {
     "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.",
   telephone: "+6282143258744",
   url: "https://travelbanyuwangi.id/",
-  image: "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
+  image: "/img/hero.webp",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Jl. Raya Jember No. 1",
@@ -248,12 +248,12 @@ export default function Home() {
                     <p className="mt-2 text-gray-600">
                       Perjalanan nyaman via tol, dijemput di rumah dan diantar sampai tujuan.
                     </p>
-                    <a
+                    <Link
                       href="/rute/banyuwangi-surabaya"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -271,12 +271,12 @@ export default function Home() {
                     <p className="mt-2 text-gray-600">
                       Armada terbaik menuju kota pendidikan dan wisata. Berangkat setiap hari.
                     </p>
-                    <a
+                    <Link
                       href="/rute/banyuwangi-malang"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -294,12 +294,12 @@ export default function Home() {
                     <p className="mt-2 text-gray-600">
                       Lintasi selat Bali dengan aman dan nyaman, langsung ke tujuan Anda di Denpasar.
                     </p>
-                    <a
+                    <Link
                       href="/rute/banyuwangi-denpasar"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -317,12 +317,12 @@ export default function Home() {
                     <p className="mt-2 text-gray-600">
                       Jelajahi Jawa Tengah dengan layanan travel via tol yang cepat dan aman.
                     </p>
-                    <a
+                    <Link
                       href="/rute/banyuwangi-solo"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -340,12 +340,12 @@ export default function Home() {
                     <p className="mt-2 text-gray-600">
                       Layanan rute selatan Jawa Timur, melayani juga Blitar dan Kediri.
                     </p>
-                    <a
+                    <Link
                       href="/rute/banyuwangi-tulungagung"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
-                    </a>
+                    </Link>
                   </div>
                 </div>
 

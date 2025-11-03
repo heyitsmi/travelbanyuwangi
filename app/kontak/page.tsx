@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: 'https://travelbanyuwangi.id/kontak',
     images: [
       {
-        url: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Kontak+Kami',
+        url: '/img/hero.webp',
         width: 1200,
         height: 630,
         alt: 'Kontak travelbanyuwangi.id',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kontak Kami | travelbanyuwangi.id',
     description: 'Hubungi kami untuk pemesanan travel, paket wisata, atau layanan lainnya. Tersedia via WhatsApp 24 jam.',
-    images: ['https://placehold.co/1200x630/0077B6/FFFFFF?text=Kontak+Kami'],
+    images: ['/img/hero.webp'],
   },
   robots: {
     index: true,

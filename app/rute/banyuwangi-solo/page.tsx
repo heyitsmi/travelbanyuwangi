@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/rute/banyuwangi-solo",
     images: [
       {
-        url: "https://placehold.co/1200x630/555555/FFFFFF?text=Travel+Banyuwangi+Solo",
+        url: "/img/rute/banyuwangi-solo.webp",
         width: 1200,
         height: 630,
       },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Travel Banyuwangi Solo (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
     description:
       "Jadwal & harga travel Banyuwangi Solo (PP) terbaru. Layanan door-to-door via Tol Transjawa, berangkat setiap hari.",
-    images: ["https://placehold.co/1200x630/555555/FFFFFF?text=Travel+Banyuwangi+Solo"],
+    images: ["/img/rute/banyuwangi-solo.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/rute/banyuwangi-solo",
@@ -48,7 +48,7 @@ const busTripData = {
     name: "travelbanyuwangi.id",
     url: "https://travelbanyuwangi.id/",
     telephone: "+6282143258744",
-    image: "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
+    image: "/img/rute/banyuwangi-solo.webp",
   },
   departureBusStop: {
     "@type": "BusStop",

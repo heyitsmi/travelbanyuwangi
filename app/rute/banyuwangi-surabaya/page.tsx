@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/rute/banyuwangi-surabaya",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi+Surabaya",
+        url: "/img/rute/banyuwangi-surabaya.webp",
         width: 1200,
         height: 630,
       },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Travel Banyuwangi Surabaya (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
     description:
       "Jadwal & harga travel Banyuwangi Surabaya (PP) terbaru. Layanan door-to-door, via tol, berangkat setiap hari.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi+Surabaya"],
+    images: ["/img/rute/banyuwangi-surabaya.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/rute/banyuwangi-surabaya",
@@ -48,7 +48,7 @@ const busTripData = {
     name: "travelbanyuwangi.id",
     url: "https://travelbanyuwangi.id/",
     telephone: "+6282143258744",
-    image: "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
+    image: "/img/rute/banyuwangi-surabaya.webp",
   },
   departureBusStop: {
     "@type": "BusStop",

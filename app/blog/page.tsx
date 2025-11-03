@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: 'https://travelbanyuwangi.id/blog',
     images: [
       {
-        url: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Blog+Kami',
+        url: '/img/hero.webp',
         width: 1200,
         height: 630,
         alt: 'Blog travelbanyuwangi.id',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Blog & Artikel Perjalanan | travelbanyuwangi.id',
     description: 'Kumpulan tips, panduan, dan artikel perjalanan terbaru dari Banyuwangi.',
-    images: ['https://placehold.co/1200x630/0077B6/FFFFFF?text=Blog+Kami'],
+    images: ['/img/hero.webp'],
   },
   alternates: {
     canonical: 'https://travelbanyuwangi.id/blog',
@@ -141,7 +141,7 @@ export default async function BlogPage() {
                       <Link href={`/blog/${post.slug}`}>
                         <div className="relative w-full h-80 mb-6 rounded-lg shadow-lg overflow-hidden">
                           <Image
-                            src={post.image || 'https://placehold.co/800x500/0077B6/FFFFFF?text=Blog+Post'}
+                            src={post.image || '/img/hero.webp'}
                             alt={post.title}
                             fill
                             className="object-cover transition-opacity duration-300 group-hover:opacity-90"

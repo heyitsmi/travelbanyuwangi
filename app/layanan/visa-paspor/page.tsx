@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/layanan/visa-paspor",
     images: [
       {
-        url: "https://placehold.co/1200x630/00B894/FFFFFF?text=Jasa+Visa+Paspor",
+        url: "/img/layanan/jasa-paspor.webp",
         width: 1200,
         height: 630,
       },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Jasa Pengurusan Visa & Paspor Banyuwangi | travelbanyuwangi.id",
     description:
       "Layanan biro jasa cepat & terpercaya untuk pengurusan visa turis, visa umroh, paspor baru, dan perpanjangan paspor di Banyuwangi.",
-    images: ["https://placehold.co/1200x630/00B894/FFFFFF?text=Jasa+Visa+Paspor"],
+    images: ["/img/layanan/jasa-paspor.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/layanan/visa-paspor",
@@ -212,7 +212,7 @@ export default function VisaPasporPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/00B894/FFFFFF?text=Jasa+Visa+Paspor"
+                    src="/img/layanan/jasa-paspor.webp"
                     alt="Biro jasa pengurusan visa Banyuwangi"
                     fill
                     className="rounded-lg shadow-xl object-cover"
