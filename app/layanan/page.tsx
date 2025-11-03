@@ -117,7 +117,7 @@ export default function LayananPage() {
 
                 {/* Kartu Layanan 2: Tiket Pesawat */}
                 <Link
-                  href="/layanan/tiket"
+                  href="/layanan/tiket-pesawat"
                   className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <div className="relative h-48 w-full">
@@ -141,7 +141,7 @@ export default function LayananPage() {
 
                 {/* Kartu Layanan 3: Tiket Bus Executive */}
                 <Link
-                  href="/layanan/tiket"
+                  href="/layanan/tiket-bus"
                   className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <div className="relative h-48 w-full">
@@ -165,7 +165,7 @@ export default function LayananPage() {
 
                 {/* Kartu Layanan 4: Tiket Kapal Laut */}
                 <Link
-                  href="/layanan/tiket"
+                  href="/layanan/tiket-kapal"
                   className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <div className="relative h-48 w-full">
@@ -213,7 +213,7 @@ export default function LayananPage() {
 
                 {/* Kartu Layanan 6: Wisata Wali 5 & 9 */}
                 <Link
-                  href="/layanan/wisata-wali"
+                  href="/layanan/wisata-wali-5"
                   className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <div className="relative h-48 w-full">
