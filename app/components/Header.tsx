@@ -40,9 +40,14 @@ export default function Header() {
             <a href="/#tentang" className="text-gray-700 hover:text-primary transition-colors">
               Tentang Kami
             </a>
-            <a href="/#faq" className="text-gray-700 hover:text-primary transition-colors">
+            <Link
+              href="/faq"
+              className={`${
+                pathname === "/faq" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
+            >
               FAQ
-            </a>
+            </Link>
           </div>
 
           <a

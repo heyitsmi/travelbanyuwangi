@@ -31,39 +31,24 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Navigasi Cepat</h4>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/" className="hover:text-white transition-colors">
-                  Beranda
-                </Link>
-              </li>
-              <li>
-                <a href="/#rute" className="hover:text-white transition-colors">
-                  Rute Populer
-                </a>
-              </li>
-              <li>
-                <Link href="/layanan" className="hover:text-white transition-colors">
-                  Layanan Kami
-                </Link>
-              </li>
-              <li>
                 <a href="/#tentang" className="hover:text-white transition-colors">
                   Tentang Kami
                 </a>
               </li>
               <li>
-                <a href="/#testimoni" className="hover:text-white transition-colors">
+                <Link href="/testimoni" className="hover:text-white transition-colors">
                   Testimoni
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#faq" className="hover:text-white transition-colors">
+                <Link href="/faq" className="hover:text-white transition-colors">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#kontak" className="hover:text-white transition-colors">
+                <Link href="/kontak" className="hover:text-white transition-colors">
                   Kontak
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -78,22 +63,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/layanan" className="hover:text-white transition-colors">
-                  Tiket Pesawat & Bus
-                </Link>
-              </li>
-              <li>
-                <Link href="/layanan" className="hover:text-white transition-colors">
                   Pengurusan Visa & Paspor
                 </Link>
               </li>
               <li>
                 <Link href="/layanan" className="hover:text-white transition-colors">
                   Wisata Wali 5 & Wali 9
-                </Link>
-              </li>
-              <li>
-                <Link href="/layanan" className="hover:text-white transition-colors">
-                  Umroh & Haji Khusus
                 </Link>
               </li>
               <li>
