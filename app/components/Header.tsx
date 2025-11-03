@@ -21,9 +21,14 @@ export default function Header() {
             <Link href="/" className="text-gray-700 hover:text-primary transition-colors">
               Beranda
             </Link>
-            <a href="/#rute" className="text-gray-700 hover:text-primary transition-colors">
+            <Link
+              href="/rute"
+              className={`${
+                pathname === "/rute" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
+            >
               Rute
-            </a>
+            </Link>
             <Link
               href="/layanan"
               className={`${
@@ -67,13 +72,15 @@ export default function Header() {
             >
               Beranda
             </Link>
-            <a
-              href="/#rute"
-              className="block text-gray-700 hover:text-primary transition-colors"
+            <Link
+              href="/rute"
+              className={`block ${
+                pathname === "/rute" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Rute
-            </a>
+            </Link>
             <Link
               href="/layanan"
               className={`block ${
