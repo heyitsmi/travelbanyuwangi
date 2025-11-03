@@ -31,9 +31,9 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Navigasi Cepat</h4>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="/#tentang" className="hover:text-white transition-colors">
+                <Link href="/tentang-kami" className="hover:text-white transition-colors">
                   Tentang Kami
-                </a>
+                </Link>
               </li>
               <li>
                 <Link href="/testimoni" className="hover:text-white transition-colors">
@@ -94,11 +94,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-700 text-center">
-          <p className="text-sm text-gray-400">
-            © 2025 travelbanyuwangi.id — Travel Aman & Terpercaya dari Banyuwangi.
-          </p>
-          <p className="text-xs text-gray-500 mt-2">Website by Josjis Studio</p>
+        <div className="mt-12 pt-8 border-t border-gray-700">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm text-gray-400 text-center md:text-left">
+              © 2025 travelbanyuwangi.id — Dikelola oleh CV Rizky Cella, terdaftar sejak 2016. Travel resmi & terpercaya dari Banyuwangi.
+            </p>
+            <div className="flex flex-wrap justify-center md:justify-end gap-4 text-sm">
+              <Link href="/syarat-ketentuan" className="text-gray-400 hover:text-white transition-colors">
+                Syarat & Ketentuan
+              </Link>
+              <span className="text-gray-600">|</span>
+              <Link href="/kebijakan-privasi" className="text-gray-400 hover:text-white transition-colors">
+                Kebijakan Privasi
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

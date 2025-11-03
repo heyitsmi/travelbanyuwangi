@@ -1,0 +1,38 @@
+# robots.txt for travelbanyuwangi.id
+# Mengizinkan semua search engine untuk crawl semua halaman
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://travelbanyuwangi.id/sitemap.xml
+
+# Crawl-delay (opsional, untuk mengurangi beban server)
+# Crawl-delay: 1
+
+# Disallow direktori yang tidak perlu di-index
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow specific paths
+Allow: /favicon/
+Allow: /img/
+Allow: /public/
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (opsional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
