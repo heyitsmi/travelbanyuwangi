@@ -491,94 +491,194 @@ export default function Home() {
           </section>
 
           {/* Testimoni Section */}
-          <section id="testimoni" className="py-20 bg-light">
+          <section id="testimoni" className="py-20 bg-light overflow-hidden">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Apa Kata Pelanggan Kami?</h2>
                 <p className="mt-4 text-lg text-gray-600">Kepuasan Anda adalah prioritas utama kami.</p>
               </div>
 
-              <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-white p-8 rounded-lg shadow-lg">
-                  <div className="flex text-accent">
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                  </div>
-                  <p className="mt-4 text-lg text-gray-700 italic">
-                    &quot;Pelayanannya cepat dan sopirnya ramah banget. Mobilnya bersih dan nyaman. Pasti langganan di
-                    sini buat travel Banyuwangi-Surabaya.&quot;
-                  </p>
-                  <div className="flex items-center mt-6">
-                    <div className="relative w-10 h-10">
-                      <Image
-                        src="https://placehold.co/40x40/0077B6/FFFFFF?text=A"
-                        alt="Avatar pelanggan"
-                        fill
-                        className="rounded-full object-cover"
-                      />
+              <div className="mt-12 relative">
+                <div className="flex animate-marquee hover:pause-animation">
+                  {/* First set of testimonials */}
+                  <div className="shrink-0 w-96 mx-4">
+                    <div className="bg-white p-8 rounded-lg shadow-lg h-full">
+                      <div className="flex text-accent">
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                      </div>
+                      <p className="mt-4 text-lg text-gray-700 italic">
+                        &quot;Pelayanannya cepat dan sopirnya ramah banget. Mobilnya bersih dan nyaman. Pasti langganan di
+                        sini buat travel Banyuwangi-Surabaya.&quot;
+                      </p>
+                      <div className="flex items-center mt-6">
+                        <div className="relative w-10 h-10">
+                          <Image
+                            src="https://placehold.co/40x40/0077B6/FFFFFF?text=A"
+                            alt="Avatar pelanggan"
+                            fill
+                            className="rounded-full object-cover"
+                          />
+                        </div>
+                        <div className="ml-3">
+                          <p className="font-semibold text-dark">Ahmad Yusuf</p>
+                          <p className="text-sm text-gray-500">Pelanggan, Surabaya</p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="ml-3">
-                      <p className="font-semibold text-dark">Ahmad Yusuf</p>
-                      <p className="text-sm text-gray-500">Pelanggan, Surabaya</p>
-                    </div>
                   </div>
-                </div>
 
-                <div className="bg-white p-8 rounded-lg shadow-lg">
-                  <div className="flex text-accent">
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                  </div>
-                  <p className="mt-4 text-lg text-gray-700 italic">
-                    &quot;Booking untuk travel ke Denpasar mendadak, tapi tetap dilayani dengan baik. Dijemput tepat
-                    waktu dan sampai tujuan dengan aman. Recommended!&quot;
-                  </p>
-                  <div className="flex items-center mt-6">
-                    <div className="relative w-10 h-10">
-                      <Image
-                        src="https://placehold.co/40x40/00B894/FFFFFF?text=S"
-                        alt="Avatar pelanggan"
-                        fill
-                        className="rounded-full object-cover"
-                      />
+                  <div className="shrink-0 w-96 mx-4">
+                    <div className="bg-white p-8 rounded-lg shadow-lg h-full">
+                      <div className="flex text-accent">
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                      </div>
+                      <p className="mt-4 text-lg text-gray-700 italic">
+                        &quot;Booking untuk travel ke Denpasar mendadak, tapi tetap dilayani dengan baik. Dijemput tepat
+                        waktu dan sampai tujuan dengan aman. Recommended!&quot;
+                      </p>
+                      <div className="flex items-center mt-6">
+                        <div className="relative w-10 h-10">
+                          <Image
+                            src="https://placehold.co/40x40/00B894/FFFFFF?text=S"
+                            alt="Avatar pelanggan"
+                            fill
+                            className="rounded-full object-cover"
+                          />
+                        </div>
+                        <div className="ml-3">
+                          <p className="font-semibold text-dark">Siti Fatimah</p>
+                          <p className="text-sm text-gray-500">Pelanggan, Denpasar</p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="ml-3">
-                      <p className="font-semibold text-dark">Siti Fatimah</p>
-                      <p className="text-sm text-gray-500">Pelanggan, Denpasar</p>
-                    </div>
                   </div>
-                </div>
 
-                <div className="bg-white p-8 rounded-lg shadow-lg">
-                  <div className="flex text-accent">
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                    <Star className="w-5 h-5 fill-current" />
-                  </div>
-                  <p className="mt-4 text-lg text-gray-700 italic">
-                    &quot;Pakai jasa kirim paket express Banyuwangi-Malang, sehari sampai. Harganya juga oke. Mantap
-                    travelbanyuwangi.id!&quot;
-                  </p>
-                  <div className="flex items-center mt-6">
-                    <div className="relative w-10 h-10">
-                      <Image
-                        src="https://placehold.co/40x40/F79E1B/FFFFFF?text=B"
-                        alt="Avatar pelanggan"
-                        fill
-                        className="rounded-full object-cover"
-                      />
+                  <div className="shrink-0 w-96 mx-4">
+                    <div className="bg-white p-8 rounded-lg shadow-lg h-full">
+                      <div className="flex text-accent">
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                      </div>
+                      <p className="mt-4 text-lg text-gray-700 italic">
+                        &quot;Pakai jasa kirim paket express Banyuwangi-Malang, sehari sampai. Harganya juga oke. Mantap
+                        travelbanyuwangi.id!&quot;
+                      </p>
+                      <div className="flex items-center mt-6">
+                        <div className="relative w-10 h-10">
+                          <Image
+                            src="https://placehold.co/40x40/F79E1B/FFFFFF?text=B"
+                            alt="Avatar pelanggan"
+                            fill
+                            className="rounded-full object-cover"
+                          />
+                        </div>
+                        <div className="ml-3">
+                          <p className="font-semibold text-dark">Budi Santoso</p>
+                          <p className="text-sm text-gray-500">Pelanggan, Malang</p>
+                        </div>
+                      </div>
                     </div>
-                    <div className="ml-3">
-                      <p className="font-semibold text-dark">Budi Santoso</p>
-                      <p className="text-sm text-gray-500">Pelanggan, Malang</p>
+                  </div>
+
+                  {/* Duplicate set for seamless loop */}
+                  <div className="shrink-0 w-96 mx-4">
+                    <div className="bg-white p-8 rounded-lg shadow-lg h-full">
+                      <div className="flex text-accent">
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                      </div>
+                      <p className="mt-4 text-lg text-gray-700 italic">
+                        &quot;Pelayanannya cepat dan sopirnya ramah banget. Mobilnya bersih dan nyaman. Pasti langganan di
+                        sini buat travel Banyuwangi-Surabaya.&quot;
+                      </p>
+                      <div className="flex items-center mt-6">
+                        <div className="relative w-10 h-10">
+                          <Image
+                            src="https://placehold.co/40x40/0077B6/FFFFFF?text=A"
+                            alt="Avatar pelanggan"
+                            fill
+                            className="rounded-full object-cover"
+                          />
+                        </div>
+                        <div className="ml-3">
+                          <p className="font-semibold text-dark">Ahmad Yusuf</p>
+                          <p className="text-sm text-gray-500">Pelanggan, Surabaya</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="shrink-0 w-96 mx-4">
+                    <div className="bg-white p-8 rounded-lg shadow-lg h-full">
+                      <div className="flex text-accent">
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                      </div>
+                      <p className="mt-4 text-lg text-gray-700 italic">
+                        &quot;Booking untuk travel ke Denpasar mendadak, tapi tetap dilayani dengan baik. Dijemput tepat
+                        waktu dan sampai tujuan dengan aman. Recommended!&quot;
+                      </p>
+                      <div className="flex items-center mt-6">
+                        <div className="relative w-10 h-10">
+                          <Image
+                            src="https://placehold.co/40x40/00B894/FFFFFF?text=S"
+                            alt="Avatar pelanggan"
+                            fill
+                            className="rounded-full object-cover"
+                          />
+                        </div>
+                        <div className="ml-3">
+                          <p className="font-semibold text-dark">Siti Fatimah</p>
+                          <p className="text-sm text-gray-500">Pelanggan, Denpasar</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="shrink-0 w-96 mx-4">
+                    <div className="bg-white p-8 rounded-lg shadow-lg h-full">
+                      <div className="flex text-accent">
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                        <Star className="w-5 h-5 fill-current" />
+                      </div>
+                      <p className="mt-4 text-lg text-gray-700 italic">
+                        &quot;Pakai jasa kirim paket express Banyuwangi-Malang, sehari sampai. Harganya juga oke. Mantap
+                        travelbanyuwangi.id!&quot;
+                      </p>
+                      <div className="flex items-center mt-6">
+                        <div className="relative w-10 h-10">
+                          <Image
+                            src="https://placehold.co/40x40/F79E1B/FFFFFF?text=B"
+                            alt="Avatar pelanggan"
+                            fill
+                            className="rounded-full object-cover"
+                          />
+                        </div>
+                        <div className="ml-3">
+                          <p className="font-semibold text-dark">Budi Santoso</p>
+                          <p className="text-sm text-gray-500">Pelanggan, Malang</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
