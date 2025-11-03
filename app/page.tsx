@@ -51,10 +51,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/",
-  },
-  icons: {
-    icon: "https://placehold.co/32x32/0077B6/FFFFFF?text=T",
-  },
+  }
 };
 
 const travelAgencyData = {
@@ -240,6 +237,7 @@ export default function Home() {
                       src="/img/rute/banyuwangi-surabaya.webp"
                       alt="Travel Banyuwangi Surabaya"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -263,6 +261,7 @@ export default function Home() {
                       src="/img/rute/banyuwangi-malang.webp"
                       alt="Travel Banyuwangi Malang"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -286,6 +285,7 @@ export default function Home() {
                       src="/img/rute/banyuwangi-denpasar.webp"
                       alt="Travel Banyuwangi Denpasar"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -309,6 +309,7 @@ export default function Home() {
                       src="/img/rute/banyuwangi-solo.webp"
                       alt="Travel Banyuwangi Solo"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -332,6 +333,7 @@ export default function Home() {
                       src="/img/rute/banyuwangi-tulungagung.webp"
                       alt="Travel Banyuwangi Tulungagung"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -355,6 +357,7 @@ export default function Home() {
                       src="/img/rute/rute-lainnya.webp"
                       alt="Travel Banyuwangi Jember Probolinggo"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -392,6 +395,7 @@ export default function Home() {
                       src="/img/layanan/travel.webp"
                       alt="Layanan Travel Antar Kota Banyuwangi"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -410,6 +414,7 @@ export default function Home() {
                       src="/img/layanan/wali-9.webp"
                       alt="Layanan Wisata Wali 5 dan Wali 9"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -428,6 +433,7 @@ export default function Home() {
                       src="/img/layanan/paket-express.webp"
                       alt="Layanan Paket Express"
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
                     />
                   </div>
@@ -461,6 +467,7 @@ export default function Home() {
                     src="/img/armada.webp"
                     alt="Tim dan armada travelbanyuwangi.id"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="rounded-lg shadow-xl object-cover"
                   />
                 </div>
@@ -517,9 +524,10 @@ export default function Home() {
                       <div className="flex items-center mt-6">
                         <div className="relative w-10 h-10">
                           <Image
-                            src="https://placehold.co/40x40/0077B6/FFFFFF?text=A"
+                            src="/avatar.webp"
                             alt="Avatar pelanggan"
                             fill
+                            sizes="40px"
                             className="rounded-full object-cover"
                           />
                         </div>
@@ -547,9 +555,10 @@ export default function Home() {
                       <div className="flex items-center mt-6">
                         <div className="relative w-10 h-10">
                           <Image
-                            src="https://placehold.co/40x40/00B894/FFFFFF?text=S"
+                            src="/avatar.webp"
                             alt="Avatar pelanggan"
                             fill
+                            sizes="40px"
                             className="rounded-full object-cover"
                           />
                         </div>
@@ -577,9 +586,10 @@ export default function Home() {
                       <div className="flex items-center mt-6">
                         <div className="relative w-10 h-10">
                           <Image
-                            src="https://placehold.co/40x40/F79E1B/FFFFFF?text=B"
+                            src="/avatar.webp"
                             alt="Avatar pelanggan"
                             fill
+                            sizes="40px"
                             className="rounded-full object-cover"
                           />
                         </div>
@@ -608,9 +618,10 @@ export default function Home() {
                       <div className="flex items-center mt-6">
                         <div className="relative w-10 h-10">
                           <Image
-                            src="https://placehold.co/40x40/0077B6/FFFFFF?text=A"
+                            src="/avatar.webp"
                             alt="Avatar pelanggan"
                             fill
+                            sizes="40px"
                             className="rounded-full object-cover"
                           />
                         </div>
@@ -638,9 +649,10 @@ export default function Home() {
                       <div className="flex items-center mt-6">
                         <div className="relative w-10 h-10">
                           <Image
-                            src="https://placehold.co/40x40/00B894/FFFFFF?text=S"
+                            src="/avatar.webp"
                             alt="Avatar pelanggan"
                             fill
+                            sizes="40px"
                             className="rounded-full object-cover"
                           />
                         </div>
@@ -668,9 +680,10 @@ export default function Home() {
                       <div className="flex items-center mt-6">
                         <div className="relative w-10 h-10">
                           <Image
-                            src="https://placehold.co/40x40/F79E1B/FFFFFF?text=B"
+                            src="/avatar.webp"
                             alt="Avatar pelanggan"
                             fill
+                            sizes="40px"
                             className="rounded-full object-cover"
                           />
                         </div>
@@ -700,6 +713,7 @@ export default function Home() {
                     src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Armada+Luar"
                     alt="Armada eksterior travel banyuwangi"
                     fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
                   />
                 </div>
@@ -708,6 +722,7 @@ export default function Home() {
                     src="https://placehold.co/400x400/BBBBBB/FFFFFF?text=Interior+Mobil"
                     alt="Armada interior travel banyuwangi"
                     fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
                   />
                 </div>
@@ -716,6 +731,7 @@ export default function Home() {
                     src="https://placehold.co/400x400/AAAAAA/FFFFFF?text=Kegiatan+Wisata+Wali"
                     alt="Kegiatan wisata wali"
                     fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
                   />
                 </div>
@@ -724,6 +740,7 @@ export default function Home() {
                     src="https://placehold.co/400x400/999999/FFFFFF?text=Pelanggan+Umroh"
                     alt="Pelanggan umroh travel banyuwangi"
                     fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
                   />
                 </div>
