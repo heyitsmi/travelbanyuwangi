@@ -37,9 +37,14 @@ export default function Header() {
             >
               Layanan
             </Link>
-            <a href="/#tentang" className="text-gray-700 hover:text-primary transition-colors">
+            <Link
+              href="/tentang-kami"
+              className={`${
+                pathname === "/tentang-kami" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
+            >
               Tentang Kami
-            </a>
+            </Link>
             <Link
               href="/faq"
               className={`${

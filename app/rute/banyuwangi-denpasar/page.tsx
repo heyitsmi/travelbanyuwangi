@@ -210,7 +210,7 @@ export default function BanyuwangiDenpasarPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/F79E1B/FFFFFF?text=Armada+Nyaman+Denpasar"
+                    src="/img/rute/banyuwangi-denpasar.webp"
                     alt="Armada travel Banyuwangi Denpasar nyaman ke Bali"
                     fill
                     className="rounded-lg shadow-xl object-cover"

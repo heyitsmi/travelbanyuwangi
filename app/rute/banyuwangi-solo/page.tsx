@@ -210,7 +210,7 @@ export default function BanyuwangiSoloPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/555555/FFFFFF?text=Armada+Via+Tol+Transjawa+ke+Solo"
+                    src="/img/rute/banyuwangi-solo.webp"
                     alt="Armada travel Banyuwangi Solo via Tol Transjawa"
                     fill
                     className="rounded-lg shadow-xl object-cover"

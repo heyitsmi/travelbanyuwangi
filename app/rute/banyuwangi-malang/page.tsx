@@ -210,7 +210,7 @@ export default function BanyuwangiMalangPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/00B894/FFFFFF?text=Armada+Sejuk+Malang"
+                    src="/img/rute/banyuwangi-malang.webp"
                     alt="Armada travel Banyuwangi Malang sejuk dan nyaman"
                     fill
                     className="rounded-lg shadow-xl object-cover"

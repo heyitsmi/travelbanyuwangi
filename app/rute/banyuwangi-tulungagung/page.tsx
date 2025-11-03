@@ -210,7 +210,7 @@ export default function BanyuwangiTulungagungPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/8A2BE2/FFFFFF?text=Armada+Rute+Selatan+Tulungagung"
+                    src="/img/rute/banyuwangi-tulungagung.webp"
                     alt="Armada travel Banyuwangi Tulungagung rute selatan"
                     fill
                     className="rounded-lg shadow-xl object-cover"

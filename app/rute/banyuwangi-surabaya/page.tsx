@@ -215,7 +215,7 @@ export default function BanyuwangiSurabayaPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/0077B6/FFFFFF?text=Armada+Via+Tol+Surabaya"
+                    src="/img/rute/banyuwangi-surabaya.webp"
                     alt="Armada travel Banyuwangi Surabaya via tol"
                     fill
                     className="rounded-lg shadow-xl object-cover"

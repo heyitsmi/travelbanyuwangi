@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://travelbanyuwangi.id/rute",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Rute+Travel+Banyuwangi",
+        url: "/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Rute Travel Populer dari Banyuwangi | travelbanyuwangi.id",
     description:
       "Daftar rute travel populer dari Banyuwangi ke Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota lain di Jawa Bali.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Rute+Travel+Banyuwangi"],
+    images: ["/img/hero.webp"],
   },
   alternates: {
     canonical: "https://travelbanyuwangi.id/rute",
@@ -116,42 +116,42 @@ const routes = [
   {
     title: "Banyuwangi ↔ Surabaya",
     description: "Perjalanan nyaman via tol, dijemput di rumah dan diantar sampai tujuan.",
-    image: "https://placehold.co/600x400/0077B6/FFFFFF?text=Surabaya",
+    image: "/img/rute/banyuwangi-surabaya.webp",
     alt: "Rute travel Banyuwangi ke Surabaya",
     link: "/rute/banyuwangi-surabaya",
   },
   {
     title: "Banyuwangi ↔ Malang",
     description: "Armada terbaik menuju kota pendidikan dan wisata. Berangkat setiap hari.",
-    image: "https://placehold.co/600x400/00B894/FFFFFF?text=Malang",
+    image: "/img/rute/banyuwangi-malang.webp",
     alt: "Rute travel Banyuwangi ke Malang",
     link: "/rute/banyuwangi-malang",
   },
   {
     title: "Banyuwangi ↔ Denpasar",
     description: "Lintasi selat Bali dengan aman dan nyaman, langsung ke tujuan Anda.",
-    image: "https://placehold.co/600x400/F79E1B/FFFFFF?text=Denpasar",
+    image: "/img/rute/banyuwangi-denpasar.webp",
     alt: "Rute travel Banyuwangi ke Denpasar Bali",
     link: "/rute/banyuwangi-denpasar",
   },
   {
     title: "Banyuwangi ↔ Solo",
     description: "Jelajahi Jawa Tengah dengan layanan travel via tol yang cepat dan aman.",
-    image: "https://placehold.co/600x400/555555/FFFFFF?text=Solo",
+    image: "/img/rute/banyuwangi-solo.webp",
     alt: "Rute travel Banyuwangi ke Solo",
     link: "/rute/banyuwangi-solo",
   },
   {
     title: "Banyuwangi ↔ Tulungagung",
     description: "Layanan rute selatan Jawa Timur, melayani juga Blitar dan Kediri.",
-    image: "https://placehold.co/600x400/8A2BE2/FFFFFF?text=Tulungagung",
+    image: "/img/rute/banyuwangi-tulungagung.webp",
     alt: "Rute travel Banyuwangi ke Tulungagung",
     link: "/rute/banyuwangi-tulungagung",
   },
   {
     title: "Rute Lainnya (Jember, dll)",
     description: "Kami juga melayani rute-rute transit utama di Jawa Timur.",
-    image: "https://placehold.co/600x400/AAAAAA/FFFFFF?text=Rute+Lain",
+    image: "/img/rute/rute-lainnya.webp",
     alt: "Rute travel Banyuwangi ke Jember dan Probolinggo",
     link: "#kontak",
   },

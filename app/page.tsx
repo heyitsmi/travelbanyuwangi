@@ -153,7 +153,7 @@ export default function Home() {
           <section id="beranda" className="relative bg-dark">
             <div className="absolute inset-0">
               <Image
-                src="https://placehold.co/1600x800/003450/FFFFFF?text=[Foto+Armada+Travel+Banyuwangi]"
+                src="/img/hero.webp"
                 alt="Armada travel Banyuwangi melayani rute Surabaya, Malang, dan Denpasar"
                 fill
                 className="object-cover opacity-50"
@@ -237,7 +237,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/0077B6/FFFFFF?text=Surabaya"
+                      src="/img/rute/banyuwangi-surabaya.webp"
                       alt="Travel Banyuwangi Surabaya"
                       fill
                       className="object-cover"
@@ -249,7 +249,7 @@ export default function Home() {
                       Perjalanan nyaman via tol, dijemput di rumah dan diantar sampai tujuan.
                     </p>
                     <a
-                      href="/travel-banyuwangi-surabaya"
+                      href="/rute/banyuwangi-surabaya"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
@@ -260,7 +260,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/00B894/FFFFFF?text=Malang"
+                      src="/img/rute/banyuwangi-malang.webp"
                       alt="Travel Banyuwangi Malang"
                       fill
                       className="object-cover"
@@ -272,7 +272,7 @@ export default function Home() {
                       Armada terbaik menuju kota pendidikan dan wisata. Berangkat setiap hari.
                     </p>
                     <a
-                      href="/travel-banyuwangi-malang"
+                      href="/rute/banyuwangi-malang"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
@@ -283,7 +283,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/F79E1B/FFFFFF?text=Denpasar"
+                      src="/img/rute/banyuwangi-denpasar.webp"
                       alt="Travel Banyuwangi Denpasar"
                       fill
                       className="object-cover"
@@ -295,7 +295,7 @@ export default function Home() {
                       Lintasi selat Bali dengan aman dan nyaman, langsung ke tujuan Anda di Denpasar.
                     </p>
                     <a
-                      href="/travel-banyuwangi-denpasar"
+                      href="/rute/banyuwangi-denpasar"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
@@ -306,7 +306,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/555555/FFFFFF?text=Solo"
+                      src="/img/rute/banyuwangi-solo.webp"
                       alt="Travel Banyuwangi Solo"
                       fill
                       className="object-cover"
@@ -318,7 +318,7 @@ export default function Home() {
                       Jelajahi Jawa Tengah dengan layanan travel via tol yang cepat dan aman.
                     </p>
                     <a
-                      href="/travel-banyuwangi-solo"
+                      href="/rute/banyuwangi-solo"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
@@ -329,7 +329,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/8A2BE2/FFFFFF?text=Tulungagung"
+                      src="/img/rute/banyuwangi-tulungagung.webp"
                       alt="Travel Banyuwangi Tulungagung"
                       fill
                       className="object-cover"
@@ -341,7 +341,7 @@ export default function Home() {
                       Layanan rute selatan Jawa Timur, melayani juga Blitar dan Kediri.
                     </p>
                     <a
-                      href="/travel-banyuwangi-tulungagung"
+                      href="/rute/banyuwangi-tulungagung"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Lihat Jadwal & Harga
@@ -352,7 +352,7 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="https://placehold.co/600x400/AAAAAA/FFFFFF?text=Rute+Lain"
+                      src="/img/rute/rute-lainnya.webp"
                       alt="Travel Banyuwangi Jember Probolinggo"
                       fill
                       className="object-cover"
@@ -401,24 +401,6 @@ export default function Home() {
                       <h3 className="text-xl font-bold text-primary">Travel Antar Kota</h3>
                     </div>
                     <p className="mt-2 text-gray-600">Layanan door-to-door untuk rute Jawa - Bali (PP).</p>
-                  </div>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="https://placehold.co/600x400/0088B7/FFFFFF?text=Tiket"
-                      alt="Layanan Tiket Pesawat, Bus, Kapal"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Ticket className="w-6 h-6 text-primary shrink-0" />
-                      <h3 className="text-xl font-bold text-primary">Tiket (Pesawat, Bus, Kapal)</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">Semua rute domestik & internasional.</p>
                   </div>
                 </div>
 
