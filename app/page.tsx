@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { StructuredData } from "./components/SEO";
@@ -513,9 +514,12 @@ export default function Home() {
               </div>
 
               <div className="text-center mt-12">
-                <a href="#kontak" className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                  Butuh layanan lain? Hubungi Kami &rarr;
-                </a>
+                <Link
+                  href="/layanan"
+                  className="inline-block text-lg font-semibold text-white bg-primary hover:bg-opacity-90 px-8 py-3 rounded-lg transition-all"
+                >
+                  Lihat Semua Layanan &rarr;
+                </Link>
               </div>
             </div>
           </section>

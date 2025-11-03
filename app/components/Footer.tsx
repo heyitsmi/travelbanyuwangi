@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Music2, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -30,37 +31,37 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Navigasi Cepat</h4>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="#beranda" className="hover:text-white transition-colors">
+                <Link href="/" className="hover:text-white transition-colors">
                   Beranda
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#rute" className="hover:text-white transition-colors">
+                <a href="/#rute" className="hover:text-white transition-colors">
                   Rute Populer
                 </a>
               </li>
               <li>
-                <a href="#layanan" className="hover:text-white transition-colors">
+                <Link href="/layanan" className="hover:text-white transition-colors">
                   Layanan Kami
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#tentang" className="hover:text-white transition-colors">
+                <a href="/#tentang" className="hover:text-white transition-colors">
                   Tentang Kami
                 </a>
               </li>
               <li>
-                <a href="#testimoni" className="hover:text-white transition-colors">
+                <a href="/#testimoni" className="hover:text-white transition-colors">
                   Testimoni
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-white transition-colors">
+                <a href="/#faq" className="hover:text-white transition-colors">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#kontak" className="hover:text-white transition-colors">
+                <a href="/#kontak" className="hover:text-white transition-colors">
                   Kontak
                 </a>
               </li>
@@ -71,34 +72,34 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Layanan Utama</h4>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="#layanan" className="hover:text-white transition-colors">
+                <Link href="/layanan" className="hover:text-white transition-colors">
                   Travel Antar Kota
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#layanan" className="hover:text-white transition-colors">
+                <Link href="/layanan" className="hover:text-white transition-colors">
                   Tiket Pesawat & Bus
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#layanan" className="hover:text-white transition-colors">
+                <Link href="/layanan" className="hover:text-white transition-colors">
                   Pengurusan Visa & Paspor
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#layanan" className="hover:text-white transition-colors">
+                <Link href="/layanan" className="hover:text-white transition-colors">
                   Wisata Wali 5 & Wali 9
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#layanan" className="hover:text-white transition-colors">
+                <Link href="/layanan" className="hover:text-white transition-colors">
                   Umroh & Haji Khusus
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#layanan" className="hover:text-white transition-colors">
+                <Link href="/layanan" className="hover:text-white transition-colors">
                   Paket Express
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

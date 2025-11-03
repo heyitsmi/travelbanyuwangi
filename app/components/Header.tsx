@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -16,19 +18,24 @@ export default function Header() {
           </Link>
 
           <div className="hidden md:flex md:items-center md:space-x-6">
-            <a href="#beranda" className="text-gray-700 hover:text-primary transition-colors">
+            <Link href="/" className="text-gray-700 hover:text-primary transition-colors">
               Beranda
-            </a>
-            <a href="#rute" className="text-gray-700 hover:text-primary transition-colors">
+            </Link>
+            <a href="/#rute" className="text-gray-700 hover:text-primary transition-colors">
               Rute
             </a>
-            <a href="#layanan" className="text-gray-700 hover:text-primary transition-colors">
+            <Link
+              href="/layanan"
+              className={`${
+                pathname === "/layanan" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
+            >
               Layanan
-            </a>
-            <a href="#tentang" className="text-gray-700 hover:text-primary transition-colors">
+            </Link>
+            <a href="/#tentang" className="text-gray-700 hover:text-primary transition-colors">
               Tentang Kami
             </a>
-            <a href="#faq" className="text-gray-700 hover:text-primary transition-colors">
+            <a href="/#faq" className="text-gray-700 hover:text-primary transition-colors">
               FAQ
             </a>
           </div>
@@ -53,36 +60,38 @@ export default function Header() {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-3">
-            <a
-              href="#beranda"
+            <Link
+              href="/"
               className="block text-gray-700 hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Beranda
-            </a>
+            </Link>
             <a
-              href="#rute"
+              href="/#rute"
               className="block text-gray-700 hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Rute
             </a>
-            <a
-              href="#layanan"
-              className="block text-gray-700 hover:text-primary transition-colors"
+            <Link
+              href="/layanan"
+              className={`block ${
+                pathname === "/layanan" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
               onClick={() => setMobileMenuOpen(false)}
             >
               Layanan
-            </a>
+            </Link>
             <a
-              href="#tentang"
+              href="/#tentang"
               className="block text-gray-700 hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Tentang Kami
             </a>
             <a
-              href="#faq"
+              href="/#faq"
               className="block text-gray-700 hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
