@@ -75,7 +75,7 @@ export default function PemesananPage() {
     e.preventDefault();
 
     // Format pesan WhatsApp
-    let message = `Halo TravelBanyuwangi.id 👋
+    let message = `Halo Juragan Travel 👋
 Saya ingin memesan layanan:
 
 Layanan: ${formData.layanan}

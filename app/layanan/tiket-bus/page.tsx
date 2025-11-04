@@ -15,18 +15,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | travelbanyuwangi.id",
+  title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | Juragan Travel",
   description:
     "Jual tiket bus executive dari Banyuwangi ke Surabaya, Malang, Denpasar, Jakarta, Bandung. Agen resmi tiket bus malam Banyuwangi. Pesan online via WA.",
   keywords:
     "tiket bus banyuwangi, agen tiket bus banyuwangi, tiket bus executive banyuwangi, tiket bus malam banyuwangi, tiket bus banyuwangi surabaya, tiket bus banyuwangi denpasar, tiket bus banyuwangi jakarta",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | travelbanyuwangi.id",
+    title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | Juragan Travel",
     description:
       "Agen resmi tiket bus executive & malam dari Banyuwangi ke semua tujuan di Jawa & Bali. Pesan mudah via WA.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/tiket-bus",
+    url: "https://juragantravel.com/layanan/tiket-bus",
     images: [
       {
         url: "/img/layanan/tiket-bus.webp",
@@ -34,17 +34,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | travelbanyuwangi.id",
+    title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | Juragan Travel",
     description:
       "Agen resmi tiket bus executive & malam dari Banyuwangi ke semua tujuan di Jawa & Bali. Pesan mudah via WA.",
     images: ["/img/layanan/tiket-bus.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/tiket-bus",
+    canonical: "https://juragantravel.com/layanan/tiket-bus",
   },
 };
 
@@ -54,8 +54,8 @@ const serviceData = {
   serviceType: "Ticket",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Penjualan Tiket Bus Executive Banyuwangi",
   description:
@@ -78,19 +78,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Tiket Bus Executive",
-      item: "https://travelbanyuwangi.id/layanan/tiket-bus",
+      item: "https://juragantravel.com/layanan/tiket-bus",
     },
   ],
 };

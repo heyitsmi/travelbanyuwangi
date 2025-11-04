@@ -7,17 +7,17 @@ import { StructuredData } from "../../components/SEO";
 import { Church, Bus, Hotel, Utensils, UserCheck, Ticket, Package } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Paket Wisata Wali 9 dari Banyuwangi (Wali Songo) | travelbanyuwangi.id",
+  title: "Paket Wisata Wali 9 dari Banyuwangi (Wali Songo) | Juragan Travel",
   description:
     "Harga paket wisata Wali 9 dari Banyuwangi (rombongan). Fasilitas lengkap: bus AC, hotel, makan, & guide. Perjalanan ziarah Wali Songo aman & nyaman.",
   keywords:
     "paket wisata wali 9 banyuwangi, ziarah wali 9 dari banyuwangi, harga paket wali 9 banyuwangi, wisata wali songo banyuwangi, travel wisata wali songo banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Paket Wisata Wali 9 dari Banyuwangi (Wali Songo) | travelbanyuwangi.id",
+    title: "Paket Wisata Wali 9 dari Banyuwangi (Wali Songo) | Juragan Travel",
     description: "Paket wisata ziarah Wali 9 (Wali Songo) dari Banyuwangi. Fasilitas lengkap untuk rombongan.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/wisata-wali-9",
+    url: "https://juragantravel.com/layanan/wisata-wali-9",
     images: [
       {
         url: "https://placehold.co/1200x630/009874/FFFFFF?text=Wisata+Wali+9",
@@ -25,16 +25,16 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paket Wisata Wali 9 dari Banyuwangi (Wali Songo) | travelbanyuwangi.id",
+    title: "Paket Wisata Wali 9 dari Banyuwangi (Wali Songo) | Juragan Travel",
     description: "Paket wisata ziarah Wali 9 (Wali Songo) dari Banyuwangi. Fasilitas lengkap untuk rombongan.",
     images: ["https://placehold.co/1200x630/009874/FFFFFF?text=Wisata+Wali+9"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/wisata-wali-9",
+    canonical: "https://juragantravel.com/layanan/wisata-wali-9",
   },
 };
 
@@ -44,8 +44,8 @@ const serviceData = {
   serviceType: "Tour",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Paket Wisata Wali 9 (Wali Songo) dari Banyuwangi",
   description:
@@ -77,19 +77,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Wisata Wali 9",
-      item: "https://travelbanyuwangi.id/layanan/wisata-wali-9",
+      item: "https://juragantravel.com/layanan/wisata-wali-9",
     },
   ],
 };

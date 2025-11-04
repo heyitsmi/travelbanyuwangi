@@ -6,18 +6,18 @@ import Footer from "../components/Footer";
 import { StructuredData } from "../components/SEO";
 
 export const metadata: Metadata = {
-  title: "Rute Travel Populer dari Banyuwangi | travelbanyuwangi.id",
+  title: "Rute Travel Populer dari Banyuwangi | Juragan Travel",
   description:
     "Daftar rute travel populer dari Banyuwangi ke Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota lain di Jawa Bali. Berangkat setiap hari.",
   keywords:
     "rute travel banyuwangi, travel banyuwangi surabaya, travel banyuwangi malang, travel banyuwangi denpasar, travel banyuwangi solo, travel banyuwangi tulungagung",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Rute Travel Populer dari Banyuwangi | travelbanyuwangi.id",
+    title: "Rute Travel Populer dari Banyuwangi | Juragan Travel",
     description:
       "Daftar rute travel populer dari Banyuwangi ke Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota lain di Jawa Bali.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute",
+    url: "https://juragantravel.com/rute",
     images: [
       {
         url: "/img/hero.webp",
@@ -25,24 +25,24 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rute Travel Populer dari Banyuwangi | travelbanyuwangi.id",
+    title: "Rute Travel Populer dari Banyuwangi | Juragan Travel",
     description:
       "Daftar rute travel populer dari Banyuwangi ke Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota lain di Jawa Bali.",
     images: ["/img/hero.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute",
+    canonical: "https://juragantravel.com/rute",
   },
 };
 
 const itemListData = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Rute Travel Populer travelbanyuwangi.id",
+  name: "Rute Travel Populer Juragan Travel",
   description: "Daftar rute perjalanan travel antar kota populer dari Banyuwangi.",
   itemListElement: [
     {
@@ -51,7 +51,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Surabaya",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-surabaya",
+        url: "https://juragantravel.com/rute/banyuwangi-surabaya",
       },
     },
     {
@@ -60,7 +60,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Bandara Juanda",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-juanda",
+        url: "https://juragantravel.com/rute/banyuwangi-juanda",
       },
     },
     {
@@ -69,7 +69,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Bandara Ngurah Rai",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-ngurah-rai",
+        url: "https://juragantravel.com/rute/banyuwangi-ngurah-rai",
       },
     },
     {
@@ -78,7 +78,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Pelabuhan Tanjung Perak",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-tanjung-perak",
+        url: "https://juragantravel.com/rute/banyuwangi-tanjung-perak",
       },
     },
     {
@@ -87,7 +87,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Malang",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
+        url: "https://juragantravel.com/rute/banyuwangi-malang",
       },
     },
     {
@@ -96,7 +96,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Denpasar",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-denpasar",
+        url: "https://juragantravel.com/rute/banyuwangi-denpasar",
       },
     },
     {
@@ -105,7 +105,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Solo",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-solo",
+        url: "https://juragantravel.com/rute/banyuwangi-solo",
       },
     },
     {
@@ -114,7 +114,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Tulungagung",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-tulungagung",
+        url: "https://juragantravel.com/rute/banyuwangi-tulungagung",
       },
     },
     {
@@ -123,7 +123,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Sidoarjo",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-sidoarjo",
+        url: "https://juragantravel.com/rute/banyuwangi-sidoarjo",
       },
     },
     {
@@ -132,7 +132,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Pasuruan",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-pasuruan",
+        url: "https://juragantravel.com/rute/banyuwangi-pasuruan",
       },
     },
     {
@@ -141,7 +141,7 @@ const itemListData = {
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Jember",
-        url: "https://travelbanyuwangi.id/rute/banyuwangi-jember",
+        url: "https://juragantravel.com/rute/banyuwangi-jember",
       },
     },
   ],
@@ -155,13 +155,13 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rute Perjalanan",
-      item: "https://travelbanyuwangi.id/rute",
+      item: "https://juragantravel.com/rute",
     },
   ],
 };

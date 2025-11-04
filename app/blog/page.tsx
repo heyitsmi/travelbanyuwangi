@@ -6,33 +6,33 @@ import Footer from '../components/Footer';
 import { getBlogPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
-  title: 'Blog & Artikel Perjalanan | travelbanyuwangi.id',
+  title: 'Blog & Artikel Perjalanan | Juragan Travel',
   description: 'Kumpulan tips, panduan, dan artikel perjalanan terbaru dari Banyuwangi. Temukan info rute, wisata, dan layanan travel kami.',
   keywords: 'blog travel banyuwangi, artikel perjalanan, tips travel, panduan wisata banyuwangi, info travel banyuwangi',
-  authors: [{ name: 'travelbanyuwangi.id' }],
+  authors: [{ name: 'Juragan Travel' }],
   openGraph: {
-    title: 'Blog & Artikel Perjalanan | travelbanyuwangi.id',
+    title: 'Blog & Artikel Perjalanan | Juragan Travel',
     description: 'Kumpulan tips, panduan, dan artikel perjalanan terbaru dari Banyuwangi.',
     type: 'website',
-    url: 'https://travelbanyuwangi.id/blog',
+    url: 'https://juragantravel.com/blog',
     images: [
       {
         url: '/img/hero.webp',
         width: 1200,
         height: 630,
-        alt: 'Blog travelbanyuwangi.id',
+        alt: 'Blog Juragan Travel',
       },
     ],
-    siteName: 'travelbanyuwangi.id',
+    siteName: 'Juragan Travel',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog & Artikel Perjalanan | travelbanyuwangi.id',
+    title: 'Blog & Artikel Perjalanan | Juragan Travel',
     description: 'Kumpulan tips, panduan, dan artikel perjalanan terbaru dari Banyuwangi.',
     images: ['/img/hero.webp'],
   },
   alternates: {
-    canonical: 'https://travelbanyuwangi.id/blog',
+    canonical: 'https://juragantravel.com/blog',
   },
 };
 
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
-  name: 'Blog & Artikel travelbanyuwangi.id',
+  name: 'Blog & Artikel Juragan Travel',
   description: 'Tips, panduan, dan artikel perjalanan terbaru dari Banyuwangi.',
-  url: 'https://travelbanyuwangi.id/blog',
+  url: 'https://juragantravel.com/blog',
   publisher: {
     '@type': 'TravelAgency',
-    name: 'travelbanyuwangi.id',
-    url: 'https://travelbanyuwangi.id/',
+    name: 'Juragan Travel',
+    url: 'https://juragantravel.com/',
   },
 };
 
@@ -59,13 +59,13 @@ const breadcrumbStructuredData = {
       '@type': 'ListItem',
       position: 1,
       name: 'Beranda',
-      item: 'https://travelbanyuwangi.id',
+      item: 'https://juragantravel.com',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Blog',
-      item: 'https://travelbanyuwangi.id/blog',
+      item: 'https://juragantravel.com/blog',
     },
   ],
 };

@@ -34,12 +34,12 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
   if (!post) {
     return {
-      title: 'Post Not Found | travelbanyuwangi.id',
+      title: 'Post Not Found | Juragan Travel',
     };
   }
 
   return {
-    title: `${post.title} | travelbanyuwangi.id`,
+    title: `${post.title} | Juragan Travel`,
     description: post.excerpt,
     keywords: `${post.category}, blog travel banyuwangi, ${post.title}`,
     authors: [{ name: post.author }],
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       publishedTime: post.date,
       authors: [post.author],
       tags: [post.category, 'Travel Banyuwangi'],
-      url: `https://travelbanyuwangi.id/blog/${post.slug}`,
+      url: `https://juragantravel.com/blog/${post.slug}`,
       images: [
         {
           url: post.image || 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Blog+Post',
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
           alt: post.title,
         },
       ],
-      siteName: 'travelbanyuwangi.id',
+      siteName: 'Juragan Travel',
     },
     twitter: {
       card: 'summary_large_image',
@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       follow: true,
     },
     alternates: {
-      canonical: `https://travelbanyuwangi.id/blog/${post.slug}`,
+      canonical: `https://juragantravel.com/blog/${post.slug}`,
     },
   };
 }
@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     '@type': 'BlogPosting',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://travelbanyuwangi.id/blog/${post.slug}`,
+      '@id': `https://juragantravel.com/blog/${post.slug}`,
     },
     headline: post.title,
     description: post.excerpt,
@@ -115,11 +115,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     author: {
       '@type': 'Organization',
       name: post.author,
-      url: 'https://travelbanyuwangi.id/',
+      url: 'https://juragantravel.com/',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'travelbanyuwangi.id',
+      name: 'Juragan Travel',
       logo: {
         '@type': 'ImageObject',
         url: 'https://placehold.co/32x32/0077B6/FFFFFF?text=T',
@@ -135,19 +135,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Beranda',
-        item: 'https://travelbanyuwangi.id',
+        item: 'https://juragantravel.com',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://travelbanyuwangi.id/blog',
+        item: 'https://juragantravel.com/blog',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: post.title,
-        item: `https://travelbanyuwangi.id/blog/${post.slug}`,
+        item: `https://juragantravel.com/blog/${post.slug}`,
       },
     ],
   };
@@ -231,7 +231,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   </h3>
                   <div className="flex space-x-4 mt-4">
                     <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=https://travelbanyuwangi.id/blog/${post.slug}`}
+                      href={`https://www.facebook.com/sharer/sharer.php?u=https://juragantravel.com/blog/${post.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-blue-700 transition-colors"
@@ -240,7 +240,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                       <span>Facebook</span>
                     </a>
                     <a
-                      href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=https://travelbanyuwangi.id/blog/${post.slug}`}
+                      href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=https://juragantravel.com/blog/${post.slug}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-gray-900 transition-colors"

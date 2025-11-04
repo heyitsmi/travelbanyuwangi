@@ -8,18 +8,18 @@ import { Zap, Home, Building2, ChevronDown } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Solo (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+  title: "Travel Banyuwangi Solo (PP) - Jadwal & Harga Terbaru | Juragan Travel",
   description:
     "Jadwal & harga travel Banyuwangi Solo (PP) terbaru. Layanan door-to-door, armada nyaman via Tol Transjawa, berangkat setiap hari (pagi & malam). Pesan sekarang!",
   keywords:
     "travel banyuwangi solo, travel solo banyuwangi, harga travel banyuwangi solo, jadwal travel banyuwangi solo, travel banyuwangi jogja, travel banyuwangi surakarta",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Solo (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Solo (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Solo (PP) terbaru. Layanan door-to-door via Tol Transjawa, berangkat setiap hari.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-solo",
+    url: "https://juragantravel.com/rute/banyuwangi-solo",
     images: [
       {
         url: "/img/rute/banyuwangi-solo.webp",
@@ -27,17 +27,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Solo (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Solo (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Solo (PP) terbaru. Layanan door-to-door via Tol Transjawa, berangkat setiap hari.",
     images: ["/img/rute/banyuwangi-solo.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute/banyuwangi-solo",
+    canonical: "https://juragantravel.com/rute/banyuwangi-solo",
   },
 };
 
@@ -46,8 +46,8 @@ const busTripData = {
   "@type": "BusTrip",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
     telephone: "+6282143258744",
     image: "/img/rute/banyuwangi-solo.webp",
   },
@@ -80,7 +80,7 @@ const busTripData = {
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Solo",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-solo",
+    url: "https://juragantravel.com/rute/banyuwangi-solo",
     availability: "https://schema.org/InStock",
   },
 };
@@ -93,19 +93,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rute",
-      item: "https://travelbanyuwangi.id/rute",
+      item: "https://juragantravel.com/rute",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Banyuwangi - Solo",
-      item: "https://travelbanyuwangi.id/rute/banyuwangi-solo",
+      item: "https://juragantravel.com/rute/banyuwangi-solo",
     },
   ],
 };

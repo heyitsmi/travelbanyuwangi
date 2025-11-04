@@ -5,15 +5,15 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | travelbanyuwangi.id',
+  title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | Juragan Travel',
   description: 'Jadwal & harga travel Banyuwangi ke Sidoarjo (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol. Berangkat setiap hari (pagi, siang, malam).',
   keywords: 'travel banyuwangi sidoarjo, travel sidoarjo banyuwangi, harga travel banyuwangi sidoarjo, jadwal travel banyuwangi sidoarjo, travel banyuwangi sidoarjo via tol, travel banyuwangi sidoarjo pagi, travel banyuwangi sidoarjo malam',
-  authors: [{ name: 'travelbanyuwangi.id' }],
+  authors: [{ name: 'Juragan Travel' }],
   openGraph: {
-    title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | travelbanyuwangi.id',
+    title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | Juragan Travel',
     description: 'Jadwal & harga travel Banyuwangi ke Sidoarjo (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol. Berangkat setiap hari.',
     type: 'website',
-    url: 'https://travelbanyuwangi.id/rute/banyuwangi-sidoarjo',
+    url: 'https://juragantravel.com/rute/banyuwangi-sidoarjo',
     images: [
       {
         url: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi+Sidoarjo',
@@ -22,16 +22,16 @@ export const metadata: Metadata = {
         alt: 'Travel Banyuwangi Sidoarjo'
       }
     ],
-    siteName: 'travelbanyuwangi.id'
+    siteName: 'Juragan Travel'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | travelbanyuwangi.id',
+    title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | Juragan Travel',
     description: 'Jadwal & harga travel Banyuwangi ke Sidoarjo (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol.',
     images: ['https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi+Sidoarjo']
   },
   alternates: {
-    canonical: 'https://travelbanyuwangi.id/rute/banyuwangi-sidoarjo'
+    canonical: 'https://juragantravel.com/rute/banyuwangi-sidoarjo'
   },
   robots: {
     index: true,
@@ -60,10 +60,10 @@ export default function BanyuwangiSidoarjoPage() {
             "@type": "BusTrip",
             "provider": {
               "@type": "TravelAgency",
-              "name": "travelbanyuwangi.id",
-              "url": "https://travelbanyuwangi.id/",
+              "name": "Juragan Travel",
+              "url": "https://juragantravel.com/",
               "telephone": `+${whatsappNumber}`,
-              "image": "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id"
+              "image": "https://placehold.co/1200x630/0077B6/FFFFFF?text=Juragan Travel"
             },
             "departureBusStop": {
               "@type": "BusStop",
@@ -93,7 +93,7 @@ export default function BanyuwangiSidoarjoPage() {
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Sidoarjo",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-              "url": "https://travelbanyuwangi.id/rute/banyuwangi-sidoarjo",
+              "url": "https://juragantravel.com/rute/banyuwangi-sidoarjo",
               "availability": "https://schema.org/InStock"
             }
           })

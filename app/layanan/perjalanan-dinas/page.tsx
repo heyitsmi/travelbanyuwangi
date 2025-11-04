@@ -7,18 +7,18 @@ import { StructuredData } from "../../components/SEO";
 import { Car, CarFront, BusFront, CarTaxiFront, Clock, UserCheck, ShieldCheck, CalendarDays, Receipt } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Jasa Travel Perjalanan Dinas Banyuwangi | travelbanyuwangi.id",
+  title: "Jasa Travel Perjalanan Dinas Banyuwangi | Juragan Travel",
   description:
     "Jasa travel dan sewa mobil (Innova, HiAce) untuk perjalanan dinas di Banyuwangi. Melayani instansi dan korporat dengan driver profesional, armada terawat, dan tepat waktu.",
   keywords:
     "jasa travel perjalanan dinas banyuwangi, sewa mobil dinas banyuwangi, carter mobil dinas banyuwangi, travel korporat banyuwangi, sewa mobil innova banyuwangi, sewa hiace banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Jasa Travel Perjalanan Dinas Banyuwangi | travelbanyuwangi.id",
+    title: "Jasa Travel Perjalanan Dinas Banyuwangi | Juragan Travel",
     description:
       "Layanan carter mobil dan travel untuk kebutuhan dinas instansi/korporat dari Banyuwangi. Profesional dan Tepat Waktu.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/perjalanan-dinas",
+    url: "https://juragantravel.com/layanan/perjalanan-dinas",
     images: [
       {
         url: "/img/layanan/perjalanan-dinas.webp",
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jasa Travel Perjalanan Dinas Banyuwangi | travelbanyuwangi.id",
+    title: "Jasa Travel Perjalanan Dinas Banyuwangi | Juragan Travel",
     description:
       "Layanan carter mobil dan travel untuk kebutuhan dinas instansi/korporat dari Banyuwangi. Profesional dan Tepat Waktu.",
     images: ["/img/layanan/perjalanan-dinas.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/perjalanan-dinas",
+    canonical: "https://juragantravel.com/layanan/perjalanan-dinas",
   },
 };
 
@@ -46,8 +46,8 @@ const serviceData = {
   serviceType: "CarRental",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Jasa Travel & Carter Mobil Perjalanan Dinas Banyuwangi",
   description:
@@ -74,19 +74,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Perjalanan Dinas",
-      item: "https://travelbanyuwangi.id/layanan/perjalanan-dinas",
+      item: "https://juragantravel.com/layanan/perjalanan-dinas",
     },
   ],
 };

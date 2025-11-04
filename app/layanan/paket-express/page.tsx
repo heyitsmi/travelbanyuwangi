@@ -16,18 +16,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Pengiriman Paket Cepat Banyuwangi (Sehari Sampai) | travelbanyuwangi.id",
+  title: "Pengiriman Paket Cepat Banyuwangi (Sehari Sampai) | Juragan Travel",
   description:
     "Layanan pengiriman paket cepat Banyuwangi ke Surabaya, Malang, Denpasar. Paket express sehari sampai (same day delivery). Aman, terpercaya, harga terjangkau.",
   keywords:
     "pengiriman paket cepat banyuwangi, paket express banyuwangi, kirim paket sehari sampai banyuwangi, travel paket banyuwangi surabaya, travel paket banyuwangi malang, travel paket banyuwangi denpasar",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Pengiriman Paket Cepat Banyuwangi (Sehari Sampai) | travelbanyuwangi.id",
+    title: "Pengiriman Paket Cepat Banyuwangi (Sehari Sampai) | Juragan Travel",
     description:
       "Layanan pengiriman paket express (same day) dari Banyuwangi ke Surabaya, Malang, Denpasar. Aman & terpercaya.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/paket-express",
+    url: "https://juragantravel.com/layanan/paket-express",
     images: [
       {
         url: "/img/layanan/paket-express.webp",
@@ -35,17 +35,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pengiriman Paket Cepat Banyuwangi (Sehari Sampai) | travelbanyuwangi.id",
+    title: "Pengiriman Paket Cepat Banyuwangi (Sehari Sampai) | Juragan Travel",
     description:
       "Layanan pengiriman paket express (same day) dari Banyuwangi ke Surabaya, Malang, Denpasar. Aman & terpercaya.",
     images: ["/img/layanan/paket-express.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/paket-express",
+    canonical: "https://juragantravel.com/layanan/paket-express",
   },
 };
 
@@ -55,8 +55,8 @@ const serviceData = {
   serviceType: "DeliveryService",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Pengiriman Paket Cepat Banyuwangi (Paket Express)",
   description:
@@ -85,19 +85,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Paket Express",
-      item: "https://travelbanyuwangi.id/layanan/paket-express",
+      item: "https://juragantravel.com/layanan/paket-express",
     },
   ],
 };
@@ -267,7 +267,7 @@ export default function PaketExpressPage() {
               {/* Judul Section */}
               <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Keunggulan Paket Express Kami</h2>
-                <p className="mt-4 text-lg text-gray-600">Mengapa kirim paket via travelbanyuwangi.id?</p>
+                <p className="mt-4 text-lg text-gray-600">Mengapa kirim paket via Juragan Travel?</p>
               </div>
 
               {/* Grid Keunggulan */}

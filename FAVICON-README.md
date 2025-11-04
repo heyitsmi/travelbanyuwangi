@@ -28,8 +28,8 @@ public/
 - Metadata base URL
 
 ### 2. Web App Manifest (public/favicon/site.webmanifest)
-- App name: "travelbanyuwangi.id - Travel Antar Kota"
-- Short name: "travelbanyuwangi.id"
+- App name: "Juragan Travel - Travel Antar Kota"
+- Short name: "Juragan Travel"
 - Theme color: #0077B6 (brand color)
 - Background color: #ffffff
 - Display mode: standalone (untuk PWA)
@@ -43,7 +43,7 @@ public/
 
 ### 4. Robots.txt (public/robots.txt)
 - Allow all search engines
-- Sitemap location: https://travelbanyuwangi.id/sitemap.xml
+- Sitemap location: https://juragantravel.com/sitemap.xml
 - Disallow: /api/, /_next/, /admin/
 - Allow: /favicon/, /img/, /public/
 - Specific rules for Googlebot, Bingbot, Slurp
@@ -79,10 +79,10 @@ public/
 
 Test favicon implementation:
 - https://realfavicongenerator.net/favicon_checker
-- https://www.google.com/s2/favicons?domain=travelbanyuwangi.id
+- https://www.google.com/s2/favicons?domain=Juragan Travel
 
 Test robots.txt:
-- https://travelbanyuwangi.id/robots.txt
+- https://juragantravel.com/robots.txt
 - Google Search Console > Robots.txt Tester
 
 ## Notes

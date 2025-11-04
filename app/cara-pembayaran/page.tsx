@@ -5,17 +5,17 @@ import Footer from "../components/Footer";
 import { Banknote, Lock, QrCode } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Cara Pembayaran | travelbanyuwangi.id",
+  title: "Cara Pembayaran | Juragan Travel",
   description:
     "Metode pembayaran yang kami terima untuk layanan travel Banyuwangi. Kami menerima tunai (cash), transfer bank (BCA, BRI, Mandiri), dan QRIS (OVO, GoPay, Dana).",
   keywords:
     "cara bayar travel banyuwangi, metode pembayaran travel, bayar travel via qris, bayar travel cash, transfer travel banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Cara Pembayaran | travelbanyuwangi.id",
+    title: "Cara Pembayaran | Juragan Travel",
     description: "Metode pembayaran yang kami terima: Tunai (Cash), Transfer Bank, dan QRIS.",
     type: "website",
-    url: "https://travelbanyuwangi.id/cara-pembayaran",
+    url: "https://juragantravel.com/cara-pembayaran",
     images: [
       {
         url: "/img/hero.webp",
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cara Pembayaran | travelbanyuwangi.id",
+    title: "Cara Pembayaran | Juragan Travel",
     description: "Metode pembayaran yang kami terima: Tunai (Cash), Transfer Bank, dan QRIS.",
     images: ["/img/hero.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/cara-pembayaran",
+    canonical: "https://juragantravel.com/cara-pembayaran",
   },
 };
 
@@ -143,7 +143,7 @@ export default function CaraPembayaranPage() {
                     </li>
                     <li>Pembayaran cepat dan tercatat otomatis.</li>
                     <li>
-                      Pastikan nama <em>merchant</em> yang muncul saat scan adalah &quot;travelbanyuwangi.id&quot;.
+                      Pastikan nama <em>merchant</em> yang muncul saat scan adalah &quot;Juragan Travel&quot;.
                     </li>
                   </ul>
                 </div>

@@ -7,17 +7,17 @@ import { StructuredData } from "../../components/SEO";
 import { Church, Bus, Hotel, Utensils, UserCheck, Ticket, Package } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Paket Wisata Wali 5 dari Banyuwangi | travelbanyuwangi.id",
+  title: "Paket Wisata Wali 5 dari Banyuwangi | Juragan Travel",
   description:
     "Harga paket wisata Wali 5 dari Banyuwangi (rombongan). Fasilitas lengkap: bus AC, hotel, makan, & guide. Perjalanan ziarah aman & nyaman. Pesan sekarang!",
   keywords:
     "paket wisata wali 5 banyuwangi, ziarah wali 5 dari banyuwangi, harga paket wali 5 banyuwangi, travel wisata wali banyuwangi, wisata rohani banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Paket Wisata Wali 5 dari Banyuwangi | travelbanyuwangi.id",
+    title: "Paket Wisata Wali 5 dari Banyuwangi | Juragan Travel",
     description: "Paket wisata ziarah Wali 5 (Jawa Timur) dari Banyuwangi. Fasilitas lengkap untuk rombongan.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/wisata-wali-5",
+    url: "https://juragantravel.com/layanan/wisata-wali-5",
     images: [
       {
         url: "https://placehold.co/1200x630/00B894/FFFFFF?text=Wisata+Wali+5",
@@ -25,16 +25,16 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paket Wisata Wali 5 dari Banyuwangi | travelbanyuwangi.id",
+    title: "Paket Wisata Wali 5 dari Banyuwangi | Juragan Travel",
     description: "Paket wisata ziarah Wali 5 (Jawa Timur) dari Banyuwangi. Fasilitas lengkap untuk rombongan.",
     images: ["https://placehold.co/1200x630/00B894/FFFFFF?text=Wisata+Wali+5"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/wisata-wali-5",
+    canonical: "https://juragantravel.com/layanan/wisata-wali-5",
   },
 };
 
@@ -44,8 +44,8 @@ const serviceData = {
   serviceType: "Tour",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Paket Wisata Wali 5 dari Banyuwangi",
   description:
@@ -74,19 +74,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Wisata Wali 5",
-      item: "https://travelbanyuwangi.id/layanan/wisata-wali-5",
+      item: "https://juragantravel.com/layanan/wisata-wali-5",
     },
   ],
 };

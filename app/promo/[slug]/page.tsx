@@ -29,18 +29,18 @@ export async function generateMetadata({ params }: PromoPageProps): Promise<Meta
 
   if (!promo) {
     return {
-      title: "Promo Tidak Ditemukan | travelbanyuwangi.id",
+      title: "Promo Tidak Ditemukan | Juragan Travel",
     };
   }
 
   return {
-    title: `${promo.frontmatter.title} | Promo travelbanyuwangi.id`,
+    title: `${promo.frontmatter.title} | Promo Juragan Travel`,
     description: promo.frontmatter.description,
     openGraph: {
       title: promo.frontmatter.title,
       description: promo.frontmatter.description,
       type: "article",
-      url: `https://travelbanyuwangi.id/promo/${slug}`,
+      url: `https://juragantravel.com/promo/${slug}`,
       images: [
         {
           url: promo.frontmatter.image,
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PromoPageProps): Promise<Meta
       ],
     },
     alternates: {
-      canonical: `https://travelbanyuwangi.id/promo/${slug}`,
+      canonical: `https://juragantravel.com/promo/${slug}`,
     },
   };
 }

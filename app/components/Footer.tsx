@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Kolom 1: About & Social */}
           <div>
-            <img src="/img/logo-footer.webp" alt="travelbanyuwangi.id" className="h-12 w-auto mb-4" />
+            <img src="/img/logo-footer.webp" alt="Juragan Travel" className="h-12 w-auto mb-4" />
             <p className="text-gray-400">
               Travel Aman & Terpercaya dari Banyuwangi untuk seluruh kebutuhan perjalanan Anda.
             </p>
@@ -194,7 +194,7 @@ export default function Footer() {
             {/* Kolom Kiri: Copyright & Developer */}
             <div className="space-y-2">
               <p className="text-sm text-gray-400">
-                © 2025 travelbanyuwangi.id — Dikelola oleh CV Rizky Cella, penyedia layanan travel resmi dari
+                © 2025 Juragan Travel — Dikelola oleh CV Rizky Cella, penyedia layanan travel resmi dari
                 Banyuwangi.
               </p>
               <p className="text-sm text-gray-500">

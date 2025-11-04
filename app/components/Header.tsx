@@ -14,7 +14,7 @@ export default function Header() {
       <nav className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-2xl font-bold text-primary">
-            <img src="/img/logo.webp" alt="travelbanyuwangi.id" className="h-12 w-auto" />
+            <img src="/img/logo.webp" alt="Juragan Travel" className="h-12 w-auto" />
           </Link>
 
           <div className="hidden md:flex md:items-center md:space-x-6">

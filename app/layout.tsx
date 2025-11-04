@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Travel Banyuwangi",
   description: "Layanan travel antar kota aman & nyaman",
-  metadataBase: new URL('https://travelbanyuwangi.id'),
+  metadataBase: new URL('https://juragantravel.com'),
   icons: {
     icon: [
       { url: "/favicon/favicon.ico", sizes: "any" },

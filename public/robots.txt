@@ -1,11 +1,11 @@
-# robots.txt for travelbanyuwangi.id
+# robots.txt for Juragan Travel
 # Mengizinkan semua search engine untuk crawl semua halaman
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://travelbanyuwangi.id/sitemap.xml
+Sitemap: https://juragantravel.com/sitemap.xml
 
 # Crawl-delay (opsional, untuk mengurangi beban server)
 # Crawl-delay: 1

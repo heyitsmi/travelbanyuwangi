@@ -98,7 +98,7 @@ export const metadata = generateMetadata({
   title: "Judul Halaman",
   description: "Deskripsi halaman",
   keywords: "keyword1, keyword2",
-  canonicalUrl: "https://travelbanyuwangi.id/halaman-baru",
+  canonicalUrl: "https://juragantravel.com/halaman-baru",
 });
 ```
 
@@ -116,7 +116,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Surabaya | travelbanyuwangi.id",
+  title: "Travel Banyuwangi Surabaya | Juragan Travel",
   description: "Layanan travel Banyuwangi - Surabaya...",
   // ... SEO lainnya
 };
@@ -169,7 +169,7 @@ npm run start
 
 ## License
 
-© 2025 travelbanyuwangi.id - All rights reserved
+© 2025 Juragan Travel - All rights reserved
 
 ---
 

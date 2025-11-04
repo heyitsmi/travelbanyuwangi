@@ -6,14 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi - Jember (PP) | Jadwal & Harga | travelbanyuwangi.id",
+  title: "Travel Banyuwangi - Jember (PP) | Jadwal & Harga | Juragan Travel",
   description: "Jadwal & harga travel Banyuwangi ke Jember (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari (pagi, siang, malam).",
   keywords: "travel banyuwangi jember, travel jember banyuwangi, harga travel banyuwangi jember, jadwal travel banyuwangi jember, travel banyuwangi jember pagi, travel banyuwangi jember malam",
   openGraph: {
-    title: "Travel Banyuwangi - Jember (PP) | Jadwal & Harga | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Jember (PP) | Jadwal & Harga | Juragan Travel",
     description: "Jadwal & harga travel Banyuwangi ke Jember (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-jember",
+    url: "https://juragantravel.com/rute/banyuwangi-jember",
     images: [
       {
         url: "/img/hero.webp",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi - Jember (PP) | Jadwal & Harga | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Jember (PP) | Jadwal & Harga | Juragan Travel",
     description: "Jadwal & harga travel Banyuwangi ke Jember (PP) terbaru. Layanan door-to-door, carter, dan drop-off.",
     images: ["/img/hero.webp"],
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute/banyuwangi-jember",
+    canonical: "https://juragantravel.com/rute/banyuwangi-jember",
   },
 };
 
@@ -282,10 +282,10 @@ export default function BanyuwangiJemberPage() {
             "@type": "BusTrip",
             "provider": {
               "@type": "TravelAgency",
-              "name": "travelbanyuwangi.id",
-              "url": "https://travelbanyuwangi.id/",
+              "name": "Juragan Travel",
+              "url": "https://juragantravel.com/",
               "telephone": "+6282143258744",
-              "image": "https://travelbanyuwangi.id/img/hero.webp"
+              "image": "https://juragantravel.com/img/hero.webp"
             },
             "departureBusStop": {
               "@type": "BusStop",
@@ -315,7 +315,7 @@ export default function BanyuwangiJemberPage() {
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Jember",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-              "url": "https://travelbanyuwangi.id/rute/banyuwangi-jember",
+              "url": "https://juragantravel.com/rute/banyuwangi-jember",
               "availability": "https://schema.org/InStock"
             }
           })

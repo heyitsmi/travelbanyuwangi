@@ -53,7 +53,7 @@ published: true
 title: "10 Tips Hemat Saat Travel Antar Kota"
 excerpt: "Ingin traveling hemat tapi tetap nyaman? Simak 10 tips jitu ini untuk menghemat biaya perjalanan antar kota Anda."
 date: "2025-01-20"
-author: "Tim travelbanyuwangi.id"
+author: "Tim Juragan Travel"
 category: "Tips Travel"
 image: "https://placehold.co/800x500/0077B6/FFFFFF?text=Tips+Hemat+Travel"
 published: true

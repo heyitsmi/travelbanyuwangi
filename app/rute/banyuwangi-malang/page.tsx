@@ -8,18 +8,18 @@ import { Map, Home, Mountain, ChevronDown } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Malang (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+  title: "Travel Banyuwangi Malang (PP) - Jadwal & Harga Terbaru | Juragan Travel",
   description:
     "Jadwal & harga travel Banyuwangi Malang (PP) terbaru. Layanan door-to-door, armada nyaman, berangkat setiap hari (pagi, siang, malam). Pesan sekarang!",
   keywords:
     "travel banyuwangi malang, travel malang banyuwangi, harga travel banyuwangi malang, jadwal travel banyuwangi malang, travel banyuwangi batu, travel banyuwangi malang pagi, travel banyuwangi malang malam",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Malang (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Malang (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Malang (PP) terbaru. Layanan door-to-door, berangkat setiap hari.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
+    url: "https://juragantravel.com/rute/banyuwangi-malang",
     images: [
       {
         url: "/img/rute/banyuwangi-malang.webp",
@@ -27,17 +27,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Malang (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Malang (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Malang (PP) terbaru. Layanan door-to-door, berangkat setiap hari.",
     images: ["/img/rute/banyuwangi-malang.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
+    canonical: "https://juragantravel.com/rute/banyuwangi-malang",
   },
 };
 
@@ -46,8 +46,8 @@ const busTripData = {
   "@type": "BusTrip",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
     telephone: "+6282143258744",
     image: "/img/rute/banyuwangi-malang.webp",
   },
@@ -80,7 +80,7 @@ const busTripData = {
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Malang",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
+    url: "https://juragantravel.com/rute/banyuwangi-malang",
     availability: "https://schema.org/InStock",
   },
 };
@@ -93,19 +93,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rute",
-      item: "https://travelbanyuwangi.id/rute",
+      item: "https://juragantravel.com/rute",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Banyuwangi - Malang",
-      item: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
+      item: "https://juragantravel.com/rute/banyuwangi-malang",
     },
   ],
 };

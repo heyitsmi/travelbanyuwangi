@@ -7,18 +7,18 @@ import { Smartphone, Tag, CheckCircle } from "lucide-react";
 import { getAllPromos } from "@/lib/promo";
 
 export const metadata: Metadata = {
-  title: "Promo & Penawaran Spesial | travelbanyuwangi.id",
+  title: "Promo & Penawaran Spesial | Juragan Travel",
   description:
     "Dapatkan promo travel Banyuwangi terbaru. Diskon spesial rute Surabaya, Malang, Denpasar. Promo rombongan wisata wali dan paket lainnya. Klaim sekarang!",
   keywords:
     "promo travel banyuwangi, diskon travel banyuwangi, promo wisata wali banyuwangi, penawaran spesial travel banyuwangi, travel banyuwangi murah",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Promo & Penawaran Spesial | travelbanyuwangi.id",
+    title: "Promo & Penawaran Spesial | Juragan Travel",
     description:
       "Dapatkan promo travel Banyuwangi terbaru. Diskon spesial rute Surabaya, Malang, Denpasar.",
     type: "website",
-    url: "https://travelbanyuwangi.id/promo",
+    url: "https://juragantravel.com/promo",
     images: [
       {
         url: "/img/hero.webp",
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Promo & Penawaran Spesial | travelbanyuwangi.id",
+    title: "Promo & Penawaran Spesial | Juragan Travel",
     description:
       "Dapatkan promo travel Banyuwangi terbaru. Diskon spesial rute Surabaya, Malang, Denpasar.",
     images: ["/img/hero.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/promo",
+    canonical: "https://juragantravel.com/promo",
   },
 };
 

@@ -15,8 +15,8 @@ export function generateMetadata({
   description,
   keywords,
   canonicalUrl,
-  ogImage = "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id",
-  author = "travelbanyuwangi.id",
+  ogImage = "/img/hero.webp",
+  author = "Juragan Travel",
 }: SEOProps): Metadata {
   return {
     title,
@@ -36,7 +36,7 @@ export function generateMetadata({
           alt: title,
         },
       ],
-      siteName: "travelbanyuwangi.id",
+      siteName: "Juragan Travel",
     },
     twitter: {
       card: "summary_large_image",

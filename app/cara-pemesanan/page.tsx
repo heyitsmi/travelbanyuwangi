@@ -5,18 +5,18 @@ import Footer from "../components/Footer";
 import { Phone, FileText, CheckCircle, Truck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Cara Pemesanan | travelbanyuwangi.id",
+  title: "Cara Pemesanan | Juragan Travel",
   description:
-    "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di travelbanyuwangi.id. Cukup 3 langkah mudah via WhatsApp. Cepat, aman, dan responsif 24 jam.",
+    "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah via WhatsApp. Cepat, aman, dan responsif 24 jam.",
   keywords:
     "cara pesan travel banyuwangi, cara booking travel banyuwangi, format pemesanan travel, cara order travel banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Cara Pemesanan | travelbanyuwangi.id",
+    title: "Cara Pemesanan | Juragan Travel",
     description:
-      "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di travelbanyuwangi.id. Cukup 3 langkah mudah via WhatsApp.",
+      "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah via WhatsApp.",
     type: "website",
-    url: "https://travelbanyuwangi.id/cara-pemesanan",
+    url: "https://juragantravel.com/cara-pemesanan",
     images: [
       {
         url: "/img/hero.webp",
@@ -24,17 +24,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cara Pemesanan | travelbanyuwangi.id",
+    title: "Cara Pemesanan | Juragan Travel",
     description:
-      "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di travelbanyuwangi.id. Cukup 3 langkah mudah via WhatsApp.",
+      "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah via WhatsApp.",
     images: ["/img/hero.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/cara-pemesanan",
+    canonical: "https://juragantravel.com/cara-pemesanan",
   },
 };
 

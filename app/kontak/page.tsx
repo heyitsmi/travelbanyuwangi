@@ -4,28 +4,28 @@ import Footer from '../components/Footer';
 import { Smartphone, MapPin, Clock, Mail, Facebook, Instagram, Music2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Kontak Kami | travelbanyuwangi.id | Agen Travel Banyuwangi',
+  title: 'Kontak Kami | Juragan Travel | Agen Travel Banyuwangi',
   description: 'Hubungi kami untuk pemesanan travel Banyuwangi, paket wisata, atau layanan lainnya. Tersedia via WhatsApp 24 jam. Lihat lokasi kami di Google Maps.',
-  keywords: 'kontak travel banyuwangi, alamat travel banyuwangi, nomor wa travel banyuwangi, hubungi travelbanyuwangi.id',
-  authors: [{ name: 'travelbanyuwangi.id' }],
+  keywords: 'kontak travel banyuwangi, alamat travel banyuwangi, nomor wa travel banyuwangi, hubungi Juragan Travel',
+  authors: [{ name: 'Juragan Travel' }],
   openGraph: {
-    title: 'Kontak Kami | travelbanyuwangi.id',
+    title: 'Kontak Kami | Juragan Travel',
     description: 'Hubungi kami untuk pemesanan travel, paket wisata, atau layanan lainnya. Tersedia via WhatsApp 24 jam.',
     type: 'website',
-    url: 'https://travelbanyuwangi.id/kontak',
+    url: 'https://juragantravel.com/kontak',
     images: [
       {
         url: '/img/hero.webp',
         width: 1200,
         height: 630,
-        alt: 'Kontak travelbanyuwangi.id',
+        alt: 'Kontak Juragan Travel',
       },
     ],
-    siteName: 'travelbanyuwangi.id',
+    siteName: 'Juragan Travel',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kontak Kami | travelbanyuwangi.id',
+    title: 'Kontak Kami | Juragan Travel',
     description: 'Hubungi kami untuk pemesanan travel, paket wisata, atau layanan lainnya. Tersedia via WhatsApp 24 jam.',
     images: ['/img/hero.webp'],
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://travelbanyuwangi.id/kontak',
+    canonical: 'https://juragantravel.com/kontak',
   },
 };
 
@@ -43,13 +43,13 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
   name: 'Kontak Kami',
-  url: 'https://travelbanyuwangi.id/kontak',
-  description: 'Halaman kontak resmi travelbanyuwangi.id. Hubungi kami via WA, telepon, email, atau kunjungi kantor kami.',
+  url: 'https://juragantravel.com/kontak',
+  description: 'Halaman kontak resmi Juragan Travel. Hubungi kami via WA, telepon, email, atau kunjungi kantor kami.',
   mainEntity: {
     '@type': 'TravelAgency',
-    name: 'travelbanyuwangi.id',
+    name: 'Juragan Travel',
     telephone: '+6282143258744',
-    email: 'info@travelbanyuwangi.id',
+    email: 'info@Juragan Travel',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Jl. Raya Jember No. 1',
@@ -58,7 +58,7 @@ const structuredData = {
       postalCode: '68416',
       addressCountry: 'ID',
     },
-    url: 'https://travelbanyuwangi.id/',
+    url: 'https://juragantravel.com/',
     logo: 'https://placehold.co/32x32/0077B6/FFFFFF?text=T',
     contactPoint: {
       '@type': 'ContactPoint',
@@ -69,8 +69,8 @@ const structuredData = {
     },
     openingHours: 'Mo-Su 00:00-23:59',
     sameAs: [
-      'https://www.facebook.com/travelbanyuwangi.id',
-      'https://www.instagram.com/travelbanyuwangi.id',
+      'https://www.facebook.com/Juragan Travel',
+      'https://www.instagram.com/Juragan Travel',
     ],
   },
 };
@@ -84,13 +84,13 @@ const breadcrumbStructuredData = {
       '@type': 'ListItem',
       position: 1,
       name: 'Beranda',
-      item: 'https://travelbanyuwangi.id',
+      item: 'https://juragantravel.com',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Kontak',
-      item: 'https://travelbanyuwangi.id/kontak',
+      item: 'https://juragantravel.com/kontak',
     },
   ],
 };
@@ -185,7 +185,7 @@ export default function KontakPage() {
                     <Mail className="w-6 h-6 mr-4 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="text-lg font-semibold text-dark">Email</h3>
-                      <p className="text-gray-700">info@travelbanyuwangi.id</p>
+                      <p className="text-gray-700">info@Juragan Travel</p>
                     </div>
                   </div>
                 </div>

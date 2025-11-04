@@ -3,7 +3,7 @@ import { getBlogPosts } from '@/lib/blog'
 import { getAllPromos } from '@/lib/promo'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://travelbanyuwangi.id'
+  const baseUrl = 'https://juragantravel.com'
   
   // Get all blog posts
   const blogPosts = await getBlogPosts()

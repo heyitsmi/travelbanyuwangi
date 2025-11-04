@@ -20,18 +20,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Agen Tiket Kapal Banyuwangi - Bali (Ketapang-Gilimanuk) | travelbanyuwangi.id",
+  title: "Agen Tiket Kapal Banyuwangi - Bali (Ketapang-Gilimanuk) | Juragan Travel",
   description:
     "Pesan tiket kapal Banyuwangi ke Bali (Ketapang - Gilimanuk) dengan mudah. Kami melayani tiket kapal laut online untuk penumpang, motor, dan mobil. Proses cepat via WA.",
   keywords:
     "tiket kapal banyuwangi bali, tiket kapal ketapang gilimanuk, tiket kapal online banyuwangi, harga tiket kapal banyuwangi bali, agen tiket kapal banyuwangi, tiket ferry banyuwangi bali",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Agen Tiket Kapal Banyuwangi - Bali (Ketapang-Gilimanuk) | travelbanyuwangi.id",
+    title: "Agen Tiket Kapal Banyuwangi - Bali (Ketapang-Gilimanuk) | Juragan Travel",
     description:
       "Pesan tiket kapal ferry online rute Banyuwangi (Ketapang) - Bali (Gilimanuk). Layanan tiket penumpang, motor, & mobil.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/tiket-kapal",
+    url: "https://juragantravel.com/layanan/tiket-kapal",
     images: [
       {
         url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Kapal+Laut",
@@ -39,17 +39,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agen Tiket Kapal Banyuwangi - Bali (Ketapang-Gilimanuk) | travelbanyuwangi.id",
+    title: "Agen Tiket Kapal Banyuwangi - Bali (Ketapang-Gilimanuk) | Juragan Travel",
     description:
       "Pesan tiket kapal ferry online rute Banyuwangi (Ketapang) - Bali (Gilimanuk). Layanan tiket penumpang, motor, & mobil.",
     images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Kapal+Laut"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/tiket-kapal",
+    canonical: "https://juragantravel.com/layanan/tiket-kapal",
   },
 };
 
@@ -59,8 +59,8 @@ const serviceData = {
   serviceType: "Ticket",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Penjualan Tiket Kapal Laut Banyuwangi - Bali (Ketapang-Gilimanuk)",
   description:
@@ -86,19 +86,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Tiket Kapal Laut",
-      item: "https://travelbanyuwangi.id/layanan/tiket-kapal",
+      item: "https://juragantravel.com/layanan/tiket-kapal",
     },
   ],
 };

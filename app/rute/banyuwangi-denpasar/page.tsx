@@ -8,18 +8,18 @@ import { Ship, Home, Plane, ChevronDown } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Denpasar (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+  title: "Travel Banyuwangi Denpasar (PP) - Jadwal & Harga Terbaru | Juragan Travel",
   description:
     "Jadwal & harga travel Banyuwangi Denpasar (PP) terbaru. Layanan door-to-door, sudah termasuk tiket kapal, berangkat setiap hari (pagi, siang, malam). Pesan sekarang!",
   keywords:
     "travel banyuwangi denpasar, travel denpasar banyuwangi, harga travel banyuwangi denpasar, jadwal travel banyuwangi denpasar, travel banyuwangi ke bali, travel banyuwangi denpasar pagi, travel banyuwangi denpasar malam",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Denpasar (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Denpasar (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Denpasar (PP) terbaru. Layanan door-to-door, sudah termasuk tiket kapal.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-denpasar",
+    url: "https://juragantravel.com/rute/banyuwangi-denpasar",
     images: [
       {
         url: "/img/rute/banyuwangi-denpasar.webp",
@@ -27,17 +27,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Denpasar (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Denpasar (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Denpasar (PP) terbaru. Layanan door-to-door, sudah termasuk tiket kapal.",
     images: ["/img/rute/banyuwangi-denpasar.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute/banyuwangi-denpasar",
+    canonical: "https://juragantravel.com/rute/banyuwangi-denpasar",
   },
 };
 
@@ -46,8 +46,8 @@ const busTripData = {
   "@type": "BusTrip",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
     telephone: "+6282143258744",
     image: "/img/hero.webp",
   },
@@ -80,7 +80,7 @@ const busTripData = {
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Denpasar",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-denpasar",
+    url: "https://juragantravel.com/rute/banyuwangi-denpasar",
     availability: "https://schema.org/InStock",
   },
 };
@@ -93,19 +93,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rute",
-      item: "https://travelbanyuwangi.id/rute",
+      item: "https://juragantravel.com/rute",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Banyuwangi - Denpasar",
-      item: "https://travelbanyuwangi.id/rute/banyuwangi-denpasar",
+      item: "https://juragantravel.com/rute/banyuwangi-denpasar",
     },
   ],
 };

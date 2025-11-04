@@ -7,17 +7,17 @@ import { StructuredData } from "../components/SEO";
 import { Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Testimoni Pelanggan | travelbanyuwangi.id",
+  title: "Testimoni Pelanggan | Juragan Travel",
   description:
-    "Lihat apa kata pelanggan kami. Kumpulan testimoni asli dari pelanggan travel, wisata wali, dan umroh di travelbanyuwangi.id. Agen terpercaya di Banyuwangi.",
+    "Lihat apa kata pelanggan kami. Kumpulan testimoni asli dari pelanggan travel, wisata wali, dan umroh di Juragan Travel. Agen terpercaya di Banyuwangi.",
   keywords:
-    "testimoni travel banyuwangi, ulasan travelbanyuwangi.id, review travel banyuwangi terpercaya, testimoni travel banyuwangi surabaya",
-  authors: [{ name: "travelbanyuwangi.id" }],
+    "testimoni travel banyuwangi, ulasan Juragan Travel, review travel banyuwangi terpercaya, testimoni travel banyuwangi surabaya",
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Testimoni Pelanggan | travelbanyuwangi.id",
-    description: "Kumpulan testimoni asli dari pelanggan travel, wisata wali, dan umroh di travelbanyuwangi.id.",
+    title: "Testimoni Pelanggan | Juragan Travel",
+    description: "Kumpulan testimoni asli dari pelanggan travel, wisata wali, dan umroh di Juragan Travel.",
     type: "website",
-    url: "https://travelbanyuwangi.id/testimoni",
+    url: "https://juragantravel.com/testimoni",
     images: [
       {
         url: "/img/hero.webp",
@@ -25,28 +25,28 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Testimoni Pelanggan | travelbanyuwangi.id",
-    description: "Kumpulan testimoni asli dari pelanggan travel, wisata wali, dan umroh di travelbanyuwangi.id.",
+    title: "Testimoni Pelanggan | Juragan Travel",
+    description: "Kumpulan testimoni asli dari pelanggan travel, wisata wali, dan umroh di Juragan Travel.",
     images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Testimoni+Pelanggan"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/testimoni",
+    canonical: "https://juragantravel.com/testimoni",
   },
 };
 
 const collectionPageData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Testimoni Pelanggan travelbanyuwangi.id",
+  name: "Testimoni Pelanggan Juragan Travel",
   description: "Kumpulan ulasan dan testimoni asli dari pelanggan kami.",
-  url: "https://travelbanyuwangi.id/testimoni",
+  url: "https://juragantravel.com/testimoni",
   about: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
+    name: "Juragan Travel",
   },
   mainEntity: [
     {
@@ -97,7 +97,7 @@ const collectionPageData = {
         bestRating: "5",
       },
       reviewBody:
-        "Alhamdulillah perjalanan Wisata Wali 5 lancar. Busnya nyaman, krunya ramah, dan bimbingannya sangat membantu. Terima kasih travelbanyuwangi.id.",
+        "Alhamdulillah perjalanan Wisata Wali 5 lancar. Busnya nyaman, krunya ramah, dan bimbingannya sangat membantu. Terima kasih Juragan Travel.",
       itemReviewed: {
         "@type": "Service",
         name: "Paket Wisata Wali 5",
@@ -114,13 +114,13 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Testimoni",
-      item: "https://travelbanyuwangi.id/testimoni",
+      item: "https://juragantravel.com/testimoni",
     },
   ],
 };
@@ -142,7 +142,7 @@ const testimonials = [
   },
   {
     rating: 5,
-    text: "Pakai jasa kirim paket express Banyuwangi-Malang, sehari sampai. Harganya juga oke. Mantap travelbanyuwangi.id!",
+    text: "Pakai jasa kirim paket express Banyuwangi-Malang, sehari sampai. Harganya juga oke. Mantap Juragan Travel!",
     avatar: "/avatar.webp",
     name: "Budi Santoso",
     service: "Pelanggan, Paket Express Malang",
@@ -191,7 +191,7 @@ export default function TestimoniPage() {
               </nav>
               <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Testimoni & Ulasan Pelanggan</h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Apa kata mereka yang telah menggunakan layanan travelbanyuwangi.id. Kepuasan Anda adalah prioritas kami.
+                Apa kata mereka yang telah menggunakan layanan Juragan Travel. Kepuasan Anda adalah prioritas kami.
               </p>
             </div>
           </section>

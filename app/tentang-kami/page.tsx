@@ -5,33 +5,33 @@ import Footer from '../components/Footer';
 import { Eye, Target } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Tentang Kami | Agen Travel Banyuwangi Terpercaya | travelbanyuwangi.id',
-  description: 'Pelajari lebih lanjut tentang travelbanyuwangi.id, agen travel Banyuwangi terpercaya. Lihat visi, misi, dan komitmen kami untuk layanan travel terbaik ke Surabaya, Malang, dan Denpasar.',
-  keywords: 'agen travel banyuwangi terpercaya, tentang travelbanyuwangi.id, profil agen travel banyuwangi, visi misi travel banyuwangi',
-  authors: [{ name: 'travelbanyuwangi.id' }],
+  title: 'Tentang Kami | Agen Travel Banyuwangi Terpercaya | Juragan Travel',
+  description: 'Pelajari lebih lanjut tentang Juragan Travel, agen travel Banyuwangi terpercaya. Lihat visi, misi, dan komitmen kami untuk layanan travel terbaik ke Surabaya, Malang, dan Denpasar.',
+  keywords: 'agen travel banyuwangi terpercaya, tentang Juragan Travel, profil agen travel banyuwangi, visi misi travel banyuwangi',
+  authors: [{ name: 'Juragan Travel' }],
   openGraph: {
-    title: 'Tentang Kami | Agen Travel Banyuwangi Terpercaya | travelbanyuwangi.id',
-    description: 'Kenali tim, visi, dan misi travelbanyuwangi.id, agen travel pilihan Anda di Banyuwangi.',
+    title: 'Tentang Kami | Agen Travel Banyuwangi Terpercaya | Juragan Travel',
+    description: 'Kenali tim, visi, dan misi Juragan Travel, agen travel pilihan Anda di Banyuwangi.',
     type: 'website',
-    url: 'https://travelbanyuwangi.id/tentang-kami',
+    url: 'https://juragantravel.com/tentang-kami',
     images: [
       {
         url: '/img/hero.webp',
         width: 1200,
         height: 630,
-        alt: 'Tentang Kami travelbanyuwangi.id',
+        alt: 'Tentang Kami Juragan Travel',
       },
     ],
-    siteName: 'travelbanyuwangi.id',
+    siteName: 'Juragan Travel',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Tentang Kami | Agen Travel Banyuwangi Terpercaya | travelbanyuwangi.id',
-    description: 'Kenali tim, visi, dan misi travelbanyuwangi.id, agen travel pilihan Anda di Banyuwangi.',
+    title: 'Tentang Kami | Agen Travel Banyuwangi Terpercaya | Juragan Travel',
+    description: 'Kenali tim, visi, dan misi Juragan Travel, agen travel pilihan Anda di Banyuwangi.',
     images: ['/img/hero.webp'],
   },
   alternates: {
-    canonical: 'https://travelbanyuwangi.id/tentang-kami',
+    canonical: 'https://juragantravel.com/tentang-kami',
   },
 };
 
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Tentang Kami | travelbanyuwangi.id',
-  description: 'Mengenal lebih dekat travelbanyuwangi.id sebagai agen travel terpercaya di Banyuwangi.',
+  name: 'Tentang Kami | Juragan Travel',
+  description: 'Mengenal lebih dekat Juragan Travel sebagai agen travel terpercaya di Banyuwangi.',
   mainEntity: {
     '@type': 'TravelAgency',
-    name: 'travelbanyuwangi.id',
+    name: 'Juragan Travel',
     description: 'Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.',
     telephone: '+6282143258744',
-    url: 'https://travelbanyuwangi.id/',
+    url: 'https://juragantravel.com/',
     image: '/img/hero.webp',
     address: {
       '@type': 'PostalAddress',
@@ -112,7 +112,7 @@ export default function TentangKamiPage() {
               Tentang Kami
             </h1>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              Mengenal Lebih Dekat travelbanyuwangi.id, Partner Perjalanan Tepercaya Anda.
+              Mengenal Lebih Dekat Juragan Travel, Partner Perjalanan Tepercaya Anda.
             </p>
           </div>
         </section>
@@ -126,8 +126,8 @@ export default function TentangKamiPage() {
               <div className="md:w-1/2">
                 <div className="relative w-full h-96 rounded-lg shadow-xl overflow-hidden">
                   <Image
-                    src="https://placehold.co/600x450/00B894/FFFFFF?text=[Foto+Tim+travelbanyuwangi.id]"
-                    alt="Tim agen travel Banyuwangi terpercaya travelbanyuwangi.id"
+                    src="https://placehold.co/600x450/00B894/FFFFFF?text=[Foto+Tim+Juragan Travel]"
+                    alt="Tim agen travel Banyuwangi terpercaya Juragan Travel"
                     fill
                     className="object-cover"
                   />
@@ -143,7 +143,7 @@ export default function TentangKamiPage() {
                   Agen Travel Banyuwangi Terpercaya Sejak 2015
                 </h2>
                 <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-                  <strong>travelbanyuwangi.id</strong> adalah{' '}
+                  <strong>Juragan Travel</strong> adalah{' '}
                   <strong>agen travel Banyuwangi terpercaya</strong> yang telah
                   melayani ribuan pelanggan sejak tahun 2015. Kami berawal dari sebuah
                   komitmen untuk menyediakan transportasi yang aman, nyaman, dan tepat

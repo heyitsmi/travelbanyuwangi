@@ -19,15 +19,15 @@ Di file `page.tsx` Anda:
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Judul Halaman - travelbanyuwangi.id",
+  title: "Judul Halaman - Juragan Travel",
   description: "Deskripsi lengkap halaman ini untuk mesin pencari",
   keywords: "travel banyuwangi, keyword2, keyword3",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Judul untuk Facebook/Twitter",
     description: "Deskripsi untuk social media",
     type: "website",
-    url: "https://travelbanyuwangi.id/halaman",
+    url: "https://juragantravel.com/halaman",
     images: [
       {
         url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Gambar",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Gambar"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/halaman",
+    canonical: "https://juragantravel.com/halaman",
   },
 };
 ```
@@ -58,10 +58,10 @@ export default function HalamanTravel() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
+    name: "Juragan Travel",
     description: "Deskripsi travel agency",
     telephone: "+6282143258744",
-    url: "https://travelbanyuwangi.id/",
+    url: "https://juragantravel.com/",
     // ... data lainnya
   };
 
@@ -84,10 +84,10 @@ export default function HalamanTravel() {
 {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  "name": "travelbanyuwangi.id",
+  "name": "Juragan Travel",
   "description": "Layanan travel...",
   "telephone": "+6282143258744",
-  "url": "https://travelbanyuwangi.id/",
+  "url": "https://juragantravel.com/",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Jl. Raya Jember No. 1",
@@ -110,7 +110,7 @@ export default function HalamanTravel() {
   "serviceType": "Travel Service",
   "provider": {
     "@type": "TravelAgency",
-    "name": "travelbanyuwangi.id"
+    "name": "Juragan Travel"
   },
   "areaServed": {
     "@type": "City",
@@ -155,13 +155,13 @@ export default function HalamanTravel() {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://travelbanyuwangi.id/"
+      "item": "https://juragantravel.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Travel Surabaya",
-      "item": "https://travelbanyuwangi.id/travel-banyuwangi-surabaya"
+      "item": "https://juragantravel.com/travel-banyuwangi-surabaya"
     }
   ]
 }
@@ -248,30 +248,30 @@ import { StructuredData } from "../components/SEO";
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Surabaya - Booking Online 24 Jam | travelbanyuwangi.id",
+  title: "Travel Banyuwangi Surabaya - Booking Online 24 Jam | Juragan Travel",
   description: "Layanan travel Banyuwangi Surabaya door-to-door. Berangkat setiap hari, armada nyaman, harga terjangkau. Booking via WhatsApp 24 jam.",
   keywords: "travel banyuwangi surabaya, travel banyuwangi ke surabaya, agen travel banyuwangi surabaya",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Surabaya | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Surabaya | Juragan Travel",
     description: "Layanan travel Banyuwangi Surabaya door-to-door. Berangkat setiap hari.",
     type: "website",
-    url: "https://travelbanyuwangi.id/travel-banyuwangi-surabaya",
+    url: "https://juragantravel.com/travel-banyuwangi-surabaya",
     images: [{
-      url: "https://travelbanyuwangi.id/images/surabaya-og.jpg",
+      url: "https://juragantravel.com/images/surabaya-og.jpg",
       width: 1200,
       height: 630,
     }],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Surabaya | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Surabaya | Juragan Travel",
     description: "Layanan travel Banyuwangi Surabaya door-to-door",
-    images: ["https://travelbanyuwangi.id/images/surabaya-og.jpg"],
+    images: ["https://juragantravel.com/images/surabaya-og.jpg"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/travel-banyuwangi-surabaya",
+    canonical: "https://juragantravel.com/travel-banyuwangi-surabaya",
   },
 };
 
@@ -282,7 +282,7 @@ const serviceData = {
   "serviceType": "Travel Service",
   "provider": {
     "@type": "TravelAgency",
-    "name": "travelbanyuwangi.id",
+    "name": "Juragan Travel",
     "telephone": "+6282143258744"
   },
   "areaServed": [
@@ -311,13 +311,13 @@ const breadcrumbData = {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://travelbanyuwangi.id/"
+      "item": "https://juragantravel.com/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Travel Banyuwangi Surabaya",
-      "item": "https://travelbanyuwangi.id/travel-banyuwangi-surabaya"
+      "item": "https://juragantravel.com/travel-banyuwangi-surabaya"
     }
   ]
 };

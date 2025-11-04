@@ -8,18 +8,18 @@ import { Map, Home, Plane, ChevronDown } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Surabaya (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+  title: "Travel Banyuwangi Surabaya (PP) - Jadwal & Harga Terbaru | Juragan Travel",
   description:
     "Jadwal & harga travel Banyuwangi Surabaya (PP) terbaru. Layanan door-to-door, via tol, berangkat setiap hari (pagi, siang, malam). Pesan sekarang!",
   keywords:
     "travel banyuwangi surabaya, travel surabaya banyuwangi, harga travel banyuwangi surabaya, jadwal travel banyuwangi surabaya, travel banyuwangi juanda, travel banyuwangi surabaya via tol, travel banyuwangi surabaya pagi, travel banyuwangi surabaya malam",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Surabaya (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Surabaya (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Surabaya (PP) terbaru. Layanan door-to-door, via tol, berangkat setiap hari.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-surabaya",
+    url: "https://juragantravel.com/rute/banyuwangi-surabaya",
     images: [
       {
         url: "/img/rute/banyuwangi-surabaya.webp",
@@ -27,17 +27,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Surabaya (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Surabaya (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Surabaya (PP) terbaru. Layanan door-to-door, via tol, berangkat setiap hari.",
     images: ["/img/rute/banyuwangi-surabaya.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute/banyuwangi-surabaya",
+    canonical: "https://juragantravel.com/rute/banyuwangi-surabaya",
   },
 };
 
@@ -46,8 +46,8 @@ const busTripData = {
   "@type": "BusTrip",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
     telephone: "+6282143258744",
     image: "/img/rute/banyuwangi-surabaya.webp",
   },
@@ -80,7 +80,7 @@ const busTripData = {
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Surabaya",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-surabaya",
+    url: "https://juragantravel.com/rute/banyuwangi-surabaya",
     availability: "https://schema.org/InStock",
   },
 };
@@ -93,19 +93,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rute",
-      item: "https://travelbanyuwangi.id/rute",
+      item: "https://juragantravel.com/rute",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Banyuwangi - Surabaya",
-      item: "https://travelbanyuwangi.id/rute/banyuwangi-surabaya",
+      item: "https://juragantravel.com/rute/banyuwangi-surabaya",
     },
   ],
 };

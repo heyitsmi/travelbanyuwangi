@@ -23,7 +23,7 @@ export default function BookingForm({ routeName }: BookingFormProps) {
     e.preventDefault();
 
     // Format pesan WhatsApp
-    const message = `Halo TravelBanyuwangi.id 👋
+    const message = `Halo Juragan Travel 👋
 Saya ingin pesan travel:
 
 Nama: ${formData.nama}

@@ -20,18 +20,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Jasa Pengurusan Visa & Paspor Banyuwangi | travelbanyuwangi.id",
+  title: "Jasa Pengurusan Visa & Paspor Banyuwangi | Juragan Travel",
   description:
     "Biro jasa pengurusan visa dan paspor di Banyuwangi. Layanan cepat & terpercaya untuk visa turis, visa umroh, paspor baru, dan perpanjangan paspor. Hubungi via WA.",
   keywords:
     "jasa pengurusan visa banyuwangi, jasa pembuatan paspor banyuwangi, biro jasa paspor banyuwangi, biro jasa visa banyuwangi, jasa visa turis banyuwangi, jasa visa umroh banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Jasa Pengurusan Visa & Paspor Banyuwangi | travelbanyuwangi.id",
+    title: "Jasa Pengurusan Visa & Paspor Banyuwangi | Juragan Travel",
     description:
       "Layanan biro jasa cepat & terpercaya untuk pengurusan visa turis, visa umroh, paspor baru, dan perpanjangan paspor di Banyuwangi.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/visa-paspor",
+    url: "https://juragantravel.com/layanan/visa-paspor",
     images: [
       {
         url: "/img/layanan/jasa-paspor.webp",
@@ -39,17 +39,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jasa Pengurusan Visa & Paspor Banyuwangi | travelbanyuwangi.id",
+    title: "Jasa Pengurusan Visa & Paspor Banyuwangi | Juragan Travel",
     description:
       "Layanan biro jasa cepat & terpercaya untuk pengurusan visa turis, visa umroh, paspor baru, dan perpanjangan paspor di Banyuwangi.",
     images: ["/img/layanan/jasa-paspor.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/visa-paspor",
+    canonical: "https://juragantravel.com/layanan/visa-paspor",
   },
 };
 
@@ -59,8 +59,8 @@ const serviceData = {
   serviceType: "GovernmentPermit",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Jasa Pengurusan Visa & Paspor Banyuwangi",
   description:
@@ -86,19 +86,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Pengurusan Visa & Paspor",
-      item: "https://travelbanyuwangi.id/layanan/visa-paspor",
+      item: "https://juragantravel.com/layanan/visa-paspor",
     },
   ],
 };

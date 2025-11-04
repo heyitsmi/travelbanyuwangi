@@ -22,7 +22,7 @@ Waktu keberangkatan sangat mempengaruhi kenyamanan perjalanan Anda. Kami merekom
 
 ## 2. Pastikan Armada dalam Kondisi Prima
 
-travelbanyuwangi.id selalu memastikan armada kami dalam kondisi terbaik:
+juragantravel.com selalu memastikan armada kami dalam kondisi terbaik:
 
 - Servis rutin setiap bulan
 - Pengecekan ban dan rem sebelum keberangkatan
@@ -51,7 +51,7 @@ Untuk mendapatkan tempat duduk yang nyaman dan memastikan ketersediaan armada, s
 
 ## Kesimpulan
 
-Perjalanan Banyuwangi-Surabaya via tol bisa menjadi pengalaman yang menyenangkan jika Anda mempersiapkannya dengan baik. Dengan memilih travel yang tepat seperti travelbanyuwangi.id, perjalanan Anda dijamin aman, nyaman, dan tepat waktu.
+Perjalanan Banyuwangi-Surabaya via tol bisa menjadi pengalaman yang menyenangkan jika Anda mempersiapkannya dengan baik. Dengan memilih travel yang tepat seperti juragantravel.com, perjalanan Anda dijamin aman, nyaman, dan tepat waktu.
 
 **Siap berangkat ke Surabaya?** Hubungi kami sekarang melalui WhatsApp untuk booking travel Anda!
 

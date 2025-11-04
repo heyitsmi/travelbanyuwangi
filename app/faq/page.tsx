@@ -4,28 +4,28 @@ import Footer from '../components/Footer';
 import { ChevronDown } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'FAQ (Pertanyaan Umum) | travelbanyuwangi.id',
+  title: 'FAQ (Pertanyaan Umum) | Juragan Travel',
   description: 'Temukan jawaban atas pertanyaan umum seputar layanan travel Banyuwangi ke Surabaya, Malang, Denpasar, pengiriman paket, dan cara pembayaran.',
   keywords: 'faq travel banyuwangi, pertanyaan umum travel, travel banyuwangi setiap hari, bayar travel di tempat, kirim paket via travel',
-  authors: [{ name: 'travelbanyuwangi.id' }],
+  authors: [{ name: 'Juragan Travel' }],
   openGraph: {
-    title: 'FAQ (Pertanyaan Umum) | travelbanyuwangi.id',
+    title: 'FAQ (Pertanyaan Umum) | Juragan Travel',
     description: 'Temukan jawaban atas pertanyaan umum seputar layanan travel Banyuwangi.',
     type: 'website',
-    url: 'https://travelbanyuwangi.id/faq',
+    url: 'https://juragantravel.com/faq',
     images: [
       {
         url: '/img/hero.webp',
         width: 1200,
         height: 630,
-        alt: 'FAQ travelbanyuwangi.id',
+        alt: 'FAQ Juragan Travel',
       },
     ],
-    siteName: 'travelbanyuwangi.id',
+    siteName: 'Juragan Travel',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FAQ (Pertanyaan Umum) | travelbanyuwangi.id',
+    title: 'FAQ (Pertanyaan Umum) | Juragan Travel',
     description: 'Temukan jawaban atas pertanyaan umum seputar layanan travel Banyuwangi.',
     images: ['/img/hero.webp'],
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://travelbanyuwangi.id/faq',
+    canonical: 'https://juragantravel.com/faq',
   },
 };
 
@@ -45,7 +45,7 @@ const structuredData = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Apakah travelbanyuwangi.id berangkat setiap hari?',
+      name: 'Apakah Juragan Travel berangkat setiap hari?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Ya, kami beroperasi setiap hari (Senin - Minggu) untuk semua rute travel populer kami, termasuk Banyuwangi - Surabaya, Banyuwangi - Malang, dan Banyuwangi - Denpasar. Kami memiliki jadwal pagi, siang, dan malam.',
@@ -103,13 +103,13 @@ const breadcrumbStructuredData = {
       '@type': 'ListItem',
       position: 1,
       name: 'Beranda',
-      item: 'https://travelbanyuwangi.id',
+      item: 'https://juragantravel.com',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'FAQ',
-      item: 'https://travelbanyuwangi.id/faq',
+      item: 'https://juragantravel.com/faq',
     },
   ],
 };
@@ -118,7 +118,7 @@ const breadcrumbStructuredData = {
 const faqItems = [
   {
     id: 1,
-    question: 'Apakah travelbanyuwangi.id berangkat setiap hari?',
+    question: 'Apakah Juragan Travel berangkat setiap hari?',
     answer: 'Ya, kami beroperasi setiap hari (Senin - Minggu) untuk semua rute travel populer kami, termasuk Banyuwangi - Surabaya, Banyuwangi - Malang, dan Banyuwangi - Denpasar. Kami memiliki jadwal pagi, siang, dan malam.',
     defaultOpen: true,
   },

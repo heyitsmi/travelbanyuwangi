@@ -14,18 +14,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Layanan Kami | Agen Travel Banyuwangi | travelbanyuwangi.id",
+  title: "Layanan Kami | Agen Travel Banyuwangi | Juragan Travel",
   description:
-    "Jelajahi semua layanan travelbanyuwangi.id. Mulai dari travel antar kota (Surabaya, Malang, Denpasar), tiket pesawat, bus, kapal, visa, paket wisata wali, hingga umroh.",
+    "Jelajahi semua layanan Juragan Travel. Mulai dari travel antar kota (Surabaya, Malang, Denpasar), tiket pesawat, bus, kapal, visa, paket wisata wali, hingga umroh.",
   keywords:
     "layanan travel banyuwangi, paket travel banyuwangi, tiket pesawat banyuwangi, visa banyuwangi, wisata wali banyuwangi, umroh banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Layanan Kami | Agen Travel Banyuwangi | travelbanyuwangi.id",
+    title: "Layanan Kami | Agen Travel Banyuwangi | Juragan Travel",
     description:
-      "Jelajahi semua layanan travelbanyuwangi.id: Travel, Tiket, Visa, Wisata Wali, Umroh, dan Paket Express.",
+      "Jelajahi semua layanan Juragan Travel: Travel, Tiket, Visa, Wisata Wali, Umroh, dan Paket Express.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan",
+    url: "https://juragantravel.com/layanan",
     images: [
       {
         url: "/img/hero.webp",
@@ -33,26 +33,26 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Layanan Kami | Agen Travel Banyuwangi | travelbanyuwangi.id",
-    description: "Jelajahi semua layanan travelbanyuwangi.id: Travel, Tiket, Visa, Wisata Wali, Umroh, dan Paket Express.",
+    title: "Layanan Kami | Agen Travel Banyuwangi | Juragan Travel",
+    description: "Jelajahi semua layanan Juragan Travel: Travel, Tiket, Visa, Wisata Wali, Umroh, dan Paket Express.",
     images: ["/img/hero.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan",
+    canonical: "https://juragantravel.com/layanan",
   },
 };
 
 const collectionPageData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  name: "Layanan Kami | travelbanyuwangi.id",
+  name: "Layanan Kami | Juragan Travel",
   description:
-    "Daftar lengkap layanan yang ditawarkan oleh agen travel Banyuwangi terpercaya, travelbanyuwangi.id.",
-  url: "https://travelbanyuwangi.id/layanan",
+    "Daftar lengkap layanan yang ditawarkan oleh agen travel Banyuwangi terpercaya, Juragan Travel.",
+  url: "https://juragantravel.com/layanan",
   mainEntity: [
     { "@type": "Service", name: "Travel Antar Kota" },
     { "@type": "Service", name: "Tiket Pesawat" },

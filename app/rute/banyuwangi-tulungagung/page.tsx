@@ -8,18 +8,18 @@ import { Map, Home, Building, ChevronDown } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+  title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | Juragan Travel",
   description:
     "Jadwal & harga travel Banyuwangi Tulungagung (PP) terbaru. Layanan door-to-door, armada nyaman, berangkat setiap hari (pagi & malam). Pesan sekarang!",
   keywords:
     "travel banyuwangi tulungagung, travel tulungagung banyuwangi, harga travel banyuwangi tulungagung, jadwal travel banyuwangi tulungagung, travel banyuwangi kediri, travel banyuwangi blitar",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Tulungagung (PP) terbaru. Layanan door-to-door, berangkat setiap hari.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-tulungagung",
+    url: "https://juragantravel.com/rute/banyuwangi-tulungagung",
     images: [
       {
         url: "/img/rute/banyuwangi-tulungagung.webp",
@@ -27,17 +27,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
+    title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | Juragan Travel",
     description:
       "Jadwal & harga travel Banyuwangi Tulungagung (PP) terbaru. Layanan door-to-door, berangkat setiap hari.",
     images: ["/img/rute/banyuwangi-tulungagung.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute/banyuwangi-tulungagung",
+    canonical: "https://juragantravel.com/rute/banyuwangi-tulungagung",
   },
 };
 
@@ -46,8 +46,8 @@ const busTripData = {
   "@type": "BusTrip",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
     telephone: "+6282143258744",
     image: "/img/hero.webp",
   },
@@ -80,7 +80,7 @@ const busTripData = {
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Tulungagung",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-tulungagung",
+    url: "https://juragantravel.com/rute/banyuwangi-tulungagung",
     availability: "https://schema.org/InStock",
   },
 };
@@ -93,19 +93,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rute",
-      item: "https://travelbanyuwangi.id/rute",
+      item: "https://juragantravel.com/rute",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Banyuwangi - Tulungagung",
-      item: "https://travelbanyuwangi.id/rute/banyuwangi-tulungagung",
+      item: "https://juragantravel.com/rute/banyuwangi-tulungagung",
     },
   ],
 };

@@ -4,33 +4,33 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Galeri Armada & Kegiatan | travelbanyuwangi.id',
-  description: 'Galeri foto armada travel, bus, kegiatan wisata wali, umroh, dan testimoni pelanggan travelbanyuwangi.id. Lihat fasilitas kami.',
+  title: 'Galeri Armada & Kegiatan | Juragan Travel',
+  description: 'Galeri foto armada travel, bus, kegiatan wisata wali, umroh, dan testimoni pelanggan Juragan Travel. Lihat fasilitas kami.',
   keywords: 'galeri travel banyuwangi, foto armada travel banyuwangi, foto bus wisata banyuwangi, kegiatan umroh travel banyuwangi',
-  authors: [{ name: 'travelbanyuwangi.id' }],
+  authors: [{ name: 'Juragan Travel' }],
   openGraph: {
-    title: 'Galeri Armada & Kegiatan | travelbanyuwangi.id',
-    description: 'Galeri foto armada travel, bus, kegiatan wisata wali, umroh, dan testimoni pelanggan travelbanyuwangi.id.',
+    title: 'Galeri Armada & Kegiatan | Juragan Travel',
+    description: 'Galeri foto armada travel, bus, kegiatan wisata wali, umroh, dan testimoni pelanggan Juragan Travel.',
     type: 'website',
-    url: 'https://travelbanyuwangi.id/galeri',
+    url: 'https://juragantravel.com/galeri',
     images: [
       {
         url: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Galeri+Kami',
         width: 1200,
         height: 630,
-        alt: 'Galeri travelbanyuwangi.id',
+        alt: 'Galeri Juragan Travel',
       },
     ],
-    siteName: 'travelbanyuwangi.id',
+    siteName: 'Juragan Travel',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Galeri Armada & Kegiatan | travelbanyuwangi.id',
-    description: 'Galeri foto armada travel, bus, kegiatan wisata wali, umroh, dan testimoni pelanggan travelbanyuwangi.id.',
+    title: 'Galeri Armada & Kegiatan | Juragan Travel',
+    description: 'Galeri foto armada travel, bus, kegiatan wisata wali, umroh, dan testimoni pelanggan Juragan Travel.',
     images: ['https://placehold.co/1200x630/0077B6/FFFFFF?text=Galeri+Kami'],
   },
   alternates: {
-    canonical: 'https://travelbanyuwangi.id/galeri',
+    canonical: 'https://juragantravel.com/galeri',
   },
 };
 
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'ImageGallery',
-  name: 'Galeri travelbanyuwangi.id',
+  name: 'Galeri Juragan Travel',
   description: 'Galeri foto armada, pelanggan, dan kegiatan kami.',
-  url: 'https://travelbanyuwangi.id/galeri',
+  url: 'https://juragantravel.com/galeri',
   image: [
     {
       '@type': 'ImageObject',
@@ -65,7 +65,7 @@ const structuredData = {
   ],
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://travelbanyuwangi.id/galeri',
+    '@id': 'https://juragantravel.com/galeri',
   },
 };
 
@@ -78,13 +78,13 @@ const breadcrumbStructuredData = {
       '@type': 'ListItem',
       position: 1,
       name: 'Beranda',
-      item: 'https://travelbanyuwangi.id',
+      item: 'https://juragantravel.com',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Galeri',
-      item: 'https://travelbanyuwangi.id/galeri',
+      item: 'https://juragantravel.com/galeri',
     },
   ],
 };

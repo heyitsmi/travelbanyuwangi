@@ -8,17 +8,17 @@ import { CheckCircle } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | travelbanyuwangi.id",
+  title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | Juragan Travel",
   description:
     "Jadwal travel Banyuwangi ke Surabaya, Malang, dan Denpasar (PP) setiap hari. Layanan door-to-door aman, nyaman, dengan harga terbaik. Pesan sekarang!",
   keywords:
     "travel banyuwangi surabaya, travel banyuwangi malang, travel banyuwangi denpasar, travel surabaya banyuwangi, travel malang banyuwangi, travel denpasar banyuwangi, jadwal travel banyuwangi, harga travel banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | Juragan Travel",
     description: "Jadwal travel Banyuwangi ke Surabaya, Malang, dan Denpasar (PP) setiap hari. Layanan door-to-door aman dan nyaman.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/travel-antar-kota",
+    url: "https://juragantravel.com/layanan/travel-antar-kota",
     images: [
       {
         url: "/img/layanan/travel.webp",
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | Juragan Travel",
     description: "Jadwal travel Banyuwangi ke Surabaya, Malang, dan Denpasar (PP) setiap hari. Layanan door-to-door aman dan nyaman.",
     images: ["/img/layanan/travel.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/travel-antar-kota",
+    canonical: "https://juragantravel.com/layanan/travel-antar-kota",
   },
 };
 
@@ -45,8 +45,8 @@ const serviceData = {
   serviceType: "TravelAgency",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Travel Antar Kota Banyuwangi (Surabaya, Malang, Denpasar)",
   description:
@@ -90,19 +90,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Travel Antar Kota",
-      item: "https://travelbanyuwangi.id/layanan/travel-antar-kota",
+      item: "https://juragantravel.com/layanan/travel-antar-kota",
     },
   ],
 };

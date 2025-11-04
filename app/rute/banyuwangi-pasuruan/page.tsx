@@ -5,15 +5,15 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Travel Banyuwangi - Pasuruan (PP) | Jadwal & Harga | travelbanyuwangi.id',
+  title: 'Travel Banyuwangi - Pasuruan (PP) | Jadwal & Harga | Juragan Travel',
   description: 'Jadwal & harga travel Banyuwangi ke Pasuruan (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol. Berangkat setiap hari (pagi, siang, malam).',
   keywords: 'travel banyuwangi pasuruan, travel pasuruan banyuwangi, harga travel banyuwangi pasuruan, jadwal travel banyuwangi pasuruan, travel banyuwangi pasuruan via tol',
-  authors: [{ name: 'travelbanyuwangi.id' }],
+  authors: [{ name: 'Juragan Travel' }],
   openGraph: {
-    title: 'Travel Banyuwangi - Pasuruan (PP) | Jadwal & Harga | travelbanyuwangi.id',
+    title: 'Travel Banyuwangi - Pasuruan (PP) | Jadwal & Harga | Juragan Travel',
     description: 'Jadwal & harga travel Banyuwangi ke Pasuruan (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol. Berangkat setiap hari.',
     type: 'website',
-    url: 'https://travelbanyuwangi.id/rute/banyuwangi-pasuruan',
+    url: 'https://juragantravel.com/rute/banyuwangi-pasuruan',
     images: [
       {
         url: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi+Pasuruan',
@@ -22,16 +22,16 @@ export const metadata: Metadata = {
         alt: 'Travel Banyuwangi Pasuruan'
       }
     ],
-    siteName: 'travelbanyuwangi.id'
+    siteName: 'Juragan Travel'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Banyuwangi - Pasuruan (PP) | Jadwal & Harga | travelbanyuwangi.id',
+    title: 'Travel Banyuwangi - Pasuruan (PP) | Jadwal & Harga | Juragan Travel',
     description: 'Jadwal & harga travel Banyuwangi ke Pasuruan (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol.',
     images: ['https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi+Pasuruan']
   },
   alternates: {
-    canonical: 'https://travelbanyuwangi.id/rute/banyuwangi-pasuruan'
+    canonical: 'https://juragantravel.com/rute/banyuwangi-pasuruan'
   },
   robots: {
     index: true,
@@ -60,10 +60,10 @@ export default function BanyuwangiPasuruanPage() {
             "@type": "BusTrip",
             "provider": {
               "@type": "TravelAgency",
-              "name": "travelbanyuwangi.id",
-              "url": "https://travelbanyuwangi.id/",
+              "name": "Juragan Travel",
+              "url": "https://juragantravel.com/",
               "telephone": `+${whatsappNumber}`,
-              "image": "https://placehold.co/1200x630/0077B6/FFFFFF?text=travelbanyuwangi.id"
+              "image": "https://placehold.co/1200x630/0077B6/FFFFFF?text=Juragan Travel"
             },
             "departureBusStop": {
               "@type": "BusStop",
@@ -93,7 +93,7 @@ export default function BanyuwangiPasuruanPage() {
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Pasuruan",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-              "url": "https://travelbanyuwangi.id/rute/banyuwangi-pasuruan",
+              "url": "https://juragantravel.com/rute/banyuwangi-pasuruan",
               "availability": "https://schema.org/InStock"
             }
           })

@@ -7,14 +7,14 @@ import Link from "next/link";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi - Bandara Ngurah Rai (PP) | Jadwal & Harga | travelbanyuwangi.id",
+  title: "Travel Banyuwangi - Bandara Ngurah Rai (PP) | Jadwal & Harga | Juragan Travel",
   description: "Jadwal & harga travel Banyuwangi ke Bandara Ngurah Rai (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari, tepat waktu untuk penerbangan di Bali.",
   keywords: "travel banyuwangi ngurah rai, travel banyuwangi ke bandara bali, travel bandara ngurah rai banyuwangi, harga travel banyuwangi ngurah rai, jadwal travel banyuwangi ngurah rai, travel banyuwangi denpasar bandara",
   openGraph: {
-    title: "Travel Banyuwangi - Bandara Ngurah Rai (PP) | Jadwal & Harga | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Bandara Ngurah Rai (PP) | Jadwal & Harga | Juragan Travel",
     description: "Jadwal & harga travel Banyuwangi ke Bandara Ngurah Rai (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari, tepat waktu.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-ngurah-rai",
+    url: "https://juragantravel.com/rute/banyuwangi-ngurah-rai",
     images: [
       {
         url: "/img/hero.webp",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi - Bandara Ngurah Rai (PP) | Jadwal & Harga | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Bandara Ngurah Rai (PP) | Jadwal & Harga | Juragan Travel",
     description: "Jadwal & harga travel Banyuwangi ke Bandara Ngurah Rai (PP) terbaru. Layanan door-to-door, carter, dan drop-off.",
     images: ["/img/hero.webp"],
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute/banyuwangi-ngurah-rai",
+    canonical: "https://juragantravel.com/rute/banyuwangi-ngurah-rai",
   },
 };
 
@@ -299,10 +299,10 @@ export default function BanyuwangiNgurahRaiPage() {
             "@type": "BusTrip",
             "provider": {
               "@type": "TravelAgency",
-              "name": "travelbanyuwangi.id",
-              "url": "https://travelbanyuwangi.id/",
+              "name": "Juragan Travel",
+              "url": "https://juragantravel.com/",
               "telephone": "+6282143258744",
-              "image": "https://travelbanyuwangi.id/img/hero.webp"
+              "image": "https://juragantravel.com/img/hero.webp"
             },
             "departureBusStop": {
               "@type": "BusStop",
@@ -332,7 +332,7 @@ export default function BanyuwangiNgurahRaiPage() {
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Ngurah Rai",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-              "url": "https://travelbanyuwangi.id/rute/banyuwangi-ngurah-rai",
+              "url": "https://juragantravel.com/rute/banyuwangi-ngurah-rai",
               "availability": "https://schema.org/InStock"
             }
           })

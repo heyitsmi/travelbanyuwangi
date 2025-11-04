@@ -7,14 +7,14 @@ import Link from "next/link";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | travelbanyuwangi.id",
+  title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | Juragan Travel",
   description: "Jadwal & harga travel Banyuwangi ke Bandara Juanda (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari, tepat waktu untuk penerbangan.",
   keywords: "travel banyuwangi juanda, travel banyuwangi ke bandara juanda, travel juanda banyuwangi, harga travel banyuwangi juanda, jadwal travel banyuwangi juanda, travel banyuwangi surabaya bandara",
   openGraph: {
-    title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | Juragan Travel",
     description: "Jadwal & harga travel Banyuwangi ke Bandara Juanda (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari, tepat waktu.",
     type: "website",
-    url: "https://travelbanyuwangi.id/rute/banyuwangi-juanda",
+    url: "https://juragantravel.com/rute/banyuwangi-juanda",
     images: [
       {
         url: "/img/hero.webp",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | Juragan Travel",
     description: "Jadwal & harga travel Banyuwangi ke Bandara Juanda (PP) terbaru. Layanan door-to-door, carter, dan drop-off.",
     images: ["/img/hero.webp"],
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/rute/banyuwangi-juanda",
+    canonical: "https://juragantravel.com/rute/banyuwangi-juanda",
   },
 };
 
@@ -299,10 +299,10 @@ export default function BanyuwangiJuandaPage() {
             "@type": "BusTrip",
             "provider": {
               "@type": "TravelAgency",
-              "name": "travelbanyuwangi.id",
-              "url": "https://travelbanyuwangi.id/",
+              "name": "Juragan Travel",
+              "url": "https://juragantravel.com/",
               "telephone": "+6282143258744",
-              "image": "https://travelbanyuwangi.id/img/hero.webp"
+              "image": "https://juragantravel.com/img/hero.webp"
             },
             "departureBusStop": {
               "@type": "BusStop",
@@ -332,7 +332,7 @@ export default function BanyuwangiJuandaPage() {
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Juanda",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
-              "url": "https://travelbanyuwangi.id/rute/banyuwangi-juanda",
+              "url": "https://juragantravel.com/rute/banyuwangi-juanda",
               "availability": "https://schema.org/InStock"
             }
           })

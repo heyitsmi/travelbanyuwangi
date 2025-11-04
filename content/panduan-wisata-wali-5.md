@@ -158,11 +158,11 @@ Armada yang kami gunakan untuk wisata ziarah:
 
 ## Testimoni Peserta
 
-> "Alhamdulillah perjalanan ziarah Wali 5 bersama travelbanyuwangi.id sangat lancar dan nyaman. Guide berpengalaman dan hotel bersih. Recommended!" - **Ibu Siti, Banyuwangi**
+> "Alhamdulillah perjalanan ziarah Wali 5 bersama Juragan Travel sangat lancar dan nyaman. Guide berpengalaman dan hotel bersih. Recommended!" - **Ibu Siti, Banyuwangi**
 
 > "Bus nya bagus, AC dingin, driver ramah. Jadwal tepat waktu dan semua terorganisir dengan baik. Jazakumullah khairan." - **H. Ahmad, Jember**
 
-## Kenapa Pilih travelbanyuwangi.id?
+## Kenapa Pilih Juragan Travel?
 
 ✨ **Berpengalaman** - Sudah melayani ratusan rombongan ziarah  
 ✨ **Armada Prima** - Bus pariwisata terawat dan nyaman  
@@ -177,6 +177,6 @@ Armada yang kami gunakan untuk wisata ziarah:
 Hubungi kami sekarang untuk booking atau konsultasi GRATIS mengenai paket wisata ziarah Anda!
 
 **WhatsApp**: 0821-4325-8744  
-**Website**: travelbanyuwangi.id
+**Website**: juragantravel.com
 
 *Jadikan perjalanan spiritual Anda lebih berkesan bersama kami!* 🕌

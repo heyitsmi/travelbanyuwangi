@@ -22,18 +22,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | travelbanyuwangi.id",
+  title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | Juragan Travel",
   description:
     "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari. Pesan via WhatsApp 24 jam.",
   keywords:
     "travel banyuwangi, travel banyuwangi surabaya, travel banyuwangi malang, travel banyuwangi denpasar, travel banyuwangi solo, agen travel banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | Juragan Travel",
     description:
       "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.",
     type: "website",
-    url: "https://travelbanyuwangi.id/",
+    url: "https://juragantravel.com/",
     images: [
       {
         url: "/img/hero.webp",
@@ -41,27 +41,27 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | travelbanyuwangi.id",
+    title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | Juragan Travel",
     description: "Layanan travel antar kota aman & nyaman. Berangkat setiap hari.",
     images: ["/img/hero.webp"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/",
+    canonical: "https://juragantravel.com/",
   }
 };
 
 const travelAgencyData = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  name: "travelbanyuwangi.id",
+  name: "Juragan Travel",
   description:
     "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.",
   telephone: "+6282143258744",
-  url: "https://travelbanyuwangi.id/",
+  url: "https://juragantravel.com/",
   image: "/img/hero.webp",
   address: {
     "@type": "PostalAddress",
@@ -465,19 +465,19 @@ export default function Home() {
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
                     src="/img/armada.webp"
-                    alt="Tim dan armada travelbanyuwangi.id"
+                    alt="Tim dan armada Juragan Travel"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="rounded-lg shadow-xl object-cover"
                   />
                 </div>
                 <div className="md:w-1/2">
-                  <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Tentang travelbanyuwangi.id</h2>
+                  <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Tentang Juragan Travel</h2>
                   <h3 className="mt-4 text-xl font-semibold text-primary">
                     Agen Travel Lokal Banyuwangi yang Aman, Cepat, dan Nyaman
                   </h3>
                   <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                    travelbanyuwangi.id adalah agen travel lokal Banyuwangi yang melayani perjalanan antar kota ke
+                    Juragan Travel adalah agen travel lokal Banyuwangi yang melayani perjalanan antar kota ke
                     seluruh Jawa dan Bali. Kami berkomitmen memberikan pengalaman perjalanan yang aman, cepat, dan
                     nyaman.
                   </p>
@@ -581,7 +581,7 @@ export default function Home() {
                       </div>
                       <p className="mt-4 text-lg text-gray-700 italic">
                         &quot;Pakai jasa kirim paket express Banyuwangi-Malang, sehari sampai. Harganya juga oke. Mantap
-                        travelbanyuwangi.id!&quot;
+                        Juragan Travel!&quot;
                       </p>
                       <div className="flex items-center mt-6">
                         <div className="relative w-10 h-10">
@@ -675,7 +675,7 @@ export default function Home() {
                       </div>
                       <p className="mt-4 text-lg text-gray-700 italic">
                         &quot;Pakai jasa kirim paket express Banyuwangi-Malang, sehari sampai. Harganya juga oke. Mantap
-                        travelbanyuwangi.id!&quot;
+                        Juragan Travel!&quot;
                       </p>
                       <div className="flex items-center mt-6">
                         <div className="relative w-10 h-10">
@@ -847,7 +847,7 @@ export default function Home() {
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
-                    title="Lokasi travelbanyuwangi.id"
+                    title="Lokasi Juragan Travel"
                   ></iframe>
                 </div>
               </div>

@@ -15,17 +15,17 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | travelbanyuwangi.id",
+  title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | Juragan Travel",
   description:
     "Cari tiket pesawat Banyuwangi? Kami agen resmi tiket pesawat domestik (Garuda, Citilink, Lion) & internasional. Pesan mudah via WA, harga resmi.",
   keywords:
     "tiket pesawat banyuwangi, agen tiket pesawat banyuwangi, harga tiket pesawat banyuwangi, pesan tiket pesawat banyuwangi, tiket pesawat banyuwangi jakarta, tiket pesawat banyuwangi surabaya, tiket pesawat bwx",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | travelbanyuwangi.id",
+    title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | Juragan Travel",
     description: "Agen resmi tiket pesawat domestik & internasional dari Banyuwangi (BWX). Pesan mudah via WA.",
     type: "website",
-    url: "https://travelbanyuwangi.id/layanan/tiket-pesawat",
+    url: "https://juragantravel.com/layanan/tiket-pesawat",
     images: [
       {
         url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Pesawat",
@@ -33,16 +33,16 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | travelbanyuwangi.id",
+    title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | Juragan Travel",
     description: "Agen resmi tiket pesawat domestik & internasional dari Banyuwangi (BWX). Pesan mudah via WA.",
     images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Pesawat"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/layanan/tiket-pesawat",
+    canonical: "https://juragantravel.com/layanan/tiket-pesawat",
   },
 };
 
@@ -52,8 +52,8 @@ const serviceData = {
   serviceType: "Ticket",
   provider: {
     "@type": "TravelAgency",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id/",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com/",
   },
   name: "Penjualan Tiket Pesawat Banyuwangi (Domestik & Internasional)",
   description:
@@ -76,19 +76,19 @@ const breadcrumbData = {
       "@type": "ListItem",
       position: 1,
       name: "Beranda",
-      item: "https://travelbanyuwangi.id/",
+      item: "https://juragantravel.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Layanan",
-      item: "https://travelbanyuwangi.id/layanan",
+      item: "https://juragantravel.com/layanan",
     },
     {
       "@type": "ListItem",
       position: 3,
       name: "Tiket Pesawat",
-      item: "https://travelbanyuwangi.id/layanan/tiket-pesawat",
+      item: "https://juragantravel.com/layanan/tiket-pesawat",
     },
   ],
 };

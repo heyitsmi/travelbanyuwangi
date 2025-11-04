@@ -5,19 +5,19 @@ import Footer from "../components/Footer";
 import { StructuredData } from "../components/SEO";
 
 export const metadata: Metadata = {
-  title: "Syarat dan Ketentuan | travelbanyuwangi.id",
+  title: "Syarat dan Ketentuan | Juragan Travel",
   description:
-    "Harap baca syarat dan ketentuan layanan travelbanyuwangi.id sebelum melakukan pemesanan. Termasuk kebijakan pemesanan, pembayaran, dan pembatalan.",
+    "Harap baca syarat dan ketentuan layanan Juragan Travel sebelum melakukan pemesanan. Termasuk kebijakan pemesanan, pembayaran, dan pembatalan.",
   keywords:
     "syarat dan ketentuan travel, kebijakan travel banyuwangi, terms and conditions travel",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   robots: "index, follow",
   openGraph: {
-    title: "Syarat dan Ketentuan | travelbanyuwangi.id",
+    title: "Syarat dan Ketentuan | Juragan Travel",
     description:
-      "Kebijakan layanan travelbanyuwangi.id terkait pemesanan, pembayaran, dan pembatalan.",
+      "Kebijakan layanan Juragan Travel terkait pemesanan, pembayaran, dan pembatalan.",
     type: "website",
-    url: "https://travelbanyuwangi.id/syarat-ketentuan",
+    url: "https://juragantravel.com/syarat-ketentuan",
     images: [
       {
         url: "https://placehold.co/1200x630/1E293B/FFFFFF?text=Syarat+Ketentuan",
@@ -25,17 +25,17 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Syarat dan Ketentuan | travelbanyuwangi.id",
+    title: "Syarat dan Ketentuan | Juragan Travel",
     description:
-      "Kebijakan layanan travelbanyuwangi.id terkait pemesanan, pembayaran, dan pembatalan.",
+      "Kebijakan layanan Juragan Travel terkait pemesanan, pembayaran, dan pembatalan.",
     images: ["https://placehold.co/1200x630/1E293B/FFFFFF?text=Syarat+Ketentuan"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/syarat-ketentuan",
+    canonical: "https://juragantravel.com/syarat-ketentuan",
   },
   icons: {
     icon: "https://placehold.co/32x32/0077B6/FFFFFF?text=T",
@@ -47,12 +47,12 @@ const webPageData = {
   "@type": "WebPage",
   name: "Syarat dan Ketentuan",
   description:
-    "Kebijakan layanan travelbanyuwangi.id terkait pemesanan, pembayaran, dan pembatalan.",
-  url: "https://travelbanyuwangi.id/syarat-ketentuan",
+    "Kebijakan layanan Juragan Travel terkait pemesanan, pembayaran, dan pembatalan.",
+  url: "https://juragantravel.com/syarat-ketentuan",
   publisher: {
     "@type": "Organization",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com",
   },
 };
 
@@ -95,7 +95,7 @@ export default function SyaratKetentuanPage() {
 
                 <p>
                   Dengan melakukan pemesanan dan menggunakan layanan dari{" "}
-                  <strong>travelbanyuwangi.id</strong>, Anda (&quot;Pelanggan&quot;) dianggap telah membaca,
+                  <strong>Juragan Travel</strong>, Anda (&quot;Pelanggan&quot;) dianggap telah membaca,
                   memahami, dan menyetujui semua syarat dan ketentuan yang tercantum di bawah ini.
                 </p>
 
@@ -170,7 +170,7 @@ export default function SyaratKetentuanPage() {
                     </ul>
                   </li>
                   <li>
-                    <strong>Pembatalan oleh travelbanyuwangi.id:</strong>
+                    <strong>Pembatalan oleh Juragan Travel:</strong>
                     <ul className="list-disc pl-6 mt-2 space-y-1">
                       <li>
                         Kami berhak membatalkan perjalanan jika terjadi kondisi di luar kendali (Force Majeure)

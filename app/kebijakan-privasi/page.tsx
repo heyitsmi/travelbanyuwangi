@@ -5,17 +5,17 @@ import Footer from "../components/Footer";
 import { StructuredData } from "../components/SEO";
 
 export const metadata: Metadata = {
-  title: "Kebijakan Privasi | travelbanyuwangi.id",
+  title: "Kebijakan Privasi | Juragan Travel",
   description:
-    "Kebijakan privasi travelbanyuwangi.id. Kami menghargai privasi Anda dan berkomitmen melindungi data pribadi pelanggan kami.",
+    "Kebijakan privasi Juragan Travel. Kami menghargai privasi Anda dan berkomitmen melindungi data pribadi pelanggan kami.",
   keywords: "kebijakan privasi travel, privacy policy travel banyuwangi",
-  authors: [{ name: "travelbanyuwangi.id" }],
+  authors: [{ name: "Juragan Travel" }],
   robots: "index, follow",
   openGraph: {
-    title: "Kebijakan Privasi | travelbanyuwangi.id",
+    title: "Kebijakan Privasi | Juragan Travel",
     description: "Kami menghargai privasi Anda dan berkomitmen melindungi data pribadi pelanggan kami.",
     type: "website",
-    url: "https://travelbanyuwangi.id/kebijakan-privasi",
+    url: "https://juragantravel.com/kebijakan-privasi",
     images: [
       {
         url: "https://placehold.co/1200x630/1E293B/FFFFFF?text=Kebijakan+Privasi",
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    siteName: "travelbanyuwangi.id",
+    siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kebijakan Privasi | travelbanyuwangi.id",
+    title: "Kebijakan Privasi | Juragan Travel",
     description: "Kami menghargai privasi Anda dan berkomitmen melindungi data pribadi pelanggan kami.",
     images: ["https://placehold.co/1200x630/1E293B/FFFFFF?text=Kebijakan+Privasi"],
   },
   alternates: {
-    canonical: "https://travelbanyuwangi.id/kebijakan-privasi",
+    canonical: "https://juragantravel.com/kebijakan-privasi",
   },
   icons: {
     icon: "https://placehold.co/32x32/0077B6/FFFFFF?text=T",
@@ -44,12 +44,12 @@ const webPageData = {
   "@type": "WebPage",
   name: "Kebijakan Privasi",
   description:
-    "Kebijakan privasi travelbanyuwangi.id terkait pengumpulan, penggunaan, dan perlindungan data pribadi pelanggan.",
-  url: "https://travelbanyuwangi.id/kebijakan-privasi",
+    "Kebijakan privasi Juragan Travel terkait pengumpulan, penggunaan, dan perlindungan data pribadi pelanggan.",
+  url: "https://juragantravel.com/kebijakan-privasi",
   publisher: {
     "@type": "Organization",
-    name: "travelbanyuwangi.id",
-    url: "https://travelbanyuwangi.id",
+    name: "Juragan Travel",
+    url: "https://juragantravel.com",
   },
 };
 
@@ -92,7 +92,7 @@ export default function KebijakanPrivasiPage() {
                 <p className="text-xl text-gray-600 mb-8">Pembaruan terakhir: {currentDate}</p>
 
                 <p>
-                  Terima kasih telah mengunjungi <strong>travelbanyuwangi.id</strong>. Kebijakan Privasi ini
+                  Terima kasih telah mengunjungi <strong>Juragan Travel</strong>. Kebijakan Privasi ini
                   menjelaskan bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan melindungi informasi
                   pribadi Anda saat Anda menggunakan layanan kami atau mengunjungi situs web kami.
                 </p>
