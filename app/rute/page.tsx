@@ -59,13 +59,22 @@ const itemListData = {
       position: 2,
       item: {
         "@type": "Service",
+        name: "Travel Banyuwangi - Bandara Juanda",
+        url: "https://travelbanyuwangi.id/rute/banyuwangi-juanda",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      item: {
+        "@type": "Service",
         name: "Travel Banyuwangi - Malang",
         url: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
       },
     },
     {
       "@type": "ListItem",
-      position: 3,
+      position: 4,
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Denpasar",
@@ -74,7 +83,7 @@ const itemListData = {
     },
     {
       "@type": "ListItem",
-      position: 4,
+      position: 5,
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Solo",
@@ -83,7 +92,7 @@ const itemListData = {
     },
     {
       "@type": "ListItem",
-      position: 5,
+      position: 6,
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Tulungagung",
@@ -119,6 +128,13 @@ const routes = [
     image: "/img/rute/banyuwangi-surabaya.webp",
     alt: "Rute travel Banyuwangi ke Surabaya",
     link: "/rute/banyuwangi-surabaya",
+  },
+  {
+    title: "Banyuwangi - Bandara Juanda",
+    description: "Layanan khusus bandara, tepat waktu untuk jadwal penerbangan Anda.",
+    image: "/img/armada.webp",
+    alt: "Rute travel Banyuwangi ke Bandara Juanda",
+    link: "/rute/banyuwangi-juanda",
   },
   {
     title: "Banyuwangi - Malang",

@@ -99,7 +99,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/rute/banyuwangi-surabaya" className="hover:text-white transition-colors">
+                <Link href="/rute/banyuwangi-juanda" className="hover:text-white transition-colors">
                   Travel Banyuwangi - Juanda
                 </Link>
               </li>
