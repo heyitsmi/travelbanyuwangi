@@ -33,7 +33,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', var(--font-geist-sans), sans-serif;
+  font-family: 'Inter', var(--font-geist-sans), sans-serif !important;
 }
 
 /* Marquee animation for testimonials */
