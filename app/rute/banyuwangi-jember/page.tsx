@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/rute/banyuwangi-jember",
     images: [
       {
-        url: "/img/hero.webp",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
         alt: "Travel Banyuwangi Jember"
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi - Jember (PP) | Jadwal & Harga | Juragan Travel",
     description: "Jadwal & harga travel Banyuwangi ke Jember (PP) terbaru. Layanan door-to-door, carter, dan drop-off.",
-    images: ["/img/hero.webp"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   robots: {
     index: true,

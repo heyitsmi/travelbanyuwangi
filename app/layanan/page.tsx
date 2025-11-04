@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/layanan",
     images: [
       {
-        url: "/img/hero.webp",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Layanan Kami | Agen Travel Banyuwangi | Juragan Travel",
     description: "Jelajahi semua layanan Juragan Travel: Travel, Tiket, Visa, Wisata Wali, Umroh, dan Paket Express.",
-    images: ["/img/hero.webp"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/layanan",

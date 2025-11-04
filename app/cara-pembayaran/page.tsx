@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/cara-pembayaran",
     images: [
       {
-        url: "/img/hero.webp",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cara Pembayaran | Juragan Travel",
     description: "Metode pembayaran yang kami terima: Tunai (Cash), Transfer Bank, dan QRIS.",
-    images: ["/img/hero.webp"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/cara-pembayaran",

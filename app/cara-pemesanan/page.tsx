@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/cara-pemesanan",
     images: [
       {
-        url: "/img/hero.webp",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Cara Pemesanan | Juragan Travel",
     description:
       "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah via WhatsApp.",
-    images: ["/img/hero.webp"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/cara-pemesanan",

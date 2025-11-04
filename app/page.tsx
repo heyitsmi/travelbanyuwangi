@@ -36,18 +36,22 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/",
     images: [
       {
-        url: "/img/hero.webp",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
+        alt: "Travel Banyuwangi - Juragan Travel",
       },
     ],
     siteName: "Juragan Travel",
+    locale: "id_ID",
   },
   twitter: {
     card: "summary_large_image",
     title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | Juragan Travel",
     description: "Layanan travel antar kota aman & nyaman. Berangkat setiap hari.",
-    images: ["/img/hero.webp"],
+    images: ["https://juragantravel.com/img/hero.webp"],
+    creator: "@juragantravel",
+    site: "@juragantravel",
   },
   alternates: {
     canonical: "https://juragantravel.com/",

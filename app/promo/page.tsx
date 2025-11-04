@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/promo",
     images: [
       {
-        url: "/img/hero.webp",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Promo & Penawaran Spesial | Juragan Travel",
     description:
       "Dapatkan promo travel Banyuwangi terbaru. Diskon spesial rute Surabaya, Malang, Denpasar.",
-    images: ["/img/hero.webp"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/promo",

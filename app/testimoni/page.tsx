@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/testimoni",
     images: [
       {
-        url: "/img/hero.webp",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },

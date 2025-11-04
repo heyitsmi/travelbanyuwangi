@@ -15,19 +15,22 @@ export const metadata: Metadata = {
     url: 'https://juragantravel.com/kontak',
     images: [
       {
-        url: '/img/hero.webp',
+        url: 'https://juragantravel.com/img/hero.webp',
         width: 1200,
         height: 630,
         alt: 'Kontak Juragan Travel',
       },
     ],
     siteName: 'Juragan Travel',
+    locale: 'id_ID',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Kontak Kami | Juragan Travel',
     description: 'Hubungi kami untuk pemesanan travel, paket wisata, atau layanan lainnya. Tersedia via WhatsApp 24 jam.',
-    images: ['/img/hero.webp'],
+    images: ['https://juragantravel.com/img/hero.webp'],
+    creator: '@juragantravel',
+    site: '@juragantravel',
   },
   robots: {
     index: true,

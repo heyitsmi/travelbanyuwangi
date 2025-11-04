@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/rute/banyuwangi-ngurah-rai",
     images: [
       {
-        url: "/img/hero.webp",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
         alt: "Travel Banyuwangi Ngurah Rai"
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi - Bandara Ngurah Rai (PP) | Jadwal & Harga | Juragan Travel",
     description: "Jadwal & harga travel Banyuwangi ke Bandara Ngurah Rai (PP) terbaru. Layanan door-to-door, carter, dan drop-off.",
-    images: ["/img/hero.webp"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   robots: {
     index: true,
