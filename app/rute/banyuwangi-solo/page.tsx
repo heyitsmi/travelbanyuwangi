@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { StructuredData } from "../../components/SEO";
 import { Zap, Home, Building2, ChevronDown } from "lucide-react";
+import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Solo (PP) - Jadwal & Harga Terbaru | travelbanyuwangi.id",
@@ -318,6 +319,22 @@ export default function BanyuwangiSoloPage() {
                   ))}
                 </div>
               </div>
+            </div>
+          </section>
+
+          {/* Form Pemesanan Section */}
+          <section id="form-pemesanan" className="py-20 bg-white">
+            <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+                  Pesan Travel Banyuwangi - Solo
+                </h2>
+                <p className="mt-4 text-lg text-gray-600">
+                  Isi formulir di bawah ini untuk pesan tiket travel dengan mudah dan cepat
+                </p>
+              </div>
+
+              <BookingForm routeName="Banyuwangi → Solo" />
             </div>
           </section>
 
