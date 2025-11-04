@@ -1,6 +1,6 @@
 ---
 title: "Diskon Rp 10.000,- Rute Surabaya"
-description: "Dapatkan potongan harga Rp 10.000,- untuk perjalanan rute Banyuwangi ↔ Surabaya (PP). Berlaku untuk pemesanan via WhatsApp di akhir pekan."
+description: "Dapatkan potongan harga Rp 10.000,- untuk perjalanan rute Banyuwangi - Surabaya (PP). Berlaku untuk pemesanan via WhatsApp di akhir pekan."
 category: "Travel Antar Kota"
 image: "/img/hero.webp"
 active: true
@@ -10,7 +10,7 @@ promoCode: "PROMO SURABAYA"
 
 ## Detail Promo
 
-Nikmati diskon spesial Rp 10.000,- untuk perjalanan travel Banyuwangi ↔ Surabaya (pulang-pergi).
+Nikmati diskon spesial Rp 10.000,- untuk perjalanan travel Banyuwangi - Surabaya (pulang-pergi).
 
 ## Syarat & Ketentuan
 

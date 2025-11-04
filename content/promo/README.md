@@ -74,7 +74,7 @@ promoCode: "MALANG20"
 
 ## Detail Promo
 
-Nikmati diskon 20% untuk perjalanan travel Banyuwangi ↔ Malang (pulang-pergi).
+Nikmati diskon 20% untuk perjalanan travel Banyuwangi - Malang (pulang-pergi).
 Promo berlaku untuk semua jadwal keberangkatan!
 
 ## Syarat & Ketentuan

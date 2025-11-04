@@ -104,7 +104,7 @@ const breadcrumbData = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Banyuwangi ↔ Tulungagung",
+      name: "Banyuwangi - Tulungagung",
       item: "https://travelbanyuwangi.id/rute/banyuwangi-tulungagung",
     },
   ],
@@ -194,9 +194,9 @@ export default function BanyuwangiTulungagungPage() {
                   Rute
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <span className="text-dark font-medium">Banyuwangi ↔ Tulungagung</span>
+                <span className="text-dark font-medium">Banyuwangi - Tulungagung</span>
               </nav>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi ↔ Tulungagung (PP)</h1>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Tulungagung (PP)</h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
                 Jadwal travel Banyuwangi Tulungagung berangkat setiap hari (pagi & malam). Layanan door-to-door, aman,
                 nyaman, melayani juga Blitar dan Kediri.

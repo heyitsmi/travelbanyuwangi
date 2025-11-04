@@ -104,7 +104,7 @@ const breadcrumbData = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Banyuwangi ↔ Surabaya",
+      name: "Banyuwangi - Surabaya",
       item: "https://travelbanyuwangi.id/rute/banyuwangi-surabaya",
     },
   ],
@@ -199,9 +199,9 @@ export default function BanyuwangiSurabayaPage() {
                   Rute
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <span className="text-dark font-medium">Banyuwangi ↔ Surabaya</span>
+                <span className="text-dark font-medium">Banyuwangi - Surabaya</span>
               </nav>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi ↔ Surabaya (PP)</h1>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Surabaya (PP)</h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
                 Jadwal travel Banyuwangi Surabaya via tol berangkat setiap hari (pagi, siang, malam). Layanan
                 door-to-door, aman, dan nyaman.

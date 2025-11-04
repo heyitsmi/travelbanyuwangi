@@ -112,7 +112,7 @@ export default function LayananPage() {
                       <h3 className="text-xl font-bold text-primary">Travel Antar Kota</h3>
                     </div>
                     <p className="mt-2 text-gray-600">
-                      Layanan door-to-door rute Banyuwangi ↔ Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota
+                      Layanan door-to-door rute Banyuwangi - Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota
                       lainnya.
                     </p>
                   </div>

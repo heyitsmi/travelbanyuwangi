@@ -104,7 +104,7 @@ const breadcrumbData = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Banyuwangi ↔ Solo",
+      name: "Banyuwangi - Solo",
       item: "https://travelbanyuwangi.id/rute/banyuwangi-solo",
     },
   ],
@@ -194,9 +194,9 @@ export default function BanyuwangiSoloPage() {
                   Rute
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <span className="text-dark font-medium">Banyuwangi ↔ Solo</span>
+                <span className="text-dark font-medium">Banyuwangi - Solo</span>
               </nav>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi ↔ Solo (PP)</h1>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Solo (PP)</h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
                 Jadwal travel Banyuwangi Solo berangkat setiap hari (pagi & malam). Layanan door-to-door, aman, nyaman
                 via Tol Transjawa, melayani juga Jogja.

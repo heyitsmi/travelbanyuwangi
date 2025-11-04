@@ -104,7 +104,7 @@ const breadcrumbData = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Banyuwangi ↔ Malang",
+      name: "Banyuwangi - Malang",
       item: "https://travelbanyuwangi.id/rute/banyuwangi-malang",
     },
   ],
@@ -194,9 +194,9 @@ export default function BanyuwangiMalangPage() {
                   Rute
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <span className="text-dark font-medium">Banyuwangi ↔ Malang</span>
+                <span className="text-dark font-medium">Banyuwangi - Malang</span>
               </nav>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi ↔ Malang (PP)</h1>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Malang (PP)</h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
                 Jadwal travel Banyuwangi Malang berangkat setiap hari (pagi, siang, malam). Layanan door-to-door, aman,
                 dan nyaman ke kota wisata.

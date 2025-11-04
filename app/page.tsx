@@ -242,7 +242,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-primary">Banyuwangi ↔ Surabaya</h3>
+                    <h3 className="text-2xl font-bold text-primary">Banyuwangi - Surabaya</h3>
                     <p className="mt-2 text-gray-600">
                       Perjalanan nyaman via tol, dijemput di rumah dan diantar sampai tujuan.
                     </p>
@@ -266,7 +266,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-primary">Banyuwangi ↔ Malang</h3>
+                    <h3 className="text-2xl font-bold text-primary">Banyuwangi - Malang</h3>
                     <p className="mt-2 text-gray-600">
                       Armada terbaik menuju kota pendidikan dan wisata. Berangkat setiap hari.
                     </p>
@@ -290,7 +290,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-primary">Banyuwangi ↔ Denpasar</h3>
+                    <h3 className="text-2xl font-bold text-primary">Banyuwangi - Denpasar</h3>
                     <p className="mt-2 text-gray-600">
                       Lintasi selat Bali dengan aman dan nyaman, langsung ke tujuan Anda di Denpasar.
                     </p>
@@ -314,7 +314,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-primary">Banyuwangi ↔ Solo</h3>
+                    <h3 className="text-2xl font-bold text-primary">Banyuwangi - Solo</h3>
                     <p className="mt-2 text-gray-600">
                       Jelajahi Jawa Tengah dengan layanan travel via tol yang cepat dan aman.
                     </p>
@@ -338,7 +338,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-2xl font-bold text-primary">Banyuwangi ↔ Tulungagung</h3>
+                    <h3 className="text-2xl font-bold text-primary">Banyuwangi - Tulungagung</h3>
                     <p className="mt-2 text-gray-600">
                       Layanan rute selatan Jawa Timur, melayani juga Blitar dan Kediri.
                     </p>

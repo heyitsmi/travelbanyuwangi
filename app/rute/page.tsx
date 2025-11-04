@@ -114,35 +114,35 @@ const breadcrumbData = {
 
 const routes = [
   {
-    title: "Banyuwangi ↔ Surabaya",
+    title: "Banyuwangi - Surabaya",
     description: "Perjalanan nyaman via tol, dijemput di rumah dan diantar sampai tujuan.",
     image: "/img/rute/banyuwangi-surabaya.webp",
     alt: "Rute travel Banyuwangi ke Surabaya",
     link: "/rute/banyuwangi-surabaya",
   },
   {
-    title: "Banyuwangi ↔ Malang",
+    title: "Banyuwangi - Malang",
     description: "Armada terbaik menuju kota pendidikan dan wisata. Berangkat setiap hari.",
     image: "/img/rute/banyuwangi-malang.webp",
     alt: "Rute travel Banyuwangi ke Malang",
     link: "/rute/banyuwangi-malang",
   },
   {
-    title: "Banyuwangi ↔ Denpasar",
+    title: "Banyuwangi - Denpasar",
     description: "Lintasi selat Bali dengan aman dan nyaman, langsung ke tujuan Anda.",
     image: "/img/rute/banyuwangi-denpasar.webp",
     alt: "Rute travel Banyuwangi ke Denpasar Bali",
     link: "/rute/banyuwangi-denpasar",
   },
   {
-    title: "Banyuwangi ↔ Solo",
+    title: "Banyuwangi - Solo",
     description: "Jelajahi Jawa Tengah dengan layanan travel via tol yang cepat dan aman.",
     image: "/img/rute/banyuwangi-solo.webp",
     alt: "Rute travel Banyuwangi ke Solo",
     link: "/rute/banyuwangi-solo",
   },
   {
-    title: "Banyuwangi ↔ Tulungagung",
+    title: "Banyuwangi - Tulungagung",
     description: "Layanan rute selatan Jawa Timur, melayani juga Blitar dan Kediri.",
     image: "/img/rute/banyuwangi-tulungagung.webp",
     alt: "Rute travel Banyuwangi ke Tulungagung",

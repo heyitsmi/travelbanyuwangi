@@ -105,31 +105,31 @@ const breadcrumbData = {
 const routes = [
   {
     icon: PackageCheck,
-    title: "Banyuwangi ↔ Surabaya",
+    title: "Banyuwangi - Surabaya",
     description: "Paket tiba di hari yang sama.",
     color: "text-primary",
   },
   {
     icon: PackageCheck,
-    title: "Banyuwangi ↔ Malang",
+    title: "Banyuwangi - Malang",
     description: "Paket tiba di hari yang sama.",
     color: "text-primary",
   },
   {
     icon: PackageCheck,
-    title: "Banyuwangi ↔ Denpasar",
+    title: "Banyuwangi - Denpasar",
     description: "Paket tiba di hari yang sama.",
     color: "text-primary",
   },
   {
     icon: PackageCheck,
-    title: "Banyuwangi ↔ Jember",
+    title: "Banyuwangi - Jember",
     description: "Paket tiba di hari yang sama.",
     color: "text-primary",
   },
   {
     icon: PackageCheck,
-    title: "Banyuwangi ↔ Solo",
+    title: "Banyuwangi - Solo",
     description: "Tiba esok hari (Next Day).",
     color: "text-primary",
   },

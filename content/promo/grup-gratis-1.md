@@ -33,8 +33,8 @@ Promo spesial untuk travel bersama rombongan! Ajak 10 orang teman atau keluarga,
 
 ## Rute yang Tersedia
 
-- Banyuwangi ↔ Surabaya
-- Banyuwangi ↔ Malang
-- Banyuwangi ↔ Denpasar
-- Banyuwangi ↔ Solo
-- Banyuwangi ↔ Tulungagung
+- Banyuwangi - Surabaya
+- Banyuwangi - Malang
+- Banyuwangi - Denpasar
+- Banyuwangi - Solo
+- Banyuwangi - Tulungagung

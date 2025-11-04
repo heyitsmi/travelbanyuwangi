@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { User, Phone, MapPin, Calendar, Users, CreditCard, MessageSquare } from "lucide-react";
+import { Phone } from "lucide-react";
 
 interface BookingFormProps {
   routeName: string;
@@ -59,7 +59,6 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
         {/* Nama */}
         <div>
           <label htmlFor="nama" className="block text-sm font-semibold text-dark mb-2">
-            <User className="w-4 h-4 inline mr-2" />
             Nama Lengkap <span className="text-red-500">*</span>
           </label>
           <input
@@ -77,7 +76,6 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
         {/* No. HP */}
         <div>
           <label htmlFor="nohp" className="block text-sm font-semibold text-dark mb-2">
-            <Phone className="w-4 h-4 inline mr-2" />
             No. HP (WhatsApp) <span className="text-red-500">*</span>
           </label>
           <input
@@ -96,7 +94,6 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
         {/* Asal (Titik Jemput) */}
         <div>
           <label htmlFor="asal" className="block text-sm font-semibold text-dark mb-2">
-            <MapPin className="w-4 h-4 inline mr-2" />
             Titik Jemput (Asal) <span className="text-red-500">*</span>
           </label>
           <input
@@ -114,7 +111,6 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
         {/* Tujuan (Titik Antar) */}
         <div>
           <label htmlFor="tujuan" className="block text-sm font-semibold text-dark mb-2">
-            <MapPin className="w-4 h-4 inline mr-2" />
             Titik Antar (Tujuan) <span className="text-red-500">*</span>
           </label>
           <input
@@ -132,7 +128,6 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
         {/* Tanggal Keberangkatan */}
         <div>
           <label htmlFor="tanggal" className="block text-sm font-semibold text-dark mb-2">
-            <Calendar className="w-4 h-4 inline mr-2" />
             Tanggal Keberangkatan <span className="text-red-500">*</span>
           </label>
           <input
@@ -150,7 +145,6 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
         {/* Jumlah Penumpang */}
         <div>
           <label htmlFor="jumlah" className="block text-sm font-semibold text-dark mb-2">
-            <Users className="w-4 h-4 inline mr-2" />
             Jumlah Penumpang <span className="text-red-500">*</span>
           </label>
           <select
@@ -172,7 +166,6 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
         {/* Metode Pembayaran */}
         <div className="md:col-span-2">
           <label htmlFor="pembayaran" className="block text-sm font-semibold text-dark mb-2">
-            <CreditCard className="w-4 h-4 inline mr-2" />
             Metode Pembayaran <span className="text-red-500">*</span>
           </label>
           <select
@@ -192,7 +185,6 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
         {/* Catatan Tambahan */}
         <div className="md:col-span-2">
           <label htmlFor="catatan" className="block text-sm font-semibold text-dark mb-2">
-            <MessageSquare className="w-4 h-4 inline mr-2" />
             Catatan Tambahan (Opsional)
           </label>
           <textarea

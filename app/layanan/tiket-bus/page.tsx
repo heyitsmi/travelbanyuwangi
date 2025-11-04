@@ -97,32 +97,32 @@ const breadcrumbData = {
 
 const routes = [
   {
-    title: "Banyuwangi ↔ Surabaya",
+    title: "Banyuwangi - Surabaya",
     description: "Jadwal pagi, siang, dan malam.",
     color: "text-primary",
   },
   {
-    title: "Banyuwangi ↔ Malang",
+    title: "Banyuwangi - Malang",
     description: "Berbagai pilihan PO.",
     color: "text-primary",
   },
   {
-    title: "Banyuwangi ↔ Denpasar",
+    title: "Banyuwangi - Denpasar",
     description: "Kelas executive nyaman.",
     color: "text-primary",
   },
   {
-    title: "Banyuwangi ↔ Yogyakarta/Solo",
+    title: "Banyuwangi - Yogyakarta/Solo",
     description: "Perjalanan lintas Jawa.",
     color: "text-accent",
   },
   {
-    title: "Banyuwangi ↔ Jakarta",
+    title: "Banyuwangi - Jakarta",
     description: "Bus malam executive / sleeper.",
     color: "text-accent",
   },
   {
-    title: "Banyuwangi ↔ Bandung",
+    title: "Banyuwangi - Bandung",
     description: "Tersedia via rute utara & selatan.",
     color: "text-accent",
   },

@@ -282,27 +282,27 @@ export default function TravelAntarKotaPage() {
                     </thead>
                     <tbody className="divide-y divide-gray-200">
                       <tr className="hover:bg-gray-50">
-                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi ↔ Surabaya</td>
+                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi - Surabaya</td>
                         <td className="py-4 px-6 text-gray-700">07:00, 13:00, 21:00</td>
                         <td className="py-4 px-6 font-semibold text-gray-900">Rp 150.000</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
-                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi ↔ Malang</td>
+                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi - Malang</td>
                         <td className="py-4 px-6 text-gray-700">07:00, 13:00, 21:00</td>
                         <td className="py-4 px-6 font-semibold text-gray-900">Rp 140.000</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
-                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi ↔ Denpasar</td>
+                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi - Denpasar</td>
                         <td className="py-4 px-6 text-gray-700">08:00, 14:00, 20:00</td>
                         <td className="py-4 px-6 font-semibold text-gray-900">Rp 170.000</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
-                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi ↔ Solo</td>
+                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi - Solo</td>
                         <td className="py-4 px-6 text-gray-700">07:00, 20:00</td>
                         <td className="py-4 px-6 font-semibold text-gray-900">Rp 250.000</td>
                       </tr>
                       <tr className="hover:bg-gray-50">
-                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi ↔ Tulungagung</td>
+                        <td className="py-4 px-6 font-medium text-primary">Banyuwangi - Tulungagung</td>
                         <td className="py-4 px-6 text-gray-700">07:00, 20:00</td>
                         <td className="py-4 px-6 font-semibold text-gray-900">Rp 180.000</td>
                       </tr>
