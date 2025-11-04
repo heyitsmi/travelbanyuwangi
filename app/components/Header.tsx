@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -14,7 +15,7 @@ export default function Header() {
       <nav className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-2xl font-bold text-primary">
-            <img src="/img/brand/juragantravel-dark.webp" alt="Juragan Travel" className="h-8 w-auto" />
+            <Image src="/img/brand/juragantravel-dark.webp" alt="Juragan Travel" width={120} height={32} className="h-8 w-auto" />
           </Link>
 
           <div className="hidden md:flex md:items-center md:space-x-6">

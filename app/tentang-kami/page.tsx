@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://juragantravel.com/tentang-kami',
     images: [
       {
-        url: '/img/hero.webp',
+        url: '/img/about6.webp',
         width: 1200,
         height: 630,
         alt: 'Tentang Kami Juragan Travel',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tentang Kami | Agen Travel Banyuwangi Terpercaya | Juragan Travel',
     description: 'Kenali tim, visi, dan misi Juragan Travel, agen travel pilihan Anda di Banyuwangi.',
-    images: ['/img/hero.webp'],
+    images: ['/img/about6.webp'],
   },
   alternates: {
     canonical: 'https://juragantravel.com/tentang-kami',
@@ -47,7 +47,7 @@ const structuredData = {
     description: 'Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.',
     telephone: '+6282143258744',
     url: 'https://juragantravel.com/',
-    image: '/img/hero.webp',
+    image: '/img/about6.webp',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Jl. Raya Jember No. 1',
@@ -126,7 +126,7 @@ export default function TentangKamiPage() {
               <div className="md:w-1/2">
                 <div className="relative w-full h-96 rounded-lg shadow-xl overflow-hidden">
                   <Image
-                    src="https://placehold.co/600x450/00B894/FFFFFF?text=[Foto+Tim+Juragan Travel]"
+                    src="/img/about6.webp"
                     alt="Tim agen travel Banyuwangi terpercaya Juragan Travel"
                     fill
                     className="object-cover"
@@ -140,12 +140,12 @@ export default function TentangKamiPage() {
                   Profil Perusahaan
                 </span>
                 <h2 className="mt-2 text-3xl md:text-4xl font-extrabold text-dark">
-                  Agen Travel Banyuwangi Terpercaya Sejak 2015
+                  Agen Travel Banyuwangi Terpercaya Sejak 2016
                 </h2>
                 <p className="mt-6 text-lg text-gray-700 leading-relaxed">
                   <strong>Juragan Travel</strong> adalah{' '}
                   <strong>agen travel Banyuwangi terpercaya</strong> yang telah
-                  melayani ribuan pelanggan sejak tahun 2015. Kami berawal dari sebuah
+                  melayani ribuan pelanggan sejak tahun 2016. Kami berawal dari sebuah
                   komitmen untuk menyediakan transportasi yang aman, nyaman, dan tepat
                   waktu dari Banyuwangi ke berbagai kota besar di Jawa dan Bali.
                 </p>

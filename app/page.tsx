@@ -177,44 +177,71 @@ export default function Home() {
           </section>
 
           {/* Keunggulan Section */}
-          <section id="keunggulan" className="py-16 bg-light">
+          <section id="keunggulan" className="py-20 bg-gradient-to-br from-white to-light">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-                <div className="flex flex-col items-center text-center p-4">
-                  <div className="shrink-0 bg-primary text-white p-3 rounded-full shadow-md">
-                    <Truck className="w-7 h-7" />
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-extrabold text-dark leading-tight">
+                  Mengapa Memilih Juragan Travel?
+                </h2>
+                <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                  Kami berkomitmen memberikan pengalaman perjalanan terbaik dengan beragam keunggulan yang membuat Anda nyaman.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                {/* Keunggulan 1: Armada Bersih & Nyaman */}
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary mb-6">
+                    <Truck className="w-8 h-8" />
                   </div>
-                  <h3 className="mt-4 font-semibold text-lg text-dark">Armada Bersih & Nyaman</h3>
+                  <h3 className="text-2xl font-bold text-dark mb-2">Armada Bersih & Nyaman</h3>
+                  <p className="text-gray-600">Kendaraan terbaru, terawat, dan selalu bersih untuk kenyamanan maksimal Anda.</p>
                 </div>
-                <div className="flex flex-col items-center text-center p-4">
-                  <div className="shrink-0 bg-primary text-white p-3 rounded-full shadow-md">
-                    <Clock className="w-7 h-7" />
+
+                {/* Keunggulan 2: Berangkat Setiap Hari */}
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-secondary/10 text-secondary mb-6">
+                    <Clock className="w-8 h-8" />
                   </div>
-                  <h3 className="mt-4 font-semibold text-lg text-dark">Berangkat Setiap Hari</h3>
+                  <h3 className="text-2xl font-bold text-dark mb-2">Berangkat Setiap Hari</h3>
+                  <p className="text-gray-600">Jadwal keberangkatan fleksibel pagi, siang, dan malam, sesuai kebutuhan Anda.</p>
                 </div>
-                <div className="flex flex-col items-center text-center p-4">
-                  <div className="shrink-0 bg-primary text-white p-3 rounded-full shadow-md">
-                    <UserCheck className="w-7 h-7" />
+
+                {/* Keunggulan 3: Driver Berpengalaman */}
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 text-accent mb-6">
+                    <UserCheck className="w-8 h-8" />
                   </div>
-                  <h3 className="mt-4 font-semibold text-lg text-dark">Driver Berpengalaman</h3>
+                  <h3 className="text-2xl font-bold text-dark mb-2">Driver Berpengalaman</h3>
+                  <p className="text-gray-600">Driver kami profesional, ramah, dan menguasai rute, menjamin perjalanan aman.</p>
                 </div>
-                <div className="flex flex-col items-center text-center p-4">
-                  <div className="shrink-0 bg-primary text-white p-3 rounded-full shadow-md">
-                    <Smartphone className="w-7 h-7" />
+
+                {/* Keunggulan 4: Booking Cepat via WA */}
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary mb-6">
+                    <Smartphone className="w-8 h-8" />
                   </div>
-                  <h3 className="mt-4 font-semibold text-lg text-dark">Booking Cepat via WA</h3>
+                  <h3 className="text-2xl font-bold text-dark mb-2">Booking Cepat via WA</h3>
+                  <p className="text-gray-600">Pesan kursi Anda dengan mudah dan respons cepat melalui WhatsApp kami.</p>
                 </div>
-                <div className="flex flex-col items-center text-center p-4">
-                  <div className="shrink-0 bg-primary text-white p-3 rounded-full shadow-md">
-                    <ShieldCheck className="w-7 h-7" />
+
+                {/* Keunggulan 5: Aman & Terpercaya */}
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-secondary/10 text-secondary mb-6">
+                    <ShieldCheck className="w-8 h-8" />
                   </div>
-                  <h3 className="mt-4 font-semibold text-lg text-dark">Aman & Terpercaya</h3>
+                  <h3 className="text-2xl font-bold text-dark mb-2">Aman & Terpercaya</h3>
+                  <p className="text-gray-600">Prioritas kami adalah keamanan Anda. Kami berizin dan memiliki rekam jejak terpercaya.</p>
                 </div>
-                <div className="flex flex-col items-center text-center p-4">
-                  <div className="shrink-0 bg-primary text-white p-3 rounded-full shadow-md">
-                    <CreditCard className="w-7 h-7" />
+
+                {/* Keunggulan 6: Pembayaran Fleksibel */}
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 text-accent mb-6">
+                    <CreditCard className="w-8 h-8" />
                   </div>
-                  <h3 className="mt-4 font-semibold text-lg text-dark">Pembayaran Fleksibel</h3>
+                  <h3 className="text-2xl font-bold text-dark mb-2">Pembayaran Fleksibel</h3>
+                  <p className="text-gray-600">Berbagai metode pembayaran tersedia, mulai dari transfer bank hingga pembayaran tunai.</p>
                 </div>
               </div>
             </div>
@@ -839,16 +866,19 @@ export default function Home() {
                   </a>
                 </div>
 
-                <div className="h-64 md:h-full rounded-lg shadow-xl overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=..."
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    title="Lokasi Juragan Travel"
-                  ></iframe>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-xl z-10"></div>
+                  <div className="relative overflow-hidden rounded-xl shadow-2xl border-4 border-white/20 backdrop-blur-sm h-96">
+                    <Image 
+                      src="/img/contact.webp" 
+                      alt="Kontak Juragan Travel" 
+                      fill
+                      className="object-cover transform hover:scale-105 transition-transform duration-500 filter brightness-110 contrast-105" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"></div>
+                  </div>
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-xl"></div>
+                  <div className="absolute -top-4 -left-4 w-16 h-16 bg-secondary/20 rounded-full blur-lg"></div>
                 </div>
               </div>
             </div>
