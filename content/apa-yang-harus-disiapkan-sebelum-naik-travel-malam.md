@@ -5,7 +5,7 @@ excerpt: "Naik travel malam bisa jadi pilihan nyaman dan efisien untuk perjalana
 date: "2025-11-04"
 author: "Admin Travel"
 category: "Panduan Perjalanan"
-image: "https://placehold.co/800x500/003366/FFFFFF?text=Travel+Malam+Tips"
+image: "/img/blog/cover/apa-yang-harus-disiapkan-sebelum-naik-travel-malam.webp"
 published: true
 ---------------
 

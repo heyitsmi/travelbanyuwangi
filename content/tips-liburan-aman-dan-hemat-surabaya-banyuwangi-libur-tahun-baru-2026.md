@@ -5,7 +5,7 @@ excerpt: "Ingin liburan ke Banyuwangi saat tahun baru tapi khawatir biaya memben
 date: "2025-11-04"
 author: "Admin Travel"
 category: "Panduan Liburan"
-image: "https://placehold.co/800x500/004D40/FFFFFF?text=Liburan+Surabaya+Banyuwangi"
+image: "/img/blog/cover/tips-liburan-aman-dan-hemat-surabaya-banyuwangi-libur-tahun-baru-2026.webp"
 published: true
 ---------------
 
