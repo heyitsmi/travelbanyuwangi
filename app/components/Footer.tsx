@@ -20,16 +20,27 @@ export default function Footer() {
                 <span className="sr-only">Instagram</span>
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <span className="sr-only">TikTok</span>
-                <Music2 className="w-6 h-6" />
-              </a>
             </div>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold text-white">Navigasi Cepat</h4>
             <ul className="mt-4 space-y-2">
+              <li>
+                <Link href="/cara-pembayaran" className="hover:text-white transition-colors">
+                  Cara Pembayaran
+                </Link>
+              </li>
+              <li>
+                <Link href="/pemesanan" className="hover:text-white transition-colors">
+                  Form Pemesanan
+                </Link>
+              </li>
+              <li>
+                <Link href="/cara-pemesanan" className="hover:text-white transition-colors">
+                  Cara Pemesanan
+                </Link>
+              </li>
               <li>
                 <Link href="/tentang-kami" className="hover:text-white transition-colors">
                   Tentang Kami
@@ -38,11 +49,6 @@ export default function Footer() {
               <li>
                 <Link href="/testimoni" className="hover:text-white transition-colors">
                   Testimoni
-                </Link>
-              </li>
-              <li>
-                <Link href="/faq" className="hover:text-white transition-colors">
-                  FAQ
                 </Link>
               </li>
               <li>
