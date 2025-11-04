@@ -169,6 +169,7 @@ export default function Home() {
                 href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Pesan travel Banyuwangi via WhatsApp - Respon cepat 24 jam"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Pesan Sekarang via WhatsApp
@@ -395,6 +396,7 @@ export default function Home() {
                     </p>
                     <a
                       href="#kontak"
+                      title="Hubungi kami untuk informasi rute travel lainnya"
                       className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                     >
                       Hubungi Kami
@@ -515,6 +517,7 @@ export default function Home() {
                   </p>
                   <a
                     href="#kontak"
+                    title="Hubungi Juragan Travel untuk informasi travel Banyuwangi"
                     className="inline-block mt-8 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all"
                   >
                     Hubungi Kami
@@ -737,8 +740,8 @@ export default function Home() {
               <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="group aspect-square relative">
                   <Image
-                    src="https://placehold.co/400x400/CCCCCC/FFFFFF?text=Armada+Luar"
-                    alt="Armada eksterior travel banyuwangi"
+                    src="/img/car/elf.webp"
+                    alt="Armada juragan travel banyuwangi (Elf)"
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
@@ -746,8 +749,8 @@ export default function Home() {
                 </div>
                 <div className="group aspect-square relative">
                   <Image
-                    src="https://placehold.co/400x400/BBBBBB/FFFFFF?text=Interior+Mobil"
-                    alt="Armada interior travel banyuwangi"
+                    src="/img/car/innova.webp"
+                    alt="Armada juragan travel banyuwangi (Innova)"
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
@@ -755,8 +758,8 @@ export default function Home() {
                 </div>
                 <div className="group aspect-square relative">
                   <Image
-                    src="https://placehold.co/400x400/AAAAAA/FFFFFF?text=Kegiatan+Wisata+Wali"
-                    alt="Kegiatan wisata wali"
+                    src="/img/car/veloz.webp"
+                    alt="Armada juragan travel banyuwangi (Veloz)"
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
@@ -764,8 +767,8 @@ export default function Home() {
                 </div>
                 <div className="group aspect-square relative">
                   <Image
-                    src="https://placehold.co/400x400/999999/FFFFFF?text=Pelanggan+Umroh"
-                    alt="Pelanggan umroh travel banyuwangi"
+                    src="/img/car/travello.webp"
+                    alt="Armada juragan travel banyuwangi (Travello)"
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
@@ -860,6 +863,7 @@ export default function Home() {
                     href="https://wa.me/6282143258744"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Pesan travel Banyuwangi sekarang via WhatsApp - Respon cepat 24 jam"
                     className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
                   >
                     Pesan via WhatsApp (Respon Cepat)

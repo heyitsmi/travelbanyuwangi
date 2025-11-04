@@ -11,16 +11,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Kolom 1: About & Social */}
           <div>
-            <Image src="/img/brand/juragantravel-light.webp" alt="Juragan Travel" width={120} height={32} className="h-8 w-auto mb-4" />
+            <Image src="/img/brand/logo-light.webp" alt="Juragan Travel" width={120} height={32} className="h-8 w-auto mb-4" />
             <p className="text-gray-400">
               Travel Aman & Terpercaya dari Banyuwangi untuk seluruh kebutuhan perjalanan Anda.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" title="Ikuti Juragan Travel di Facebook" className="text-gray-400 hover:text-white">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
+              <a href="#" title="Ikuti Juragan Travel di Instagram" className="text-gray-400 hover:text-white">
                 <span className="sr-only">Instagram</span>
                 <Instagram className="w-6 h-6" />
               </a>
@@ -32,37 +32,37 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Navigasi Cepat</h4>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/cara-pembayaran" className="hover:text-white transition-colors">
+                <Link href="/cara-pembayaran" title="Panduan cara pembayaran travel Banyuwangi" className="hover:text-white transition-colors">
                   Cara Pembayaran
                 </Link>
               </li>
               <li>
-                <Link href="/pemesanan" className="hover:text-white transition-colors">
+                <Link href="/pemesanan" title="Form pemesanan travel online - Pesan sekarang" className="hover:text-white transition-colors">
                   Form Pemesanan
                 </Link>
               </li>
               <li>
-                <Link href="/cara-pemesanan" className="hover:text-white transition-colors">
+                <Link href="/cara-pemesanan" title="Panduan cara pemesanan travel step by step" className="hover:text-white transition-colors">
                   Cara Pemesanan
                 </Link>
               </li>
               <li>
-                <Link href="/tentang-kami" className="hover:text-white transition-colors">
+                <Link href="/tentang-kami" title="Tentang Juragan Travel - Profil perusahaan travel Banyuwangi" className="hover:text-white transition-colors">
                   Tentang Kami
                 </Link>
               </li>
               <li>
-                <Link href="/testimoni" className="hover:text-white transition-colors">
+                <Link href="/testimoni" title="Testimoni pelanggan travel Banyuwangi" className="hover:text-white transition-colors">
                   Testimoni
                 </Link>
               </li>
               <li>
-                <Link href="/kontak" className="hover:text-white transition-colors">
+                <Link href="/kontak" title="Kontak Juragan Travel - Hubungi kami sekarang" className="hover:text-white transition-colors">
                   Kontak
                 </Link>
               </li>
               <li>
-                <Link href="/promo" className="hover:text-white transition-colors">
+                <Link href="/promo" title="Promo travel terbaru - Dapatkan harga spesial" className="hover:text-white transition-colors">
                   Promo
                 </Link>
               </li>
@@ -74,37 +74,37 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Layanan Utama</h4>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/layanan/travel-antar-kota" className="hover:text-white transition-colors">
+                <Link href="/layanan/travel-antar-kota" title="Layanan travel antar kota Banyuwangi - Jawa dan Bali" className="hover:text-white transition-colors">
                   Travel Antar Kota
                 </Link>
               </li>
               <li>
-                <Link href="/rute/banyuwangi-tanjung-perak" className="hover:text-white transition-colors">
+                <Link href="/rute/banyuwangi-tanjung-perak" title="Travel Banyuwangi Tanjung Perak - Jadwal dan harga terbaru" className="hover:text-white transition-colors">
                   Travel Banyuwangi - Tanjung Perak
                 </Link>
               </li>
               <li>
-                <Link href="/rute/banyuwangi-surabaya" className="hover:text-white transition-colors">
+                <Link href="/rute/banyuwangi-surabaya" title="Travel Banyuwangi Surabaya - Rute populer setiap hari" className="hover:text-white transition-colors">
                   Travel Banyuwangi - Surabaya
                 </Link>
               </li>
               <li>
-                <Link href="/rute/banyuwangi-denpasar" className="hover:text-white transition-colors">
+                <Link href="/rute/banyuwangi-denpasar" title="Travel Banyuwangi Denpasar Bali - Perjalanan lintas pulau" className="hover:text-white transition-colors">
                   Travel Banyuwangi - Denpasar
                 </Link>
               </li>
               <li>
-                <Link href="/rute/banyuwangi-malang" className="hover:text-white transition-colors">
+                <Link href="/rute/banyuwangi-malang" title="Travel Banyuwangi Malang - Ke kota pendidikan dan wisata" className="hover:text-white transition-colors">
                   Travel Banyuwangi - Malang
                 </Link>
               </li>
               <li>
-                <Link href="/rute/banyuwangi-juanda" className="hover:text-white transition-colors">
+                <Link href="/rute/banyuwangi-juanda" title="Travel Banyuwangi Bandara Juanda - Shuttle bandara terpercaya" className="hover:text-white transition-colors">
                   Travel Banyuwangi - Juanda
                 </Link>
               </li>
               <li>
-                <Link href="/layanan/paket-express" className="hover:text-white transition-colors">
+                <Link href="/layanan/paket-express" title="Jasa kirim paket express - Cepat dan aman same day delivery" className="hover:text-white transition-colors">
                   Jasa Kirim Paket Express
                 </Link>
               </li>
@@ -203,6 +203,7 @@ export default function Footer() {
                   href="https://josjis.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Josjis Studio - Jasa pembuatan website profesional"
                   className="text-accent hover:text-opacity-80 transition-colors font-medium"
                 >
                   Josjis Studio
@@ -213,11 +214,11 @@ export default function Footer() {
 
             {/* Kolom Kanan: Policy Links */}
             <div className="flex flex-wrap gap-4 text-sm">
-              <Link href="/syarat-ketentuan" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/syarat-ketentuan" title="Syarat dan ketentuan penggunaan layanan travel" className="text-gray-400 hover:text-white transition-colors">
                 Syarat & Ketentuan
               </Link>
               <span className="text-gray-600">|</span>
-              <Link href="/kebijakan-privasi" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/kebijakan-privasi" title="Kebijakan privasi dan perlindungan data pelanggan" className="text-gray-400 hover:text-white transition-colors">
                 Kebijakan Privasi
               </Link>
             </div>

@@ -65,23 +65,23 @@ const structuredData = {
 const fleetGallery = [
   {
     id: 1,
-    image: 'https://placehold.co/400x400/CCCCCC/FFFFFF?text=Armada+Luar',
-    alt: 'Armada eksterior travel banyuwangi (Hiace)',
+    image: '/img/car/elf.webp',
+    alt: 'Armada juragan travel banyuwangi (Elf)',
   },
   {
     id: 2,
-    image: 'https://placehold.co/400x400/BBBBBB/FFFFFF?text=Interior+Mobil',
-    alt: 'Armada interior travel banyuwangi (bersih)',
+    image: '/img/car/mobilio.webp',
+    alt: 'Armada juragan travel banyuwangi (Mobilio)',
   },
   {
     id: 3,
-    image: 'https://placehold.co/400x400/AAAAAA/FFFFFF?text=Armada+Elf',
-    alt: 'Armada Elf travel banyuwangi',
+    image: '/img/car/veloz.webp',
+    alt: 'Armada juragan travel banyuwangi (Veloz)',
   },
   {
     id: 4,
-    image: 'https://placehold.co/400x400/999999/FFFFFF?text=Armada+Siap+Berangkat',
-    alt: 'Armada travel banyuwangi siap berangkat',
+    image: '/img/car/innova.webp',
+    alt: 'Armada juragan travel banyuwangi (Innova)',
   },
 ];
 
@@ -129,6 +129,7 @@ export default function TentangKamiPage() {
                     src="/img/about6.webp"
                     alt="Tim agen travel Banyuwangi terpercaya Juragan Travel"
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover"
                   />
                 </div>
@@ -210,6 +211,7 @@ export default function TentangKamiPage() {
                     src={item.image}
                     alt={item.alt}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover rounded-lg shadow-md group-hover:opacity-80 transition-opacity"
                   />
                 </div>
