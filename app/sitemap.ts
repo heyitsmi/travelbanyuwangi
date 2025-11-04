@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getBlogPosts } from '@/lib/blog'
+import { getAllPromos } from '@/lib/promo'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://travelbanyuwangi.id'
@@ -7,12 +8,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Get all blog posts
   const blogPosts = await getBlogPosts()
   
+  // Get all active promos
+  const promos = getAllPromos()
+  
   // Blog post URLs
   const blogUrls = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly' as const,
     priority: 0.6,
+  }))
+
+  // Promo URLs
+  const promoUrls = promos.map((promo) => ({
+    url: `${baseUrl}/promo/${promo.slug}`,
+    lastModified: new Date(promo.frontmatter.validUntil),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
   }))
 
   // Static pages
@@ -40,6 +52,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/promo`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/pemesanan`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/cara-pemesanan`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/cara-pembayaran`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/faq`,
@@ -88,6 +124,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/rute/banyuwangi-juanda`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rute/banyuwangi-ngurah-rai`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rute/banyuwangi-tanjung-perak`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/rute/banyuwangi-malang`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
@@ -107,6 +161,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/rute/banyuwangi-tulungagung`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rute/banyuwangi-sidoarjo`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rute/banyuwangi-pasuruan`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/rute/banyuwangi-jember`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
@@ -182,5 +254,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...routePages,
     ...servicePages,
     ...blogUrls,
+    ...promoUrls,
   ]
 }
