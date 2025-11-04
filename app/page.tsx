@@ -852,7 +852,7 @@ export default function Home() {
                   <div className="mt-8 space-y-4">
                     <div className="flex items-center">
                       <MapPin className="w-6 h-6 mr-3 text-accent" />
-                      <span className="text-lg">Jl. Raya Jember No. 1, Banyuwangi, Jawa Timur</span>
+                      <span className="text-lg">Kec. Bangorejo, Banyuwangi, Jawa Timur</span>
                     </div>
                     <div className="flex items-center">
                       <Phone className="w-6 h-6 mr-3 text-accent" />
