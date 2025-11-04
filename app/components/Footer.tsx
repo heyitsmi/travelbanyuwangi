@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-gray-300 py-16">
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_0.7fr_1.3fr_1.3fr] gap-6 lg:gap-4">
           {/* Kolom 1: About & Social */}
           <div>
             <Image src="/img/brand/logo-light.webp" alt="Juragan Travel" width={120} height={32} className="h-8 w-auto mb-4" />
@@ -117,7 +117,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 mt-1 shrink-0 text-accent" />
-                <span>Jl. Raya Jember No. 1, Banyuwangi, Jawa Timur 68416</span>
+                <span>Kec. Bangorejo, Banyuwangi, Jawa Timur</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 shrink-0 text-accent" />

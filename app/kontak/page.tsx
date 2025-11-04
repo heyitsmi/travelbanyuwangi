@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Smartphone, MapPin, Clock, Mail, Facebook, Instagram, Music2 } from 'lucide-react';
+// Icons tidak digunakan lagi karena kolom informasi kontak dihapus
 
 export const metadata: Metadata = {
   title: 'Kontak Kami | Juragan Travel | Agen Travel Banyuwangi',
@@ -49,7 +49,7 @@ const structuredData = {
     '@type': 'TravelAgency',
     name: 'Juragan Travel',
     telephone: '+6282143258744',
-    email: 'info@Juragan Travel',
+    email: 'hi@juragantravel.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Jl. Raya Jember No. 1',
@@ -59,7 +59,7 @@ const structuredData = {
       addressCountry: 'ID',
     },
     url: 'https://juragantravel.com/',
-    logo: 'https://placehold.co/32x32/0077B6/FFFFFF?text=T',
+    logo: 'https://juragantravel.com/img/brand/logo-dark.webp',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+6282143258744',
@@ -69,8 +69,8 @@ const structuredData = {
     },
     openingHours: 'Mo-Su 00:00-23:59',
     sameAs: [
-      'https://www.facebook.com/Juragan Travel',
-      'https://www.instagram.com/Juragan Travel',
+      'https://www.facebook.com/juragantravel.id',
+      'https://www.instagram.com/juragantravel_id',
     ],
   },
 };
@@ -129,184 +129,100 @@ export default function KontakPage() {
           </div>
         </section>
 
-        {/* Contact Details Section */}
-        <section id="contact-details" className="py-20 bg-white">
-          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              
-              {/* Left Column: Contact Information */}
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-3xl font-bold text-dark">Informasi Kontak</h2>
-                  <p className="mt-2 text-lg text-gray-600">
-                    Cara tercepat menghubungi kami adalah melalui WhatsApp.
-                  </p>
-                </div>
-
-                {/* WhatsApp Button */}
-                <a
-                  href="https://wa.me/6282143258744"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center p-6 bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 transition-all text-left w-full"
-                >
-                  <Smartphone className="w-10 h-10 mr-4 shrink-0" />
-                  <div>
-                    <span className="text-lg font-semibold">
-                      Klik untuk WhatsApp (Respon Cepat)
-                    </span>
-                    <span className="block text-2xl font-bold">0821-4325-8744</span>
-                  </div>
-                </a>
-
-                {/* Other Contact Details */}
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <MapPin className="w-6 h-6 mr-4 text-primary shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-dark">
-                        Alamat Kantor/Garasi
-                      </h3>
-                      <p className="text-gray-700">
-                        Jl. Raya Jember No. 1, Banyuwangi, Jawa Timur 68416
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <Clock className="w-6 h-6 mr-4 text-primary shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-dark">
-                        Jam Operasional
-                      </h3>
-                      <p className="text-gray-700">Senin - Minggu: 24 Jam Non-Stop</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <Mail className="w-6 h-6 mr-4 text-primary shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold text-dark">Email</h3>
-                      <p className="text-gray-700">info@Juragan Travel</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Social Media */}
-                <div>
-                  <h3 className="text-lg font-semibold text-dark mb-3">Ikuti Kami</h3>
-                  <div className="flex space-x-4">
-                    <a
-                      href="#"
-                      className="flex items-center text-gray-600 hover:text-primary"
-                    >
-                      <Facebook className="w-6 h-6 mr-2" /> Facebook
-                    </a>
-                    <a
-                      href="#"
-                      className="flex items-center text-gray-600 hover:text-primary"
-                    >
-                      <Instagram className="w-6 h-6 mr-2" /> Instagram
-                    </a>
-                    <a
-                      href="#"
-                      className="flex items-center text-gray-600 hover:text-primary"
-                    >
-                      <Music2 className="w-6 h-6 mr-2" /> TikTok
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right Column: Contact Form */}
-              <div className="bg-light p-8 rounded-lg shadow-lg">
+        {/* Contact Form Section */}
+        <section id="contact-form" className="py-20 bg-white">
+          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="bg-light p-8 rounded-lg shadow-lg">
+              <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-dark">
-                  Atau, Kirim Pesan di Sini
+                  Kirim Pesan Kepada Kami
                 </h2>
                 <p className="mt-2 text-lg text-gray-600">
                   Kami akan membalas pesan Anda secepatnya.
                 </p>
-
-                <form action="#" method="POST" className="mt-8 space-y-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Nama Lengkap
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        autoComplete="name"
-                        required
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Email
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        autoComplete="email"
-                        required
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Nomor Telepon/WA
-                    </label>
-                    <div className="mt-1">
-                      <input
-                        type="text"
-                        name="phone"
-                        id="phone"
-                        autoComplete="tel"
-                        required
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-sm font-medium text-gray-700"
-                    >
-                      Pesan
-                    </label>
-                    <div className="mt-1">
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        required
-                        className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div>
-                    <button
-                      type="submit"
-                      className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-lg font-bold text-white bg-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all"
-                    >
-                      Kirim Pesan
-                    </button>
-                  </div>
-                </form>
               </div>
+
+              <form action="#" method="POST" className="mt-8 space-y-6">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Nama Lengkap
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      autoComplete="name"
+                      required
+                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border text-gray-900"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Email
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      autoComplete="email"
+                      required
+                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border text-gray-900"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Nomor Telepon/WA
+                  </label>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      autoComplete="tel"
+                      required
+                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border text-gray-900"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Pesan
+                  </label>
+                  <div className="mt-1">
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows={4}
+                      required
+                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border text-gray-900"
+                    ></textarea>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-lg font-bold text-white bg-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all"
+                  >
+                    Kirim Pesan
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </section>

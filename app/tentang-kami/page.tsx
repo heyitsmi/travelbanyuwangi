@@ -123,7 +123,7 @@ export default function TentangKamiPage() {
             <div className="flex flex-col md:flex-row-reverse items-center gap-12">
               
               {/* Profile Image */}
-              <div className="md:w-1/2">
+              <div className="w-full md:w-1/2">
                 <div className="relative w-full h-96 rounded-lg shadow-xl overflow-hidden">
                   <Image
                     src="/img/about6.webp"
@@ -136,7 +136,7 @@ export default function TentangKamiPage() {
               </div>
 
               {/* Profile Text */}
-              <div className="md:w-1/2">
+              <div className="w-full md:w-1/2">
                 <span className="text-secondary font-semibold uppercase">
                   Profil Perusahaan
                 </span>
