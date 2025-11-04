@@ -202,6 +202,7 @@ export default function TiketBusPage() {
                     src="/img/layanan/tiket-bus.webp"
                     alt="Agen tiket bus executive Banyuwangi"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="rounded-lg shadow-xl object-cover"
                   />
                 </div>

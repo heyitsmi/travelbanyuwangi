@@ -175,6 +175,7 @@ export default function TiketPesawatPage() {
                     src="https://placehold.co/600x450/0077B6/FFFFFF?text=Tiket+Pesawat+Banyuwangi"
                     alt="Agen tiket pesawat Banyuwangi (BWX)"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="rounded-lg shadow-xl object-cover"
                   />
                 </div>

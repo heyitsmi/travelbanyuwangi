@@ -187,6 +187,7 @@ export default function PerjalananDinasPage() {
                     src="/img/layanan/perjalanan-dinas.webp"
                     alt="Jasa travel perjalanan dinas Banyuwangi"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="rounded-lg shadow-xl object-cover"
                   />
                 </div>

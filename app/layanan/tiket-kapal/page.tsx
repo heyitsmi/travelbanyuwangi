@@ -216,6 +216,7 @@ export default function TiketKapalPage() {
                     src="https://placehold.co/600x450/0077B6/FFFFFF?text=Kapal+Ferry+Ketapang"
                     alt="Agen tiket kapal Banyuwangi Bali (Ketapang-Gilimanuk)"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="rounded-lg shadow-xl object-cover"
                   />
                 </div>

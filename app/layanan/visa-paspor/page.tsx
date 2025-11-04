@@ -215,6 +215,7 @@ export default function VisaPasporPage() {
                     src="/img/layanan/jasa-paspor.webp"
                     alt="Biro jasa pengurusan visa Banyuwangi"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="rounded-lg shadow-xl object-cover"
                   />
                 </div>

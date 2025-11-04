@@ -216,6 +216,7 @@ export default function PaketExpressPage() {
                     alt="Layanan pengiriman paket cepat Banyuwangi"
                     fill
                     className="rounded-lg shadow-xl object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
                 <div className="md:w-1/2">

@@ -144,6 +144,7 @@ export default async function BlogPage() {
                             src={post.image || '/img/hero.webp'}
                             alt={post.title}
                             fill
+                            sizes="(max-width: 768px) 100vw, 50vw"
                             className="object-cover transition-opacity duration-300 group-hover:opacity-90"
                           />
                         </div>

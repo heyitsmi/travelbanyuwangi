@@ -173,6 +173,7 @@ export default function WisataWali5Page() {
                     src="https://placehold.co/600x450/00B894/FFFFFF?text=Bus+Pariwisata+Wali+Songo"
                     alt="Bus pariwisata untuk paket wisata wali 5 banyuwangi"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="rounded-lg shadow-xl object-cover"
                   />
                 </div>

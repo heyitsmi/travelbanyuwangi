@@ -214,6 +214,7 @@ export default function TestimoniPage() {
                           src={testimonial.avatar}
                           alt="Avatar pelanggan"
                           fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
                           className="rounded-full object-cover"
                         />
                       </div>
