@@ -220,7 +220,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 )}
 
                 {/* Article Content */}
-                <div className="prose prose-lg max-w-none text-lg text-gray-700 leading-relaxed space-y-6 prose-headings:text-dark prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-a:text-primary prose-a:no-underline hover:prose-a:text-accent prose-strong:text-dark prose-strong:font-semibold prose-ul:list-disc prose-ul:ml-6 prose-ol:list-decimal prose-ol:ml-6 prose-li:mb-2 prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-gray-700 prose-img:rounded-lg prose-img:shadow-lg">
+                <div className="blog-content prose prose-lg max-w-none text-lg text-gray-700 leading-relaxed space-y-6">
                   <ReactMarkdown>{post.content}</ReactMarkdown>
                 </div>
 
