@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/layanan/tiket-bus",
     images: [
       {
-        url: "/img/layanan/tiket-bus.webp",
+        url: "https://juragantravel.com/img/layanan/tiket-bus-executive.webp",
         width: 1200,
         height: 630,
       },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | Juragan Travel",
     description:
       "Agen resmi tiket bus executive & malam dari Banyuwangi ke semua tujuan di Jawa & Bali. Pesan mudah via WA.",
-    images: ["/img/layanan/tiket-bus.webp"],
+    images: ["https://juragantravel.com/img/layanan/tiket-bus.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/layanan/tiket-bus",
@@ -199,7 +199,7 @@ export default function TiketBusPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="/img/layanan/tiket-bus.webp"
+                    src="/img/layanan/tiket-bus-executive.webp"
                     alt="Agen tiket bus executive Banyuwangi"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

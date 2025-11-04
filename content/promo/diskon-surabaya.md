@@ -16,7 +16,7 @@ Nikmati diskon spesial Rp 10.000,- untuk perjalanan travel Banyuwangi - Surabaya
 
 - Berlaku untuk pemesanan di akhir pekan (Jumat, Sabtu, Minggu)
 - Pemesanan harus dilakukan via WhatsApp minimal H-1
-- Sebutkan kode promo "PROMO SURABAYA" saat booking
+- Sebutkan kode promo "JURAGAN10" saat booking
 - Tidak dapat digabungkan dengan promo lainnya
 - Berlaku untuk semua jadwal keberangkatan
 - Promo berlaku sampai 31 Desember 2025
@@ -24,6 +24,6 @@ Nikmati diskon spesial Rp 10.000,- untuk perjalanan travel Banyuwangi - Surabaya
 ## Cara Klaim
 
 1. Hubungi admin kami via WhatsApp
-2. Sebutkan kode promo: **PROMO SURABAYA**
+2. Sebutkan kode promo: **JURAGAN10**
 3. Lakukan pemesanan sesuai jadwal yang tersedia
 4. Diskon akan langsung dipotong dari total tagihan

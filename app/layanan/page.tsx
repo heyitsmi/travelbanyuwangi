@@ -118,31 +118,6 @@ export default function LayananPage() {
                   </div>
                 </Link>
 
-                {/* Kartu Layanan 3: Tiket Bus Executive */}
-                <Link
-                  href="/layanan/tiket-bus"
-                  className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
-                >
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="/img/layanan/tiket-bus.webp"
-                      alt="Layanan Tiket Bus Executive"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Bus className="w-6 h-6 text-primary shrink-0" />
-                      <h3 className="text-xl font-bold text-primary">Tiket Bus Executive</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">
-                      Dapatkan tiket bus malam dan bus executive ke berbagai tujuan di Pulau Jawa.
-                    </p>
-                  </div>
-                </Link>
-
                 {/* Kartu Layanan 5: Visa & Paspor */}
                 <Link
                   href="/layanan/visa-paspor"
@@ -150,7 +125,7 @@ export default function LayananPage() {
                 >
                   <div className="relative h-48 w-full">
                     <Image
-                      src="/img/layanan/jasa-paspor.webp"
+                      src="/img/layanan/visa-paspor.webp"
                       alt="Layanan Pengurusan Visa dan Paspor"
                       fill
                       className="object-cover"
@@ -164,56 +139,6 @@ export default function LayananPage() {
                     </div>
                     <p className="mt-2 text-gray-600">
                       Jasa pengurusan dokumen perjalanan Anda (paspor baru, perpanjangan, visa) dengan cepat.
-                    </p>
-                  </div>
-                </Link>
-
-                {/* Kartu Layanan 6: Wisata Wali 5 & 9 */}
-                <Link
-                  href="/layanan/wisata-wali-5"
-                  className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
-                >
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="/img/layanan/wali-9.webp"
-                      alt="Layanan Wisata Wali 5 dan Wali 9"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Building className="w-6 h-6 text-secondary shrink-0" />
-                      <h3 className="text-xl font-bold text-secondary">Wisata Wali 5 & Wali 9</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">
-                      Paket perjalanan rohani ziarah Wali Songo (Wali 5 dan Wali 9) lengkap dengan akomodasi.
-                    </p>
-                  </div>
-                </Link>
-
-                {/* Kartu Layanan 8: Perjalanan Dinas */}
-                <Link
-                  href="/layanan/perjalanan-dinas"
-                  className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
-                >
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src="/img/layanan/perjalanan-dinas.webp"
-                      alt="Layanan Perjalanan Dinas dan Sewa Mobil"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center space-x-3">
-                      <Building className="w-6 h-6 text-accent shrink-0" />
-                      <h3 className="text-xl font-bold text-accent">Perjalanan Dinas</h3>
-                    </div>
-                    <p className="mt-2 text-gray-600">
-                      Penyediaan layanan sewa mobil (charter) dan akomodasi untuk kebutuhan instansi dan perusahaan.
                     </p>
                   </div>
                 </Link>

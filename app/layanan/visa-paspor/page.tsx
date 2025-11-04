@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/layanan/visa-paspor",
     images: [
       {
-        url: "/img/layanan/jasa-paspor.webp",
+        url: "https://juragantravel.com/img/layanan/visa-paspor.webp",
         width: 1200,
         height: 630,
       },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Jasa Pengurusan Visa & Paspor Banyuwangi | Juragan Travel",
     description:
       "Layanan biro jasa cepat & terpercaya untuk pengurusan visa turis, visa umroh, paspor baru, dan perpanjangan paspor di Banyuwangi.",
-    images: ["/img/layanan/jasa-paspor.webp"],
+    images: ["https://juragantravel.com/img/layanan/visa-paspor.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/layanan/visa-paspor",
@@ -212,7 +212,7 @@ export default function VisaPasporPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="/img/layanan/jasa-paspor.webp"
+                    src="/img/layanan/visa-paspor.webp"
                     alt="Biro jasa pengurusan visa Banyuwangi"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
