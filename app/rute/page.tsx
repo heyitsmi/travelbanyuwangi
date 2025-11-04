@@ -117,6 +117,33 @@ const itemListData = {
         url: "https://travelbanyuwangi.id/rute/banyuwangi-tulungagung",
       },
     },
+    {
+      "@type": "ListItem",
+      position: 9,
+      item: {
+        "@type": "Service",
+        name: "Travel Banyuwangi - Sidoarjo",
+        url: "https://travelbanyuwangi.id/rute/banyuwangi-sidoarjo",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 10,
+      item: {
+        "@type": "Service",
+        name: "Travel Banyuwangi - Pasuruan",
+        url: "https://travelbanyuwangi.id/rute/banyuwangi-pasuruan",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 11,
+      item: {
+        "@type": "Service",
+        name: "Travel Banyuwangi - Jember",
+        url: "https://travelbanyuwangi.id/rute/banyuwangi-jember",
+      },
+    },
   ],
 };
 
@@ -197,11 +224,25 @@ const routes = [
     link: "/rute/banyuwangi-tulungagung",
   },
   {
-    title: "Rute Lainnya (Jember, dll)",
-    description: "Kami juga melayani rute-rute transit utama di Jawa Timur.",
-    image: "/img/rute/rute-lainnya.webp",
-    alt: "Rute travel Banyuwangi ke Jember dan Probolinggo",
-    link: "#kontak",
+    title: "Banyuwangi - Sidoarjo",
+    description: "Rute via tol ke kawasan industri Sidoarjo. Dekat Bandara Juanda dan pusat bisnis.",
+    image: "/img/armada.webp",
+    alt: "Rute travel Banyuwangi ke Sidoarjo",
+    link: "/rute/banyuwangi-sidoarjo",
+  },
+  {
+    title: "Banyuwangi - Pasuruan",
+    description: "Rute via tol ke kota industri Pasuruan. Melayani area Bangil, Gempol, dan sekitarnya.",
+    image: "/img/armada.webp",
+    alt: "Rute travel Banyuwangi ke Pasuruan",
+    link: "/rute/banyuwangi-pasuruan",
+  },
+  {
+    title: "Banyuwangi - Jember",
+    description: "Rute lokal populer untuk mahasiswa dan pekerja. Berangkat 3x sehari dengan jadwal pagi, siang, malam.",
+    image: "/img/armada.webp",
+    alt: "Rute travel Banyuwangi ke Jember",
+    link: "/rute/banyuwangi-jember",
   },
 ];
 
