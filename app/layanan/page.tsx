@@ -101,6 +101,9 @@ export default function LayananPage() {
                       alt="Layanan Travel Antar Kota Banyuwangi"
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      loading="eager"
+                      priority
                     />
                   </div>
                   <div className="p-6">
@@ -126,6 +129,7 @@ export default function LayananPage() {
                       alt="Layanan Tiket Bus Executive"
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-6">
@@ -150,6 +154,7 @@ export default function LayananPage() {
                       alt="Layanan Pengurusan Visa dan Paspor"
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-6">
@@ -174,6 +179,7 @@ export default function LayananPage() {
                       alt="Layanan Wisata Wali 5 dan Wali 9"
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-6">
@@ -198,6 +204,7 @@ export default function LayananPage() {
                       alt="Layanan Perjalanan Dinas dan Sewa Mobil"
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-6">
@@ -222,6 +229,7 @@ export default function LayananPage() {
                       alt="Layanan Paket Express"
                       fill
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
                   <div className="p-6">
