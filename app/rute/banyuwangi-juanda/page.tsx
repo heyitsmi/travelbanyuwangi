@@ -62,9 +62,9 @@ export default function BanyuwangiJuandaPage() {
               <span className="text-gray-400 mx-2">/</span>
               <Link href="/rute" className="text-gray-600 hover:text-primary">Rute</Link>
               <span className="text-gray-400 mx-2">/</span>
-              <span className="text-dark font-medium">Banyuwangi ↔ Bandara Juanda</span>
+              <span className="text-dark font-medium">Banyuwangi - Bandara Juanda</span>
             </nav>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi ↔ Bandara Juanda (PP)</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Bandara Juanda (PP)</h1>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
               Jadwal travel Banyuwangi ke Bandara Juanda via tol. Tepat waktu untuk jadwal penerbangan Anda. Layanan door-to-airport aman dan nyaman.
             </p>
@@ -148,7 +148,7 @@ export default function BanyuwangiJuandaPage() {
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
-                      <td className="p-4 font-medium text-gray-700">Carter Drop (Private) Banyuwangi ↔ Juanda</td>
+                      <td className="p-4 font-medium text-gray-700">Carter Drop (Private) Banyuwangi - Juanda</td>
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 750.000</td>
                       <td className="p-4">
@@ -241,7 +241,7 @@ export default function BanyuwangiJuandaPage() {
                     <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                    Harga carter (1 mobil Avanza/Xenia) untuk rute Banyuwangi ↔ Juanda adalah mulai dari <strong>Rp 750.000,-</strong> (All-in: mobil, driver, bbm, tol, parkir). Harga bisa berbeda jika menggunakan unit Innova atau HiAce.
+                    Harga carter (1 mobil Avanza/Xenia) untuk rute Banyuwangi - Juanda adalah mulai dari <strong>Rp 750.000,-</strong> (All-in: mobil, driver, bbm, tol, parkir). Harga bisa berbeda jika menggunakan unit Innova atau HiAce.
                   </p>
                 </details>
 
@@ -251,21 +251,21 @@ export default function BanyuwangiJuandaPage() {
           </div>
         </section>
 
-          {/* Form Pemesanan Section */}
-          <section id="form-pemesanan" className="py-20 bg-white">
-            <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
-                  Pesan Travel Banyuwangi - Bandara Juanda
-                </h2>
-                <p className="mt-4 text-lg text-gray-600">
-                  Isi formulir di bawah ini untuk pesan tiket travel dengan mudah dan cepat
-                </p>
-              </div>
-
-              <BookingForm routeName="Banyuwangi → Juanda" />
+        {/* Form Pemesanan Section */}
+        <section id="form-pemesanan" className="py-20 bg-white">
+        <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+                Pesan Travel Banyuwangi - Bandara Juanda
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+                Isi formulir di bawah ini untuk pesan tiket travel dengan mudah dan cepat
+            </p>
             </div>
-          </section>
+
+            <BookingForm routeName="Banyuwangi → Juanda" />
+        </div>
+        </section>
 
         {/* CTA Section */}
         <section id="kontak" className="py-20 bg-primary text-white">
