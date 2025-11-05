@@ -202,7 +202,7 @@ export default function Footer() {
                 © 2025 Juragan Travel — Dikelola oleh CV Rizky Cella, penyedia layanan travel resmi dari
                 Banyuwangi.
               </p>
-              <p className="text-sm text-gray-500">
+              {/* <p className="text-sm text-gray-500">
                 Website dikembangkan oleh{" "}
                 <a
                   href="https://josjis.com"
@@ -214,7 +214,7 @@ export default function Footer() {
                   Josjis Studio
                 </a>
                 .
-              </p>
+              </p> */}
             </div>
 
             {/* Kolom Kanan: Policy Links */}
