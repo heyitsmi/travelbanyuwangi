@@ -4,6 +4,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { StructuredData } from "../components/SEO";
+import { ChevronDown } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Rute Travel Populer dari Banyuwangi | Juragan Travel",
@@ -166,6 +167,53 @@ const breadcrumbData = {
   ],
 };
 
+const faqData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Rute mana yang paling populer dari Banyuwangi?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Rute paling populer dari Banyuwangi adalah ke Surabaya, Malang, dan Denpasar. Ketiga rute ini memiliki jadwal keberangkatan setiap hari dengan beberapa waktu keberangkatan yang bisa dipilih sesuai kebutuhan Anda.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Berapa lama perjalanan dari Banyuwangi ke Surabaya?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Perjalanan dari Banyuwangi ke Surabaya memakan waktu sekitar 5-6 jam via tol Gempol-Pasuruan-Probolinggo-Banyuwangi (GEPPRO). Waktu tempuh bisa bervariasi tergantung kondisi lalu lintas dan titik penjemputan/pengantaran Anda.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Apakah tersedia layanan travel ke bandara?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ya, kami menyediakan layanan khusus ke Bandara Juanda (Surabaya) dan Bandara Ngurah Rai (Bali). Layanan ini sudah termasuk estimasi waktu tunggu untuk memastikan Anda tiba tepat waktu sesuai jadwal penerbangan.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Bagaimana jika rute tujuan saya tidak ada di daftar?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Jika rute tujuan Anda tidak ada di daftar rute reguler kami, silakan hubungi admin melalui WhatsApp. Kami melayani layanan carter mobil dan drop off ke seluruh tujuan di Jawa dan Bali dengan harga yang kompetitif.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Apakah bisa dijemput dan diantar langsung ke alamat tujuan?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ya, semua layanan travel kami menggunakan sistem door-to-door. Kami akan menjemput Anda di alamat yang Anda tentukan dan mengantar langsung ke alamat tujuan, selama masih dalam area jangkauan rute yang dipilih.",
+      },
+    },
+  ],
+};
+
 const routes = [
   {
     title: "Banyuwangi - Surabaya",
@@ -251,6 +299,7 @@ export default function RutePage() {
     <>
       <StructuredData data={itemListData} />
       <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqData} />
       <div className="bg-white antialiased">
         <Header />
 
@@ -307,6 +356,85 @@ export default function RutePage() {
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section id="faq" className="py-20 bg-light">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Pertanyaan Seputar Rute Travel</h2>
+                <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                  Jawaban untuk pertanyaan yang sering diajukan tentang rute perjalanan kami
+                </p>
+              </div>
+
+              <div className="max-w-3xl mx-auto space-y-6">
+                {/* FAQ 1 */}
+                <details className="bg-white p-6 rounded-lg shadow-md group" open>
+                  <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
+                    Rute mana yang paling populer dari Banyuwangi?
+                    <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
+                  </summary>
+                  <p className="mt-4 text-gray-700 leading-relaxed">
+                    Rute paling populer dari Banyuwangi adalah ke <strong>Surabaya, Malang, dan Denpasar</strong>. 
+                    Ketiga rute ini memiliki jadwal keberangkatan setiap hari dengan beberapa waktu keberangkatan 
+                    yang bisa dipilih sesuai kebutuhan Anda.
+                  </p>
+                </details>
+
+                {/* FAQ 2 */}
+                <details className="bg-white p-6 rounded-lg shadow-md group">
+                  <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
+                    Berapa lama perjalanan dari Banyuwangi ke Surabaya?
+                    <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
+                  </summary>
+                  <p className="mt-4 text-gray-700 leading-relaxed">
+                    Perjalanan dari Banyuwangi ke Surabaya memakan waktu sekitar <strong>5-6 jam</strong> via tol 
+                    Gempol-Pasuruan-Probolinggo-Banyuwangi (GEPPRO). Waktu tempuh bisa bervariasi tergantung kondisi 
+                    lalu lintas dan titik penjemputan/pengantaran Anda.
+                  </p>
+                </details>
+
+                {/* FAQ 3 */}
+                <details className="bg-white p-6 rounded-lg shadow-md group">
+                  <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
+                    Apakah tersedia layanan travel ke bandara?
+                    <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
+                  </summary>
+                  <p className="mt-4 text-gray-700 leading-relaxed">
+                    Ya, kami menyediakan layanan khusus ke <strong>Bandara Juanda (Surabaya)</strong> dan{" "}
+                    <strong>Bandara Ngurah Rai (Bali)</strong>. Layanan ini sudah termasuk estimasi waktu tunggu 
+                    untuk memastikan Anda tiba tepat waktu sesuai jadwal penerbangan.
+                  </p>
+                </details>
+
+                {/* FAQ 4 */}
+                <details className="bg-white p-6 rounded-lg shadow-md group">
+                  <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
+                    Bagaimana jika rute tujuan saya tidak ada di daftar?
+                    <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
+                  </summary>
+                  <p className="mt-4 text-gray-700 leading-relaxed">
+                    Jika rute tujuan Anda tidak ada di daftar rute reguler kami, silakan hubungi admin melalui WhatsApp. 
+                    Kami melayani <strong>layanan carter mobil dan drop off</strong> ke seluruh tujuan di Jawa dan Bali 
+                    dengan harga yang kompetitif.
+                  </p>
+                </details>
+
+                {/* FAQ 5 */}
+                <details className="bg-white p-6 rounded-lg shadow-md group">
+                  <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
+                    Apakah bisa dijemput dan diantar langsung ke alamat tujuan?
+                    <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
+                  </summary>
+                  <p className="mt-4 text-gray-700 leading-relaxed">
+                    Ya, semua layanan travel kami menggunakan sistem <strong>door-to-door</strong>. Kami akan menjemput 
+                    Anda di alamat yang Anda tentukan dan mengantar langsung ke alamat tujuan, selama masih dalam area 
+                    jangkauan rute yang dipilih.
+                  </p>
+                </details>
               </div>
             </div>
           </section>
