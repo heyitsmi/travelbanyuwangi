@@ -52,6 +52,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/cek-harga" title="Cek harga travel antar kota - Estimasi biaya perjalanan" className="hover:text-white transition-colors">
+                  Cek Harga
+                </Link>
+              </li>
+              <li>
                 <Link href="/testimoni" title="Testimoni pelanggan travel Banyuwangi" className="hover:text-white transition-colors">
                   Testimoni
                 </Link>

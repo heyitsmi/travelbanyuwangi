@@ -50,6 +50,15 @@ export default function Header() {
               Blog
             </Link>
             <Link
+              href="/cek-harga"
+              title="Cek Harga Travel - Dapatkan estimasi biaya perjalanan Anda"
+              className={`${
+                pathname === "/cek-harga" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
+            >
+              Cek Harga
+            </Link>
+            <Link
               href="/faq"
               title="FAQ - Pertanyaan yang sering diajukan tentang layanan travel"
               className={`${
@@ -118,6 +127,16 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
+            </Link>
+            <Link
+              href="/cek-harga"
+              title="Cek Harga Travel - Dapatkan estimasi biaya perjalanan Anda"
+              className={`block ${
+                pathname === "/cek-harga" ? "text-primary font-semibold" : "text-gray-700"
+              } hover:text-primary transition-colors`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Cek Harga
             </Link>
             <Link
               href="/faq"
