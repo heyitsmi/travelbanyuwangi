@@ -154,6 +154,15 @@ const itemListData = {
         url: "https://juragantravel.com/rute/banyuwangi-jember",
       },
     },
+    {
+      "@type": "ListItem",
+      position: 13,
+      item: {
+        "@type": "Service",
+        name: "Travel Banyuwangi - Lumajang",
+        url: "https://juragantravel.com/rute/banyuwangi-lumajang",
+      },
+    },
   ],
 };
 
@@ -307,6 +316,13 @@ const routes = [
     image: "/img/armada.webp",
     alt: "Rute travel Banyuwangi ke Jember",
     link: "/rute/banyuwangi-jember",
+  },
+  {
+    title: "Banyuwangi - Lumajang",
+    description: "Rute selatan via Jember menuju Lumajang. Melayani transit ke Bromo dan Semeru.",
+    image: "/img/armada.webp",
+    alt: "Rute travel Banyuwangi ke Lumajang",
+    link: "/rute/banyuwangi-lumajang",
   },
 ];
 
