@@ -120,7 +120,7 @@ export default function BanyuwangiNgurahRaiPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Banyuwangi → Bandara Ngurah Rai</td>
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Pesawat)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 180.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 250.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.toNgurahRai}
@@ -135,7 +135,7 @@ export default function BanyuwangiNgurahRaiPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Bandara Ngurah Rai → Banyuwangi</td>
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Landing)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 180.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 250.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.fromNgurahRai}
@@ -150,7 +150,7 @@ export default function BanyuwangiNgurahRaiPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Carter Drop (Private) Banyuwangi - Ngurah Rai</td>
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 800.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 1.000.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.carter}
@@ -328,7 +328,7 @@ export default function BanyuwangiNgurahRaiPage() {
             "description": "Layanan travel door-to-door antara Banyuwangi dan Bandara I Gusti Ngurah Rai, Bali.",
             "offers": {
               "@type": "Offer",
-              "price": "180000",
+              "price": "250000",
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Ngurah Rai",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",

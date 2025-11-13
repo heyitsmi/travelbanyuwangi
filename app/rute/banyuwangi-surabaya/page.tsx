@@ -76,7 +76,7 @@ const busTripData = {
     "Layanan travel door-to-door antara Banyuwangi dan Surabaya via tol dengan jadwal pagi, siang, dan malam.",
   offers: {
     "@type": "Offer",
-    price: "150000",
+    price: "200000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Surabaya",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
@@ -114,22 +114,22 @@ const schedules = [
   {
     route: "Banyuwangi → Surabaya",
     schedule: "Pagi (09:00), Siang (15:00), Malam (21:00)",
-    price: "Rp 150.000",
+    price: "Rp 200.000",
   },
   {
     route: "Surabaya → Banyuwangi",
     schedule: "Pagi (09:00), Siang (15:00), Malam (21:00)",
-    price: "Rp 150.000",
+    price: "Rp 200.000",
   },
   {
     route: "Banyuwangi → Bandara Juanda",
     schedule: "Hubungi Admin (Menyesuaikan Jadwal)",
-    price: "Rp 170.000",
+    price: "Rp 250.000",
   },
   {
     route: "Bandara Juanda → Banyuwangi",
     schedule: "Hubungi Admin (Menyesuaikan Jadwal)",
-    price: "Rp 170.000",
+    price: "Rp 250.000",
   },
 ];
 

@@ -76,7 +76,7 @@ const busTripData = {
     "Layanan travel door-to-door antara Banyuwangi dan Malang dengan jadwal pagi, siang, dan malam.",
   offers: {
     "@type": "Offer",
-    price: "140000",
+    price: "200000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Malang",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
@@ -114,17 +114,17 @@ const schedules = [
   {
     route: "Banyuwangi → Malang",
     schedule: "Pagi (09:00), Siang (15:00), Malam (21:00)",
-    price: "Rp 140.000",
+    price: "Rp 200.000",
   },
   {
     route: "Malang → Banyuwangi",
     schedule: "Pagi (09:00), Siang (15:00), Malam (21:00)",
-    price: "Rp 140.000",
+    price: "Rp 200.000",
   },
   {
     route: "Banyuwangi → Kota Batu",
     schedule: "Hubungi Admin (Menyesuaikan Jadwal)",
-    price: "Rp 160.000",
+    price: "Rp 230.000",
   },
 ];
 

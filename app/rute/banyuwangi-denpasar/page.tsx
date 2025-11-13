@@ -76,7 +76,7 @@ const busTripData = {
     "Layanan travel door-to-door antara Banyuwangi dan Denpasar (Bali) dengan jadwal pagi, siang, dan malam.",
   offers: {
     "@type": "Offer",
-    price: "160000",
+    price: "200000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Denpasar",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
@@ -114,17 +114,17 @@ const schedules = [
   {
     route: "Banyuwangi → Denpasar",
     schedule: "Pagi (09:00), Siang (15:00), Malam (21:00)",
-    price: "Rp 160.000",
+    price: "Rp 200.000",
   },
   {
     route: "Denpasar → Banyuwangi",
     schedule: "Pagi (09:00), Siang (15:00), Malam (21:00)",
-    price: "Rp 160.000",
+    price: "Rp 200.000",
   },
   {
     route: "Banyuwangi → Kuta / Jimbaran",
     schedule: "Hubungi Admin (Menyesuaikan Jadwal)",
-    price: "Rp 170.000",
+    price: "Rp 200.000",
   },
 ];
 
