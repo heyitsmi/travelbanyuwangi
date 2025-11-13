@@ -1,6 +1,6 @@
 'use client';
 
-import { Facebook, Instagram, Music2, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Music2, MapPin, Phone, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,9 +16,18 @@ export default function Footer() {
               Layanan Travel Banyuwangi yang Aman & Terpercaya untuk seluruh kebutuhan perjalanan Anda — Surabaya, Malang, Denpasar, dan seluruh Jawa–Bali.
             </p>
             <ul className="mt-4 space-y-2">
-              <li><span className="before:content-['•_'] before:mr-1">Armada Bersih</span></li>
-              <li><span className="before:content-['•_'] before:mr-1">Driver Berpengalaman</span></li>
-              <li><span className="before:content-['•_'] before:mr-1">Berangkat Setiap Hari</span></li>
+              <li className="flex items-center">
+                <CheckCircle className="w-4 h-4 text-accent mr-2 shrink-0" />
+                <span>Armada Bersih</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="w-4 h-4 text-accent mr-2 shrink-0" />
+                <span>Driver Berpengalaman</span>
+              </li>
+              <li className="flex items-center">
+                <CheckCircle className="w-4 h-4 text-accent mr-2 shrink-0" />
+                <span>Berangkat Setiap Hari</span>
+              </li>
             </ul>
             <div className="flex space-x-4 mt-6">
               <a href="https://facebook.com/juragantravel.id" title="Ikuti Juragan Travel di Facebook" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">

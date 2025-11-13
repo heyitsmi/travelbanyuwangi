@@ -425,254 +425,254 @@ export default function Home() {
 
               <div className="max-w-5xl mx-auto">
                 <div className="bg-white shadow-xl rounded-lg overflow-hidden">
-                  <div className="overflow-x-auto">
-                    <table className="w-full">
+                  <div className="overflow-x-auto -mx-4 sm:mx-0">
+                    <table className="w-full min-w-[700px]">
                       <thead>
                         <tr className="bg-dark text-white">
-                          <th className="py-4 px-6 text-left font-semibold">Rute Travel</th>
-                          <th className="py-4 px-6 text-center font-semibold">Jadwal</th>
-                          <th className="py-4 px-6 text-right font-semibold">Harga</th>
+                          <th className="py-4 px-4 sm:px-6 text-left font-semibold">Rute Travel</th>
+                          <th className="py-4 px-3 sm:px-6 text-center font-semibold whitespace-nowrap">Jadwal</th>
+                          <th className="py-4 px-4 sm:px-6 text-right font-semibold whitespace-nowrap">Harga</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-gray-200">
                         {/* Rute Utama */}
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-primary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Surabaya</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-primary shrink-0"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Surabaya</span>
                             </div>
                           </td>
-                          <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                          <td className="py-3 px-3 sm:px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
-                          <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          <td className="py-3 px-4 sm:px-6 text-right">
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(200000)}</span>
                           </td>
                         </tr>
                         
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-primary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Malang</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-primary"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Malang</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(200000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-primary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Denpasar</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-primary"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Denpasar</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(200000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Bandara Juanda</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-secondary"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Bandara Juanda</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(200000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Bandara Ngurah Rai</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-secondary"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Bandara Ngurah Rai</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(200000)}</span>
                           </td>
                         </tr>
 
                         {/* Rute Jarak Dekat */}
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-accent"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Jember</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-accent"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Jember</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(150000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(150000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-accent"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Lumajang</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-accent"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Lumajang</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(170000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(170000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-accent"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Probolinggo</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-accent"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Probolinggo</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(200000)}</span>
                           </td>
                         </tr>
 
                         {/* Rute Jarak Jauh */}
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Solo</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-secondary"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Solo</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(400000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(400000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Tulungagung</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-secondary"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Tulungagung</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(400000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(400000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Gresik</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-secondary"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Gresik</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(350000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(350000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-accent"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Sidoarjo</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-accent"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Sidoarjo</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(200000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-accent"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Pasuruan</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-accent"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Pasuruan</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(200000)}</span>
                           </td>
                         </tr>
 
                         <tr className="hover:bg-gray-50 transition-colors">
-                          <td className="py-4 px-6">
-                            <div className="flex items-center space-x-3">
-                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                              <span className="font-semibold text-dark">Banyuwangi - Batu</span>
+                          <td className="py-3 px-4 sm:px-6">
+                            <div className="flex items-center space-x-2 sm:space-x-3">
+                              <div className="w-2 h-2 rounded-full shrink-0 bg-secondary"></div>
+                              <span className="font-semibold text-dark text-sm sm:text-base">Banyuwangi - Batu</span>
                             </div>
                           </td>
                           <td className="py-4 px-6 text-center text-gray-700">
-                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                            <span className="inline-block bg-light px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm whitespace-nowrap">
                               Setiap Hari
                             </span>
                           </td>
                           <td className="py-4 px-6 text-right">
-                            <span className="font-bold text-primary text-lg">{formatPrice(250000)}</span>
+                            <span className="font-bold text-primary text-base sm:text-lg whitespace-nowrap">{formatPrice(250000)}</span>
                           </td>
                         </tr>
                       </tbody>
@@ -714,7 +714,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-2 sm:space-x-3">
                       <CarFront className="w-6 h-6 text-primary shrink-0" />
                       <h3 className="text-xl font-bold text-primary">Travel Antar Kota</h3>
                     </div>
@@ -733,7 +733,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-2 sm:space-x-3">
                       <Bus className="w-6 h-6 text-secondary shrink-0" />
                       <h3 className="text-xl font-bold text-secondary">Tiket Bus Executive, VIP & Sleeper</h3>
                     </div>
@@ -752,7 +752,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-6">
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-2 sm:space-x-3">
                       <PackageCheck className="w-6 h-6 text-accent shrink-0" />
                       <h3 className="text-xl font-bold text-accent">Paket Express</h3>
                     </div>
@@ -847,7 +847,7 @@ export default function Home() {
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="font-semibold text-dark">Ahmad Yusuf</p>
+                          <p className="font-semibold text-dark text-sm sm:text-base">Ahmad Yusuf</p>
                           <p className="text-sm text-gray-500">Pelanggan, Surabaya</p>
                         </div>
                       </div>
@@ -878,7 +878,7 @@ export default function Home() {
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="font-semibold text-dark">Siti Fatimah</p>
+                          <p className="font-semibold text-dark text-sm sm:text-base">Siti Fatimah</p>
                           <p className="text-sm text-gray-500">Pelanggan, Denpasar</p>
                         </div>
                       </div>
@@ -909,7 +909,7 @@ export default function Home() {
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="font-semibold text-dark">Budi Santoso</p>
+                          <p className="font-semibold text-dark text-sm sm:text-base">Budi Santoso</p>
                           <p className="text-sm text-gray-500">Pelanggan, Malang</p>
                         </div>
                       </div>
@@ -941,7 +941,7 @@ export default function Home() {
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="font-semibold text-dark">Ahmad Yusuf</p>
+                          <p className="font-semibold text-dark text-sm sm:text-base">Ahmad Yusuf</p>
                           <p className="text-sm text-gray-500">Pelanggan, Surabaya</p>
                         </div>
                       </div>
@@ -972,7 +972,7 @@ export default function Home() {
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="font-semibold text-dark">Siti Fatimah</p>
+                          <p className="font-semibold text-dark text-sm sm:text-base">Siti Fatimah</p>
                           <p className="text-sm text-gray-500">Pelanggan, Denpasar</p>
                         </div>
                       </div>
@@ -1003,7 +1003,7 @@ export default function Home() {
                           />
                         </div>
                         <div className="ml-3">
-                          <p className="font-semibold text-dark">Budi Santoso</p>
+                          <p className="font-semibold text-dark text-sm sm:text-base">Budi Santoso</p>
                           <p className="text-sm text-gray-500">Pelanggan, Malang</p>
                         </div>
                       </div>
