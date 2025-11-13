@@ -61,9 +61,9 @@ export default function BanyuwangiJemberPage() {
               <span className="text-gray-400 mx-2">/</span>
               <Link href="/rute" className="text-gray-600 hover:text-primary">Rute</Link>
               <span className="text-gray-400 mx-2">/</span>
-              <span className="text-dark font-medium">Banyuwangi ↔ Jember</span>
+              <span className="text-dark font-medium">Banyuwangi - Jember</span>
             </nav>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi ↔ Jember (PP)</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Jember (PP)</h1>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
               Jadwal travel Banyuwangi Jember berangkat setiap hari. Layanan door-to-door, aman, dan nyaman untuk mahasiswa atau pekerja.
             </p>
@@ -119,7 +119,7 @@ export default function BanyuwangiJemberPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium">Banyuwangi → Jember</td>
                       <td className="p-4 text-gray-700">Pagi (07:00), Siang (13:00), Malam (19:00)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 80.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 130.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.toJember}
@@ -134,7 +134,7 @@ export default function BanyuwangiJemberPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium">Jember → Banyuwangi</td>
                       <td className="p-4 text-gray-700">Pagi (07:00), Siang (13:00), Malam (19:00)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 80.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 130.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.fromJember}
@@ -147,9 +147,9 @@ export default function BanyuwangiJemberPage() {
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
-                      <td className="p-4 font-medium">Carter Drop (Private) Banyuwangi ↔ Jember</td>
+                      <td className="p-4 font-medium">Carter Drop (Private) Banyuwangi - Jember</td>
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 350.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 450.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.carter}
@@ -311,7 +311,7 @@ export default function BanyuwangiJemberPage() {
             "description": "Layanan travel door-to-door antara Banyuwangi dan Jember.",
             "offers": {
               "@type": "Offer",
-              "price": "80000",
+              "price": "130000",
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Jember",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
