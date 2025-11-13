@@ -124,12 +124,12 @@ const schedules = [
   {
     route: "Banyuwangi → Bandara Juanda",
     schedule: "Hubungi Admin (Menyesuaikan Jadwal)",
-    price: "Rp 250.000",
+    price: "Rp 200.000",
   },
   {
     route: "Bandara Juanda → Banyuwangi",
     schedule: "Hubungi Admin (Menyesuaikan Jadwal)",
-    price: "Rp 250.000",
+    price: "Rp 200.000",
   },
 ];
 

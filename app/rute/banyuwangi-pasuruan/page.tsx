@@ -89,7 +89,7 @@ export default function BanyuwangiPasuruanPage() {
             "description": "Layanan travel door-to-door antara Banyuwangi dan Pasuruan.",
             "offers": {
               "@type": "Offer",
-              "price": "140000",
+              "price": "200000",
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Pasuruan",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
@@ -169,7 +169,7 @@ export default function BanyuwangiPasuruanPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Banyuwangi → Pasuruan</td>
                       <td className="p-4 text-gray-700">Pagi (09:00), Siang (15:00), Malam (21:00)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 140.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
                         <a href={whatsappLinks.toPasuruan} target="_blank" rel="noopener noreferrer" className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90">Pesan</a>
                       </td>
@@ -177,19 +177,19 @@ export default function BanyuwangiPasuruanPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Pasuruan → Banyuwangi</td>
                       <td className="p-4 text-gray-700">Pagi (09:00), Siang (15:00), Malam (21:00)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 140.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
                         <a href={whatsappLinks.fromPasuruan} target="_blank" rel="noopener noreferrer" className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90">Pesan</a>
                       </td>
                     </tr>
-                    <tr className="hover:bg-white transition-colors">
+                    {/* <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Carter Drop (Private) Banyuwangi - Pasuruan</td>
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 650.000</td>
                       <td className="p-4">
                         <a href={whatsappLinks.carter} target="_blank" rel="noopener noreferrer" className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90">Pesan</a>
                       </td>
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>

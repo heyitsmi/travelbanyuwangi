@@ -119,7 +119,7 @@ export default function BanyuwangiJemberPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Banyuwangi → Jember</td>
                       <td className="p-4 text-gray-700">Pagi (07:00), Siang (13:00), Malam (19:00)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 130.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 150.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.toJember}
@@ -134,7 +134,7 @@ export default function BanyuwangiJemberPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Jember → Banyuwangi</td>
                       <td className="p-4 text-gray-700">Pagi (07:00), Siang (13:00), Malam (19:00)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 130.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 150.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.fromJember}
@@ -146,7 +146,7 @@ export default function BanyuwangiJemberPage() {
                         </a>
                       </td>
                     </tr>
-                    <tr className="hover:bg-white transition-colors">
+                    {/* <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Carter Drop (Private) Banyuwangi - Jember</td>
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 450.000</td>
@@ -160,7 +160,7 @@ export default function BanyuwangiJemberPage() {
                           Pesan
                         </a>
                       </td>
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>

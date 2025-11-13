@@ -120,7 +120,7 @@ export default function BanyuwangiJuandaPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Banyuwangi → Bandara Juanda</td>
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Pesawat)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 250.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.toJuanda}
@@ -135,7 +135,7 @@ export default function BanyuwangiJuandaPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Bandara Juanda → Banyuwangi</td>
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Landing)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 250.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.fromJuanda}
@@ -147,7 +147,7 @@ export default function BanyuwangiJuandaPage() {
                         </a>
                       </td>
                     </tr>
-                    <tr className="hover:bg-white transition-colors">
+                    {/* <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Carter Drop (Private) Banyuwangi - Juanda</td>
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 1.000.000</td>
@@ -161,7 +161,7 @@ export default function BanyuwangiJuandaPage() {
                           Pesan
                         </a>
                       </td>
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>
@@ -328,7 +328,7 @@ export default function BanyuwangiJuandaPage() {
             "description": "Layanan travel door-to-door antara Banyuwangi dan Bandara Juanda Surabaya via tol.",
             "offers": {
               "@type": "Offer",
-              "price": "250000",
+              "price": "200000",
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Juanda",
               "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",

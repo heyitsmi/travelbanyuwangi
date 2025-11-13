@@ -16,11 +16,11 @@ export default function Footer() {
               Travel Aman & Terpercaya dari Banyuwangi untuk seluruh kebutuhan perjalanan Anda.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a href="#" title="Ikuti Juragan Travel di Facebook" className="text-gray-400 hover:text-white">
+              <a href="https://facebook.com/juragantravel.id" title="Ikuti Juragan Travel di Facebook" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" title="Ikuti Juragan Travel di Instagram" className="text-gray-400 hover:text-white">
+              <a href="https://instagram.com/juragantravel_id" title="Ikuti Juragan Travel di Instagram" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">Instagram</span>
                 <Instagram className="w-6 h-6" />
               </a>

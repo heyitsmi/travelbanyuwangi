@@ -76,7 +76,7 @@ const busTripData = {
     "Layanan travel door-to-door antara Banyuwangi dan Tulungagung, Blitar, Kediri dengan jadwal pagi dan malam.",
   offers: {
     "@type": "Offer",
-    price: "160000",
+    price: "400000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Tulungagung",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
@@ -114,17 +114,12 @@ const schedules = [
   {
     route: "Banyuwangi → Tulungagung",
     schedule: "Pagi (09:00), Malam (21:00)",
-    price: "Rp 160.000",
+    price: "Rp 400.000",
   },
   {
     route: "Tulungagung → Banyuwangi",
     schedule: "Pagi (09:00), Malam (21:00)",
-    price: "Rp 160.000",
-  },
-  {
-    route: "Banyuwangi → Blitar / Kediri",
-    schedule: "Pagi (09:00), Malam (21:00)",
-    price: "Rp 150.000",
+    price: "Rp 400.000",
   },
 ];
 

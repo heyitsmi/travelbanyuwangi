@@ -120,7 +120,7 @@ export default function BanyuwangiNgurahRaiPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Banyuwangi → Bandara Ngurah Rai</td>
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Pesawat)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 250.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.toNgurahRai}
@@ -135,7 +135,7 @@ export default function BanyuwangiNgurahRaiPage() {
                     <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Bandara Ngurah Rai → Banyuwangi</td>
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Landing)</td>
-                      <td className="p-4 font-bold text-primary text-lg">Rp 250.000</td>
+                      <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
                         <a 
                           href={whatsappLinks.fromNgurahRai}
@@ -147,7 +147,7 @@ export default function BanyuwangiNgurahRaiPage() {
                         </a>
                       </td>
                     </tr>
-                    <tr className="hover:bg-white transition-colors">
+                    {/* <tr className="hover:bg-white transition-colors">
                       <td className="p-4 font-medium text-gray-700">Carter Drop (Private) Banyuwangi - Ngurah Rai</td>
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 1.000.000</td>
@@ -161,7 +161,7 @@ export default function BanyuwangiNgurahRaiPage() {
                           Pesan
                         </a>
                       </td>
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
               </div>

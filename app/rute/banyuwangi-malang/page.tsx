@@ -124,7 +124,7 @@ const schedules = [
   {
     route: "Banyuwangi → Kota Batu",
     schedule: "Hubungi Admin (Menyesuaikan Jadwal)",
-    price: "Rp 230.000",
+    price: "Rp 250.000",
   },
 ];
 

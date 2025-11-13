@@ -76,7 +76,7 @@ const busTripData = {
     "Layanan travel door-to-door antara Banyuwangi dan Solo (Surakarta), via Tol Transjawa dengan jadwal pagi dan malam.",
   offers: {
     "@type": "Offer",
-    price: "250000",
+    price: "400000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Solo",
     description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
@@ -114,17 +114,12 @@ const schedules = [
   {
     route: "Banyuwangi → Solo",
     schedule: "Pagi (09:00), Malam (21:00)",
-    price: "Rp 250.000",
+    price: "Rp 400.000",
   },
   {
     route: "Solo → Banyuwangi",
     schedule: "Pagi (09:00), Malam (21:00)",
-    price: "Rp 250.000",
-  },
-  {
-    route: "Banyuwangi → Jogja (via Solo)",
-    schedule: "Pagi (09:00), Malam (21:00)",
-    price: "Rp 270.000",
+    price: "Rp 400.000",
   },
 ];
 
