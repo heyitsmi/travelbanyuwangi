@@ -4,6 +4,7 @@ import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { StructuredData } from "./components/SEO";
+import { formatPrice } from "../lib/priceConfig";
 import {
   Truck,
   Clock,
@@ -167,8 +168,8 @@ export default function Home() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
                 Travel Banyuwangi – Surabaya, Malang, Denpasar, dan Seluruh Jawa Bali
               </h1>
-              <p className="mt-6 text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto">
-                Layanan travel antar kota aman & nyaman, berangkat setiap hari.
+              <p className="mt-6 text-xl lg:text-2xl text-gray-200 max-w-5xl mx-auto">
+                Juragan Travel melayani perjalanan antar kota dari Banyuwangi ke Surabaya, Malang, Denpasar, dan kota-kota lain di Jawa–Bali. Kami menyediakan layanan door-to-door, jadwal fleksibel setiap hari, serta kenyamanan armada terbaik dengan sopir berpengalaman. Pesan travel Banyuwangi hari ini dan nikmati perjalanan tanpa repot!
               </p>
               <a
                 href="https://wa.me/6282143258744"
@@ -407,6 +408,285 @@ export default function Home() {
                       Hubungi Kami
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Jadwal & Harga Travel Section */}
+          <section id="jadwal-harga" className="py-20 bg-light">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
+                <p className="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">
+                  Daftar lengkap rute travel dan harga terbaru. Berangkat setiap hari dengan jadwal fleksibel.
+                </p>
+              </div>
+
+              <div className="max-w-5xl mx-auto">
+                <div className="bg-white shadow-xl rounded-lg overflow-hidden">
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="bg-dark text-white">
+                          <th className="py-4 px-6 text-left font-semibold">Rute Travel</th>
+                          <th className="py-4 px-6 text-center font-semibold">Jadwal</th>
+                          <th className="py-4 px-6 text-right font-semibold">Harga</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-200">
+                        {/* Rute Utama */}
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-primary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Surabaya</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          </td>
+                        </tr>
+                        
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-primary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Malang</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-primary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Denpasar</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Bandara Juanda</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Bandara Ngurah Rai</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          </td>
+                        </tr>
+
+                        {/* Rute Jarak Dekat */}
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-accent"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Jember</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(150000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-accent"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Lumajang</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(170000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-accent"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Probolinggo</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          </td>
+                        </tr>
+
+                        {/* Rute Jarak Jauh */}
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Solo</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(400000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Tulungagung</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(400000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Gresik</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(350000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-accent"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Sidoarjo</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-accent"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Pasuruan</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(200000)}</span>
+                          </td>
+                        </tr>
+
+                        <tr className="hover:bg-gray-50 transition-colors">
+                          <td className="py-4 px-6">
+                            <div className="flex items-center space-x-3">
+                              <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                              <span className="font-semibold text-dark">Banyuwangi - Batu</span>
+                            </div>
+                          </td>
+                          <td className="py-4 px-6 text-center text-gray-700">
+                            <span className="inline-block bg-light px-3 py-1 rounded-full text-sm">
+                              Setiap Hari
+                            </span>
+                          </td>
+                          <td className="py-4 px-6 text-right">
+                            <span className="font-bold text-primary text-lg">{formatPrice(250000)}</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="mt-8 text-center">
+                  <Link
+                    href="/rute"
+                    className="inline-block bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition-all"
+                  >
+                    Lihat Semua Rute &rarr;
+                  </Link>
                 </div>
               </div>
             </div>
@@ -837,6 +1117,140 @@ export default function Home() {
                     hari yang sama untuk rute-rute tertentu. Silakan hubungi admin untuk informasi biaya dan jadwal.
                   </p>
                 </details>
+              </div>
+            </div>
+          </section>
+
+          {/* Area Layanan Kami Section */}
+          <section id="area-layanan" className="py-20 bg-light">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">Area Layanan Kami</h2>
+                <p className="text-gray-600 max-w-3xl mx-auto">
+                  Melayani perjalanan dari Banyuwangi ke berbagai kota di Jawa Timur, Jawa Tengah, dan Bali dengan 
+                  layanan door-to-door yang nyaman dan terpercaya.
+                </p>
+              </div>
+
+              <div className="max-w-6xl mx-auto">
+                {/* Tag Cloud Container */}
+                <div className="flex flex-wrap justify-center gap-3 mb-12">
+                  {/* Kota Besar - Size XL */}
+                  <Link 
+                    href="/rute/banyuwangi-surabaya"
+                    className="bg-white hover:bg-primary hover:text-white text-primary font-bold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
+                  >
+                    Surabaya
+                  </Link>
+                  <Link 
+                    href="/rute/banyuwangi-malang"
+                    className="bg-white hover:bg-primary hover:text-white text-primary font-bold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
+                  >
+                    Malang
+                  </Link>
+                  <Link 
+                    href="/rute/banyuwangi-denpasar"
+                    className="bg-white hover:bg-primary hover:text-white text-primary font-bold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-lg"
+                  >
+                    Denpasar
+                  </Link>
+
+                  {/* Kota Menengah - Size L */}
+                  <Link 
+                    href="/rute/banyuwangi-jember"
+                    className="bg-white hover:bg-primary hover:text-white text-dark font-semibold px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                  >
+                    Jember
+                  </Link>
+                  <Link 
+                    href="/rute/banyuwangi-lumajang"
+                    className="bg-white hover:bg-primary hover:text-white text-dark font-semibold px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                  >
+                    Lumajang
+                  </Link>
+                  <Link 
+                    href="/rute/banyuwangi-solo"
+                    className="bg-white hover:bg-primary hover:text-white text-dark font-semibold px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                  >
+                    Solo
+                  </Link>
+                  <Link 
+                    href="/rute/banyuwangi-gresik"
+                    className="bg-white hover:bg-primary hover:text-white text-dark font-semibold px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+                  >
+                    Gresik
+                  </Link>
+
+                  {/* Kota Kecil - Size M */}
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-700 px-4 py-2 rounded-lg shadow hover:shadow-md transition-all duration-300 text-sm cursor-pointer">
+                    Probolinggo
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-700 px-4 py-2 rounded-lg shadow hover:shadow-md transition-all duration-300 text-sm cursor-pointer">
+                    Pasuruan
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-700 px-4 py-2 rounded-lg shadow hover:shadow-md transition-all duration-300 text-sm cursor-pointer">
+                    Sidoarjo
+                  </span>
+                  <Link 
+                    href="/rute/banyuwangi-tulungagung"
+                    className="bg-white hover:bg-primary hover:text-white text-gray-700 px-4 py-2 rounded-lg shadow hover:shadow-md transition-all duration-300 text-sm"
+                  >
+                    Tulungagung
+                  </Link>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-700 px-4 py-2 rounded-lg shadow hover:shadow-md transition-all duration-300 text-sm cursor-pointer">
+                    Batu
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-700 px-4 py-2 rounded-lg shadow hover:shadow-md transition-all duration-300 text-sm cursor-pointer">
+                    Mojokerto
+                  </span>
+
+                  {/* Area Spesifik - Size S */}
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Bandara Juanda
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Bandara Ngurah Rai
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Tanjung Perak
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Kuta Bali
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Seminyak
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Sanur
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Ubud
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Jimbaran
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Nusa Dua
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Blitar
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Kediri
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Madiun
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Ponorogo
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Bondowoso
+                  </span>
+                  <span className="bg-white hover:bg-primary hover:text-white text-gray-600 px-3 py-1.5 rounded-lg text-xs shadow-sm hover:shadow transition-all duration-300 cursor-pointer">
+                    Situbondo
+                  </span>
+                </div>
               </div>
             </div>
           </section>

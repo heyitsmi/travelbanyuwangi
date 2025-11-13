@@ -13,8 +13,13 @@ export default function Footer() {
           <div>
             <Image src="/img/brand/logo-light.webp" alt="Juragan Travel" width={120} height={32} className="h-8 w-auto mb-4" />
             <p className="text-gray-400">
-              Travel Aman & Terpercaya dari Banyuwangi untuk seluruh kebutuhan perjalanan Anda.
+              Layanan Travel Banyuwangi yang Aman & Terpercaya untuk seluruh kebutuhan perjalanan Anda — Surabaya, Malang, Denpasar, dan seluruh Jawa–Bali.
             </p>
+            <ul className="mt-4 space-y-2">
+              <li><span className="before:content-['•_'] before:mr-1">Armada Bersih</span></li>
+              <li><span className="before:content-['•_'] before:mr-1">Driver Berpengalaman</span></li>
+              <li><span className="before:content-['•_'] before:mr-1">Berangkat Setiap Hari</span></li>
+            </ul>
             <div className="flex space-x-4 mt-6">
               <a href="https://facebook.com/juragantravel.id" title="Ikuti Juragan Travel di Facebook" className="text-gray-400 hover:text-white" target="_blank" rel="noopener noreferrer">
                 <span className="sr-only">Facebook</span>
@@ -32,6 +37,16 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Navigasi Cepat</h4>
             <ul className="mt-4 space-y-2">
               <li>
+                <Link href="/blog" title="Artikel dan tips perjalanan travel Banyuwangi" className="hover:text-white transition-colors">
+                  Artikel & Tips Perjalanan
+                </Link>
+              </li>
+              <li>
+                <Link href="/cara-pemesanan" title="Panduan cara pemesanan travel step by step" className="hover:text-white transition-colors">
+                  Cara Pesan Travel
+                </Link>
+              </li>
+              <li>
                 <Link href="/cara-pembayaran" title="Panduan cara pembayaran travel Banyuwangi" className="hover:text-white transition-colors">
                   Cara Pembayaran
                 </Link>
@@ -39,11 +54,6 @@ export default function Footer() {
               <li>
                 <Link href="/pemesanan" title="Form pemesanan travel online - Pesan sekarang" className="hover:text-white transition-colors">
                   Form Pemesanan
-                </Link>
-              </li>
-              <li>
-                <Link href="/cara-pemesanan" title="Panduan cara pemesanan travel step by step" className="hover:text-white transition-colors">
-                  Cara Pemesanan
                 </Link>
               </li>
               <li>
@@ -194,38 +204,23 @@ export default function Footer() {
         </div>
 
         {/* Copyright & Footer Bottom */}
-        <div className="mt-12 pt-8 border-t border-gray-700">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-start gap-6">
-            {/* Kolom Kiri: Copyright & Developer */}
-            <div className="space-y-2">
-              <p className="text-sm text-gray-400">
-                © 2025 Juragan Travel — Dikelola oleh CV Rizky Cella, penyedia layanan travel resmi dari Banyuwangi.
-              </p>
-              {/* <p className="text-sm text-gray-500">
-                Website dikembangkan oleh{" "}
-                <a
-                  href="https://josjis.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Josjis Studio - Jasa pembuatan website profesional"
-                  className="text-accent hover:text-opacity-80 transition-colors font-medium"
-                >
-                  Josjis Studio
-                </a>
-                .
-              </p> */}
-            </div>
-
-            {/* Kolom Kanan: Policy Links */}
-            <div className="flex flex-wrap gap-4 text-sm">
-              <Link href="/syarat-ketentuan" title="Syarat dan ketentuan penggunaan layanan travel" className="text-gray-400 hover:text-white transition-colors">
-                Syarat & Ketentuan
-              </Link>
-              <span className="text-gray-600">|</span>
-              <Link href="/kebijakan-privasi" title="Kebijakan privasi dan perlindungan data pelanggan" className="text-gray-400 hover:text-white transition-colors">
-                Kebijakan Privasi
-              </Link>
-            </div>
+        <div className="mt-12 pt-8 border-t border-gray-700 text-center">
+          <p className="text-sm text-gray-400 mb-3 max-w-5xl mx-auto">
+            © 2025 Juragan Travel | Travel Banyuwangi – Surabaya, Malang, Denpasar, dan seluruh Jawa–Bali. Layanan resmi, door-to-door, berangkat setiap hari.
+          </p>
+          <p className="text-sm text-gray-400 mb-3 max-w-4xl mx-auto">
+            Dikelola oleh CV Rizky Cella, penyedia layanan travel resmi dari Banyuwangi.
+          </p>
+          
+          {/* Policy Links */}
+          <div className="flex justify-center items-center gap-3 text-sm">
+            <Link href="/syarat-ketentuan" title="Syarat dan ketentuan penggunaan layanan travel" className="text-gray-400 hover:text-white transition-colors">
+              Syarat & Ketentuan
+            </Link>
+            <span className="text-gray-600">|</span>
+            <Link href="/kebijakan-privasi" title="Kebijakan privasi dan perlindungan data pelanggan" className="text-gray-400 hover:text-white transition-colors">
+              Kebijakan Privasi
+            </Link>
           </div>
         </div>
       </div>
