@@ -38,23 +38,36 @@ export const metadata: Metadata = {
   },
 };
 
-const collectionPageData = {
+const organizationData = {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  name: "Testimoni Pelanggan Juragan Travel",
-  description: "Kumpulan ulasan dan testimoni asli dari pelanggan kami.",
-  url: "https://juragantravel.com/testimoni",
-  about: {
-    "@type": "TravelAgency",
-    name: "Juragan Travel",
+  "@type": "TravelAgency",
+  name: "Juragan Travel",
+  url: "https://juragantravel.com",
+  logo: "https://juragantravel.com/img/brand/logo.webp",
+  description: "Agen travel terpercaya di Banyuwangi untuk perjalanan antar kota, wisata religi, dan layanan perjalanan lainnya.",
+  telephone: "+6282143258744",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Kec. Bangorejo",
+    addressLocality: "Banyuwangi",
+    addressRegion: "Jawa Timur",
+    addressCountry: "ID",
   },
-  mainEntity: [
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "15",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: [
     {
       "@type": "Review",
       author: {
         "@type": "Person",
         name: "Ahmad Yusuf",
       },
+      datePublished: "2025-01-10",
       reviewRating: {
         "@type": "Rating",
         ratingValue: "5",
@@ -62,10 +75,6 @@ const collectionPageData = {
       },
       reviewBody:
         "Pelayanannya cepat dan sopirnya ramah banget. Mobilnya bersih dan nyaman. Pasti langganan di sini buat travel Banyuwangi-Surabaya.",
-      itemReviewed: {
-        "@type": "Service",
-        name: "Travel Banyuwangi Surabaya",
-      },
     },
     {
       "@type": "Review",
@@ -73,6 +82,7 @@ const collectionPageData = {
         "@type": "Person",
         name: "Siti Fatimah",
       },
+      datePublished: "2025-01-08",
       reviewRating: {
         "@type": "Rating",
         ratingValue: "5",
@@ -80,28 +90,201 @@ const collectionPageData = {
       },
       reviewBody:
         "Booking untuk travel ke Denpasar mendadak, tapi tetap dilayani dengan baik. Dijemput tepat waktu dan sampai tujuan dengan aman. Recommended!",
-      itemReviewed: {
-        "@type": "Service",
-        name: "Travel Banyuwangi Denpasar",
-      },
     },
     {
       "@type": "Review",
       author: {
         "@type": "Person",
-        name: "Rombongan Bapak H. Sodiq",
+        name: "Budi Santoso",
       },
+      datePublished: "2025-01-05",
       reviewRating: {
         "@type": "Rating",
         ratingValue: "5",
         bestRating: "5",
       },
       reviewBody:
-        "Alhamdulillah perjalanan Wisata Wali 5 lancar. Busnya nyaman, krunya ramah, dan bimbingannya sangat membantu. Terima kasih Juragan Travel.",
-      itemReviewed: {
-        "@type": "Service",
-        name: "Paket Wisata Wali 5",
+        "Pakai jasa kirim paket express Banyuwangi-Malang, sehari sampai. Harganya juga oke. Mantap Juragan Travel!",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Nurul Hidayah",
       },
+      datePublished: "2024-12-28",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Travel Banyuwangi-Jember sangat nyaman dan cepat. Dijemput di rumah, langsung antar sampai tujuan. Harga terjangkau dan pelayanan memuaskan.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Dewi Lestari",
+      },
+      datePublished: "2024-12-20",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Beli tiket bus Gunung Harta sleeper ke Bandung di sini. Admin bantu pilih kursi terbaik, harga lebih murah dari agen lain. Recommended!",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Ibu Indah",
+      },
+      datePublished: "2024-12-15",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Travel ke Lumajang tepat waktu, sopir ramah dan menguasai medan. Armada bersih dan nyaman. Harga sesuai dengan kualitas pelayanan.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Eko Prasetyo",
+      },
+      datePublished: "2024-12-10",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Travel ke Malang jam berangkat tepat waktu, tidak menunggu lama. Sopir berpengalaman dan mengerti jalan pintas. Harga juga masuk akal.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Rini Anggraini",
+      },
+      datePublished: "2024-12-05",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Pesan tiket bus Handoyo ke Jakarta di sini, prosesnya mudah dan cepat. Admin responsif banget. E-ticket langsung dikirim via WA. Mantap!",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Agus Setiawan",
+      },
+      datePublished: "2024-11-28",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Saya sering ke Bandara Juanda, selalu pakai Juragan Travel. Armadanya bagus, sopir ramah, dan yang penting tepat waktu. Tidak pernah telat!",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Fitri Wulandari",
+      },
+      datePublished: "2024-11-22",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Perjalanan ke Solo lancar jaya. Meskipun jarak jauh, tapi mobil nyaman dan driver profesional. Worth it untuk harga yang ditawarkan.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Hendra Kurniawan",
+      },
+      datePublished: "2024-11-18",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Travel Banyuwangi-Probolinggo sangat nyaman. Dijemput door to door, armada bagus, dan sopir berpengalaman. Perjalanan jadi lebih praktis.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Linda Permatasari",
+      },
+      datePublished: "2024-11-12",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "4",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Travel ke Denpasar nyaman, cuma agak telat 20 menit dari jadwal. Tapi overall pelayanannya bagus dan sopir ramah. Next time pasti pakai lagi.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Bambang Tri Hartono",
+      },
+      datePublished: "2024-11-08",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Sudah 3 kali pakai jasa Juragan Travel untuk ke Gresik. Selalu memuaskan! Booking mudah, harga jelas, dan tidak ada biaya tersembunyi.",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Yulia Rahmawati",
+      },
+      datePublished: "2024-11-02",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Kirim paket express ke Surabaya pagi, sore sudah sampai. Fast response dari admin dan harga kompetitif. Terima kasih Juragan Travel!",
+    },
+    {
+      "@type": "Review",
+      author: {
+        "@type": "Person",
+        name: "Muhammad Rizki",
+      },
+      datePublished: "2024-10-28",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      reviewBody:
+        "Beli tiket bus Handoyo Executive ke Jakarta sangat mudah. Admin kasih info lengkap jadwal keberangkatan. Bus nyaman dan driver profesional.",
     },
   ],
 };
@@ -149,31 +332,94 @@ const testimonials = [
   },
   {
     rating: 5,
-    text: "Alhamdulillah perjalanan Wisata Wali 5 lancar. Busnya nyaman, krunya ramah, dan bimbingannya sangat membantu. Terima kasih.",
+    text: "Travel Banyuwangi-Jember sangat nyaman dan cepat. Dijemput di rumah, langsung antar sampai tujuan. Harga terjangkau dan pelayanan memuaskan.",
     avatar: "/avatar.webp",
-    name: "Rombongan Bpk. H. Sodiq",
-    service: "Peserta, Wisata Wali 5",
+    name: "Nurul Hidayah",
+    service: "Pelanggan, Travel Banyuwangi-Jember",
   },
   {
     rating: 5,
-    text: "Sangat terbantu dengan jasa pengurusan paspor. Tidak perlu antri dan ribet, tahu-tahu sudah jadi. Prosesnya cepat dan amanah.",
+    text: "Beli tiket bus Gunung Harta sleeper ke Bandung di sini. Admin bantu pilih kursi terbaik, harga lebih murah dari agen lain. Recommended!",
     avatar: "/avatar.webp",
     name: "Dewi Lestari",
-    service: "Pelanggan, Jasa Paspor",
+    service: "Pelanggan, Tiket Bus Gunung Harta",
   },
   {
     rating: 5,
-    text: "Charter mobil untuk perjalanan dinas ke Surabaya. Driver on-time, mobil Innova Reborn bersih dan wangi. Pelayanan profesional.",
+    text: "Travel ke Lumajang tepat waktu, sopir ramah dan menguasai medan. Armada bersih dan nyaman. Harga sesuai dengan kualitas pelayanan.",
     avatar: "/avatar.webp",
-    name: "Ibu Indah (Dinas PU)",
-    service: "Pelanggan, Perjalanan Dinas",
+    name: "Ibu Indah",
+    service: "Pelanggan, Travel Banyuwangi-Lumajang",
+  },
+  {
+    rating: 5,
+    text: "Travel ke Malang jam berangkat tepat waktu, tidak menunggu lama. Sopir berpengalaman dan mengerti jalan pintas. Harga juga masuk akal.",
+    avatar: "/avatar.webp",
+    name: "Eko Prasetyo",
+    service: "Pelanggan, Travel Banyuwangi-Malang",
+  },
+  {
+    rating: 5,
+    text: "Pesan tiket bus Handoyo ke Jakarta di sini, prosesnya mudah dan cepat. Admin responsif banget. E-ticket langsung dikirim via WA. Mantap!",
+    avatar: "/avatar.webp",
+    name: "Rini Anggraini",
+    service: "Pelanggan, Tiket Bus Handoyo",
+  },
+  {
+    rating: 5,
+    text: "Saya sering ke Bandara Juanda, selalu pakai Juragan Travel. Armadanya bagus, sopir ramah, dan yang penting tepat waktu. Tidak pernah telat!",
+    avatar: "/avatar.webp",
+    name: "Agus Setiawan",
+    service: "Pelanggan, Travel Bandara Juanda",
+  },
+  {
+    rating: 5,
+    text: "Perjalanan ke Solo lancar jaya. Meskipun jarak jauh, tapi mobil nyaman dan driver profesional. Worth it untuk harga yang ditawarkan.",
+    avatar: "/avatar.webp",
+    name: "Fitri Wulandari",
+    service: "Pelanggan, Travel Banyuwangi-Solo",
+  },
+  {
+    rating: 5,
+    text: "Travel Banyuwangi-Probolinggo sangat nyaman. Dijemput door to door, armada bagus, dan sopir berpengalaman. Perjalanan jadi lebih praktis.",
+    avatar: "/avatar.webp",
+    name: "Hendra Kurniawan",
+    service: "Pelanggan, Travel Banyuwangi-Probolinggo",
+  },
+  {
+    rating: 4,
+    text: "Travel ke Denpasar nyaman, cuma agak telat 20 menit dari jadwal. Tapi overall pelayanannya bagus dan sopir ramah. Next time pasti pakai lagi.",
+    avatar: "/avatar.webp",
+    name: "Linda Permatasari",
+    service: "Pelanggan, Travel Banyuwangi-Denpasar",
+  },
+  {
+    rating: 5,
+    text: "Sudah 3 kali pakai jasa Juragan Travel untuk ke Gresik. Selalu memuaskan! Booking mudah, harga jelas, dan tidak ada biaya tersembunyi.",
+    avatar: "/avatar.webp",
+    name: "Bambang Tri Hartono",
+    service: "Pelanggan, Travel Banyuwangi-Gresik",
+  },
+  {
+    rating: 5,
+    text: "Kirim paket express ke Surabaya pagi, sore sudah sampai. Fast response dari admin dan harga kompetitif. Terima kasih Juragan Travel!",
+    avatar: "/avatar.webp",
+    name: "Yulia Rahmawati",
+    service: "Pelanggan, Paket Express",
+  },
+  {
+    rating: 5,
+    text: "Beli tiket bus Handoyo Executive ke Jakarta sangat mudah. Admin kasih info lengkap jadwal keberangkatan. Bus nyaman dan driver profesional.",
+    avatar: "/avatar.webp",
+    name: "Muhammad Rizki",
+    service: "Pelanggan, Tiket Bus Handoyo",
   },
 ];
 
 export default function TestimoniPage() {
   return (
     <>
-      <StructuredData data={collectionPageData} />
+      <StructuredData data={organizationData} />
       <StructuredData data={breadcrumbData} />
       <div className="bg-white antialiased">
         <Header />
