@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/layanan/tiket-pesawat",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Pesawat",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | Juragan Travel",
     description: "Agen resmi tiket pesawat domestik & internasional dari Banyuwangi (BWX). Pesan mudah via WA.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Pesawat"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/layanan/tiket-pesawat",
@@ -172,7 +172,7 @@ export default function TiketPesawatPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/0077B6/FFFFFF?text=Tiket+Pesawat+Banyuwangi"
+                    src="https://juragantravel.com/img/hero.webp"
                     alt="Agen tiket pesawat Banyuwangi (BWX)"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

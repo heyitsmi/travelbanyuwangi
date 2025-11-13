@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       url: `https://juragantravel.com/blog/${post.slug}`,
       images: [
         {
-          url: post.image || 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Blog+Post',
+          url: post.image || 'https://juragantravel.com/img/hero.webp',
           width: 1200,
           height: 630,
           alt: post.title,
@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       card: 'summary_large_image',
       title: post.title,
       description: post.excerpt,
-      images: [post.image || 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Blog+Post'],
+      images: [post.image || 'https://juragantravel.com/img/hero.webp'],
     },
     robots: {
       index: true,
@@ -122,7 +122,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       name: 'Juragan Travel',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://placehold.co/32x32/0077B6/FFFFFF?text=T',
+        url: 'https://juragantravel.com/img/brand/logo-dark.webp',
       },
     },
   };

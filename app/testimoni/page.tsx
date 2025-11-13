@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Testimoni Pelanggan | Juragan Travel",
     description: "Kumpulan testimoni asli dari pelanggan travel, wisata wali, dan umroh di Juragan Travel.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Testimoni+Pelanggan"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/testimoni",

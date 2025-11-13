@@ -20,6 +20,7 @@ export const CITIES = [
   "Probolinggo",
   "Pasuruan",
   "Sidoarjo",
+  "Gresik",
   "Solo",
   "Tulungagung",
 ] as const;
@@ -40,6 +41,7 @@ export const PRICE_DATABASE: Record<string, number> = {
   "Banyuwangi-Probolinggo": 150000,
   "Banyuwangi-Pasuruan": 170000,
   "Banyuwangi-Sidoarjo": 180000,
+  "Banyuwangi-Gresik": 350000,
   "Banyuwangi-Solo": 300000,
   "Banyuwangi-Tulungagung": 180000,
 
@@ -54,6 +56,7 @@ export const PRICE_DATABASE: Record<string, number> = {
   "Probolinggo-Banyuwangi": 150000,
   "Pasuruan-Banyuwangi": 170000,
   "Sidoarjo-Banyuwangi": 180000,
+  "Gresik-Banyuwangi": 350000,
   "Solo-Banyuwangi": 300000,
   "Tulungagung-Banyuwangi": 180000,
 

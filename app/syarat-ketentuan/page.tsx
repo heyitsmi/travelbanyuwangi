@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/syarat-ketentuan",
     images: [
       {
-        url: "https://placehold.co/1200x630/1E293B/FFFFFF?text=Syarat+Ketentuan",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     title: "Syarat dan Ketentuan | Juragan Travel",
     description:
       "Kebijakan layanan Juragan Travel terkait pemesanan, pembayaran, dan pembatalan.",
-    images: ["https://placehold.co/1200x630/1E293B/FFFFFF?text=Syarat+Ketentuan"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/syarat-ketentuan",
   },
   icons: {
-    icon: "https://placehold.co/32x32/0077B6/FFFFFF?text=T",
+    icon: "/favicon/favicon.ico",
   },
 };
 

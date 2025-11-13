@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/layanan/wisata-wali-9",
     images: [
       {
-        url: "https://placehold.co/1200x630/009874/FFFFFF?text=Wisata+Wali+9",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Paket Wisata Wali 9 dari Banyuwangi (Wali Songo) | Juragan Travel",
     description: "Paket wisata ziarah Wali 9 (Wali Songo) dari Banyuwangi. Fasilitas lengkap untuk rombongan.",
-    images: ["https://placehold.co/1200x630/009874/FFFFFF?text=Wisata+Wali+9"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/layanan/wisata-wali-9",
@@ -176,7 +176,7 @@ export default function WisataWali9Page() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/009874/FFFFFF?text=Bus+Ziarah+Wali+Songo"
+                    src="https://juragantravel.com/img/hero.webp"
                     alt="Bus pariwisata untuk paket wisata wali 9 banyuwangi"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

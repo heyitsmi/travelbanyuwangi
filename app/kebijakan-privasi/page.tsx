@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/kebijakan-privasi",
     images: [
       {
-        url: "https://placehold.co/1200x630/1E293B/FFFFFF?text=Kebijakan+Privasi",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kebijakan Privasi | Juragan Travel",
     description: "Kami menghargai privasi Anda dan berkomitmen melindungi data pribadi pelanggan kami.",
-    images: ["https://placehold.co/1200x630/1E293B/FFFFFF?text=Kebijakan+Privasi"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/kebijakan-privasi",
   },
   icons: {
-    icon: "https://placehold.co/32x32/0077B6/FFFFFF?text=T",
+    icon: "/favicon/favicon.ico",
   },
 };
 

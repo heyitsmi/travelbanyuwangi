@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://juragantravel.com/rute/banyuwangi-pasuruan',
     images: [
       {
-        url: 'https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi+Pasuruan',
+        url: 'https://juragantravel.com/img/hero.webp',
         width: 1200,
         height: 630,
         alt: 'Travel Banyuwangi Pasuruan'
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Travel Banyuwangi - Pasuruan (PP) | Jadwal & Harga | Juragan Travel',
     description: 'Jadwal & harga travel Banyuwangi ke Pasuruan (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol.',
-    images: ['https://placehold.co/1200x630/0077B6/FFFFFF?text=Travel+Banyuwangi+Pasuruan']
+    images: ['https://juragantravel.com/img/hero.webp']
   },
   alternates: {
     canonical: 'https://juragantravel.com/rute/banyuwangi-pasuruan'
@@ -63,7 +63,7 @@ export default function BanyuwangiPasuruanPage() {
               "name": "Juragan Travel",
               "url": "https://juragantravel.com/",
               "telephone": `+${whatsappNumber}`,
-              "image": "https://placehold.co/1200x630/0077B6/FFFFFF?text=Juragan Travel"
+              "image": "https://juragantravel.com/img/hero.webp"
             },
             "departureBusStop": {
               "@type": "BusStop",
@@ -128,7 +128,7 @@ export default function BanyuwangiPasuruanPage() {
             <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
               <div className="md:w-1/2">
                 <Image 
-                  src="https://placehold.co/600x450/0077B6/FFFFFF?text=Armada+Menuju+Pasuruan" 
+                  src="/img/hero.webp" 
                   alt="Armada travel Banyuwangi ke Pasuruan" 
                   width={600}
                   height={450}

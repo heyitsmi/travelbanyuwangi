@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: "https://juragantravel.com/layanan/tiket-kapal",
     images: [
       {
-        url: "https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Kapal+Laut",
+        url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
       },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Agen Tiket Kapal Banyuwangi - Bali (Ketapang-Gilimanuk) | Juragan Travel",
     description:
       "Pesan tiket kapal ferry online rute Banyuwangi (Ketapang) - Bali (Gilimanuk). Layanan tiket penumpang, motor, & mobil.",
-    images: ["https://placehold.co/1200x630/0077B6/FFFFFF?text=Tiket+Kapal+Laut"],
+    images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/layanan/tiket-kapal",
@@ -213,7 +213,7 @@ export default function TiketKapalPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="https://placehold.co/600x450/0077B6/FFFFFF?text=Kapal+Ferry+Ketapang"
+                    src="https://juragantravel.com/img/hero.webp"
                     alt="Agen tiket kapal Banyuwangi Bali (Ketapang-Gilimanuk)"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

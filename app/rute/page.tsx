@@ -132,13 +132,22 @@ const itemListData = {
       position: 10,
       item: {
         "@type": "Service",
+        name: "Travel Banyuwangi - Gresik",
+        url: "https://juragantravel.com/rute/banyuwangi-gresik",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 11,
+      item: {
+        "@type": "Service",
         name: "Travel Banyuwangi - Pasuruan",
         url: "https://juragantravel.com/rute/banyuwangi-pasuruan",
       },
     },
     {
       "@type": "ListItem",
-      position: 11,
+      position: 12,
       item: {
         "@type": "Service",
         name: "Travel Banyuwangi - Jember",
@@ -277,6 +286,13 @@ const routes = [
     image: "/img/armada.webp",
     alt: "Rute travel Banyuwangi ke Sidoarjo",
     link: "/rute/banyuwangi-sidoarjo",
+  },
+  {
+    title: "Banyuwangi - Gresik",
+    description: "Layanan travel ke kawasan industri Gresik. Berangkat setiap hari dengan jadwal fleksibel.",
+    image: "/img/armada.webp",
+    alt: "Rute travel Banyuwangi ke Gresik",
+    link: "/rute/banyuwangi-gresik",
   },
   {
     title: "Banyuwangi - Pasuruan",

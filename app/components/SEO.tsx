@@ -48,7 +48,7 @@ export function generateMetadata({
       canonical: canonicalUrl,
     },
     icons: {
-      icon: "https://placehold.co/32x32/0077B6/FFFFFF?text=T",
+      icon: "/favicon/favicon.ico",
     },
   };
 }
