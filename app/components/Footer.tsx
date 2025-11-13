@@ -128,6 +128,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/rute/banyuwangi-jember" title="Travel Banyuwangi Jember" className="hover:text-white transition-colors">
+                  Travel Banyuwangi - Jember
+                </Link>
+              </li>
+              <li>
+                <Link href="/rute/banyuwangi-gresik" title="Travel Banyuwangi Gresik" className="hover:text-white transition-colors">
+                  Travel Banyuwangi - Gresik
+                </Link>
+              </li>
+              <li>
                 <Link href="/layanan/paket-express" title="Jasa kirim paket express - Cepat dan aman same day delivery" className="hover:text-white transition-colors">
                   Jasa Kirim Paket Express
                 </Link>
