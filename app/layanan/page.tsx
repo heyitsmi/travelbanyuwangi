@@ -212,7 +212,7 @@ export default function LayananPage() {
 
                 {/* Kartu Layanan 2: Tiket Bus */}
                 <Link
-                  href="/layanan/tiket-bus"
+                  href="/layanan/tiket-bus-executive-vip-sleeper"
                   className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <div className="relative h-48 w-full">

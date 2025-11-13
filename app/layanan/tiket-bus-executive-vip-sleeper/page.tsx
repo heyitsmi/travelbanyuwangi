@@ -326,6 +326,105 @@ export default function TiketBusPage() {
             </div>
           </section>
 
+          {/* Tentang PO Section */}
+          <section id="tentang-po" className="py-20 bg-light">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Mengenal PO Bus Terpercaya</h2>
+                <p className="mt-4 text-lg text-gray-600">Partner bus pilihan kami untuk perjalanan jarak jauh yang nyaman dan aman</p>
+              </div>
+
+              {/* PO Handoyo */}
+              <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-xl">
+                  <Image
+                    src="/img/layanan/po-handoyo-1.webp"
+                    alt="PO Handoyo - Bus Executive dan VIP untuk perjalanan jarak jauh"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-3xl font-bold text-dark mb-4">PO. Handoyo</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                    <strong>PO. Handoyo</strong> adalah perusahaan otobus yang telah berpengalaman puluhan tahun melayani rute antar provinsi di Indonesia. Dengan armada bus <strong>Executive</strong> dan <strong>VIP</strong>, PO. Handoyo menawarkan kenyamanan maksimal untuk perjalanan jarak jauh.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 shrink-0"></div>
+                      <p className="text-gray-700"><strong>Rute Utama:</strong> Banyuwangi - Jakarta, Bogor, Bandung, Pekanbaru, Palembang, dan kota-kota besar lainnya</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 shrink-0"></div>
+                      <p className="text-gray-700"><strong>Fasilitas:</strong> AC, kursi reclining, TV, audio entertainment, toilet, selimut, dan bantal</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 shrink-0"></div>
+                      <p className="text-gray-700"><strong>Kelas Bus:</strong> Executive (2-2), VIP (2-2 semi sleeper)</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 mr-3 shrink-0"></div>
+                      <p className="text-gray-700"><strong>Keunggulan:</strong> Tepat waktu, armada terawat, driver profesional, dan harga kompetitif</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* PO Gunung Harta */}
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="order-2 md:order-1">
+                  <h3 className="text-3xl font-bold text-dark mb-4">PO. Gunung Harta</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                    <strong>PO. Gunung Harta</strong> merupakan salah satu perusahaan otobus terkemuka yang melayani rute Jawa dengan fokus pada kenyamanan penumpang. Armada bus <strong>Executive</strong> dan <strong>Sleeper</strong> menjadi pilihan favorit untuk perjalanan malam maupun siang.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 shrink-0"></div>
+                      <p className="text-gray-700"><strong>Rute Utama:</strong> Banyuwangi - Jakarta, Bandung, Bogor, Semarang, Yogyakarta, dan wilayah Jawa lainnya</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 shrink-0"></div>
+                      <p className="text-gray-700"><strong>Fasilitas:</strong> Full AC, kursi sleeper berbaring 160°, LED TV, USB charging port, WiFi, toilet, dan snack gratis</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 shrink-0"></div>
+                      <p className="text-gray-700"><strong>Kelas Bus:</strong> Executive (2-2), Sleeper (2-1 full sleeper)</p>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-2 h-2 rounded-full bg-secondary mt-2 mr-3 shrink-0"></div>
+                      <p className="text-gray-700"><strong>Keunggulan:</strong> Kursi sleeper premium, jadwal keberangkatan fleksibel, crew ramah, dan standar keamanan tinggi</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-xl order-1 md:order-2">
+                  <Image
+                    src="/img/layanan/po-gunung-harta.webp"
+                    alt="PO Gunung Harta - Bus Executive dan Sleeper dengan fasilitas premium"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              </div>
+
+              {/* Info Box */}
+              <div className="mt-16 bg-white p-8 rounded-xl shadow-lg border-l-4 border-primary">
+                <h4 className="text-2xl font-bold text-dark mb-4">Kenapa Memilih Bus Executive & Sleeper?</h4>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h5 className="font-semibold text-dark mb-2">✨ Bus Executive</h5>
+                    <p className="text-gray-600">Cocok untuk perjalanan siang atau malam dengan durasi menengah. Kursi nyaman, AC dingin, dan harga terjangkau.</p>
+                  </div>
+                  <div>
+                    <h5 className="font-semibold text-dark mb-2">🛏️ Bus Sleeper</h5>
+                    <p className="text-gray-600">Pilihan terbaik untuk perjalanan malam jarak jauh. Kursi bisa rebahan hingga 160°, sehingga Anda bisa tidur nyenyak selama perjalanan.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* FAQ Section */}
           <section id="faq-page" className="py-20 bg-light">
             <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
