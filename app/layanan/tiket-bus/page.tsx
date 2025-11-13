@@ -4,27 +4,24 @@ import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { StructuredData } from "../../components/SEO";
-import {
-  BusFront,
-  BadgeCheck,
-  Smartphone,
-  DollarSign,
-  CalendarCheck,
-  Armchair,
-  Bus,
-} from "lucide-react";
+import { Shield, UserCheck, MessageCircle, ChevronDown } from "lucide-react";
+import { 
+  HANDOYO_TICKETS, 
+  GUNUNG_HARTA_SCHEDULES, 
+  formatBusPrice 
+} from "@/lib/busTicketConfig";
 
 export const metadata: Metadata = {
-  title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | Juragan Travel",
+  title: "Tiket Bus Handoyo & Gunung Harta Banyuwangi | Juragan Travel",
   description:
-    "Jual tiket bus executive dari Banyuwangi ke Surabaya, Malang, Denpasar, Jakarta, Bandung. Agen resmi tiket bus malam Banyuwangi. Pesan online via WA.",
+    "Jadwal & harga tiket bus PO. Handoyo dan PO. Gunung Harta dari Banyuwangi ke Jakarta, Bogor, Bandung, Palembang, Pekanbaru. Cek harga executive & sleeper di sini.",
   keywords:
-    "tiket bus banyuwangi, agen tiket bus banyuwangi, tiket bus executive banyuwangi, tiket bus malam banyuwangi, tiket bus banyuwangi surabaya, tiket bus banyuwangi denpasar, tiket bus banyuwangi jakarta",
+    "tiket bus handoyo banyuwangi, tiket bus gunung harta banyuwangi, harga tiket bus handoyo, harga tiket bus gunung harta, agen tiket bus handoyo, agen tiket bus gunung harta banyuwangi",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | Juragan Travel",
+    title: "Tiket Bus Handoyo & Gunung Harta Banyuwangi | Juragan Travel",
     description:
-      "Agen resmi tiket bus executive & malam dari Banyuwangi ke semua tujuan di Jawa & Bali. Pesan mudah via WA.",
+      "Jadwal & harga tiket bus PO. Handoyo dan PO. Gunung Harta dari Banyuwangi ke Jakarta, Bogor, Bandung, Palembang, Pekanbaru.",
     type: "website",
     url: "https://juragantravel.com/layanan/tiket-bus",
     images: [
@@ -38,15 +35,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agen Tiket Bus Executive Banyuwangi (Semua Tujuan) | Juragan Travel",
+    title: "Tiket Bus Handoyo & Gunung Harta Banyuwangi | Juragan Travel",
     description:
-      "Agen resmi tiket bus executive & malam dari Banyuwangi ke semua tujuan di Jawa & Bali. Pesan mudah via WA.",
-    images: ["https://juragantravel.com/img/layanan/tiket-bus.webp"],
+      "Jadwal & harga tiket bus PO. Handoyo dan PO. Gunung Harta dari Banyuwangi.",
+    images: ["https://juragantravel.com/img/layanan/tiket-bus-executive.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/layanan/tiket-bus",
   },
 };
+
 
 const serviceData = {
   "@context": "https://schema.org",
@@ -56,18 +54,63 @@ const serviceData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
+    telephone: "+6282143258744",
   },
-  name: "Penjualan Tiket Bus Executive Banyuwangi",
+  name: "Tiket Bus Executive PO. Handoyo & PO. Gunung Harta dari Banyuwangi",
   description:
-    "Agen resmi penjualan tiket bus executive dan bus malam dari Banyuwangi ke semua tujuan di Jawa dan Bali, termasuk Surabaya, Malang, Denpasar, Jakarta, Bandung.",
+    "Agen resmi tiket bus PO. Handoyo dan PO. Gunung Harta keberangkatan Banyuwangi ke Jakarta, Bogor, Bandung, dan kota-kota di Sumatera.",
   areaServed: [{ "@type": "City", name: "Banyuwangi" }],
-  offers: {
-    "@type": "Offer",
-    name: "Tiket Bus Executive (Semua PO)",
-    category: "Ticket",
-    priceCurrency: "IDR",
-    description: "Harga tiket bus bervariasi tergantung PO dan tujuan. Hubungi untuk info jadwal dan harga terbaru.",
-  },
+  offers: [
+    {
+      "@type": "Offer",
+      name: "Tiket Bus PO. Handoyo (Executive & VIP)",
+      category: "BusTicket",
+    },
+    {
+      "@type": "Offer",
+      name: "Tiket Bus PO. Gunung Harta (Executive & Sleeper)",
+      category: "BusTicket",
+    },
+  ],
+};
+
+const faqData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Bagaimana cara memesan tiket bus Handoyo atau Gunung Harta di sini?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Cara termudah adalah dengan menghubungi admin kami via WhatsApp. Informasikan rute (misal: Banyuwangi - Jakarta), tanggal berangkat, dan jumlah penumpang. Admin kami akan mengecek ketersediaan kursi dan harga terbaru untuk Anda.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Apakah harga yang tertera di website sudah pasti?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Harga yang tertera adalah harga estimasi dan dapat berubah sewaktu-waktu mengikuti kebijakan dari masing-masing PO Bus, terutama saat musim liburan atau high season. Selalu konfirmasi harga final kepada admin kami saat melakukan pemesanan.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Apakah saya bisa memilih kursi bus?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ya, tentu saja. Selama kursi masih tersedia, Anda bisa meminta untuk memilih nomor kursi yang Anda inginkan. Admin kami akan membantu mengecek ketersediaan kursi tersebut.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Apakah JuraganTravel adalah agen resmi?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ya, kami adalah agen resmi dari PO. Handoyo, PO. Gunung Harta, dan banyak PO bus lainnya. Tiket yang kami keluarkan adalah e-ticket resmi yang sah untuk perjalanan Anda.",
+      },
+    },
+  ],
 };
 
 const breadcrumbData = {
@@ -89,75 +132,48 @@ const breadcrumbData = {
     {
       "@type": "ListItem",
       position: 3,
-      name: "Tiket Bus Executive",
+      name: "Tiket Bus",
       item: "https://juragantravel.com/layanan/tiket-bus",
     },
   ],
 };
 
-const routes = [
+const benefits = [
   {
-    title: "Banyuwangi - Surabaya",
-    description: "Jadwal pagi, siang, dan malam.",
-    color: "text-primary",
+    icon: Shield,
+    title: "Agen Resmi & Terpercaya",
+    description: "Kami adalah agen resmi PO. Handoyo dan PO. Gunung Harta. Tiket Anda dijamin valid.",
   },
   {
-    title: "Banyuwangi - Malang",
-    description: "Berbagai pilihan PO.",
-    color: "text-primary",
+    icon: UserCheck,
+    title: "Bisa Pilih Kursi",
+    description: "Selama masih tersedia, Anda bisa request nomor kursi favorit Anda kepada admin kami.",
   },
   {
-    title: "Banyuwangi - Denpasar",
-    description: "Kelas executive nyaman.",
-    color: "text-primary",
-  },
-  {
-    title: "Banyuwangi - Yogyakarta/Solo",
-    description: "Perjalanan lintas Jawa.",
-    color: "text-accent",
-  },
-  {
-    title: "Banyuwangi - Jakarta",
-    description: "Bus malam executive / sleeper.",
-    color: "text-accent",
-  },
-  {
-    title: "Banyuwangi - Bandung",
-    description: "Tersedia via rute utara & selatan.",
-    color: "text-accent",
+    icon: MessageCircle,
+    title: "Proses Cepat via WA",
+    description: "Tidak perlu aplikasi, pesan langsung, bayar, dan e-ticket dikirim ke WhatsApp Anda.",
   },
 ];
 
-const benefits = [
+const faqs = [
   {
-    icon: BadgeCheck,
-    title: "Agen Resmi",
-    description: "Kami agen resmi dari puluhan PO bus ternama di Indonesia.",
+    question: "Bagaimana cara memesan tiket bus Handoyo atau Gunung Harta di sini?",
+    answer:
+      "Cara termudah adalah dengan menghubungi admin kami via WhatsApp. Informasikan rute (misal: Banyuwangi - Jakarta), tanggal berangkat, dan jumlah penumpang. Admin kami akan mengecek ketersediaan kursi dan harga terbaru untuk Anda.",
+    defaultOpen: true,
   },
   {
-    icon: Smartphone,
-    title: "Proses Cepat via WA",
-    description: "Tidak perlu aplikasi. Pesan, bayar, e-ticket dikirim via WhatsApp.",
+    question: "Apakah harga yang tertera di website sudah pasti?",
+    answer:
+      "Harga yang tertera adalah harga estimasi dan dapat berubah sewaktu-waktu mengikuti kebijakan dari masing-masing PO Bus, terutama saat musim liburan atau high season. Selalu konfirmasi harga final kepada admin kami saat melakukan pemesanan.",
+    defaultOpen: false,
   },
   {
-    icon: DollarSign,
-    title: "Harga Resmi (Jujur)",
-    description: "Kami memberikan harga resmi dari PO, tanpa biaya tersembunyi.",
-  },
-  {
-    icon: CalendarCheck,
-    title: "Jadwal Lengkap",
-    description: "Tersedia pilihan jadwal lengkap, dari pagi, siang, hingga malam.",
-  },
-  {
-    icon: Armchair,
-    title: "Pasti Dapat Kursi",
-    description: "Amankan kursi Anda, terutama saat musim liburan, jauh-jauh hari.",
-  },
-  {
-    icon: Bus,
-    title: "Banyak Pilihan PO",
-    description: "Akses ke PO. Lorena, Rosalia Indah, Gunung Harta, Pahala Kencana, dll.",
+    question: "Apakah saya bisa memilih kursi bus?",
+    answer:
+      "Ya, tentu saja. Selama kursi masih tersedia, Anda bisa meminta untuk memilih nomor kursi yang Anda inginkan. Admin kami akan membantu mengecek ketersediaan kursi tersebut.",
+    defaultOpen: false,
   },
 ];
 
@@ -165,6 +181,7 @@ export default function TiketBusPage() {
   return (
     <>
       <StructuredData data={serviceData} />
+      <StructuredData data={faqData} />
       <StructuredData data={breadcrumbData} />
       <div className="bg-white antialiased">
         <Header />
@@ -182,86 +199,122 @@ export default function TiketBusPage() {
                   Layanan
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <span className="text-dark font-medium">Tiket Bus Executive</span>
+                <span className="text-dark font-medium">Tiket Bus</span>
               </nav>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Agen Tiket Bus Executive Banyuwangi</h1>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Tiket Bus PO. Handoyo & PO. Gunung Harta</h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Pesan tiket bus malam dan executive dari Banyuwangi ke semua tujuan. Agen resmi, proses mudah via
-                WhatsApp.
+                Harga dan jadwal terbaru tiket bus executive dan sleeper PO. Handoyo & PO. Gunung Harta keberangkatan dari Banyuwangi.
               </p>
             </div>
           </section>
 
-          {/* Detail Layanan Section */}
-          <section id="detail-layanan" className="py-20 bg-white">
+          {/* Detail Section */}
+          <section id="detail-rute" className="py-20 bg-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              {/* Deskripsi Layanan */}
-              <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
-                <div className="md:w-1/2 relative h-96 w-full">
-                  <Image
-                    src="/img/layanan/tiket-bus-executive.webp"
-                    alt="Agen tiket bus executive Banyuwangi"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="rounded-lg shadow-xl object-cover"
-                  />
+              {/* Deskripsi */}
+              <div className="max-w-3xl mx-auto text-center mb-12">
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Kami adalah agen resmi yang melayani pemesanan tiket bus <strong>PO. Handoyo</strong> dan <strong>PO. Gunung Harta</strong> dari Banyuwangi. Pesan tiket Anda dengan mudah melalui WhatsApp kami untuk rute Jawa hingga Sumatera.
+                </p>
+                <p className="mt-4 text-md text-gray-500">
+                  Catatan: Harga di bawah ini adalah estimasi dan dapat berubah sewaktu-waktu.
+                </p>
+              </div>
+
+              {/* PO. HANDOYO */}
+              <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
+                <div className="text-center mb-10">
+                  <div className="mx-auto mb-4 h-16 flex items-center justify-center">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-dark">PO. Handoyo</h2>
+                  </div>
+                  <p className="mt-4 text-lg text-gray-600">Keberangkatan dari Banyuwangi ke Jawa & Sumatera.</p>
                 </div>
-                <div className="md:w-1/2">
-                  <span className="text-primary font-semibold uppercase">PESAN ONLINE, PROSES CEPAT</span>
-                  <h2 className="mt-2 text-3xl md:text-4xl font-extrabold text-dark">
-                    Jual Tiket Bus Banyuwangi ke Semua Tujuan
-                  </h2>
-                  <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                    Kami adalah <strong>agen tiket bus Banyuwangi</strong> resmi yang melayani pemesanan tiket untuk
-                    berbagai Perusahaan Otobus (PO) ternama. Dapatkan kemudahan memesan{" "}
-                    <strong>tiket bus executive Banyuwangi</strong> dan <strong>tiket bus malam Banyuwangi</strong>{" "}
-                    tanpa harus antri di terminal.
-                  </p>
-                  <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                    Cukup hubungi kami via WhatsApp, informasikan rute dan tanggal, dan kami akan bantu carikan jadwal
-                    dan kursi terbaik untuk Anda. Kami melayani semua rute populer dari Banyuwangi ke Jawa dan Bali.
-                  </p>
+                <div className="overflow-x-auto">
+                  <table className="w-full min-w-max text-left">
+                    <thead>
+                      <tr className="border-b border-gray-300">
+                        <th className="p-4 text-lg font-semibold text-dark">Tujuan</th>
+                        <th className="p-4 text-lg font-semibold text-dark text-center">Executive</th>
+                        <th className="p-4 text-lg font-semibold text-dark text-center">VIP</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200">
+                      {HANDOYO_TICKETS.map((ticket, index) => (
+                        <tr key={index} className="hover:bg-white transition-colors">
+                          <td className="p-4 font-medium text-gray-700">{ticket.destination}</td>
+                          <td className="p-4 text-gray-700 text-center">{formatBusPrice(ticket.executive!)}</td>
+                          <td className="p-4 text-gray-700 text-center">{formatBusPrice(ticket.vip!)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
                 </div>
               </div>
 
-              {/* Rute Bus Populer */}
-              <div className="mb-20">
-                <div className="text-center">
-                  <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Rute Bus Populer dari Banyuwangi</h2>
-                  <p className="mt-4 text-lg text-gray-600">Melayani kelas Executive, Patas AC, dan Suite Class.</p>
+              {/* PO. GUNUNG HARTA */}
+              <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
+                <div className="text-center mb-10">
+                  <div className="mx-auto mb-4 h-16 flex items-center justify-center">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-dark">PO. Gunung Harta</h2>
+                  </div>
+                  <p className="mt-4 text-lg text-gray-600">Keberangkatan dari Banyuwangi ke berbagai kota di Jawa.</p>
                 </div>
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                  {routes.map((route, index) => (
-                    <div
-                      key={index}
-                      className="bg-light p-6 rounded-lg shadow-md text-center group hover:bg-white hover:shadow-lg transition-all"
-                    >
-                      <BusFront className={`w-12 h-12 ${route.color} mx-auto`} />
-                      <h3 className="mt-4 text-xl font-bold text-dark">{route.title}</h3>
-                      <p className="text-gray-600">{route.description}</p>
+
+                {GUNUNG_HARTA_SCHEDULES.map((schedule, scheduleIndex) => (
+                  <div key={scheduleIndex} className="mb-8">
+                    <h3 className="text-2xl font-bold text-dark mb-4">{schedule.label}</h3>
+                    <div className="overflow-x-auto">
+                      <table className="w-full min-w-max text-left">
+                        <thead>
+                          <tr className="border-b border-gray-300">
+                            <th className="p-4 text-lg font-semibold text-dark">Tujuan</th>
+                            {schedule.tickets[0].executive && schedule.tickets[0].sleeper ? (
+                              <>
+                                <th className="p-4 text-lg font-semibold text-dark text-center">Executive</th>
+                                <th className="p-4 text-lg font-semibold text-dark text-center">Sleeper</th>
+                              </>
+                            ) : (
+                              <th className="p-4 text-lg font-semibold text-dark text-center">Harga</th>
+                            )}
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-200">
+                          {schedule.tickets.map((ticket, ticketIndex) => (
+                            <tr key={ticketIndex} className="hover:bg-white transition-colors">
+                              <td className="p-4 font-medium text-gray-700">{ticket.destination}</td>
+                              {ticket.executive && ticket.sleeper ? (
+                                <>
+                                  <td className="p-4 text-gray-700 text-center">{formatBusPrice(ticket.executive)}</td>
+                                  <td className="p-4 text-gray-700 text-center">{formatBusPrice(ticket.sleeper)}</td>
+                                </>
+                              ) : (
+                                <td className="p-4 text-gray-700 text-center">{formatBusPrice(ticket.executive!)}</td>
+                              )}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
           </section>
 
-          {/* Keunggulan Layanan Section */}
-          <section id="keunggulan" className="py-20 bg-light">
+          {/* Keunggulan Section */}
+          <section id="keunggulan" className="py-20 bg-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              {/* Judul Section */}
               <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Kemudahan Memesan Tiket di Sini</h2>
-                <p className="mt-4 text-lg text-gray-600">Kami adalah mitra terpercaya perjalanan Anda.</p>
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Mengapa Pesan Tiket Bus di Juragan Travel?</h2>
+                <p className="mt-4 text-lg text-gray-600">Kami lebih dari sekedar agen tiket. Kami partner perjalanan Anda.</p>
               </div>
 
-              {/* Grid Keunggulan */}
               <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {benefits.map((benefit, index) => {
                   const IconComponent = benefit.icon;
                   return (
-                    <div key={index} className="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4">
-                      <IconComponent className="w-10 h-10 text-secondary shrink-0" />
+                    <div key={index} className="bg-light p-6 rounded-lg shadow-lg flex items-start space-x-4">
+                      <IconComponent className="w-10 h-10 text-secondary shrink-0 mt-1" />
                       <div>
                         <h3 className="text-xl font-bold text-dark">{benefit.title}</h3>
                         <p className="text-gray-600">{benefit.description}</p>
@@ -273,13 +326,44 @@ export default function TiketBusPage() {
             </div>
           </section>
 
+          {/* FAQ Section */}
+          <section id="faq-page" className="py-20 bg-light">
+            <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+                  Sering Ditanyakan (FAQ)
+                </h2>
+                <p className="mt-4 text-lg text-gray-600">
+                  Pertanyaan umum seputar pemesanan tiket bus.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <details
+                    key={index}
+                    className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 group"
+                    open={faq.defaultOpen}
+                  >
+                    <summary className="flex justify-between items-center font-semibold text-lg text-dark cursor-pointer group-hover:text-primary">
+                      {faq.question}
+                      <ChevronDown className="w-5 h-5 text-primary transition-transform duration-300 group-open:rotate-180" />
+                    </summary>
+                    <p className="mt-4 text-gray-700 leading-relaxed">{faq.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </section>
+
           {/* CTA Section */}
           <section id="kontak" className="py-20 bg-primary text-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl md:text-4xl font-extrabold">Cek Jadwal & Pesan Tiket Bus Anda</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold">
+                Pesan Tiket Bus Anda Sekarang
+              </h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Jangan sampai kehabisan tiket! Hubungi admin kami sekarang untuk menanyakan jadwal, harga, dan
-                ketersediaan kursi untuk <strong>tiket bus Banyuwangi</strong>.
+                Amankan kursi Anda untuk perjalanan jauh. Hubungi admin kami via WhatsApp untuk booking cepat dan konfirmasi jadwal terbaru.
               </p>
               <a
                 href="https://wa.me/6282143258744"
@@ -287,7 +371,7 @@ export default function TiketBusPage() {
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Tanya Jadwal via WhatsApp
+                Pesan Tiket Bus via WA
               </a>
             </div>
           </section>

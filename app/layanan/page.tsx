@@ -14,19 +14,20 @@ import {
   Shield,
   CheckCircle,
   ChevronDown,
+  Bus,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Layanan Travel Banyuwangi Terlengkap | Juragan Travel",
   description:
-    "Layanan travel antar kota door-to-door, pengurusan visa paspor, dan paket express di Banyuwangi. Armada nyaman, driver berpengalaman, pelayanan 24 jam.",
+    "Layanan travel antar kota door-to-door, tiket bus executive VIP dan sleeper, serta paket express di Banyuwangi. Armada nyaman, driver berpengalaman, pelayanan 24 jam.",
   keywords:
-    "travel antar kota banyuwangi, visa paspor banyuwangi, paket express banyuwangi, layanan travel door to door, agen travel banyuwangi terpercaya",
+    "travel antar kota banyuwangi, tiket bus executive banyuwangi, tiket bus vip banyuwangi, paket express banyuwangi, layanan travel door to door, agen travel banyuwangi terpercaya",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Layanan Travel Banyuwangi Terlengkap | Juragan Travel",
     description:
-      "Travel antar kota door-to-door, pengurusan visa paspor, dan paket express. Armada nyaman, pelayanan terpercaya 24 jam.",
+      "Travel antar kota door-to-door, tiket bus executive VIP dan sleeper, serta paket express. Armada nyaman, pelayanan terpercaya 24 jam.",
     type: "website",
     url: "https://juragantravel.com/layanan",
     images: [
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Layanan Travel Banyuwangi Terlengkap | Juragan Travel",
-    description: "Travel antar kota door-to-door, pengurusan visa paspor, dan paket express. Armada nyaman, pelayanan terpercaya 24 jam.",
+    description: "Travel antar kota door-to-door, tiket bus executive VIP dan sleeper, serta paket express. Armada nyaman, pelayanan terpercaya 24 jam.",
     images: ["https://juragantravel.com/img/hero.webp"],
     creator: "@juragantravel",
     site: "@juragantravel",
@@ -58,7 +59,7 @@ const collectionPageData = {
   "@type": "CollectionPage",
   name: "Layanan Travel Banyuwangi | Juragan Travel",
   description:
-    "Layanan travel antar kota door-to-door, pengurusan visa paspor, dan paket express di Banyuwangi dengan armada nyaman dan pelayanan terpercaya.",
+    "Layanan travel antar kota door-to-door, tiket bus executive VIP dan sleeper, serta paket express di Banyuwangi dengan armada nyaman dan pelayanan terpercaya.",
   url: "https://juragantravel.com/layanan",
   mainEntity: [
     {
@@ -76,8 +77,8 @@ const collectionPageData = {
     },
     {
       "@type": "Service",
-      name: "Pengurusan Visa dan Paspor",
-      description: "Jasa pengurusan dokumen perjalanan meliputi paspor baru, perpanjangan paspor, dan visa berbagai negara.",
+      name: "Tiket Bus Executive, VIP dan Sleeper",
+      description: "Penjualan tiket bus PO Handoyo dan PO Gunung Harta dengan berbagai kelas: Executive, VIP, dan Sleeper untuk perjalanan jarak jauh yang nyaman.",
       provider: {
         "@type": "TravelAgency",
         name: "Juragan Travel",
@@ -104,7 +105,7 @@ const faqData = {
       name: "Apa saja layanan utama yang tersedia di Juragan Travel?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Kami menyediakan 3 layanan utama: Travel Antar Kota door-to-door (Banyuwangi ke Surabaya, Malang, Denpasar, Solo, dll), Pengurusan Visa & Paspor, dan Paket Express (pengiriman barang one day service).",
+        text: "Kami menyediakan 3 layanan utama: Travel Antar Kota door-to-door (Banyuwangi ke Surabaya, Malang, Denpasar, Solo, dll), Tiket Bus Executive VIP dan Sleeper (PO Handoyo & PO Gunung Harta), dan Paket Express (pengiriman barang one day service).",
       },
     },
     {
@@ -117,18 +118,18 @@ const faqData = {
     },
     {
       "@type": "Question",
-      name: "Bagaimana cara memesan layanan travel atau visa paspor?",
+      name: "Bagaimana cara memesan layanan travel atau tiket bus?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Anda dapat memesan melalui WhatsApp di 0821-4325-8744. Tim kami siap melayani 24 jam untuk booking travel, konsultasi pengurusan visa paspor, atau layanan paket express.",
+        text: "Anda dapat memesan melalui WhatsApp di 0821-4325-8744. Tim kami siap melayani 24 jam untuk booking travel, pemesanan tiket bus, atau layanan paket express.",
       },
     },
     {
       "@type": "Question",
-      name: "Berapa lama proses pengurusan visa dan paspor?",
+      name: "Apa perbedaan kelas Executive, VIP, dan Sleeper pada tiket bus?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Waktu proses bervariasi tergantung jenis dokumen. Paspor baru biasanya 3-7 hari kerja, perpanjangan paspor 1-3 hari kerja, sedangkan visa tergantung negara tujuan (7-21 hari kerja). Kami akan memberikan estimasi waktu yang akurat saat konsultasi.",
+        text: "Executive memiliki kursi standar yang nyaman, VIP dengan kursi lebih lebar dan legroom lebih luas, sedangkan Sleeper dilengkapi dengan tempat tidur untuk perjalanan jarak jauh yang lebih nyaman. Semua kelas dilengkapi AC dan fasilitas entertainment.",
       },
     },
     {
@@ -163,7 +164,7 @@ export default function LayananPage() {
               </nav>
               <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Layanan Travel Banyuwangi Terlengkap</h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Kami menyediakan layanan travel antar kota door-to-door, pengurusan visa paspor, dan paket express dengan 
+                Kami menyediakan layanan travel antar kota door-to-door, tiket bus executive VIP dan sleeper, serta paket express dengan 
                 armada nyaman dan pelayanan terpercaya 24 jam.
               </p>
             </div>
@@ -209,15 +210,15 @@ export default function LayananPage() {
                   </div>
                 </Link>
 
-                {/* Kartu Layanan 5: Visa & Paspor */}
+                {/* Kartu Layanan 2: Tiket Bus */}
                 <Link
-                  href="/layanan/visa-paspor"
+                  href="/layanan/tiket-bus"
                   className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <div className="relative h-48 w-full">
                     <Image
-                      src="/img/layanan/visa-paspor.webp"
-                      alt="Layanan Pengurusan Visa dan Paspor"
+                      src="/img/layanan/tiket-bus.webp"
+                      alt="Layanan Tiket Bus Executive VIP dan Sleeper"
                       fill
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -225,16 +226,16 @@ export default function LayananPage() {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center space-x-3">
-                      <Building className="w-6 h-6 text-secondary shrink-0" />
-                      <h3 className="text-xl font-bold text-secondary">Pengurusan Visa & Paspor</h3>
+                      <Bus className="w-6 h-6 text-secondary shrink-0" />
+                      <h3 className="text-xl font-bold text-secondary">Tiket Bus Executive, VIP & Sleeper</h3>
                     </div>
                     <p className="mt-2 text-gray-600">
-                      Jasa pengurusan dokumen perjalanan lengkap: paspor baru, perpanjangan paspor, dan visa berbagai negara dengan proses cepat dan terpercaya.
+                      Penjualan tiket bus PO Handoyo dan PO Gunung Harta dengan berbagai kelas: Executive, VIP, dan Sleeper untuk perjalanan jarak jauh yang nyaman.
                     </p>
                   </div>
                 </Link>
 
-                {/* Kartu Layanan 9: Paket Express */}
+                {/* Kartu Layanan 3: Paket Express */}
                 <Link
                   href="/layanan/paket-express"
                   className="block bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
@@ -354,7 +355,7 @@ export default function LayananPage() {
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
                     Kami menyediakan 3 layanan utama: Travel Antar Kota door-to-door (Banyuwangi ke Surabaya, Malang, Denpasar, Solo, dll), 
-                    Pengurusan Visa & Paspor, dan Paket Express (pengiriman barang one day service).
+                    Tiket Bus Executive VIP dan Sleeper (PO Handoyo & PO Gunung Harta), dan Paket Express (pengiriman barang one day service).
                   </p>
                 </details>
 
@@ -371,23 +372,24 @@ export default function LayananPage() {
 
                 <details className="bg-light p-6 rounded-lg shadow-md group">
                   <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
-                    Bagaimana cara memesan layanan travel atau visa paspor?
+                    Bagaimana cara memesan layanan travel atau tiket bus?
                     <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
                     Anda dapat memesan melalui WhatsApp di 0821-4325-8744. Tim kami siap melayani 24 jam untuk booking travel, 
-                    konsultasi pengurusan visa paspor, atau layanan paket express.
+                    pemesanan tiket bus, atau layanan paket express.
                   </p>
                 </details>
 
                 <details className="bg-light p-6 rounded-lg shadow-md group">
                   <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
-                    Berapa lama proses pengurusan visa dan paspor?
+                    Apa perbedaan kelas Executive, VIP, dan Sleeper pada tiket bus?
                     <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                    Waktu proses bervariasi tergantung jenis dokumen. Paspor baru biasanya 3-7 hari kerja, perpanjangan paspor 1-3 hari kerja, 
-                    sedangkan visa tergantung negara tujuan (7-21 hari kerja). Kami akan memberikan estimasi waktu yang akurat saat konsultasi.
+                    Executive memiliki kursi standar yang nyaman, VIP dengan kursi lebih lebar dan legroom lebih luas, 
+                    sedangkan Sleeper dilengkapi dengan tempat tidur untuk perjalanan jarak jauh yang lebih nyaman. 
+                    Semua kelas dilengkapi AC dan fasilitas entertainment.
                   </p>
                 </details>
 
@@ -410,7 +412,7 @@ export default function LayananPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl md:text-4xl font-extrabold">Siap Memesan Layanan Kami?</h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Hubungi tim kami melalui WhatsApp untuk booking travel, konsultasi visa paspor, atau paket express. 
+                Hubungi tim kami melalui WhatsApp untuk booking travel, pemesanan tiket bus, atau paket express. 
                 Pelayanan 24 jam dengan respon cepat.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

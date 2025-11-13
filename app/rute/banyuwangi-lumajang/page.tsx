@@ -49,7 +49,7 @@ const busTripData = {
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "https://juragantravel.com/img/rute/banyuwangi-lumajang.webp",
+    image: "https://juragantravel.com/img/hero.webp",
   },
   departureBusStop: {
     "@type": "BusStop",
@@ -210,7 +210,7 @@ export default function BanyuwangiLumajangPage() {
               <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
-                    src="/img/rute/banyuwangi-lumajang.webp"
+                    src="/img/hero.webp"
                     alt="Armada travel Banyuwangi ke Lumajang"
                     fill
                     className="rounded-lg shadow-xl object-cover"

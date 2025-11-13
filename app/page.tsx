@@ -19,6 +19,7 @@ import {
   Phone,
   Star,
   ChevronDown,
+  Bus,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -444,8 +445,8 @@ export default function Home() {
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
                   <div className="relative h-48 w-full">
                     <Image
-                      src="/img/layanan/wali-9.webp"
-                      alt="Layanan Wisata Wali 5 dan Wali 9"
+                      src="/img/layanan/tiket-bus.webp"
+                      alt="Layanan Tiket Bus Executive VIP dan Sleeper"
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover"
@@ -453,10 +454,10 @@ export default function Home() {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center space-x-3">
-                      <Building className="w-6 h-6 text-secondary shrink-0" />
-                      <h3 className="text-xl font-bold text-secondary">Wisata Wali 5 & Wali 9</h3>
+                      <Bus className="w-6 h-6 text-secondary shrink-0" />
+                      <h3 className="text-xl font-bold text-secondary">Tiket Bus Executive, VIP & Sleeper</h3>
                     </div>
-                    <p className="mt-2 text-gray-600">Perjalanan rohani yang nyaman dan terpandu.</p>
+                    <p className="mt-2 text-gray-600">PO Handoyo & Gunung Harta untuk perjalanan jarak jauh.</p>
                   </div>
                 </div>
 
