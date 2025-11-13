@@ -117,7 +117,7 @@ export default function BanyuwangiJemberPage() {
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr className="hover:bg-white transition-colors">
-                      <td className="p-4 font-medium">Banyuwangi → Jember</td>
+                      <td className="p-4 font-medium text-gray-700">Banyuwangi → Jember</td>
                       <td className="p-4 text-gray-700">Pagi (07:00), Siang (13:00), Malam (19:00)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 130.000</td>
                       <td className="p-4">
@@ -132,7 +132,7 @@ export default function BanyuwangiJemberPage() {
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
-                      <td className="p-4 font-medium">Jember → Banyuwangi</td>
+                      <td className="p-4 font-medium text-gray-700">Jember → Banyuwangi</td>
                       <td className="p-4 text-gray-700">Pagi (07:00), Siang (13:00), Malam (19:00)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 130.000</td>
                       <td className="p-4">
@@ -147,7 +147,7 @@ export default function BanyuwangiJemberPage() {
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
-                      <td className="p-4 font-medium">Carter Drop (Private) Banyuwangi - Jember</td>
+                      <td className="p-4 font-medium text-gray-700">Carter Drop (Private) Banyuwangi - Jember</td>
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 450.000</td>
                       <td className="p-4">
