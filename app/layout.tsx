@@ -53,6 +53,37 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* WebSite Structured Data for Site Name */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Juragan Travel",
+              alternateName: "JuraganTravel",
+              url: "https://juragantravel.com",
+              description: "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari. Pesan via WhatsApp 24 jam.",
+              publisher: {
+                "@type": "Organization",
+                name: "Juragan Travel",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://juragantravel.com/img/brand/logo-dark.webp"
+                }
+              },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://juragantravel.com/rute?search={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
       </head>
       <body className={`${inter.variable} antialiased`}>
         <GoogleAnalytics />
