@@ -8,12 +8,15 @@ import Link from "next/link";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | Juragan Travel",
-  description: "Jadwal & harga travel Banyuwangi ke Bandara Juanda (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari, tepat waktu untuk penerbangan.",
-  keywords: "travel banyuwangi juanda, travel banyuwangi ke bandara juanda, travel juanda banyuwangi, harga travel banyuwangi juanda, jadwal travel banyuwangi juanda, travel banyuwangi surabaya bandara",
+  title: "Travel Banyuwangi Juanda (Bandara) – Door to Door Tepat Waktu | Juragan Travel",
+  description:
+    "Layanan travel Banyuwangi Juanda dan travel Juanda Banyuwangi PP dengan sistem door to door. Berangkat setiap hari, menyesuaikan jadwal penerbangan Anda. Armada nyaman, via tol, driver berpengalaman.",
+  keywords:
+    "travel banyuwangi juanda, travel banyuwangi bandara juanda, travel juanda banyuwangi, travel banyuwangi ke bandara juanda, travel bandara juanda ke banyuwangi, harga travel banyuwangi juanda, jadwal travel banyuwangi juanda",
   openGraph: {
-    title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | Juragan Travel",
-    description: "Jadwal & harga travel Banyuwangi ke Bandara Juanda (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari, tepat waktu.",
+    title: "Travel Banyuwangi Juanda (Bandara) – Door to Door Tepat Waktu | Juragan Travel",
+    description:
+      "Jadwal & harga travel Banyuwangi Juanda (Bandara) PP terbaru. Door to door dari Banyuwangi ke Bandara Juanda Surabaya (T1 & T2), tepat waktu untuk penerbangan Anda.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-juanda",
     images: [
@@ -21,14 +24,15 @@ export const metadata: Metadata = {
         url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
-        alt: "Travel Banyuwangi Juanda"
-      }
+        alt: "Travel Banyuwangi Juanda door to door",
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi - Bandara Juanda (PP) | Jadwal & Harga | Juragan Travel",
-    description: "Jadwal & harga travel Banyuwangi ke Bandara Juanda (PP) terbaru. Layanan door-to-door, carter, dan drop-off.",
+    title: "Travel Banyuwangi Juanda (Bandara) – Door to Door Tepat Waktu",
+    description:
+      "Travel Banyuwangi ke Bandara Juanda dan Juanda ke Banyuwangi dengan layanan door to door, jadwal fleksibel, dan armada nyaman.",
     images: ["https://juragantravel.com/img/hero.webp"],
   },
   robots: {
@@ -48,7 +52,7 @@ const busTripData = {
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "https://juragantravel.com/img/hero.webp"
+    image: "https://juragantravel.com/img/hero.webp",
   },
   departureBusStop: {
     "@type": "BusStop",
@@ -57,8 +61,8 @@ const busTripData = {
       "@type": "PostalAddress",
       addressLocality: "Banyuwangi",
       addressRegion: "Jawa Timur",
-      addressCountry: "ID"
-    }
+      addressCountry: "ID",
+    },
   },
   arrivalBusStop: {
     "@type": "BusStop",
@@ -67,20 +71,22 @@ const busTripData = {
       "@type": "PostalAddress",
       addressLocality: "Sidoarjo",
       addressRegion: "Jawa Timur",
-      addressCountry: "ID"
-    }
+      addressCountry: "ID",
+    },
   },
-  name: "Travel Banyuwangi - Bandara Juanda (PP)",
-  description: "Layanan travel door-to-door antara Banyuwangi dan Bandara Juanda Surabaya via tol.",
+  name: "Travel Banyuwangi Juanda (Bandara) PP Door to Door",
+  description:
+    "Layanan travel Banyuwangi Juanda dan travel Juanda Banyuwangi PP dengan sistem door to door, antar jemput langsung ke Terminal 1 dan Terminal 2 Bandara Juanda via tol.",
   offers: {
     "@type": "Offer",
     price: "200000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Juanda",
-    description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
+    description:
+      "Harga travel Banyuwangi ke Bandara Juanda dan sebaliknya mulai Rp 200.000 per orang. Harga dapat berbeda tergantung titik jemput dan tujuan. Hubungi admin untuk harga pasti.",
     url: "https://juragantravel.com/rute/banyuwangi-juanda",
-    availability: "https://schema.org/InStock"
-  }
+    availability: "https://schema.org/InStock",
+  },
 };
 
 const breadcrumbData = {
@@ -176,8 +182,11 @@ export default function BanyuwangiJuandaPage() {
               <span className="text-dark font-medium">Banyuwangi - Bandara Juanda</span>
             </nav>
             <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Bandara Juanda (PP)</h1>
-            <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Jadwal travel Banyuwangi ke Bandara Juanda via tol. Tepat waktu untuk jadwal penerbangan Anda. Layanan door-to-airport aman dan nyaman.
+            <p className="mt-4 text-lg text-gray-600 max-w-5xl mx-auto">
+              Juragan Travel melayani <strong>travel Banyuwangi Juanda</strong> dan{" "}
+              <strong>travel Juanda Banyuwangi</strong> setiap hari via tol. Layanan
+              door-to-airport langsung ke Terminal 1 dan Terminal 2, tepat waktu untuk jadwal
+              penerbangan Anda.
             </p>
           </div>
         </section>
@@ -214,8 +223,14 @@ export default function BanyuwangiJuandaPage() {
             {/* Jadwal & Harga */}
             <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
               <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
-                <p className="mt-4 text-lg text-gray-600">Jadwal fleksibel, harga pasti. Pesan kursi Anda sekarang!</p>
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+                  Jadwal & Harga Travel Banyuwangi Juanda
+                </h2>
+                <p className="mt-4 text-lg text-gray-600">
+                  Jadwal <strong>travel Banyuwangi Juanda</strong> dan{" "}
+                  <strong>travel Juanda Banyuwangi</strong> menyesuaikan jam terbang dan landing
+                  pesawat Anda. Konsultasikan jadwal dengan admin untuk menghindari keterlambatan.
+                </p>
               </div>
               <div className="mt-10 overflow-x-auto">
                 <table className="w-full min-w-max text-left">
@@ -295,8 +310,11 @@ export default function BanyuwangiJuandaPage() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-center mt-6 text-sm text-gray-600">
-                *Harga dapat berubah sewaktu-waktu. Hubungi admin via WA untuk harga pasti dan promo terbaru.
+              <p className="text-center mt-6 text-sm text-gray-600 max-w-3xl mx-auto">
+                *Harga <strong>travel Banyuwangi ke Bandara Juanda</strong> dan{" "}
+                <strong>travel Bandara Juanda ke Banyuwangi</strong> mulai Rp 200.000 per orang.
+                Harga dapat berubah sewaktu-waktu tergantung titik penjemputan, tujuan, dan jadwal
+                penerbangan. Hubungi admin via WhatsApp untuk harga pasti dan promo terbaru.
               </p>
             </div>
 
@@ -434,10 +452,12 @@ export default function BanyuwangiJuandaPage() {
             <div className="mb-20 bg-white">
               <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
-                  Apa Kata Pelanggan Travel Banyuwangi Bandara Juanda
+                  Apa Kata Pelanggan Travel Banyuwangi Juanda
                 </h2>
                 <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
-                  Testimoni pelanggan rute travel Banyuwangi Bandara Juanda yang sudah menggunakan layanan door to airport kami.
+                  Testimoni pelanggan yang sudah menggunakan layanan{" "}
+                  <strong>travel Banyuwangi ke Bandara Juanda</strong> dan{" "}
+                  <strong>travel Juanda ke Banyuwangi</strong> dengan sistem door to airport kami.
                 </p>
               </div>
 
@@ -606,7 +626,7 @@ export default function BanyuwangiJuandaPage() {
 
             {/* FAQ Rute Spesifik */}
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-dark text-center mb-10">FAQ - Rute Banyuwangi Juanda</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-dark text-center mb-10">FAQ – Travel Banyuwangi Juanda</h2>
               <div className="space-y-6">
                 
                 <details className="bg-light p-6 rounded-lg shadow-md group" open>
@@ -659,12 +679,14 @@ export default function BanyuwangiJuandaPage() {
         <section id="form-pemesanan" className="py-20 bg-white">
         <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
-                Pesan Travel Banyuwangi - Bandara Juanda
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-                Isi formulir di bawah ini untuk pesan tiket travel dengan mudah dan cepat
-            </p>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+                Pesan Travel Banyuwangi – Bandara Juanda
+              </h2>
+              <p className="mt-4 text-lg text-gray-600">
+                Isi formulir di bawah ini untuk pesan tiket{" "}
+                <strong>travel Banyuwangi Juanda</strong> dengan mudah dan cepat. Tim kami akan
+                menghubungi Anda untuk konfirmasi jadwal penjemputan dan penerbangan.
+              </p>
             </div>
 
             <BookingForm routeName="Banyuwangi → Juanda" />
@@ -675,10 +697,13 @@ export default function BanyuwangiJuandaPage() {
         <section id="kontak" className="py-20 bg-primary text-white">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold">
-              Pesan Travel ke Bandara Juanda Sekarang
+              Pesan Travel Banyuwangi Juanda Sekarang
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-              Jangan sampai ketinggalan pesawat. Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan penjemputan tepat waktu.
+              Jangan sampai ketinggalan pesawat. Amankan kursi{" "}
+              <strong>travel Banyuwangi ke Bandara Juanda</strong> atau{" "}
+              <strong>travel Bandara Juanda ke Banyuwangi</strong> sekarang. Hubungi admin kami
+              via WhatsApp untuk booking cepat dan pengaturan jadwal yang tepat waktu.
             </p>
             <a 
               href={whatsappLinks.general}
@@ -687,7 +712,7 @@ export default function BanyuwangiJuandaPage() {
               title="Chat WhatsApp untuk Booking Travel Banyuwangi Bandara Juanda"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
-              Pesan Rute Juanda via WA
+              Pesan Travel Banyuwangi Juanda via WA
             </a>
           </div>
         </section>
