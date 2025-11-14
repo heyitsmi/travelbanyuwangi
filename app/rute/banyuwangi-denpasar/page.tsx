@@ -8,21 +8,21 @@ import { Ship, Home, Plane, ChevronDown, Map, Mountain } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Denpasar (PP) – Termasuk Tiket Kapal Ferry",
+  title: "Travel Banyuwangi Denpasar (PP) – Termasuk Tiket Kapal Ferry | Juragan Travel",
   description:
-    "Jadwal & harga travel Banyuwangi Denpasar (PP) terbaru. Layanan door-to-door, sudah termasuk tiket kapal, berangkat setiap hari (pagi, siang, malam). Pesan sekarang!",
+    "Butuh travel Banyuwangi Denpasar yang aman dan nyaman? Juragan Travel melayani travel Banyuwangi Denpasar dan Denpasar Banyuwangi setiap hari (pagi, siang, malam), layanan door-to-door, sudah termasuk tiket kapal ferry Ketapang–Gilimanuk.",
   keywords:
     "travel banyuwangi denpasar, travel denpasar banyuwangi, harga travel banyuwangi denpasar, jadwal travel banyuwangi denpasar, travel banyuwangi ke bali, travel banyuwangi denpasar pagi, travel banyuwangi denpasar malam",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Denpasar (PP) – Termasuk Tiket Kapal Ferry",
+    title: "Travel Banyuwangi Denpasar (PP) – Termasuk Tiket Kapal Ferry | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Denpasar (PP) terbaru. Layanan door-to-door, sudah termasuk tiket kapal.",
+      "Travel Banyuwangi Denpasar (PP) dengan layanan door-to-door, sudah termasuk tiket kapal ferry Ketapang–Gilimanuk. Berangkat setiap hari, pagi, siang, dan malam.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-denpasar",
     images: [
       {
-        url: "/img/rute/banyuwangi-denpasar.webp",
+        url: "https://juragantravel.com/img/rute/banyuwangi-denpasar.webp",
         width: 1200,
         height: 630,
       },
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Denpasar (PP) – Termasuk Tiket Kapal Ferry",
+    title: "Travel Banyuwangi Denpasar (PP) – Termasuk Tiket Kapal Ferry | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Denpasar (PP) terbaru. Layanan door-to-door, sudah termasuk tiket kapal.",
-    images: ["/img/rute/banyuwangi-denpasar.webp"],
+      "Travel Banyuwangi Denpasar dengan layanan door-to-door dan sudah termasuk tiket kapal ferry Ketapang–Gilimanuk. Cek jadwal & pesan via WhatsApp.",
+    images: ["https://juragantravel.com/img/rute/banyuwangi-denpasar.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/rute/banyuwangi-denpasar",
@@ -49,7 +49,7 @@ const busTripData = {
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "/img/hero.webp",
+    image: "https://juragantravel.com/img/rute/banyuwangi-denpasar.webp",
   },
   departureBusStop: {
     "@type": "BusStop",
@@ -63,7 +63,7 @@ const busTripData = {
   },
   arrivalBusStop: {
     "@type": "BusStop",
-    name: "Area Denpasar (Door-to-door)",
+    name: "Area Denpasar & Bali Selatan (Door-to-door)",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Denpasar",
@@ -71,15 +71,15 @@ const busTripData = {
       addressCountry: "ID",
     },
   },
-  name: "Travel Banyuwangi - Denpasar (PP)",
+  name: "Travel Banyuwangi Denpasar (PP) via Ketapang–Gilimanuk",
   description:
-    "Layanan travel door-to-door antara Banyuwangi dan Denpasar (Bali) dengan jadwal pagi, siang, dan malam.",
+    "Layanan travel Banyuwangi Denpasar dan travel Denpasar Banyuwangi dengan sistem door-to-door, sudah termasuk tiket kapal ferry Ketapang–Gilimanuk dan jadwal pagi, siang, malam setiap hari.",
   offers: {
     "@type": "Offer",
     price: "200000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Denpasar",
-    description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
+    description: "Harga travel Banyuwangi Denpasar sudah termasuk tiket kapal ferry. Hubungi admin untuk harga terbaru.",
     url: "https://juragantravel.com/rute/banyuwangi-denpasar",
     availability: "https://schema.org/InStock",
   },
@@ -179,11 +179,25 @@ const faqs = [
   }
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function BanyuwangiDenpasarPage() {
   return (
     <>
       <StructuredData data={busTripData} />
       <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqSchema} />
       <div className="bg-white antialiased">
         <Header />
 
@@ -192,20 +206,20 @@ export default function BanyuwangiDenpasarPage() {
           <section className="bg-light py-20">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <nav className="text-sm mb-4">
-                <Link href="/" className="text-gray-600 hover:text-primary">
+                <Link href="/" className="text-gray-600 hover:text-primary" title="Kembali ke Beranda">
                   Beranda
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <Link href="/rute" className="text-gray-600 hover:text-primary">
+                <Link href="/rute" className="text-gray-600 hover:text-primary" title="Lihat Semua Rute Travel">
                   Rute
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
                 <span className="text-dark font-medium">Banyuwangi - Denpasar</span>
               </nav>
               <h1 className="text-2xl md:text-4xl font-extrabold text-dark">Travel Banyuwangi Denpasar (PP) – Termasuk Tiket Kapal</h1>
-              <p className="mt-4 text-sm md:text-lg text-gray-600 max-w-4xl mx-auto">
+              <p className="mt-4 text-sm md:text-lg text-gray-600 max-w-5xl mx-auto">
                 Jadwal travel Banyuwangi Denpasar berangkat setiap hari (pagi, siang, malam). Layanan door-to-door,
-                aman, nyaman, sudah termasuk tiket kapal.
+  aman, nyaman, dan sudah termasuk tiket kapal ferry untuk perjalanan Banyuwangi Denpasar maupun Denpasar Banyuwangi.
               </p>
             </div>
           </section>
@@ -238,14 +252,20 @@ export default function BanyuwangiDenpasarPage() {
                     pengantaran ke area populer seperti <strong>Kuta, Sanur, Jimbaran,</strong> dan{" "}
                     <strong>Bandara Ngurah Rai</strong> dengan penyesuaian.
                   </p>
+                  <p className="mt-4 text-sm md:text-lg text-gray-700 leading-relaxed">
+                    Dengan memilih travel Banyuwangi Denpasar, Anda tidak perlu repot memikirkan tiket kapal dan
+                    transportasi lanjutan karena kami mengantar langsung sampai alamat tujuan di Bali.
+                  </p>
                 </div>
               </div>
 
               {/* Jadwal & Harga */}
               <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
                 <div className="text-center">
-                  <h2 className="text-xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
-                  <p className="mt-4 text-sm md:text-lg text-gray-600">Jadwal pasti, harga terjangkau. Pesan kursi Anda sekarang!</p>
+                  <h2 className="text-xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel Banyuwangi Denpasar</h2>
+                  <p className="mt-4 text-sm md:text-lg text-gray-600">
+                    Jadwal pasti, harga terjangkau. Pesan kursi travel Banyuwangi Denpasar Anda sekarang!
+                  </p>
                 </div>
                 <div className="mt-10 overflow-x-auto">
                   <table className="w-full min-w-max text-left">
@@ -268,6 +288,7 @@ export default function BanyuwangiDenpasarPage() {
                               href="https://wa.me/6282143258744"
                               target="_blank"
                               rel="noopener noreferrer"
+                              title="Pesan Travel Banyuwangi Denpasar via WhatsApp"
                               className="bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-base font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -279,7 +300,7 @@ export default function BanyuwangiDenpasarPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600">
-                  *Jadwal travel Banyuwangi Denpasar dapat berubah sesuai kondisi penyeberangan Ketapang–Gilimanuk, hubungi admin untuk konfirmasi jam terbaru. Harga dapat berubah sewaktu-waktu. Hubungi admin via WA untuk harga pasti dan promo terbaru.
+                  *Jadwal travel Banyuwangi Denpasar dapat berubah sesuai kondisi penyeberangan Ketapang–Gilimanuk, hubungi admin untuk konfirmasi jam terbaru. Harga travel Banyuwangi Denpasar dapat berubah sewaktu-waktu, silakan hubungi admin via WA untuk harga pasti dan promo terbaru.
                 </p>
               </div>
 
@@ -313,7 +334,7 @@ export default function BanyuwangiDenpasarPage() {
                     Area Layanan Travel Banyuwangi Denpasar
                   </h2>
                   <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
-                    Layanan door-to-door kami mencakup penjemputan di seluruh area Banyuwangi dan pengantaran di area Denpasar, Badung & sekitarnya
+                    Layanan door-to-door travel Banyuwangi Denpasar kami mencakup penjemputan di seluruh area Banyuwangi dan pengantaran di area Denpasar, Badung & sekitarnya.
                   </p>
                 </div>
 
@@ -529,6 +550,7 @@ export default function BanyuwangiDenpasarPage() {
                     href="https://wa.me/6282143258744"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Hubungi Admin untuk Pesan Travel Banyuwangi Denpasar"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
                     Pesan Travel Banyuwangi Denpasar via WhatsApp
@@ -549,7 +571,7 @@ export default function BanyuwangiDenpasarPage() {
 
                 <div className="grid md:grid-cols-3 gap-6">
                   {/* Rute Surabaya */}
-                  <Link href="/rute/banyuwangi-surabaya" className="group">
+                  <Link href="/rute/banyuwangi-surabaya" className="group" title="Travel Banyuwangi Surabaya - Via Tol Door to Door">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
                       <div className="flex items-center mb-4">
                         <div>
@@ -570,7 +592,7 @@ export default function BanyuwangiDenpasarPage() {
                   </Link>
 
                   {/* Rute Malang */}
-                  <Link href="/rute/banyuwangi-malang" className="group">
+                  <Link href="/rute/banyuwangi-malang" className="group" title="Travel Banyuwangi Malang - Door to Door Nyaman">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
                       <div className="flex items-center mb-4">
                         <div>
@@ -591,7 +613,7 @@ export default function BanyuwangiDenpasarPage() {
                   </Link>
 
                   {/* Rute Solo */}
-                  <Link href="/rute/banyuwangi-solo" className="group">
+                  <Link href="/rute/banyuwangi-solo" className="group" title="Travel Banyuwangi Solo - Via Tol Nyaman Terpercaya">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
                       <div className="flex items-center mb-4">
                         <div>
@@ -615,6 +637,7 @@ export default function BanyuwangiDenpasarPage() {
                 <div className="text-center mt-8">
                   <Link
                     href="/rute"
+                    title="Lihat Semua Rute Travel Kami"
                     className="inline-block bg-primary text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
                     Lihat Semua Rute Travel
@@ -623,9 +646,9 @@ export default function BanyuwangiDenpasarPage() {
               </div>
 
               {/* FAQ Rute Spesifik */}
-              <div className="max-w-3xl mx-auto">
+              <div className="max-w-5xl mx-auto">
                 <h2 className="text-xl md:text-4xl font-extrabold text-dark text-center mb-8">
-                  FAQ - Rute Banyuwangi Denpasar
+                  FAQ Travel Banyuwangi Denpasar (Rute & Layanan)
                 </h2>
                 <div className="space-y-6">
                   {faqs.map((faq, index) => (
@@ -651,7 +674,7 @@ export default function BanyuwangiDenpasarPage() {
                   Pesan Travel Banyuwangi - Denpasar
                 </h2>
                 <p className="mt-4 text-sm md:text-lg text-gray-600">
-                  Isi formulir di bawah ini untuk pesan tiket travel dengan mudah dan cepat
+                  Isi formulir di bawah ini untuk pesan tiket travel Banyuwangi Denpasar dengan mudah dan cepat.
                 </p>
               </div>
 
@@ -671,6 +694,7 @@ export default function BanyuwangiDenpasarPage() {
                 href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Chat WhatsApp untuk Booking Travel Banyuwangi Denpasar"
                 className="mt-10 inline-block bg-accent text-white px-6 py-2.5 md:px-10 md:py-3 rounded-lg font-bold text-sm md:text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Pesan Travel Banyuwangi Denpasar via WhatsApp

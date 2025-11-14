@@ -218,11 +218,11 @@ export default function BanyuwangiSurabayaPage() {
           <section className="bg-light py-20">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <nav className="text-sm mb-4">
-                <Link href="/" className="text-gray-600 hover:text-primary">
+                <Link href="/" className="text-gray-600 hover:text-primary" title="Kembali ke Beranda">
                   Beranda
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <Link href="/rute" className="text-gray-600 hover:text-primary">
+                <Link href="/rute" className="text-gray-600 hover:text-primary" title="Lihat Semua Rute Travel">
                   Rute
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
@@ -298,6 +298,7 @@ export default function BanyuwangiSurabayaPage() {
                               href="https://wa.me/6282143258744"
                               target="_blank"
                               rel="noopener noreferrer"
+                              title="Pesan Travel Banyuwangi Surabaya via WhatsApp"
                               className="bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-base font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -598,6 +599,7 @@ export default function BanyuwangiSurabayaPage() {
                     href="https://wa.me/6282143258744"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Hubungi Admin untuk Pesan Travel Banyuwangi Surabaya"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
                     Pesan Travel Banyuwangi Surabaya via WhatsApp
@@ -618,7 +620,7 @@ export default function BanyuwangiSurabayaPage() {
 
                 <div className="grid md:grid-cols-3 gap-6">
                   {/* Rute Malang */}
-                  <Link href="/rute/banyuwangi-malang" className="group">
+                  <Link href="/rute/banyuwangi-malang" className="group" title="Travel Banyuwangi Malang - Door to Door Nyaman">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
                       <div className="flex items-center mb-4">
                         <div>
@@ -639,7 +641,7 @@ export default function BanyuwangiSurabayaPage() {
                   </Link>
 
                   {/* Rute Denpasar */}
-                  <Link href="/rute/banyuwangi-denpasar" className="group">
+                  <Link href="/rute/banyuwangi-denpasar" className="group" title="Travel Banyuwangi Denpasar - Via Ferry Aman Nyaman">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
                       <div className="flex items-center mb-4">
                         <div>
@@ -660,7 +662,7 @@ export default function BanyuwangiSurabayaPage() {
                   </Link>
 
                   {/* Rute Solo */}
-                  <Link href="/rute/banyuwangi-solo" className="group">
+                  <Link href="/rute/banyuwangi-solo" className="group" title="Travel Banyuwangi Solo - Via Tol Nyaman Terpercaya">
                     <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
                       <div className="flex items-center mb-4">
                         <div>
@@ -684,6 +686,7 @@ export default function BanyuwangiSurabayaPage() {
                 <div className="text-center mt-8">
                   <Link
                     href="/rute"
+                    title="Lihat Semua Rute Travel Kami"
                     className="inline-block bg-primary text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
                     Lihat Semua Rute Travel
@@ -739,6 +742,7 @@ export default function BanyuwangiSurabayaPage() {
                 href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Chat WhatsApp untuk Booking Travel Banyuwangi Surabaya"
                 className="mt-10 inline-block bg-accent text-white px-6 py-2.5 md:px-10 md:py-3 rounded-lg font-bold text-sm md:text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Pesan Travel Banyuwangi Surabaya via WhatsApp
