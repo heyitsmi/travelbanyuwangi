@@ -8,21 +8,21 @@ import { Map, Home, Mountain, ChevronDown, Plane } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Malang (PP) – Jadwal & Harga Terbaru",
+  title: "Travel Banyuwangi Malang (PP) – Jadwal, Harga & Door to Door | Juragan Travel",
   description:
-    "Jadwal & harga travel Banyuwangi Malang (PP) terbaru. Layanan door-to-door via Jember/Probolinggo, armada nyaman, berangkat setiap hari (pagi, siang, malam). Pesan sekarang!",
+    "Butuh travel Banyuwangi Malang yang aman dan nyaman? Juragan Travel melayani travel Banyuwangi Malang dan Malang Banyuwangi setiap hari (pagi, siang, malam) dengan layanan door-to-door ke kampus, kos, hotel, dan Kota Batu.",
   keywords:
     "travel banyuwangi malang, travel malang banyuwangi, harga travel banyuwangi malang, jadwal travel banyuwangi malang, travel banyuwangi batu, travel banyuwangi malang pagi, travel banyuwangi malang malam",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Malang (PP) – Jadwal & Harga Terbaru",
+    title: "Travel Banyuwangi Malang (PP) – Jadwal, Harga & Door to Door | Juragan Travel",
     description:
-      "Travel Banyuwangi Malang (PP) via door-to-door. Jemput di rumah, antar sampai Malang/Kota Batu. Cek jadwal & pesan via WhatsApp sekarang.",
+      "Travel Banyuwangi Malang (PP) dengan layanan door-to-door. Jemput di rumah, antar sampai Malang/Kota Batu dan area kampus UB, UM, UIN. Cek jadwal & pesan via WhatsApp sekarang.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-malang",
     images: [
       {
-        url: "/img/rute/banyuwangi-malang.webp",
+        url: "https://juragantravel.com/img/rute/banyuwangi-malang.webp",
         width: 1200,
         height: 630,
       },
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Malang (PP) – Jadwal & Harga Terbaru",
+    title: "Travel Banyuwangi Malang (PP) – Jadwal, Harga & Door to Door | Juragan Travel",
     description:
-      "Travel Banyuwangi Malang (PP) via door-to-door. Jemput di rumah, antar sampai Malang/Kota Batu. Cek jadwal & pesan via WhatsApp sekarang.",
-    images: ["/img/rute/banyuwangi-malang.webp"],
+      "Travel Banyuwangi Malang (PP) via layanan door-to-door. Jemput di rumah, antar sampai Malang/Kota Batu. Cek jadwal & pesan via WhatsApp sekarang.",
+    images: ["https://juragantravel.com/img/rute/banyuwangi-malang.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/rute/banyuwangi-malang",
@@ -49,7 +49,7 @@ const busTripData = {
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "/img/rute/banyuwangi-malang.webp",
+    image: "https://juragantravel.com/img/rute/banyuwangi-malang.webp",
   },
   departureBusStop: {
     "@type": "BusStop",
@@ -63,7 +63,7 @@ const busTripData = {
   },
   arrivalBusStop: {
     "@type": "BusStop",
-    name: "Area Malang (Door-to-door)",
+    name: "Area Malang & Kota Batu (Door-to-door)",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Malang",
@@ -71,15 +71,15 @@ const busTripData = {
       addressCountry: "ID",
     },
   },
-  name: "Travel Banyuwangi - Malang (PP)",
+  name: "Travel Banyuwangi Malang (PP) via Jember/Probolinggo",
   description:
-    "Layanan travel door-to-door antara Banyuwangi dan Malang dengan jadwal pagi, siang, dan malam.",
+    "Layanan travel Banyuwangi Malang dan travel Malang Banyuwangi dengan sistem door-to-door, jadwal pagi, siang, dan malam, serta pengantaran ke kampus dan area wisata Kota Batu.",
   offers: {
     "@type": "Offer",
     price: "200000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Malang",
-    description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
+    description: "Harga travel Banyuwangi Malang dapat bervariasi. Hubungi admin untuk harga terbaru.",
     url: "https://juragantravel.com/rute/banyuwangi-malang",
     availability: "https://schema.org/InStock",
   },
@@ -173,11 +173,25 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function BanyuwangiMalangPage() {
   return (
     <>
       <StructuredData data={busTripData} />
       <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqSchema} />
       <div className="bg-white antialiased">
         <Header />
 
@@ -197,8 +211,8 @@ export default function BanyuwangiMalangPage() {
                 <span className="text-dark font-medium">Banyuwangi - Malang</span>
               </nav>
               <h1 className="text-2xl md:text-4xl font-extrabold text-dark">Travel Banyuwangi Malang (PP) – Door to Door & Nyaman</h1>
-              <p className="mt-4 text-sm md:text-lg text-gray-600 max-w-4xl mx-auto">
-                Juragan Travel melayani travel Banyuwangi Malang setiap hari (pagi, siang, malam) dengan layanan door-to-door, armada nyaman, dan rute fleksibel via Jember atau Probolinggo.
+              <p className="mt-4 text-sm md:text-lg text-gray-600 max-w-5xl mx-auto">
+                Juragan Travel melayani travel Banyuwangi Malang dan travel Malang Banyuwangi setiap hari (pagi, siang, malam) dengan layanan door-to-door, armada nyaman, dan rute fleksibel via Jember atau Probolinggo.
               </p>
             </div>
           </section>
@@ -232,7 +246,7 @@ export default function BanyuwangiMalangPage() {
                     dengan penyesuaian.
                   </p>
                   <p className="mt-4 text-sm md:text-lg text-gray-700 leading-relaxed">
-                    Rute travel Banyuwangi ke Malang dan Kota Batu ini cocok untuk mahasiswa, pekerja, hingga wisatawan yang ingin berlibur ke Malang dan sekitarnya.
+                    Rute travel Banyuwangi ke Malang dan Kota Batu ini cocok untuk mahasiswa, pekerja, hingga wisatawan yang ingin berlibur ke Malang dan sekitarnya. Dengan memilih travel Banyuwangi Malang, Anda tidak perlu pindah kendaraan karena kami mengantar langsung sampai tujuan.
                   </p>
                 </div>
               </div>
@@ -240,9 +254,9 @@ export default function BanyuwangiMalangPage() {
               {/* Jadwal & Harga */}
               <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
                 <div className="text-center">
-                  <h2 className="text-xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
+                  <h2 className="text-xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel Banyuwangi Malang</h2>
                   <p className="mt-4 text-sm md:text-lg text-gray-600">
-                    Jadwal pasti, harga terjangkau. Pesan kursi Anda sekarang!
+                    Jadwal pasti, harga terjangkau. Pesan kursi travel Banyuwangi Malang Anda sekarang!
                   </p>
                 </div>
                 <div className="mt-10 overflow-x-auto">
@@ -742,7 +756,7 @@ export default function BanyuwangiMalangPage() {
               {/* FAQ Rute Spesifik */}
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-xl md:text-4xl font-extrabold text-dark text-center mb-8">
-                  FAQ - Rute Banyuwangi Malang
+                  FAQ Travel Banyuwangi Malang (Rute & Layanan)
                 </h2>
                 <div className="space-y-6">
                   {faqs.map((faq, index) => (

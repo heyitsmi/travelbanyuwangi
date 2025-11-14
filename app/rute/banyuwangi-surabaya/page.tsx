@@ -49,7 +49,7 @@ const busTripData = {
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "/img/rute/banyuwangi-surabaya.webp",
+    image: "https://juragantravel.com/img/rute/banyuwangi-surabaya.webp",
   },
   departureBusStop: {
     "@type": "BusStop",
@@ -71,15 +71,15 @@ const busTripData = {
       addressCountry: "ID",
     },
   },
-  name: "Travel Banyuwangi - Surabaya (PP)",
+  name: "Travel Banyuwangi Surabaya (PP) via Tol",
   description:
-    "Layanan travel door-to-door antara Banyuwangi dan Surabaya via tol dengan jadwal pagi, siang, dan malam.",
+    "Layanan travel Banyuwangi Surabaya dan travel Surabaya Banyuwangi via tol dengan jadwal pagi, siang, dan malam serta layanan door to door.",
   offers: {
     "@type": "Offer",
     price: "200000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Surabaya",
-    description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
+    description: "Harga travel Banyuwangi Surabaya dapat bervariasi. Hubungi admin untuk harga terbaru.",
     url: "https://juragantravel.com/rute/banyuwangi-surabaya",
     availability: "https://schema.org/InStock",
   },
@@ -190,11 +190,26 @@ const faqs = [
   }
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
+
 export default function BanyuwangiSurabayaPage() {
   return (
     <>
       <StructuredData data={busTripData} />
       <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqSchema} />
       <div className="bg-white antialiased">
         <Header />
 
@@ -257,9 +272,9 @@ export default function BanyuwangiSurabayaPage() {
               {/* Jadwal & Harga */}
               <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
                 <div className="text-center">
-                  <h2 className="text-xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
+                  <h2 className="text-xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel Banyuwangi Surabaya</h2>
                   <p className="mt-4 text-sm md:text-lg text-gray-600">
-                    Jadwal pasti, harga terjangkau. Pesan kursi Anda sekarang!
+                    Jadwal pasti, harga terjangkau. Pesan kursi travel Banyuwangi Surabaya Anda sekarang!
                   </p>
                 </div>
                 <div className="mt-10 overflow-x-auto">
@@ -679,7 +694,7 @@ export default function BanyuwangiSurabayaPage() {
               {/* FAQ Rute Spesifik */}
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-xl md:text-4xl font-extrabold text-dark mb-8 text-center">
-                  FAQ - Rute Banyuwangi Surabaya
+                  FAQ Travel Banyuwangi Surabaya (Rute & Layanan)
                 </h2>
                 <div className="space-y-6">
                   {faqs.map((faq, index) => (
@@ -704,7 +719,7 @@ export default function BanyuwangiSurabayaPage() {
                   Pesan Travel Banyuwangi - Surabaya
                 </h2>
                 <p className="mt-4 text-sm md:text-lg text-gray-600">
-                  Isi formulir di bawah ini untuk pesan tiket travel Banyuwangi Surabaya dengan mudah dan cepat
+                  Isi formulir di bawah ini untuk pesan tiket travel Banyuwangi Surabaya dengan mudah dan cepat.
                 </p>
               </div>
 
