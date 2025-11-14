@@ -5,6 +5,7 @@ import { ArrowRight, Home, Lock, ChevronDown, Map, Plane, Mountain } from 'lucid
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { StructuredData } from '../../components/SEO';
+import BookingForm from '../../components/BookingForm';
 
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Pasuruan (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel",
@@ -603,6 +604,22 @@ export default function BanyuwangiPasuruanPage() {
                 ))}
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Form Pemesanan Section */}
+        <section id="form-pemesanan" className="py-20 bg-white">
+          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-xl md:text-4xl font-extrabold text-dark">
+                Pesan Travel Banyuwangi - Pasuruan
+              </h2>
+              <p className="mt-4 text-sm md:text-lg text-gray-600">
+                Isi formulir di bawah ini untuk pesan tiket travel Banyuwangi Pasuruan dengan mudah dan cepat.
+              </p>
+            </div>
+
+            <BookingForm routeName="Banyuwangi → Pasuruan" />
           </div>
         </section>
 
