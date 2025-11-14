@@ -10,9 +10,9 @@ import BookingForm from "../../components/BookingForm";
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel",
   description:
-    "Travel Banyuwangi Sidoarjo via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Sidoarjo. Booking cepat via WhatsApp.",
+    "Butuh travel Banyuwangi Sidoarjo via tol? Juragan Travel melayani travel Banyuwangi Sidoarjo dan Sidoarjo Banyuwangi setiap hari dengan layanan door to door, armada nyaman, dan booking cepat via WhatsApp.",
   keywords:
-    "travel banyuwangi sidoarjo, travel sidoarjo banyuwangi, harga travel banyuwangi sidoarjo, jadwal travel banyuwangi sidoarjo, travel banyuwangi sidoarjo via tol",
+    "travel banyuwangi sidoarjo, travel sidoarjo banyuwangi, harga travel banyuwangi sidoarjo, jadwal travel banyuwangi sidoarjo, travel banyuwangi sidoarjo via tol, travel banyuwangi sidoarjo malam, travel banyuwangi sidoarjo pagi, travel banyuwangi sidoarjo murah",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel",
@@ -207,7 +207,7 @@ export default function BanyuwangiSidoarjoPage() {
               </nav>
               <h1 className="text-2xl md:text-4xl font-extrabold text-dark">Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door</h1>
               <p className="mt-4 text-sm md:text-lg text-gray-600 max-w-4xl mx-auto">
-                Juragan Travel melayani travel Banyuwangi Sidoarjo via tol setiap hari dengan sistem jemput di rumah dan antar sampai tujuan (door to door) di seluruh area Sidoarjo dan sekitarnya.
+                Juragan Travel melayani travel Banyuwangi Sidoarjo via tol setiap hari dengan sistem jemput di rumah dan antar sampai tujuan (door to door) di seluruh area Sidoarjo dan sekitarnya, termasuk Waru, Gedangan, Candi, dan dekat Bandara Juanda.
               </p>
             </div>
           </section>
@@ -286,7 +286,10 @@ export default function BanyuwangiSidoarjoPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600 max-w-4xl mx-auto">
-                  *Harga travel Banyuwangi Sidoarjo mulai Rp 200.000 dengan jadwal keberangkatan pagi, siang, dan malam setiap hari. Harga travel Banyuwangi Sidoarjo dapat berubah sewaktu-waktu, hubungi kami via WA untuk info harga terbaru.
+                  *Harga travel Banyuwangi Sidoarjo mulai Rp 200.000 dengan jadwal keberangkatan pagi, siang, dan malam setiap hari. Harga dapat berubah sewaktu-waktu, hubungi kami via WA untuk info harga terbaru atau{" "}
+                  <a href="#form-pemesanan" className="text-primary font-semibold underline" title="Isi Formulir Pemesanan Travel Banyuwangi Sidoarjo">
+                    pesan travel Banyuwangi Sidoarjo melalui formulir pemesanan
+                  </a>.
                 </p>
               </div>
 
@@ -321,6 +324,9 @@ export default function BanyuwangiSidoarjoPage() {
                   </h2>
                   <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
                     Layanan door-to-door kami mencakup penjemputan dan pengantaran di seluruh area Banyuwangi dan Sidoarjo
+                  </p>
+                  <p className="mt-2 text-sm md:text-base text-gray-600 max-w-4xl mx-auto px-2">
+                    Jadi, baik Anda berangkat dari Banyuwangi ke Sidoarjo maupun dari Sidoarjo ke Banyuwangi, Anda bisa menggunakan layanan travel kami tanpa perlu datang ke terminal.
                   </p>
                 </div>
 

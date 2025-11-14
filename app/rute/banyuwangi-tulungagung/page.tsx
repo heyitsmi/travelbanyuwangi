@@ -4,20 +4,20 @@ import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { StructuredData } from "../../components/SEO";
-import { Map, Home, Building, ChevronDown } from "lucide-react";
+import { Map, Home, Building, ChevronDown, Mountain } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | Juragan Travel",
+  title: "Travel Banyuwangi Tulungagung (PP) – Jalur Selatan, Door to Door | Juragan Travel",
   description:
-    "Jadwal & harga travel Banyuwangi Tulungagung (PP) terbaru. Layanan door-to-door, armada nyaman, berangkat setiap hari (pagi & malam). Pesan sekarang!",
+    "Butuh travel Banyuwangi Tulungagung via jalur selatan? Juragan Travel melayani travel Banyuwangi Tulungagung dan Tulungagung Banyuwangi setiap hari dengan layanan door to door, armada nyaman, dan driver berpengalaman.",
   keywords:
-    "travel banyuwangi tulungagung, travel tulungagung banyuwangi, harga travel banyuwangi tulungagung, jadwal travel banyuwangi tulungagung, travel banyuwangi kediri, travel banyuwangi blitar",
+    "travel banyuwangi tulungagung, travel tulungagung banyuwangi, harga travel banyuwangi tulungagung, jadwal travel banyuwangi tulungagung, travel banyuwangi tulungagung malam, travel banyuwangi tulungagung pagi, travel banyuwangi kediri, travel banyuwangi blitar",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | Juragan Travel",
+    title: "Travel Banyuwangi Tulungagung (PP) – Jalur Selatan, Door to Door | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Tulungagung (PP) terbaru. Layanan door-to-door, berangkat setiap hari.",
+      "Travel Banyuwangi Tulungagung via jalur selatan dengan layanan door to door, armada nyaman, dan keberangkatan setiap hari. Booking cepat via WhatsApp.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-tulungagung",
     images: [
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Tulungagung (PP) - Jadwal & Harga Terbaru | Juragan Travel",
+    title: "Travel Banyuwangi Tulungagung (PP) – Jalur Selatan, Door to Door | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Tulungagung (PP) terbaru. Layanan door-to-door, berangkat setiap hari.",
+      "Travel Banyuwangi Tulungagung via jalur selatan dengan layanan door to door dan berangkat setiap hari (pagi & malam).",
     images: ["/img/rute/banyuwangi-tulungagung.webp"],
   },
   alternates: {
@@ -49,7 +49,7 @@ const busTripData = {
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "/img/hero.webp",
+    image: "https://juragantravel.com/img/rute/banyuwangi-tulungagung.webp",
   },
   departureBusStop: {
     "@type": "BusStop",
@@ -73,7 +73,7 @@ const busTripData = {
   },
   name: "Travel Banyuwangi - Tulungagung (PP)",
   description:
-    "Layanan travel door-to-door antara Banyuwangi dan Tulungagung, Blitar, Kediri dengan jadwal pagi dan malam.",
+    "Layanan travel Banyuwangi Tulungagung dan travel Tulungagung Banyuwangi door-to-door via jalur selatan Jawa Timur, melayani juga Blitar dan Kediri dengan jadwal pagi dan malam.",
   offers: {
     "@type": "Offer",
     price: "400000",
@@ -168,11 +168,25 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function BanyuwangiTulungagungPage() {
   return (
     <>
       <StructuredData data={busTripData} />
       <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqSchema} />
       <div className="bg-white antialiased">
         <Header />
 
@@ -181,20 +195,22 @@ export default function BanyuwangiTulungagungPage() {
           <section className="bg-light py-20">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <nav className="text-sm mb-4">
-                <Link href="/" className="text-gray-600 hover:text-primary">
+                <Link href="/" className="text-gray-600 hover:text-primary" title="Kembali ke Beranda">
                   Beranda
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <Link href="/rute" className="text-gray-600 hover:text-primary">
+                <Link href="/rute" className="text-gray-600 hover:text-primary" title="Lihat Semua Rute Travel">
                   Rute
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
                 <span className="text-dark font-medium">Banyuwangi - Tulungagung</span>
               </nav>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Tulungagung (PP)</h1>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">
+                Travel Banyuwangi Tulungagung (PP) – Jalur Selatan Door to Door
+              </h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Jadwal travel Banyuwangi Tulungagung berangkat setiap hari (pagi & malam). Layanan door-to-door, aman,
-                nyaman, melayani juga Blitar dan Kediri.
+                Juragan Travel melayani travel Banyuwangi Tulungagung dan Tulungagung Banyuwangi setiap hari (pagi & malam)
+                dengan layanan door-to-door, armada nyaman, dan rute jalur selatan yang juga melayani Blitar dan Kediri.
               </p>
             </div>
           </section>
@@ -224,7 +240,8 @@ export default function BanyuwangiTulungagungPage() {
                   </p>
                   <p className="mt-4 text-lg text-gray-700 leading-relaxed">
                     Dengan armada yang nyaman dan driver profesional, kami memastikan perjalanan Anda via Jember,
-                    Lumajang, dan Blitar tetap nyaman dan aman sampai tujuan.
+                    Lumajang, Blitar, hingga Tulungagung tetap aman dan nyaman. Cocok untuk perjalanan kerja, kuliah,
+                    maupun pulang kampung.
                   </p>
                 </div>
               </div>
@@ -232,9 +249,11 @@ export default function BanyuwangiTulungagungPage() {
               {/* Jadwal & Harga */}
               <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
                 <div className="text-center">
-                  <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
+                  <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+                    Jadwal & Harga Travel Banyuwangi Tulungagung
+                  </h2>
                   <p className="mt-4 text-lg text-gray-600">
-                    Jadwal pasti, harga terjangkau. Pesan kursi Anda sekarang!
+                    Jadwal travel Banyuwangi Tulungagung pasti, harga terjangkau. Pesan kursi Anda sekarang!
                   </p>
                 </div>
                 <div className="mt-10 overflow-x-auto">
@@ -258,6 +277,7 @@ export default function BanyuwangiTulungagungPage() {
                               href="https://wa.me/6282143258744"
                               target="_blank"
                               rel="noopener noreferrer"
+                              title="Pesan Travel Banyuwangi Tulungagung via WhatsApp"
                               className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -268,8 +288,12 @@ export default function BanyuwangiTulungagungPage() {
                     </tbody>
                   </table>
                 </div>
-                <p className="text-center mt-6 text-sm text-gray-600">
-                  *Harga dapat berubah sewaktu-waktu. Hubungi admin via WA untuk harga pasti dan promo terbaru.
+                <p className="text-center mt-6 text-sm text-gray-600 max-w-4xl mx-auto">
+                  *Harga travel Banyuwangi Tulungagung mulai Rp 400.000 untuk sekali jalan dengan jadwal keberangkatan pagi
+                  dan malam. Harga dapat berubah sewaktu-waktu, hubungi admin via WA untuk harga terbaru atau{" "}
+                  <a href="#form-pemesanan" className="text-primary font-semibold underline">
+                    pesan travel Banyuwangi Tulungagung melalui formulir pemesanan
+                  </a>.
                 </p>
               </div>
 
@@ -293,6 +317,349 @@ export default function BanyuwangiTulungagungPage() {
                       </div>
                     );
                   })}
+                </div>
+              </div>
+
+              {/* Area Layanan Section */}
+              <div className="mb-20 bg-light p-6 md:p-12 rounded-lg shadow-lg">
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
+                    Area Layanan Travel Banyuwangi Tulungagung
+                  </h2>
+                  <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
+                    Layanan door-to-door kami mencakup penjemputan dan pengantaran di seluruh area Banyuwangi dan Tulungagung
+                  </p>
+                  <p className="mt-2 text-sm md:text-base text-gray-600 max-w-5xl mx-auto px-2">
+                    Baik untuk rute dari Banyuwangi ke Tulungagung maupun dari Tulungagung ke Banyuwangi, Anda bisa naik travel
+                    tanpa perlu datang ke terminal, cukup tunggu di rumah.
+                  </p>
+                </div>
+
+                {/* Tag Cloud Area Coverage */}
+                <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+                  {/* Banyuwangi Areas */}
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Banyuwangi Kota
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Rogojampi
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kabat
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Genteng
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Srono
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Glenmore
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kalibaru
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Glagah
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Singojuruh
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Cluring
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Purwoharjo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Muncar
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Wongsorejo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Songgon
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Sempu
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Giri
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Pesanggaran
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Bangorejo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Tegalsari
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Licin
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Tegaldlimo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Siliragung
+                  </span>
+                  
+                  {/* Daerah yang Dilewati */}
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Jember
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Lumajang
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Probolinggo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Pasuruan
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Malang
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Blitar
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kediri
+                  </span>
+                  
+                  {/* Tulungagung Areas (19 Kecamatan) */}
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Tulungagung Kota
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Boyolangu
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kedungwaru
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Ngunut
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Sumbergempol
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Bandung
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Pakel
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Campurdarat
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Tanggunggunung
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kauman
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Gondang
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kalidawir
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Rejotangan
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Besuki
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Pagerwojo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Sendang
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Karangrejo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Pucanglaban
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Ngunut Selatan
+                  </span>
+                </div>
+              </div>
+
+              {/* Testimonial Section - Route Specific */}
+              <div className="mb-20 bg-white">
+                <div className="text-center mb-12">
+                  <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
+                    Apa Kata Pelanggan Travel Banyuwangi Tulungagung
+                  </h2>
+                  <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
+                    Testimoni pelanggan rute travel Banyuwangi Tulungagung yang sudah menggunakan layanan door to door kami.
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8">
+                  {/* Testimonial 1 */}
+                  <div className="bg-light p-6 rounded-lg shadow-lg">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">
+                        D
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="font-bold text-dark">Dwi Cahyono</h4>
+                        <p className="text-sm text-gray-600">Mahasiswa, Tulungagung</p>
+                      </div>
+                    </div>
+                    <div className="flex mb-3">
+                      <span className="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                      "Saya kuliah di Banyuwangi, rutin pulang ke Tulungagung pakai travel ini. Pelayanan door-to-door sangat membantu, tidak perlu ke terminal. Driver ramah dan perjalanan nyaman!"
+                    </p>
+                    <p className="text-xs text-gray-500 mt-4">Januari 2025</p>
+                  </div>
+
+                  {/* Testimonial 2 */}
+                  <div className="bg-light p-6 rounded-lg shadow-lg">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xl">
+                        P
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="font-bold text-dark">Putra Wijaya</h4>
+                        <p className="text-sm text-gray-600">Pengusaha, Blitar</p>
+                      </div>
+                    </div>
+                    <div className="flex mb-3">
+                      <span className="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                      "Sering ke Banyuwangi untuk urusan bisnis. Juragan Travel solusi terbaik! Jadwal pasti, harga terjangkau, dan bisa dijemput dari rumah. Sangat recommended!"
+                    </p>
+                    <p className="text-xs text-gray-500 mt-4">Desember 2024</p>
+                  </div>
+
+                  {/* Testimonial 3 */}
+                  <div className="bg-light p-6 rounded-lg shadow-lg">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">
+                        A
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="font-bold text-dark">Ani Rahayu</h4>
+                        <p className="text-sm text-gray-600">Guru, Kediri</p>
+                      </div>
+                    </div>
+                    <div className="flex mb-3">
+                      <span className="text-accent text-xl">★★★★★</span>
+                    </div>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                      "Travel paling nyaman untuk rute Tulungagung-Banyuwangi! Mobilnya bersih, AC dingin, dan driver sangat membantu dengan bagasi. Pasti pakai lagi!"
+                    </p>
+                    <p className="text-xs text-gray-500 mt-4">Januari 2025</p>
+                  </div>
+                </div>
+
+                <div className="text-center mt-10">
+                  <p className="text-sm md:text-base text-gray-600 mb-6">Ingin jadi pelanggan berikutnya yang puas dengan travel Banyuwangi Tulungagung kami?</p>
+                  <a
+                    href="https://wa.me/6282143258744"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Hubungi Admin untuk Pesan Travel Banyuwangi Tulungagung"
+                    className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
+                  >
+                    Pesan Travel Banyuwangi Tulungagung via WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              {/* Rute Lainnya Section */}
+              <div className="mb-20 bg-light p-8 md:p-12 rounded-lg shadow-lg">
+                <div className="text-center mb-10">
+                  <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
+                    Rute Travel Lainnya dari Banyuwangi
+                  </h2>
+                  <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
+                    Selain rute Banyuwangi - Tulungagung, kami juga melayani berbagai rute populer lainnya
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                  {/* Rute Surabaya */}
+                  <Link href="/rute/banyuwangi-surabaya" className="group" title="Travel Banyuwangi Surabaya - Via Tol Door to Door">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center mb-4">
+                        <div>
+                          <h3 className="text-lg md:text-xl font-bold text-dark group-hover:text-primary transition-colors">
+                            Banyuwangi - Surabaya
+                          </h3>
+                          <p className="text-sm text-gray-600">Via Tol, Door to Door</p>
+                        </div>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-700 mb-4">
+                        Travel Banyuwangi Surabaya via tol dengan layanan door-to-door ke seluruh area Surabaya & Bandara Juanda.
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-primary font-bold text-lg">Mulai Rp 200.000</span>
+                        <span className="text-secondary group-hover:translate-x-1 transition-transform">→</span>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Rute Malang */}
+                  <Link href="/rute/banyuwangi-malang" className="group" title="Travel Banyuwangi Malang - Door to Door Nyaman">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center mb-4">
+                        <div>
+                          <h3 className="text-lg md:text-xl font-bold text-dark group-hover:text-primary transition-colors">
+                            Banyuwangi - Malang
+                          </h3>
+                          <p className="text-sm text-gray-600">Door to Door, Nyaman</p>
+                        </div>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-700 mb-4">
+                        Travel Banyuwangi Malang dengan layanan door-to-door ke seluruh area Malang, Kota Batu & kampus.
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-primary font-bold text-lg">Mulai Rp 200.000</span>
+                        <span className="text-primary group-hover:translate-x-1 transition-transform">→</span>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Rute Denpasar */}
+                  <Link href="/rute/banyuwangi-denpasar" className="group" title="Travel Banyuwangi Denpasar - Via Ferry Aman Nyaman">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center mb-4">
+                        <div>
+                          <h3 className="text-lg md:text-xl font-bold text-dark group-hover:text-primary transition-colors">
+                            Banyuwangi - Denpasar
+                          </h3>
+                          <p className="text-sm text-gray-600">Via Ferry, Aman & Nyaman</p>
+                        </div>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-700 mb-4">
+                        Travel Banyuwangi Denpasar via Ketapang-Gilimanuk dengan layanan antar ke seluruh area Denpasar & Ngurah Rai.
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-primary font-bold text-lg">Mulai Rp 200.000</span>
+                        <span className="text-accent group-hover:translate-x-1 transition-transform">→</span>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+
+                <div className="text-center mt-8">
+                  <Link
+                    href="/rute"
+                    title="Lihat Semua Rute Travel Kami"
+                    className="inline-block bg-primary text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
+                  >
+                    Lihat Semua Rute Travel
+                  </Link>
                 </div>
               </div>
 
@@ -335,15 +702,18 @@ export default function BanyuwangiTulungagungPage() {
           {/* CTA Section */}
           <section id="kontak" className="py-20 bg-primary text-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl md:text-4xl font-extrabold">Pesan Tiket Travel Banyuwangi Tulungagung Anda</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold">
+                Pesan Tiket Travel Banyuwangi Tulungagung Anda
+              </h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
                 Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
-                travel Banyuwangi Tulungagung hari ini.
+                travel Banyuwangi Tulungagung hari ini, termasuk untuk rute ke Blitar dan Kediri.
               </p>
               <a
                 href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Chat WhatsApp untuk Booking Travel Banyuwangi Tulungagung"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Pesan Rute Tulungagung via WA
