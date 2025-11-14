@@ -5,13 +5,16 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | Juragan Travel',
-  description: 'Jadwal & harga travel Banyuwangi ke Sidoarjo (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol. Berangkat setiap hari (pagi, siang, malam).',
-  keywords: 'travel banyuwangi sidoarjo, travel sidoarjo banyuwangi, harga travel banyuwangi sidoarjo, jadwal travel banyuwangi sidoarjo, travel banyuwangi sidoarjo via tol, travel banyuwangi sidoarjo pagi, travel banyuwangi sidoarjo malam',
+  title: 'Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel',
+  description:
+    'Butuh travel Banyuwangi Sidoarjo via tol? Juragan Travel melayani travel Banyuwangi Sidoarjo dan Sidoarjo Banyuwangi dengan layanan door-to-door, armada nyaman, berangkat pagi, siang, dan malam setiap hari.',
+  keywords:
+    'travel banyuwangi sidoarjo, travel sidoarjo banyuwangi, harga travel banyuwangi sidoarjo, jadwal travel banyuwangi sidoarjo, travel banyuwangi sidoarjo via tol, travel banyuwangi sidoarjo pagi, travel banyuwangi sidoarjo malam, travel banyuwangi sidoarjo murah',
   authors: [{ name: 'Juragan Travel' }],
   openGraph: {
-    title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | Juragan Travel',
-    description: 'Jadwal & harga travel Banyuwangi ke Sidoarjo (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol. Berangkat setiap hari.',
+    title: 'Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel',
+    description:
+      'Travel Banyuwangi Sidoarjo (PP) via tol dengan layanan door-to-door, armada nyaman, dan jadwal fleksibel pagi, siang, dan malam. Cocok untuk perjalanan kerja, kuliah, maupun keluarga.',
     type: 'website',
     url: 'https://juragantravel.com/rute/banyuwangi-sidoarjo',
     images: [
@@ -26,8 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Travel Banyuwangi - Sidoarjo (PP) | Jadwal & Harga | Juragan Travel',
-    description: 'Jadwal & harga travel Banyuwangi ke Sidoarjo (PP) terbaru. Layanan door-to-door, carter, dan drop-off via tol.',
+    title: 'Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel',
+    description:
+      'Jadwal & harga travel Banyuwangi Sidoarjo terbaru. Layanan door-to-door via tol dengan armada nyaman dan driver berpengalaman.',
     images: ['https://juragantravel.com/img/hero.webp']
   },
   alternates: {
@@ -85,17 +89,67 @@ export default function BanyuwangiSidoarjoPage() {
                 "addressCountry": "ID"
               }
             },
-            "name": "Travel Banyuwangi - Sidoarjo (PP)",
-            "description": "Layanan travel door-to-door antara Banyuwangi dan Sidoarjo.",
+            "name": "Travel Banyuwangi Sidoarjo (PP) via Tol",
+            "description":
+              "Layanan travel Banyuwangi Sidoarjo dan travel Sidoarjo Banyuwangi door-to-door via tol dengan jadwal pagi, siang, dan malam. Armada nyaman dan driver berpengalaman.",
             "offers": {
               "@type": "Offer",
               "price": "200000",
               "priceCurrency": "IDR",
               "name": "Harga Tiket Travel Banyuwangi Sidoarjo",
-              "description": "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
+              "description":
+                "Harga tiket travel Banyuwangi Sidoarjo via tol. Harga dapat berubah, hubungi admin Juragan Travel untuk konfirmasi terbaru.",
               "url": "https://juragantravel.com/rute/banyuwangi-sidoarjo",
               "availability": "https://schema.org/InStock"
             }
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Berapa jam perjalanan travel Banyuwangi ke Sidoarjo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text":
+                    "Estimasi waktu tempuh normal travel Banyuwangi ke Sidoarjo adalah sekitar 6–7 jam via tol, tergantung kondisi lalu lintas dan titik penjemputan serta pengantaran."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Area penjemputan di Banyuwangi meliputi mana saja?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text":
+                    "Area penjemputan travel Banyuwangi Sidoarjo meliputi Kota Banyuwangi, Rogojampi, Srono, Genteng, Jajag, dan sekitarnya. Untuk area di luar jalur utama mungkin dikenakan biaya tambahan, silakan konfirmasi ke admin."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Area pengantaran di Sidoarjo meliputi mana saja?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text":
+                    "Kami melayani pengantaran ke area Kota Sidoarjo, Waru, Gedangan, Candi, dan area lain yang berdekatan dengan pintu keluar tol maupun akses menuju Bandara Juanda."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Berapa harga carter/private travel Banyuwangi ke Sidoarjo?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text":
+                    "Harga carter private travel Banyuwangi Sidoarjo mulai dari Rp 700.000 untuk 1 unit mobil (All-in: mobil, driver, BBM, tol). Harga bisa berbeda jika menggunakan unit Innova, HiAce, atau permintaan khusus lainnya."
+                }
+              }
+            ]
           })
         }}
       />
@@ -113,9 +167,9 @@ export default function BanyuwangiSidoarjoPage() {
               <span className="text-gray-400 mx-2">/</span>
               <span className="text-dark font-medium">Banyuwangi - Sidoarjo</span>
             </nav>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Sidoarjo (PP)</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi Sidoarjo (PP) via Tol – Door to Door</h1>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Jadwal travel Banyuwangi Sidoarjo via tol berangkat setiap hari. Layanan door-to-door, aman, dan nyaman.
+              Juragan Travel melayani travel Banyuwangi Sidoarjo dan Sidoarjo Banyuwangi via tol setiap hari. Layanan door-to-door, aman, nyaman, dengan pilihan jadwal pagi, siang, dan malam.
             </p>
           </div>
         </section>
@@ -146,14 +200,17 @@ export default function BanyuwangiSidoarjoPage() {
                 <p className="mt-4 text-lg text-gray-700 leading-relaxed">
                   Dengan layanan door-to-door, kami menjemput Anda di alamat Banyuwangi dan mengantar langsung ke tujuan Anda di Sidoarjo, termasuk area kota, Candi, Gedangan, Waru, dan dekat Bandara Juanda.
                 </p>
+                <p className="mt-4 text-lg text-gray-700 leading-relaxed">
+                  Rute travel Banyuwangi Sidoarjo ini cocok untuk perjalanan kerja, kunjungan keluarga, hingga perjalanan lanjutan menuju Surabaya atau Bandara Juanda tanpa perlu ganti kendaraan berkali-kali.
+                </p>
               </div>
             </div>
 
             {/* Jadwal & Harga */}
             <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
               <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
-                <p className="mt-4 text-lg text-gray-600">Jadwal fleksibel, harga pasti. Pesan kursi Anda sekarang!</p>
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel Banyuwangi Sidoarjo</h2>
+                <p className="mt-4 text-lg text-gray-600">Pilih jadwal travel Banyuwangi Sidoarjo yang paling cocok untuk Anda. Harga terjangkau, jadwal fleksibel.</p>
               </div>
               <div className="mt-10 overflow-x-auto">
                 <table className="w-full min-w-max text-left">
@@ -194,7 +251,7 @@ export default function BanyuwangiSidoarjoPage() {
                 </table>
               </div>
               <p className="text-center mt-6 text-sm text-gray-600">
-                *Harga dapat berubah sewaktu-waktu. Hubungi admin untuk harga pasti.
+                *Harga travel Banyuwangi Sidoarjo dapat berubah sewaktu-waktu tergantung musim dan ketersediaan kursi. Hubungi admin untuk harga pasti dan promo terbaru.
               </p>
             </div>
 
@@ -202,6 +259,9 @@ export default function BanyuwangiSidoarjoPage() {
             <div className="mb-20">
               <div className="text-center">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Keunggulan Rute Travel Banyuwangi Sidoarjo</h2>
+                <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto">
+                  Kenapa banyak penumpang memilih travel Banyuwangi Sidoarjo dari Juragan Travel? Ini beberapa alasannya:
+                </p>
               </div>
               <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="bg-white p-6 rounded-lg shadow-lg flex items-start space-x-4">
@@ -230,7 +290,7 @@ export default function BanyuwangiSidoarjoPage() {
 
             {/* FAQ Rute Spesifik */}
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-dark text-center mb-10">FAQ - Rute Banyuwangi Sidoarjo</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-dark text-center mb-10">FAQ Travel Banyuwangi Sidoarjo</h2>
               <div className="space-y-6">
                 <details className="bg-light p-6 rounded-lg shadow-md group" open>
                   <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
@@ -278,10 +338,10 @@ export default function BanyuwangiSidoarjoPage() {
         <section id="kontak" className="py-20 bg-primary text-white">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold">
-              Pesan Travel ke Sidoarjo Sekarang
+              Pesan Travel Banyuwangi Sidoarjo Sekarang
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-              Perjalanan nyaman dan cepat via tol. Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat.
+              Perjalanan nyaman dan cepat via tol bersama Juragan Travel. Amankan kursi travel Banyuwangi Sidoarjo Anda sekarang dengan booking mudah lewat WhatsApp.
             </p>
             <a href={whatsappLinks.general} target="_blank" rel="noopener noreferrer"
                className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1">
