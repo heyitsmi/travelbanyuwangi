@@ -8,21 +8,21 @@ import { Zap, Home, Building2, ChevronDown, Map, Mountain, Plane } from "lucide-
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Solo (PP) – Via Tol, Nyaman & Terpercaya",
+  title: "Travel Banyuwangi Solo (PP) – Via Tol Transjawa, Nyaman & Terpercaya | Juragan Travel",
   description:
-    "Jadwal & harga travel Banyuwangi Solo (PP) terbaru. Layanan door-to-door, armada nyaman via Tol Transjawa, berangkat setiap hari (pagi & malam). Pesan sekarang!",
+    "Butuh travel Banyuwangi Solo yang nyaman dan terpercaya? Juragan Travel melayani travel Banyuwangi Solo dan Solo Banyuwangi via Tol Transjawa dengan layanan door-to-door, berangkat pagi & malam setiap hari.",
   keywords:
     "travel banyuwangi solo, travel solo banyuwangi, harga travel banyuwangi solo, jadwal travel banyuwangi solo, travel banyuwangi jogja, travel banyuwangi surakarta",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Solo (PP) – Via Tol, Nyaman & Terpercaya",
+    title: "Travel Banyuwangi Solo (PP) – Via Tol Transjawa, Nyaman & Terpercaya | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Solo (PP) terbaru. Layanan door-to-door via Tol Transjawa, berangkat setiap hari.",
+      "Travel Banyuwangi Solo (PP) via Tol Transjawa dengan layanan door-to-door, armada nyaman, dan driver berpengalaman. Berangkat pagi & malam setiap hari.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-solo",
     images: [
       {
-        url: "/img/rute/banyuwangi-solo.webp",
+        url: "https://juragantravel.com/img/rute/banyuwangi-solo.webp",
         width: 1200,
         height: 630,
       },
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Solo (PP) – Via Tol, Nyaman & Terpercaya",
+    title: "Travel Banyuwangi Solo (PP) – Via Tol Transjawa, Nyaman & Terpercaya | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Solo (PP) terbaru. Layanan door-to-door via Tol Transjawa, berangkat setiap hari.",
-    images: ["/img/rute/banyuwangi-solo.webp"],
+      "Jadwal & harga travel Banyuwangi Solo terbaru. Layanan door-to-door via Tol Transjawa, berangkat pagi & malam, cocok untuk mahasiswa, karyawan, dan keluarga.",
+    images: ["https://juragantravel.com/img/rute/banyuwangi-solo.webp"],
   },
   alternates: {
     canonical: "https://juragantravel.com/rute/banyuwangi-solo",
@@ -49,7 +49,7 @@ const busTripData = {
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "/img/rute/banyuwangi-solo.webp",
+    image: "https://juragantravel.com/img/rute/banyuwangi-solo.webp",
   },
   departureBusStop: {
     "@type": "BusStop",
@@ -63,23 +63,24 @@ const busTripData = {
   },
   arrivalBusStop: {
     "@type": "BusStop",
-    name: "Area Solo (Door-to-door)",
+    name: "Area Solo (Surakarta) & Sekitarnya (Door-to-door)",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Solo",
+      addressLocality: "Surakarta",
       addressRegion: "Jawa Tengah",
       addressCountry: "ID",
     },
   },
-  name: "Travel Banyuwangi - Solo (PP)",
+  name: "Travel Banyuwangi Solo (PP) via Tol Transjawa",
   description:
-    "Layanan travel door-to-door antara Banyuwangi dan Solo (Surakarta), via Tol Transjawa dengan jadwal pagi dan malam.",
+    "Layanan travel Banyuwangi Solo dan travel Solo Banyuwangi door-to-door via Tol Transjawa dengan jadwal pagi dan malam, armada nyaman dan driver berpengalaman.",
   offers: {
     "@type": "Offer",
     price: "400000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Solo",
-    description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
+    description:
+      "Harga tiket travel Banyuwangi Solo via tol Transjawa. Harga dapat berubah, hubungi admin Juragan Travel untuk konfirmasi terbaru.",
     url: "https://juragantravel.com/rute/banyuwangi-solo",
     availability: "https://schema.org/InStock",
   },
@@ -174,11 +175,25 @@ const faqs = [
   }
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+};
+
 export default function BanyuwangiSoloPage() {
   return (
     <>
       <StructuredData data={busTripData} />
       <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqSchema} />
       <div className="bg-white antialiased">
         <Header />
 
@@ -198,8 +213,8 @@ export default function BanyuwangiSoloPage() {
                 <span className="text-dark font-medium">Banyuwangi - Solo</span>
               </nav>
               <h1 className="text-2xl md:text-4xl font-extrabold text-dark">Travel Banyuwangi Solo (PP) – Nyaman via Tol</h1>
-              <p className="mt-4 text-sm md:text-lg text-gray-600 max-w-4xl mx-auto">
-                Perjalanan nyaman dan aman travel dari Banyuwangi ke Solo (Surakarta) via tol dengan layanan door-to-door terpercaya. Hubungi kami sekarang!
+              <p className="mt-4 text-sm md:text-lg text-gray-600 max-w-6xl mx-auto">
+                Perjalanan nyaman dan aman dengan travel Banyuwangi Solo (Surakarta) via tol dengan layanan door-to-door terpercaya. Kami melayani travel Banyuwangi Solo dan Solo Banyuwangi setiap hari, cocok untuk mahasiswa, karyawan, dan keluarga.
               </p>
             </div>
           </section>
@@ -232,15 +247,18 @@ export default function BanyuwangiSoloPage() {
                     Ngawi, dan Sragen tetap nyaman dan aman sampai tujuan. Kami juga melayani tujuan{" "}
                     <strong>Yogyakarta (Jogja)</strong> via Solo.
                   </p>
+                  <p className="mt-4 text-sm md:text-lg text-gray-700 leading-relaxed">
+                    Rute travel Banyuwangi Solo ini cocok bagi Anda yang ingin perjalanan jarak jauh tanpa repot ganti kendaraan, karena sudah termasuk penjemputan di Banyuwangi dan pengantaran hingga alamat tujuan di Solo dan sekitarnya.
+                  </p>
                 </div>
               </div>
 
               {/* Jadwal & Harga */}
               <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
                 <div className="text-center">
-                  <h2 className="text-xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
+                  <h2 className="text-xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel Banyuwangi Solo</h2>
                   <p className="mt-4 text-sm md:text-lg text-gray-600">
-                    Jadwal pasti, harga terjangkau. Pesan kursi Anda sekarang!
+                    Jadwal pasti, harga terjangkau. Pesan kursi travel Banyuwangi Solo Anda sekarang!
                   </p>
                 </div>
                 <div className="mt-10 overflow-x-auto">
@@ -276,7 +294,7 @@ export default function BanyuwangiSoloPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600">
-                  *Estimasi waktu tempuh travel Banyuwangi Solo sekitar 10–12 jam via tol Transjawa, sudah termasuk 1x makan dan beberapa kali istirahat. Waktu bisa berubah tergantung kondisi lalu lintas. Harga dapat berubah sewaktu-waktu. Hubungi admin via WA untuk harga pasti dan promo terbaru.
+                  *Estimasi waktu tempuh travel Banyuwangi Solo sekitar 10–12 jam via tol Transjawa, sudah termasuk 1x makan dan beberapa kali istirahat. Waktu bisa berubah tergantung kondisi lalu lintas. Harga travel Banyuwangi Solo dapat berubah sewaktu-waktu, hubungi admin via WA untuk harga pasti dan promo terbaru.
                 </p>
               </div>
 
@@ -284,7 +302,7 @@ export default function BanyuwangiSoloPage() {
               <div className="mb-20">
                 <div className="text-center">
                   <h2 className="text-xl md:text-4xl font-extrabold text-dark">
-                    Keunggulan Rute Banyuwangi-Solo Kami
+                    Keunggulan Travel Banyuwangi Solo Kami
                   </h2>
                 </div>
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -310,7 +328,7 @@ export default function BanyuwangiSoloPage() {
                     Area Layanan Travel Banyuwangi Solo
                   </h2>
                   <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
-                    Layanan door-to-door kami mencakup penjemputan di seluruh area Banyuwangi dan pengantaran di area Solo (Surakarta) & sekitarnya
+                    Layanan door-to-door travel Banyuwangi Solo kami mencakup penjemputan di seluruh area Banyuwangi dan pengantaran di area Solo (Surakarta) & sekitarnya.
                   </p>
                 </div>
 
@@ -634,9 +652,9 @@ export default function BanyuwangiSoloPage() {
               </div>
 
               {/* FAQ Rute Spesifik */}
-              <div className="max-w-3xl mx-auto">
+              <div className="max-w-5xl mx-auto">
                 <h2 className="text-xl md:text-4xl font-extrabold text-dark text-center mb-8">
-                  FAQ - Rute Banyuwangi Solo
+                  FAQ Travel Banyuwangi Solo (Rute & Layanan)
                 </h2>
                 <div className="space-y-6">
                   {faqs.map((faq, index) => (
