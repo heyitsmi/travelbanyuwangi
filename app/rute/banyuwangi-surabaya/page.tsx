@@ -4,7 +4,7 @@ import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { StructuredData } from "../../components/SEO";
-import { Map, Home, Plane, ChevronDown } from "lucide-react";
+import { Map, Home, Plane, ChevronDown, Mountain } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
@@ -587,6 +587,92 @@ export default function BanyuwangiSurabayaPage() {
                   >
                     Pesan Travel Banyuwangi Surabaya via WhatsApp
                   </a>
+                </div>
+              </div>
+
+              {/* Rute Lainnya Section */}
+              <div className="mb-20 bg-light p-8 md:p-12 rounded-lg shadow-lg">
+                <div className="text-center mb-10">
+                  <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
+                    Rute Travel Lainnya dari Banyuwangi
+                  </h2>
+                  <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
+                    Selain rute Banyuwangi - Surabaya, kami juga melayani berbagai rute populer lainnya
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                  {/* Rute Malang */}
+                  <Link href="/rute/banyuwangi-malang" className="group">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center mb-4">
+                        <div>
+                          <h3 className="text-lg md:text-xl font-bold text-dark group-hover:text-primary transition-colors">
+                            Banyuwangi - Malang
+                          </h3>
+                          <p className="text-sm text-gray-600">Door to Door, Nyaman</p>
+                        </div>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-700 mb-4">
+                        Travel Banyuwangi Malang dengan layanan door-to-door ke seluruh area Malang, Kota Batu & kampus.
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-primary font-bold text-lg">Mulai Rp 200.000</span>
+                        <span className="text-primary group-hover:translate-x-1 transition-transform">→</span>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Rute Denpasar */}
+                  <Link href="/rute/banyuwangi-denpasar" className="group">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center mb-4">
+                        <div>
+                          <h3 className="text-lg md:text-xl font-bold text-dark group-hover:text-primary transition-colors">
+                            Banyuwangi - Denpasar
+                          </h3>
+                          <p className="text-sm text-gray-600">Via Ferry, Aman & Nyaman</p>
+                        </div>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-700 mb-4">
+                        Travel Banyuwangi Denpasar via Ketapang-Gilimanuk dengan layanan antar ke seluruh area Denpasar & Ngurah Rai.
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-primary font-bold text-lg">Mulai Rp 200.000</span>
+                        <span className="text-accent group-hover:translate-x-1 transition-transform">→</span>
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Rute Solo */}
+                  <Link href="/rute/banyuwangi-solo" className="group">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center mb-4">
+                        <div>
+                          <h3 className="text-lg md:text-xl font-bold text-dark group-hover:text-primary transition-colors">
+                            Banyuwangi - Solo
+                          </h3>
+                          <p className="text-sm text-gray-600">Perjalanan Jauh & Nyaman</p>
+                        </div>
+                      </div>
+                      <p className="text-sm md:text-base text-gray-700 mb-4">
+                        Travel Banyuwangi Solo dengan layanan door-to-door langsung ke alamat tujuan di area Solo & sekitarnya.
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-primary font-bold text-lg">Mulai Rp 400.000</span>
+                        <span className="text-secondary group-hover:translate-x-1 transition-transform">→</span>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+
+                <div className="text-center mt-8">
+                  <Link
+                    href="/rute"
+                    className="inline-block bg-primary text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
+                  >
+                    Lihat Semua Rute Travel
+                  </Link>
                 </div>
               </div>
 
