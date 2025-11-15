@@ -4,85 +4,68 @@ import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { StructuredData } from "../../components/SEO";
-import { ArrowRight, Home, Mountain, ChevronDown } from "lucide-react";
+import { ArrowRight, Home, Mountain, ChevronDown, Map, Plane } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi Lumajang (PP) - Jadwal & Harga Terbaru | Juragan Travel",
+  title: "Travel Banyuwangi Lumajang – Jadwal, Harga, Carter (Via Jember) | Juragan Travel",
   description:
-    "Jadwal & harga travel Banyuwangi Lumajang (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari (pagi, malam). Harga mulai Rp 170.000.",
+    "Layanan travel Banyuwangi Lumajang & travel Lumajang Banyuwangi (PP) via Jember. Door-to-door tiap hari (pagi/malam), armada nyaman, driver berpengalaman. Harga mulai Rp 170.000.",
   keywords:
-    "travel banyuwangi lumajang, travel lumajang banyuwangi, harga travel banyuwangi lumajang, jadwal travel banyuwangi lumajang, travel banyuwangi lumajang via jember, travel banyuwangi bromo",
+    "travel banyuwangi lumajang, travel lumajang banyuwangi, travel banyuwangi lumajang via jember, harga travel banyuwangi lumajang, jadwal travel banyuwangi lumajang, carter banyuwangi lumajang",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Travel Banyuwangi Lumajang (PP) - Jadwal & Harga Terbaru | Juragan Travel",
+    title: "Travel Banyuwangi Lumajang – Jadwal & Harga (Via Jember) | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Lumajang (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari. Harga mulai Rp 170.000.",
+      "Travel Banyuwangi ke Lumajang & sebaliknya via Jember. Door-to-door tiap hari, aman & nyaman. Harga mulai Rp 170.000.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-lumajang",
-    images: [
-      {
-        url: "https://juragantravel.com/img/hero.webp",
-        width: 1200,
-        height: 630,
-      },
-    ],
+    images: [{ url: "https://juragantravel.com/img/hero.webp", width: 1200, height: 630, alt: "Travel Banyuwangi Lumajang via Jember" }],
     siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi Lumajang (PP) - Jadwal & Harga Terbaru | Juragan Travel",
+    title: "Travel Banyuwangi Lumajang – Via Jember | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Lumajang (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari. Harga mulai Rp 170.000.",
+      "Door-to-door tiap hari (pagi/malam), armada nyaman. Travel Banyuwangi Lumajang & Lumajang Banyuwangi mulai Rp 170.000.",
     images: ["https://juragantravel.com/img/hero.webp"],
   },
-  alternates: {
-    canonical: "https://juragantravel.com/rute/banyuwangi-lumajang",
-  },
+  alternates: { canonical: "https://juragantravel.com/rute/banyuwangi-lumajang" },
 };
 
 const busTripData = {
   "@context": "https://schema.org",
   "@type": "BusTrip",
+  name: "Travel Banyuwangi ⇄ Lumajang (Via Jember) – Door to Door",
+  description:
+    "Travel Banyuwangi ke Lumajang dan Lumajang ke Banyuwangi via Jember. Layanan door-to-door setiap hari, armada nyaman, tepat waktu.",
   provider: {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "https://juragantravel.com/img/hero.webp",
+    image: "https://juragantravel.com/img/hero.webp"
   },
   departureBusStop: {
     "@type": "BusStop",
     name: "Area Banyuwangi (Door-to-door)",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Banyuwangi",
-      addressRegion: "Jawa Timur",
-      addressCountry: "ID",
-    },
+    address: { "@type": "PostalAddress", addressLocality: "Banyuwangi", addressRegion: "Jawa Timur", addressCountry: "ID" }
   },
   arrivalBusStop: {
     "@type": "BusStop",
     name: "Area Lumajang (Door-to-door)",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Lumajang",
-      addressRegion: "Jawa Timur",
-      addressCountry: "ID",
-    },
+    address: { "@type": "PostalAddress", addressLocality: "Lumajang", addressRegion: "Jawa Timur", addressCountry: "ID" }
   },
-  name: "Travel Banyuwangi - Lumajang (PP)",
-  description:
-    "Layanan travel door-to-door antara Banyuwangi dan Lumajang via Jember.",
   offers: {
     "@type": "Offer",
     price: "170000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Lumajang",
-    description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
+    description:
+      "Harga mulai Rp 170.000 per orang (door-to-door). Tersedia carter private dengan jadwal fleksibel. Hubungi admin untuk detail titik jemput & promo.",
     url: "https://juragantravel.com/rute/banyuwangi-lumajang",
-    availability: "https://schema.org/InStock",
-  },
+    availability: "https://schema.org/InStock"
+  }
 };
 
 const breadcrumbData = {
@@ -112,27 +95,22 @@ const breadcrumbData = {
 
 const schedules = [
   {
-    route: "Banyuwangi → Lumajang",
+    route: "Travel Banyuwangi → Lumajang",
     schedule: "Pagi (09:00), Malam (21:00)",
     price: "Rp 170.000",
   },
   {
-    route: "Lumajang → Banyuwangi",
+    route: "Travel Lumajang → Banyuwangi",
     schedule: "Pagi (09:00), Malam (21:00)",
     price: "Rp 170.000",
-  },
-  {
-    route: "Carter Drop (Private) Banyuwangi ↔ Lumajang",
-    schedule: "Fleksibel 24 Jam (Sesuai Pesanan)",
-    price: "Rp 550.000",
-  },
+  }
 ];
 
 const benefits = [
   {
     icon: ArrowRight,
     title: "Rute Selatan via Jember",
-    description: "Perjalanan nyaman via Jember, melintasi jalur selatan yang lancar.",
+    description: "Jalur utama selatan yang relatif lancar dan waktu tempuh stabil; cocok untuk keberangkatan pagi & malam."
   },
   {
     icon: Home,
@@ -149,9 +127,13 @@ const benefits = [
 const faqs = [
   {
     question: "Berapa jam perjalanan travel Banyuwangi ke Lumajang?",
-    answer:
-      "Estimasi waktu tempuh normal adalah sekitar 4-5 jam, tergantung kondisi lalu lintas dan titik penjemputan/pengantaran.",
-    defaultOpen: true,
+    answer: "Estimasi 4–5 jam tergantung lalu lintas serta titik jemput/antar. Rute utama via Jember.",
+    defaultOpen: true
+  },
+  {
+    question: "Apakah tersedia jadwal pagi dan malam?",
+    answer: "Ya. Umumnya keberangkatan pukul 09.00 dan 21.00 dari kedua arah. Silakan konfirmasi ke admin.",
+    defaultOpen: false
   },
   {
     question: "Area penjemputan di Banyuwangi meliputi mana saja?",
@@ -173,11 +155,51 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Berapa jam perjalanan travel Banyuwangi ke Lumajang?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Estimasi waktu tempuh sekitar 4–5 jam tergantung lalu lintas serta titik jemput/antar. Rute utama via Jember (koridor selatan)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah tersedia jadwal pagi dan malam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya. Umumnya keberangkatan pukul 09.00 dan 21.00 dari kedua arah. Silakan konfirmasi ke admin untuk ketersediaan kursi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berapa harga travel Banyuwangi Lumajang?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Harga mulai Rp 170.000 per orang (door-to-door). Tarif dapat bervariasi berdasarkan titik jemput/antar dan waktu keberangkatan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah bisa carter/private Banyuwangi ⇄ Lumajang?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bisa. Carter private mulai sekitar Rp 550.000 (unit Avanza/Xenia). Jadwal fleksibel 24 jam. Untuk Innova/HiAce, hubungi admin."
+      }
+    }
+  ]
+};
+
 export default function BanyuwangiLumajangPage() {
   return (
     <>
       <StructuredData data={busTripData} />
       <StructuredData data={breadcrumbData} />
+      <StructuredData data={faqSchema} />
       <div className="bg-white antialiased">
         <Header />
 
@@ -186,19 +208,21 @@ export default function BanyuwangiLumajangPage() {
           <section className="bg-light py-20">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <nav className="text-sm mb-4">
-                <Link href="/" className="text-gray-600 hover:text-primary">
+                <Link href="/" className="text-gray-600 hover:text-primary" title="Kembali ke Beranda">
                   Beranda
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
-                <Link href="/rute" className="text-gray-600 hover:text-primary">
+                <Link href="/rute" className="text-gray-600 hover:text-primary" title="Lihat Semua Rute Travel">
                   Rute
                 </Link>
                 <span className="text-gray-400 mx-2">/</span>
                 <span className="text-dark font-medium">Banyuwangi - Lumajang</span>
               </nav>
               <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Lumajang (PP)</h1>
-              <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Jadwal travel Banyuwangi Lumajang berangkat setiap hari. Layanan door-to-door, aman, dan nyaman via Jember.
+              <p className="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">
+                Juragan Travel melayani <strong>travel Banyuwangi Lumajang</strong> dan{" "}
+                <strong>travel Lumajang Banyuwangi</strong> setiap hari via Jember. Layanan
+                door-to-door yang nyaman, aman, dan tepat waktu (pagi & malam).
               </p>
             </div>
           </section>
@@ -211,7 +235,7 @@ export default function BanyuwangiLumajangPage() {
                 <div className="md:w-1/2 relative h-96 w-full">
                   <Image
                     src="/img/hero.webp"
-                    alt="Armada travel Banyuwangi ke Lumajang"
+                    alt="Armada travel Banyuwangi Lumajang via Jember – door-to-door"
                     fill
                     className="rounded-lg shadow-xl object-cover"
                   />
@@ -225,7 +249,11 @@ export default function BanyuwangiLumajangPage() {
                     Kami menyediakan layanan <strong>travel Banyuwangi ke Lumajang</strong> (dan sebaliknya) setiap hari. Rute ini melayani koridor selatan Jawa Timur, melewati Jember.
                   </p>
                   <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                    Layanan door-to-door kami memastikan Anda dijemput di alamat Banyuwangi dan diantar langsung ke tujuan Anda di area Kota Lumajang, Klakah, atau titik transit lain menuju Bromo atau Semeru.
+                    Layanan door-to-door kami memastikan Anda dijemput di alamat Banyuwangi dan diantar langsung ke
+                    tujuan di Lumajang. Cek juga rute populer kami seperti{" "}
+                    <Link href="/rute/banyuwangi-surabaya" className="text-primary underline hover:no-underline">travel Banyuwangi Surabaya</Link>{" "}
+                    dan{" "}
+                    <Link href="/rute/banyuwangi-malang" className="text-primary underline hover:no-underline">travel Banyuwangi Malang</Link>.
                   </p>
                 </div>
               </div>
@@ -233,13 +261,17 @@ export default function BanyuwangiLumajangPage() {
               {/* Jadwal & Harga */}
               <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
                 <div className="text-center">
-                  <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
-                  <p className="mt-4 text-lg text-gray-600">
-                    Jadwal fleksibel, harga pasti. Pesan kursi Anda sekarang!
+                  <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+                    Jadwal & Harga Travel Banyuwangi Lumajang
+                  </h2>
+                  <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                    Jadwal <strong>travel Banyuwangi ke Lumajang</strong> dan{" "}
+                    <strong>travel Lumajang ke Banyuwangi</strong> tersedia pagi & malam. Hubungi admin untuk ketersediaan kursi.
                   </p>
                 </div>
                 <div className="mt-10 overflow-x-auto">
-                  <table className="w-full min-w-max text-left">
+                  <table className="w-full min-w-max text-left" aria-label="Jadwal dan harga travel Banyuwangi Lumajang">
+                    <caption className="sr-only">Jadwal dan harga travel rute Banyuwangi ⇄ Lumajang</caption>
                     <thead>
                       <tr className="border-b border-gray-300">
                         <th className="p-4 text-lg font-semibold text-dark">Rute</th>
@@ -259,6 +291,7 @@ export default function BanyuwangiLumajangPage() {
                               href="https://wa.me/6282143258744"
                               target="_blank"
                               rel="noopener noreferrer"
+                              title="Pesan Travel Banyuwangi Lumajang via WhatsApp"
                               className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -278,7 +311,7 @@ export default function BanyuwangiLumajangPage() {
               <div className="mb-20">
                 <div className="text-center">
                   <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
-                    Keunggulan Rute Travel Banyuwangi Lumajang
+                    Keunggulan Travel Banyuwangi Lumajang di Juragan Travel
                   </h2>
                 </div>
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -294,6 +327,321 @@ export default function BanyuwangiLumajangPage() {
                       </div>
                     );
                   })}
+                </div>
+              </div>
+
+              {/* Area Layanan Section */}
+              <div className="mb-20 bg-light p-6 md:p-12 rounded-lg shadow-lg">
+                <div className="text-center mb-8">
+                  <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
+                    Area Layanan Travel Banyuwangi Lumajang
+                  </h2>
+                  <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
+                    Layanan door-to-door kami mencakup penjemputan di seluruh area Banyuwangi, pengantaran di Lumajang, serta transit di beberapa area Jember
+                  </p>
+                </div>
+
+                {/* Tag Cloud Area Coverage */}
+                <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+                  {/* Banyuwangi Areas */}
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Banyuwangi Kota
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Banyuwangi
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Rogojampi
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kabat
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Genteng
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Srono
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Glenmore
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kalibaru
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Glagah
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Singojuruh
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Cluring
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Purwoharjo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Muncar
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Wongsorejo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Songgon
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Sempu
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Giri
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Pesanggaran
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Bangorejo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Tegalsari
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Licin
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Tegaldlimo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Siliragung
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Blimbingsari
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Gambiran
+                  </span>
+                  
+                  {/* Jember Transit Areas */}
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Jember Kota
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Sumbersari
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Patrang
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Rambipuji
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Tanggul
+                  </span>
+                  
+                  {/* Lumajang Areas */}
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Lumajang Kota
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Sukodono
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Klakah
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Senduro
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Gucialit
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Kunir
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Tempeh
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Candipuro
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Pronojiwo
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Pasirian
+                  </span>
+                  <span className="bg-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-shadow">
+                    Randuagung
+                  </span>
+                </div>
+              </div>
+
+              {/* Testimonial Section */}
+              <div className="mb-20 bg-white">
+                <div className="text-center mb-12">
+                  <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
+                    Apa Kata Pelanggan Travel Banyuwangi Lumajang
+                  </h2>
+                  <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
+                    Testimoni pelanggan yang sudah menggunakan layanan travel Banyuwangi Lumajang dengan sistem door to door kami.
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8">
+                  {/* Testimonial 1 */}
+                  <div className="bg-light p-6 rounded-lg shadow-lg">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        D
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="font-bold text-dark">Devi Kusuma</h4>
+                        <p className="text-sm text-gray-500">Mahasiswa</p>
+                      </div>
+                    </div>
+                    <div className="flex mb-3">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                      "Saya kuliah di Lumajang, setiap libur pulang ke Banyuwangi pakai travel ini. Nyaman, tepat waktu, dan driver ramah. Recommended!"
+                    </p>
+                    <p className="text-xs text-gray-500 mt-4">Januari 2025</p>
+                  </div>
+
+                  {/* Testimonial 2 */}
+                  <div className="bg-light p-6 rounded-lg shadow-lg">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        R
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="font-bold text-dark">Rian Pratama</h4>
+                        <p className="text-sm text-gray-500">Pendaki Gunung</p>
+                      </div>
+                    </div>
+                    <div className="flex mb-3">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                      "Perjalanan dari Banyuwangi ke Lumajang untuk mendaki Semeru sangat lancar. Driver berpengalaman lewat rute selatan via Jember. Puas!"
+                    </p>
+                    <p className="text-xs text-gray-500 mt-4">Desember 2024</p>
+                  </div>
+
+                  {/* Testimonial 3 */}
+                  <div className="bg-light p-6 rounded-lg shadow-lg">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        L
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="font-bold text-dark">Lina Safitri</h4>
+                        <p className="text-sm text-gray-500">Guru</p>
+                      </div>
+                    </div>
+                    <div className="flex mb-3">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                      "Travel Banyuwangi Lumajang ini sangat membantu saya untuk pulang kampung. Harga terjangkau, armada bersih dan nyaman. Terima kasih!"
+                    </p>
+                    <p className="text-xs text-gray-500 mt-4">Januari 2025</p>
+                  </div>
+                </div>
+
+                <div className="text-center mt-10">
+                  <p className="text-sm md:text-base text-gray-600 mb-6">Ingin jadi pelanggan berikutnya yang puas dengan travel Banyuwangi Lumajang kami?</p>
+                  <a
+                    href="https://wa.me/6282143258744"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Hubungi Admin untuk Pesan Travel Banyuwangi Lumajang"
+                    className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
+                  >
+                    Pesan Travel Banyuwangi Lumajang via WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              {/* Rute Lainnya Section */}
+              <div className="mb-20 bg-light p-8 md:p-12 rounded-lg shadow-lg">
+                <div className="text-center mb-10">
+                  <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
+                    Rute Travel Lainnya dari Banyuwangi
+                  </h2>
+                  <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
+                    Selain rute Banyuwangi - Lumajang, kami juga melayani berbagai rute populer lainnya
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-6">
+                  {/* Rute Surabaya */}
+                  <Link href="/rute/banyuwangi-surabaya" className="group" title="Travel Banyuwangi Surabaya - Via Tol Door to Door">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
+                        <Map className="w-8 h-8 text-blue-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-dark text-center mb-2 group-hover:text-primary transition-colors">
+                        Banyuwangi - Surabaya
+                      </h3>
+                      <p className="text-sm text-gray-600 text-center mb-4">
+                        Via tol, door to door, jadwal pagi, siang, malam
+                      </p>
+                      <p className="text-center text-primary font-semibold">Mulai Rp 200.000</p>
+                    </div>
+                  </Link>
+
+                  {/* Rute Malang */}
+                  <Link href="/rute/banyuwangi-malang" className="group" title="Travel Banyuwangi Malang - Door to Door Nyaman">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mx-auto mb-4 group-hover:bg-green-200 transition-colors">
+                        <Mountain className="w-8 h-8 text-green-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-dark text-center mb-2 group-hover:text-primary transition-colors">
+                        Banyuwangi - Malang
+                      </h3>
+                      <p className="text-sm text-gray-600 text-center mb-4">
+                        Rute cepat ke Kota Malang, door to door
+                      </p>
+                      <p className="text-center text-primary font-semibold">Mulai Rp 150.000</p>
+                    </div>
+                  </Link>
+
+                  {/* Rute Denpasar */}
+                  <Link href="/rute/banyuwangi-denpasar" className="group" title="Travel Banyuwangi Denpasar - Via Ferry Aman Nyaman">
+                    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1">
+                      <div className="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 group-hover:bg-orange-200 transition-colors">
+                        <Plane className="w-8 h-8 text-orange-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-dark text-center mb-2 group-hover:text-primary transition-colors">
+                        Banyuwangi - Denpasar
+                      </h3>
+                      <p className="text-sm text-gray-600 text-center mb-4">
+                        Via ferry, door to door Bali
+                      </p>
+                      <p className="text-center text-primary font-semibold">Mulai Rp 250.000</p>
+                    </div>
+                  </Link>
+                </div>
+
+                <div className="text-center mt-8">
+                  <Link
+                    href="/rute"
+                    title="Lihat Semua Rute Travel Kami"
+                    className="inline-block bg-primary text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
+                  >
+                    Lihat Semua Rute Travel
+                  </Link>
                 </div>
               </div>
 
@@ -336,17 +684,21 @@ export default function BanyuwangiLumajangPage() {
           {/* CTA Section */}
           <section id="kontak" className="py-20 bg-primary text-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl md:text-4xl font-extrabold">Pesan Travel ke Lumajang Sekarang</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold">
+                Pesan Travel Banyuwangi Lumajang Sekarang
+              </h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Perjalanan nyaman via Jember. Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat.
+                Amankan kursi <strong>travel Banyuwangi ke Lumajang</strong> atau{" "}
+                <strong>travel Lumajang ke Banyuwangi</strong>. Booking cepat via WhatsApp—kami jemput di alamat Anda.
               </p>
               <a
                 href="https://wa.me/6282143258744"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Chat WhatsApp untuk Booking Travel Banyuwangi Lumajang"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Rute Lumajang via WA
+                Pesan Travel Banyuwangi Lumajang via WA
               </a>
             </div>
           </section>
