@@ -7,37 +7,32 @@ import { StructuredData } from "../components/SEO";
 import { ChevronDown } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Rute Travel Populer dari Banyuwangi | Juragan Travel",
+  title: "Rute Travel Banyuwangi – Surabaya, Malang, Denpasar, & Lainnya | Juragan Travel",
   description:
-    "Daftar rute travel populer dari Banyuwangi ke Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota lain di Jawa Bali. Berangkat setiap hari.",
+    "Daftar rute travel dari Banyuwangi ke Surabaya, Malang, Denpasar, Juanda, Tanjung Perak, Solo, Tulungagung, Jember, Lumajang, Sidoarjo, Gresik, Pasuruan. Jadwal setiap hari, door-to-door.",
   keywords:
-    "rute travel banyuwangi, travel banyuwangi surabaya, travel banyuwangi malang, travel banyuwangi denpasar, travel banyuwangi solo, travel banyuwangi tulungagung",
+    "rute travel banyuwangi, travel banyuwangi surabaya, travel banyuwangi malang, travel banyuwangi denpasar, travel banyuwangi juanda, travel banyuwangi tanjung perak, travel banyuwangi solo, travel banyuwangi tulungagung, travel banyuwangi jember, travel banyuwangi lumajang, travel banyuwangi sidoarjo, travel banyuwangi gresik, travel banyuwangi pasuruan",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
-    title: "Rute Travel Populer dari Banyuwangi | Juragan Travel",
+    title: "Rute Travel Banyuwangi – Jadwal & Harga | Juragan Travel",
     description:
-      "Daftar rute travel populer dari Banyuwangi ke Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota lain di Jawa Bali.",
+      "Semua rute travel dari Banyuwangi: Surabaya, Malang, Denpasar, Juanda, Tanjung Perak, dan lainnya. Berangkat tiap hari, door-to-door.",
     type: "website",
     url: "https://juragantravel.com/rute",
     images: [
-      {
-        url: "https://juragantravel.com/img/hero.webp",
-        width: 1200,
-        height: 630,
-      },
+      { url: "https://juragantravel.com/img/hero.webp", width: 1200, height: 630, alt: "Rute travel dari Banyuwangi" },
     ],
     siteName: "Juragan Travel",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rute Travel Populer dari Banyuwangi | Juragan Travel",
+    title: "Rute Travel Banyuwangi – Jadwal & Harga",
     description:
-      "Daftar rute travel populer dari Banyuwangi ke Surabaya, Malang, Denpasar, Solo, Tulungagung, dan kota lain di Jawa Bali.",
+      "Pilih rute travel Banyuwangi ke Surabaya, Malang, Denpasar, dan lainnya. Berangkat setiap hari, door-to-door.",
     images: ["https://juragantravel.com/img/hero.webp"],
   },
-  alternates: {
-    canonical: "https://juragantravel.com/rute",
-  },
+  alternates: { canonical: "https://juragantravel.com/rute" },
+  robots: { index: true, follow: true },
 };
 
 const itemListData = {
@@ -45,6 +40,8 @@ const itemListData = {
   "@type": "ItemList",
   name: "Rute Travel Populer Juragan Travel",
   description: "Daftar rute perjalanan travel antar kota populer dari Banyuwangi.",
+  itemListOrder: "http://schema.org/ItemListOrderAscending",
+  numberOfItems: 13,
   itemListElement: [
     {
       "@type": "ListItem",
@@ -202,7 +199,7 @@ const faqData = {
       name: "Berapa lama perjalanan dari Banyuwangi ke Surabaya?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Perjalanan dari Banyuwangi ke Surabaya memakan waktu sekitar 5-6 jam via tol Gempol-Pasuruan-Probolinggo-Banyuwangi (GEPPRO). Waktu tempuh bisa bervariasi tergantung kondisi lalu lintas dan titik penjemputan/pengantaran Anda.",
+        text: "Perjalanan dari Banyuwangi ke Surabaya umumnya sekitar 5–6 jam via tol Trans-Jawa (melewati Probolinggo–Pasuruan–Gempol). Durasi dapat bervariasi tergantung lalu lintas dan titik jemput/antar."
       },
     },
     {
@@ -326,12 +323,49 @@ const routes = [
   },
 ];
 
+const collectionPageData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Rute Travel dari Banyuwangi – Juragan Travel",
+  "description": "Kumpulan layanan rute travel dari Banyuwangi ke berbagai kota di Jawa & Bali. Jadwal setiap hari, door-to-door.",
+  "url": "https://juragantravel.com/rute",
+  "hasPart": [
+    { "@type": "Service", "name": "Travel Banyuwangi - Surabaya", "url": "https://juragantravel.com/rute/banyuwangi-surabaya" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Malang", "url": "https://juragantravel.com/rute/banyuwangi-malang" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Denpasar", "url": "https://juragantravel.com/rute/banyuwangi-denpasar" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Bandara Juanda", "url": "https://juragantravel.com/rute/banyuwangi-juanda" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Bandara Ngurah Rai", "url": "https://juragantravel.com/rute/banyuwangi-ngurah-rai" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Pelabuhan Tanjung Perak", "url": "https://juragantravel.com/rute/banyuwangi-tanjung-perak" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Solo", "url": "https://juragantravel.com/rute/banyuwangi-solo" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Tulungagung", "url": "https://juragantravel.com/rute/banyuwangi-tulungagung" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Sidoarjo", "url": "https://juragantravel.com/rute/banyuwangi-sidoarjo" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Gresik", "url": "https://juragantravel.com/rute/banyuwangi-gresik" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Pasuruan", "url": "https://juragantravel.com/rute/banyuwangi-pasuruan" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Jember", "url": "https://juragantravel.com/rute/banyuwangi-jember" },
+    { "@type": "Service", "name": "Travel Banyuwangi - Lumajang", "url": "https://juragantravel.com/rute/banyuwangi-lumajang" }
+  ]
+};
+
+const siteSearchData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Juragan Travel",
+  "url": "https://juragantravel.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://juragantravel.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+
 export default function RutePage() {
   return (
     <>
+      <StructuredData data={collectionPageData} />
       <StructuredData data={itemListData} />
       <StructuredData data={breadcrumbData} />
       <StructuredData data={faqData} />
+      <StructuredData data={siteSearchData} />
       <div className="bg-white antialiased">
         <Header />
 
@@ -346,10 +380,10 @@ export default function RutePage() {
                 <span className="text-gray-400 mx-2">/</span>
                 <span className="text-dark font-medium">Rute Perjalanan</span>
               </nav>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Rute Perjalanan Populer</h1>
-              <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Kami melayani travel dari Banyuwangi ke berbagai kota besar di Jawa dan Bali dengan jadwal keberangkatan
-                setiap hari.
+              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Rute Travel dari Banyuwangi (Jadwal & Harga)</h1>
+              <p className="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">
+                Temukan <strong>rute travel Banyuwangi</strong> ke Surabaya, Malang, Denpasar, bandara, pelabuhan, dan kota lain di Jawa & Bali. 
+                Jadwal setiap hari, layanan door-to-door, armada nyaman, driver berpengalaman.
               </p>
             </div>
           </section>
@@ -357,6 +391,9 @@ export default function RutePage() {
           {/* Daftar Rute Section */}
           <section id="daftar-rute" className="py-20 bg-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-6 text-center">
+                Daftar Rute Travel Banyuwangi Populer
+              </h2>
               {/* Grid Daftar Rute */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {routes.map((route, index) => (
@@ -381,6 +418,7 @@ export default function RutePage() {
                         <Link
                           href={route.link}
                           className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                          title={`Detail travel ${route.title}`}
                         >
                           Lihat Detail Rute
                         </Link>
