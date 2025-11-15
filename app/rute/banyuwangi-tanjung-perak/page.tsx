@@ -8,12 +8,15 @@ import Link from "next/link";
 import BookingForm from "../../components/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Travel Banyuwangi - Pelabuhan Tanjung Perak (PP) | Jadwal & Harga | Juragan Travel",
-  description: "Jadwal & harga travel Banyuwangi ke Pelabuhan Tanjung Perak (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari, tepat waktu untuk jadwal kapal.",
-  keywords: "travel banyuwangi tanjung perak, travel banyuwangi ke pelabuhan perak, travel tanjung perak banyuwangi, harga travel banyuwangi tanjung perak, jadwal travel banyuwangi tanjung perak, travel banyuwangi surabaya pelabuhan",
+  title: "Travel Banyuwangi Tanjung Perak – Door to Port Surabaya | Juragan Travel",
+  description:
+    "Layanan travel Banyuwangi Tanjung Perak dan travel Tanjung Perak Banyuwangi PP dengan sistem door to port. Berangkat setiap hari via tol, armada nyaman, tepat waktu menyesuaikan jadwal kapal di Pelabuhan Tanjung Perak Surabaya.",
+  keywords:
+    "travel banyuwangi tanjung perak, travel banyuwangi ke pelabuhan tanjung perak, travel tanjung perak banyuwangi, travel pelabuhan tanjung perak banyuwangi, harga travel banyuwangi tanjung perak, jadwal travel banyuwangi tanjung perak, travel banyuwangi surabaya pelabuhan",
   openGraph: {
-    title: "Travel Banyuwangi - Pelabuhan Tanjung Perak (PP) | Jadwal & Harga | Juragan Travel",
-    description: "Jadwal & harga travel Banyuwangi ke Pelabuhan Tanjung Perak (PP) terbaru. Layanan door-to-door, carter, dan drop-off. Berangkat setiap hari, tepat waktu.",
+    title: "Travel Banyuwangi Tanjung Perak – Door to Port Surabaya | Juragan Travel",
+    description:
+      "Jadwal & harga travel Banyuwangi Tanjung Perak PP terbaru. Layanan door to port dari Banyuwangi ke Pelabuhan Tanjung Perak Surabaya, aman dan tepat waktu untuk jadwal kapal Anda.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-tanjung-perak",
     images: [
@@ -21,14 +24,15 @@ export const metadata: Metadata = {
         url: "https://juragantravel.com/img/hero.webp",
         width: 1200,
         height: 630,
-        alt: "Travel Banyuwangi Tanjung Perak"
-      }
+        alt: "Travel Banyuwangi Tanjung Perak door to port",
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Travel Banyuwangi - Pelabuhan Tanjung Perak (PP) | Jadwal & Harga | Juragan Travel",
-    description: "Jadwal & harga travel Banyuwangi ke Pelabuhan Tanjung Perak (PP) terbaru. Layanan door-to-door, carter, dan drop-off.",
+    title: "Travel Banyuwangi Tanjung Perak – Door to Port Surabaya",
+    description:
+      "Travel Banyuwangi ke Pelabuhan Tanjung Perak dan Tanjung Perak ke Banyuwangi dengan layanan door to port via tol, armada nyaman dan driver berpengalaman.",
     images: ["https://juragantravel.com/img/hero.webp"],
   },
   robots: {
@@ -48,7 +52,7 @@ const busTripData = {
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
     telephone: "+6282143258744",
-    image: "https://juragantravel.com/img/hero.webp"
+    image: "https://juragantravel.com/img/hero.webp",
   },
   departureBusStop: {
     "@type": "BusStop",
@@ -57,30 +61,32 @@ const busTripData = {
       "@type": "PostalAddress",
       addressLocality: "Banyuwangi",
       addressRegion: "Jawa Timur",
-      addressCountry: "ID"
-    }
+      addressCountry: "ID",
+    },
   },
   arrivalBusStop: {
     "@type": "BusStop",
-    name: "Pelabuhan Tanjung Perak (Surabaya)",
+    name: "Pelabuhan Tanjung Perak (Terminal Penumpang)",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Surabaya",
       addressRegion: "Jawa Timur",
-      addressCountry: "ID"
-    }
+      addressCountry: "ID",
+    },
   },
-  name: "Travel Banyuwangi - Pelabuhan Tanjung Perak (PP)",
-  description: "Layanan travel door-to-door antara Banyuwangi dan Pelabuhan Tanjung Perak, Surabaya.",
+  name: "Travel Banyuwangi Tanjung Perak (Pelabuhan) PP Door to Port",
+  description:
+    "Layanan travel Banyuwangi Tanjung Perak dan travel Tanjung Perak Banyuwangi PP dengan sistem door to port via tol. Antar jemput langsung dari alamat di Banyuwangi ke Terminal Penumpang Pelabuhan Tanjung Perak Surabaya.",
   offers: {
     "@type": "Offer",
     price: "200000",
     priceCurrency: "IDR",
     name: "Harga Tiket Travel Banyuwangi Tanjung Perak",
-    description: "Harga dapat bervariasi. Hubungi admin untuk harga pasti.",
+    description:
+      "Harga travel Banyuwangi ke Pelabuhan Tanjung Perak dan sebaliknya mulai Rp 200.000 per orang. Harga dapat berbeda tergantung titik jemput dan tujuan, hubungi admin untuk detail terbaru.",
     url: "https://juragantravel.com/rute/banyuwangi-tanjung-perak",
-    availability: "https://schema.org/InStock"
-  }
+    availability: "https://schema.org/InStock",
+  },
 };
 
 const breadcrumbData = {
@@ -176,8 +182,11 @@ export default function BanyuwangiTanjungPerakPage() {
               <span className="text-dark font-medium">Banyuwangi - Pelabuhan Tanjung Perak</span>
             </nav>
             <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Travel Banyuwangi - Pelabuhan Tanjung Perak (PP)</h1>
-            <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Jadwal travel Banyuwangi ke Pelabuhan Tanjung Perak, Surabaya. Tepat waktu untuk jadwal kapal Anda. Layanan door-to-port aman dan nyaman.
+            <p className="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">
+              Juragan Travel melayani <strong>travel Banyuwangi Tanjung Perak</strong> dan{" "}
+              <strong>travel Tanjung Perak Banyuwangi</strong> setiap hari via tol.
+              Layanan door-to-port langsung ke Terminal Penumpang Pelabuhan Tanjung Perak
+              Surabaya, aman, nyaman, dan tepat waktu mengikuti jadwal kapal Anda.
             </p>
           </div>
         </section>
@@ -214,8 +223,15 @@ export default function BanyuwangiTanjungPerakPage() {
             {/* Jadwal & Harga */}
             <div className="bg-light p-8 md:p-12 rounded-lg shadow-lg mb-20">
               <div className="text-center">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">Jadwal & Harga Travel</h2>
-                <p className="mt-4 text-lg text-gray-600">Jadwal fleksibel, harga pasti. Pesan kursi Anda sekarang!</p>
+                <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+                  Jadwal & Harga Travel Banyuwangi Tanjung Perak
+                </h2>
+                <p className="mt-4 text-lg text-gray-600">
+                  Jadwal <strong>travel Banyuwangi Tanjung Perak</strong> dan{" "}
+                  <strong>travel Tanjung Perak Banyuwangi</strong> menyesuaikan jam berangkat dan
+                  sandar kapal. Konsultasikan jadwal dengan admin agar Anda tiba lebih awal dan tidak
+                  ketinggalan kapal.
+                </p>
               </div>
               <div className="mt-10 overflow-x-auto">
                 <table className="w-full min-w-max text-left">
@@ -295,8 +311,12 @@ export default function BanyuwangiTanjungPerakPage() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-center mt-6 text-sm text-gray-600">
-                *Harga dapat berubah sewaktu-waktu. Harga sudah termasuk tol.
+              <p className="text-center mt-6 text-sm text-gray-600 max-w-3xl mx-auto">
+                *Harga <strong>travel Banyuwangi ke Pelabuhan Tanjung Perak</strong> dan{" "}
+                <strong>travel Pelabuhan Tanjung Perak ke Banyuwangi</strong> mulai Rp 200.000
+                per orang. Harga dapat berubah sewaktu-waktu tergantung titik penjemputan, tujuan,
+                dan jadwal kapal. Harga sudah termasuk tol, silakan hubungi admin untuk detail dan
+                promo terbaru.
               </p>
             </div>
 
@@ -334,7 +354,7 @@ export default function BanyuwangiTanjungPerakPage() {
             <div className="mb-20 bg-light p-6 md:p-12 rounded-lg shadow-lg">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-4xl font-extrabold text-dark">
-                  Area Layanan Travel Banyuwangi Pelabuhan Tanjung Perak
+                  Area Layanan Travel Banyuwangi ke Pelabuhan Tanjung Perak
                 </h2>
                 <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
                   Layanan door-to-port kami mencakup penjemputan di seluruh area Banyuwangi dan pengantaran langsung ke Terminal Penumpang Pelabuhan Tanjung Perak
@@ -434,7 +454,10 @@ export default function BanyuwangiTanjungPerakPage() {
                   Apa Kata Pelanggan Travel Banyuwangi Tanjung Perak
                 </h2>
                 <p className="mt-3 text-base md:text-lg text-gray-600 max-w-5xl mx-auto px-2">
-                  Testimoni pelanggan yang sudah menggunakan layanan travel Banyuwangi ke Pelabuhan Tanjung Perak dengan sistem door to port kami.
+                  Testimoni pelanggan yang sudah menggunakan layanan{" "}
+                  <strong>travel Banyuwangi Tanjung Perak</strong> dan{" "}
+                  <strong>travel Tanjung Perak Banyuwangi</strong> dengan sistem door to port yang
+                  praktis dan nyaman.
                 </p>
               </div>
 
@@ -600,7 +623,9 @@ export default function BanyuwangiTanjungPerakPage() {
 
             {/* FAQ Rute Spesifik */}
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-dark text-center mb-10">FAQ - Rute Banyuwangi Tanjung Perak</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-dark text-center mb-10">
+                FAQ – Travel Banyuwangi Tanjung Perak
+              </h2>
               <div className="space-y-6">
                 
                 <details className="bg-light p-6 rounded-lg shadow-md group" open>
@@ -619,7 +644,9 @@ export default function BanyuwangiTanjungPerakPage() {
                     <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                    Ya, harga yang tertera di tabel (Rp 170.000) sudah termasuk biaya tol via Trans-Jawa.
+                    Ya, harga <strong>travel Banyuwangi Tanjung Perak</strong> yang tertera di tabel
+                    (Rp 200.000) sudah termasuk biaya tol via Trans-Jawa. Tidak ada biaya tol tambahan
+                    di luar harga tiket, kecuali ada permintaan rute khusus di luar jalur utama.
                   </p>
                 </details>
 
@@ -651,13 +678,15 @@ export default function BanyuwangiTanjungPerakPage() {
 
         {/* Form Pemesanan Section */}
         <section id="form-pemesanan" className="py-20 bg-white">
-          <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-dark">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-dark max-w-5xl mx-auto">
                 Pesan Travel Banyuwangi – Pelabuhan Tanjung Perak
               </h2>
               <p className="mt-4 text-lg text-gray-600">
-                Isi formulir di bawah ini untuk pesan tiket travel Banyuwangi Tanjung Perak dengan mudah dan cepat. Tim kami akan menghubungi Anda untuk konfirmasi jadwal penjemputan dan jadwal kapal.
+                Isi formulir di bawah ini untuk pesan tiket travel Banyuwangi Tanjung Perak dengan
+                mudah dan cepat. Tim kami akan menghubungi Anda untuk konfirmasi jadwal penjemputan
+                dan jadwal kapal.
               </p>
             </div>
 
@@ -668,11 +697,15 @@ export default function BanyuwangiTanjungPerakPage() {
         {/* CTA Section */}
         <section id="kontak" className="py-20 bg-primary text-white">
           <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold">
+            <h2 className="text-3xl md:text-4xl font-extrabold max-w-5xl mx-auto">
               Pesan Travel ke Pelabuhan Tanjung Perak Sekarang
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-              Jangan sampai ketinggalan kapal. Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan penjemputan tepat waktu.
+              Jangan sampai ketinggalan kapal. Amankan kursi{" "}
+              <strong>travel Banyuwangi ke Pelabuhan Tanjung Perak</strong> atau{" "}
+              <strong>travel Pelabuhan Tanjung Perak ke Banyuwangi</strong> sekarang. Hubungi
+              admin via WhatsApp untuk booking cepat dan pengaturan jadwal penjemputan yang
+              tepat waktu.
             </p>
             <a 
               href={whatsappLinks.general}
@@ -681,7 +714,7 @@ export default function BanyuwangiTanjungPerakPage() {
               title="Chat WhatsApp untuk Booking Travel Banyuwangi Tanjung Perak"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
-              Pesan Rute Tanjung Perak via WA
+              Pesan Travel Banyuwangi Tanjung Perak via WA
             </a>
           </div>
         </section>
