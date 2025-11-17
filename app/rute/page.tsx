@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { StructuredData } from "../components/SEO";
@@ -332,7 +332,8 @@ const siteSearchData = {
   }
 };
 
-export default function RutePage() {
+// Component untuk search functionality yang dibungkus Suspense
+function SearchableRouteList() {
   const searchParams = useSearchParams();
   const queryParam = searchParams.get('q') || '';
   
@@ -378,6 +379,134 @@ export default function RutePage() {
 
   return (
     <>
+      {/* Hero Section */}
+      <section className="bg-light py-20">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <nav className="text-sm mb-4">
+            <Link href="/" className="text-gray-600 hover:text-primary">
+              Beranda
+            </Link>
+            <span className="text-gray-400 mx-2">/</span>
+            <span className="text-dark font-medium">Rute Perjalanan</span>
+          </nav>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Rute Travel dari Banyuwangi (Jadwal & Harga)</h1>
+          <p className="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">
+            Temukan <strong>rute travel Banyuwangi</strong> ke Surabaya, Malang, Denpasar, bandara, pelabuhan, dan kota lain di Jawa & Bali. 
+            Jadwal setiap hari, layanan door-to-door, armada nyaman, driver berpengalaman.
+          </p>
+
+          {/* Search Bar */}
+          <div className="mt-8 max-w-2xl mx-auto">
+            <form onSubmit={handleSearch} className="relative">
+              <div className="relative">
+                <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Cari rute travel (contoh: Surabaya, Malang, Denpasar...)"
+                  className="w-full pl-12 pr-12 py-4 rounded-lg border-2 border-gray-300 focus:border-primary focus:outline-none text-gray-700 placeholder-gray-400"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={handleClearSearch}
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                    aria-label="Clear search"
+                  >
+                    <X className="w-5 h-5" />
+                  </button>
+                )}
+              </div>
+            </form>
+            {searchQuery && (
+              <p className="mt-3 text-sm text-gray-600 text-center">
+                Menampilkan {filteredRoutes.length} dari {routes.length} rute untuk "{searchQuery}"
+              </p>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Daftar Rute Section */}
+      <section id="daftar-rute" className="py-20 bg-white">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-6 text-center">
+            {searchQuery ? `Hasil Pencarian "${searchQuery}"` : 'Daftar Rute Travel Banyuwangi Populer'}
+          </h2>
+          
+          {filteredRoutes.length === 0 ? (
+            <div className="text-center py-16">
+              <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <Search className="w-12 h-12 text-gray-400" />
+              </div>
+              <h3 className="text-2xl font-bold text-dark mb-3">Rute Tidak Ditemukan</h3>
+              <p className="text-gray-600 mb-6 max-w-md mx-auto">
+                Maaf, rute dengan kata kunci "{searchQuery}" tidak ditemukan. Silakan coba kata kunci lain atau hubungi kami untuk rute khusus.
+              </p>
+              <div className="flex gap-4 justify-center">
+                <button
+                  onClick={handleClearSearch}
+                  className="bg-secondary text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                >
+                  Lihat Semua Rute
+                </button>
+                <a
+                  href="https://wa.me/6282143258744"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                >
+                  Hubungi Kami
+                </a>
+              </div>
+            </div>
+          ) : (
+            <>
+          {/* Grid Daftar Rute */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredRoutes.map((route, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
+              >
+                <div className="relative h-48 w-full">
+                  <Image src={route.image} alt={route.alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-primary">{route.title}</h3>
+                  <p className="mt-2 text-gray-600">{route.description}</p>
+                  {route.link === "#kontak" ? (
+                    <a
+                      href={route.link}
+                      className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                    >
+                      Hubungi Kami
+                    </a>
+                  ) : (
+                    <Link
+                      href={route.link}
+                      className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                      title={`Detail travel ${route.title}`}
+                    >
+                      Lihat Detail Rute
+                    </Link>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+          </>
+          )}
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default function RutePage() {
+  return (
+    <>
       <StructuredData data={collectionPageData} />
       <StructuredData data={itemListData} />
       <StructuredData data={breadcrumbData} />
@@ -387,127 +516,18 @@ export default function RutePage() {
         <Header />
 
         <main>
-          {/* Hero Section */}
-          <section className="bg-light py-20">
-            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-              <nav className="text-sm mb-4">
-                <Link href="/" className="text-gray-600 hover:text-primary">
-                  Beranda
-                </Link>
-                <span className="text-gray-400 mx-2">/</span>
-                <span className="text-dark font-medium">Rute Perjalanan</span>
-              </nav>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Rute Travel dari Banyuwangi (Jadwal & Harga)</h1>
-              <p className="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">
-                Temukan <strong>rute travel Banyuwangi</strong> ke Surabaya, Malang, Denpasar, bandara, pelabuhan, dan kota lain di Jawa & Bali. 
-                Jadwal setiap hari, layanan door-to-door, armada nyaman, driver berpengalaman.
-              </p>
-
-              {/* Search Bar */}
-              <div className="mt-8 max-w-2xl mx-auto">
-                <form onSubmit={handleSearch} className="relative">
-                  <div className="relative">
-                    <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                    <input
-                      type="text"
-                      value={searchQuery}
-                      onChange={(e) => setSearchQuery(e.target.value)}
-                      placeholder="Cari rute travel (contoh: Surabaya, Malang, Denpasar...)"
-                      className="w-full pl-12 pr-12 py-4 rounded-lg border-2 border-gray-300 focus:border-primary focus:outline-none text-gray-700 placeholder-gray-400"
-                    />
-                    {searchQuery && (
-                      <button
-                        type="button"
-                        onClick={handleClearSearch}
-                        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
-                        aria-label="Clear search"
-                      >
-                        <X className="w-5 h-5" />
-                      </button>
-                    )}
-                  </div>
-                </form>
-                {searchQuery && (
-                  <p className="mt-3 text-sm text-gray-600 text-center">
-                    Menampilkan {filteredRoutes.length} dari {routes.length} rute untuk "{searchQuery}"
-                  </p>
-                )}
-              </div>
-            </div>
-          </section>
-
-          {/* Daftar Rute Section */}
-          <section id="daftar-rute" className="py-20 bg-white">
-            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-6 text-center">
-                {searchQuery ? `Hasil Pencarian "${searchQuery}"` : 'Daftar Rute Travel Banyuwangi Populer'}
-              </h2>
-              
-              {filteredRoutes.length === 0 ? (
-                <div className="text-center py-16">
-                  <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <Search className="w-12 h-12 text-gray-400" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-dark mb-3">Rute Tidak Ditemukan</h3>
-                  <p className="text-gray-600 mb-6 max-w-md mx-auto">
-                    Maaf, rute dengan kata kunci "{searchQuery}" tidak ditemukan. Silakan coba kata kunci lain atau hubungi kami untuk rute khusus.
-                  </p>
-                  <div className="flex gap-4 justify-center">
-                    <button
-                      onClick={handleClearSearch}
-                      className="bg-secondary text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
-                    >
-                      Lihat Semua Rute
-                    </button>
-                    <a
-                      href="https://wa.me/6282143258744"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
-                    >
-                      Hubungi Kami
-                    </a>
-                  </div>
+          <Suspense fallback={
+            <section className="bg-light py-20">
+              <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+                <div className="animate-pulse">
+                  <div className="h-8 bg-gray-200 rounded w-3/4 mx-auto mb-4"></div>
+                  <div className="h-6 bg-gray-200 rounded w-1/2 mx-auto"></div>
                 </div>
-              ) : (
-                <>
-              {/* Grid Daftar Rute */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredRoutes.map((route, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
-                  >
-                    <div className="relative h-48 w-full">
-                      <Image src={route.image} alt={route.alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold text-primary">{route.title}</h3>
-                      <p className="mt-2 text-gray-600">{route.description}</p>
-                      {route.link === "#kontak" ? (
-                        <a
-                          href={route.link}
-                          className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
-                        >
-                          Hubungi Kami
-                        </a>
-                      ) : (
-                        <Link
-                          href={route.link}
-                          className="inline-block mt-4 bg-secondary text-white px-5 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
-                          title={`Detail travel ${route.title}`}
-                        >
-                          Lihat Detail Rute
-                        </Link>
-                      )}
-                    </div>
-                  </div>
-                ))}
               </div>
-              </>
-              )}
-            </div>
-          </section>
+            </section>
+          }>
+            <SearchableRouteList />
+          </Suspense>
 
           {/* FAQ Section */}
           <section id="faq" className="py-20 bg-light">
