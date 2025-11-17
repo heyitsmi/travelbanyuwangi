@@ -1,39 +1,13 @@
-import { Metadata } from "next";
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { StructuredData } from "../components/SEO";
-import { ChevronDown } from "lucide-react";
-
-export const metadata: Metadata = {
-  title: "Rute Travel Banyuwangi – Surabaya, Malang, Denpasar, & Lainnya | Juragan Travel",
-  description:
-    "Daftar rute travel dari Banyuwangi ke Surabaya, Malang, Denpasar, Juanda, Tanjung Perak, Solo, Tulungagung, Jember, Lumajang, Sidoarjo, Gresik, Pasuruan. Jadwal setiap hari, door-to-door.",
-  keywords:
-    "rute travel banyuwangi, travel banyuwangi surabaya, travel banyuwangi malang, travel banyuwangi denpasar, travel banyuwangi juanda, travel banyuwangi tanjung perak, travel banyuwangi solo, travel banyuwangi tulungagung, travel banyuwangi jember, travel banyuwangi lumajang, travel banyuwangi sidoarjo, travel banyuwangi gresik, travel banyuwangi pasuruan",
-  authors: [{ name: "Juragan Travel" }],
-  openGraph: {
-    title: "Rute Travel Banyuwangi – Jadwal & Harga | Juragan Travel",
-    description:
-      "Semua rute travel dari Banyuwangi: Surabaya, Malang, Denpasar, Juanda, Tanjung Perak, dan lainnya. Berangkat tiap hari, door-to-door.",
-    type: "website",
-    url: "https://juragantravel.com/rute",
-    images: [
-      { url: "https://juragantravel.com/img/hero.webp", width: 1200, height: 630, alt: "Rute travel dari Banyuwangi" },
-    ],
-    siteName: "Juragan Travel",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Rute Travel Banyuwangi – Jadwal & Harga",
-    description:
-      "Pilih rute travel Banyuwangi ke Surabaya, Malang, Denpasar, dan lainnya. Berangkat setiap hari, door-to-door.",
-    images: ["https://juragantravel.com/img/hero.webp"],
-  },
-  alternates: { canonical: "https://juragantravel.com/rute" },
-  robots: { index: true, follow: true },
-};
+import { ChevronDown, Search, X } from "lucide-react";
 
 const itemListData = {
   "@context": "https://schema.org",
@@ -359,6 +333,49 @@ const siteSearchData = {
 };
 
 export default function RutePage() {
+  const searchParams = useSearchParams();
+  const queryParam = searchParams.get('q') || '';
+  
+  const [searchQuery, setSearchQuery] = useState(queryParam);
+  const [filteredRoutes, setFilteredRoutes] = useState(routes);
+
+  useEffect(() => {
+    // Update search query dari URL parameter
+    if (queryParam) {
+      setSearchQuery(queryParam);
+    }
+  }, [queryParam]);
+
+  useEffect(() => {
+    // Filter routes berdasarkan search query
+    if (searchQuery.trim() === '') {
+      setFilteredRoutes(routes);
+    } else {
+      const query = searchQuery.toLowerCase();
+      const filtered = routes.filter(
+        (route) =>
+          route.title.toLowerCase().includes(query) ||
+          route.description.toLowerCase().includes(query)
+      );
+      setFilteredRoutes(filtered);
+    }
+  }, [searchQuery]);
+
+  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Update URL dengan query parameter
+    if (searchQuery.trim()) {
+      window.history.pushState({}, '', `/rute?q=${encodeURIComponent(searchQuery)}`);
+    } else {
+      window.history.pushState({}, '', '/rute');
+    }
+  };
+
+  const handleClearSearch = () => {
+    setSearchQuery('');
+    window.history.pushState({}, '', '/rute');
+  };
+
   return (
     <>
       <StructuredData data={collectionPageData} />
@@ -385,6 +402,37 @@ export default function RutePage() {
                 Temukan <strong>rute travel Banyuwangi</strong> ke Surabaya, Malang, Denpasar, bandara, pelabuhan, dan kota lain di Jawa & Bali. 
                 Jadwal setiap hari, layanan door-to-door, armada nyaman, driver berpengalaman.
               </p>
+
+              {/* Search Bar */}
+              <div className="mt-8 max-w-2xl mx-auto">
+                <form onSubmit={handleSearch} className="relative">
+                  <div className="relative">
+                    <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                    <input
+                      type="text"
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      placeholder="Cari rute travel (contoh: Surabaya, Malang, Denpasar...)"
+                      className="w-full pl-12 pr-12 py-4 rounded-lg border-2 border-gray-300 focus:border-primary focus:outline-none text-gray-700 placeholder-gray-400"
+                    />
+                    {searchQuery && (
+                      <button
+                        type="button"
+                        onClick={handleClearSearch}
+                        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                        aria-label="Clear search"
+                      >
+                        <X className="w-5 h-5" />
+                      </button>
+                    )}
+                  </div>
+                </form>
+                {searchQuery && (
+                  <p className="mt-3 text-sm text-gray-600 text-center">
+                    Menampilkan {filteredRoutes.length} dari {routes.length} rute untuk "{searchQuery}"
+                  </p>
+                )}
+              </div>
             </div>
           </section>
 
@@ -392,11 +440,40 @@ export default function RutePage() {
           <section id="daftar-rute" className="py-20 bg-white">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <h2 className="text-2xl md:text-3xl font-extrabold text-dark mb-6 text-center">
-                Daftar Rute Travel Banyuwangi Populer
+                {searchQuery ? `Hasil Pencarian "${searchQuery}"` : 'Daftar Rute Travel Banyuwangi Populer'}
               </h2>
+              
+              {filteredRoutes.length === 0 ? (
+                <div className="text-center py-16">
+                  <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <Search className="w-12 h-12 text-gray-400" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-dark mb-3">Rute Tidak Ditemukan</h3>
+                  <p className="text-gray-600 mb-6 max-w-md mx-auto">
+                    Maaf, rute dengan kata kunci "{searchQuery}" tidak ditemukan. Silakan coba kata kunci lain atau hubungi kami untuk rute khusus.
+                  </p>
+                  <div className="flex gap-4 justify-center">
+                    <button
+                      onClick={handleClearSearch}
+                      className="bg-secondary text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                    >
+                      Lihat Semua Rute
+                    </button>
+                    <a
+                      href="https://wa.me/6282143258744"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
+                    >
+                      Hubungi Kami
+                    </a>
+                  </div>
+                </div>
+              ) : (
+                <>
               {/* Grid Daftar Rute */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {routes.map((route, index) => (
+                {filteredRoutes.map((route, index) => (
                   <div
                     key={index}
                     className="bg-white rounded-lg shadow-lg overflow-hidden group transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
@@ -427,6 +504,8 @@ export default function RutePage() {
                   </div>
                 ))}
               </div>
+              </>
+              )}
             </div>
           </section>
 
