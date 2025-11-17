@@ -77,7 +77,7 @@ export default function RootLayout({
                 "@type": "SearchAction",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: "https://juragantravel.com/rute?search={search_term_string}"
+                  urlTemplate: "https://juragantravel.com/search?q={search_term_string}"
                 },
                 "query-input": "required name=search_term_string"
               }
