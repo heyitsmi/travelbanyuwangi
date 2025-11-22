@@ -63,6 +63,11 @@ const organizationData = {
   review: [
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Ahmad Yusuf",
@@ -78,6 +83,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Siti Fatimah",
@@ -93,6 +103,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Budi Santoso",
@@ -108,6 +123,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Nurul Hidayah",
@@ -123,6 +143,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Dewi Lestari",
@@ -138,6 +163,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Ibu Indah",
@@ -153,6 +183,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Eko Prasetyo",
@@ -168,6 +203,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Rini Anggraini",
@@ -183,6 +223,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Agus Setiawan",
@@ -198,6 +243,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Fitri Wulandari",
@@ -213,6 +263,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Hendra Kurniawan",
@@ -228,6 +283,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Linda Permatasari",
@@ -243,6 +303,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Bambang Tri Hartono",
@@ -258,6 +323,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Yulia Rahmawati",
@@ -273,6 +343,11 @@ const organizationData = {
     },
     {
       "@type": "Review",
+      itemReviewed: {
+        "@type": "TravelAgency",
+        name: "Juragan Travel",
+        image: "https://juragantravel.com/img/brand/logo.webp",
+      },
       author: {
         "@type": "Person",
         name: "Muhammad Rizki",

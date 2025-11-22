@@ -1,0 +1,30 @@
+
+> travelbanyuwangi@0.1.0 build
+> next build
+
+   ▲ Next.js 16.0.1 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 9.9s
+   Running TypeScript ...
+   Collecting page data ...
+ ⚠ Using edge runtime on a page currently disables static generation for that page
+   Generating static pages (0/48) ...
+   Generating static pages (12/48) 
+   Generating static pages (24/48) 
+   Generating static pages (36/48) 
+ ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/search". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+    at S (C:\laragon\www\travelbanyuwangi\.next\server\chunks\ssr\node_modules_next_1f69ae37._.js:2:2111)
+    at p (C:\laragon\www\travelbanyuwangi\.next\server\chunks\ssr\node_modules_next_1f69ae37._.js:4:4847)
+    at e (C:\laragon\www\travelbanyuwangi\.next\server\chunks\ssr\[root-of-the-server]__aaf01ed3._.js:1:898)
+    at ir (C:\laragon\www\travelbanyuwangi\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:84433)
+    at ia (C:\laragon\www\travelbanyuwangi\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:86252)
+    at il (C:\laragon\www\travelbanyuwangi\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:107981)
+    at is (C:\laragon\www\travelbanyuwangi\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:105399)
+    at ii (C:\laragon\www\travelbanyuwangi\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:84785)
+    at ia (C:\laragon\www\travelbanyuwangi\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:86301)
+    at ia (C:\laragon\www\travelbanyuwangi\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.prod.js:2:104739)
+Error occurred prerendering page "/search". Read more: https://nextjs.org/docs/messages/prerender-error
+Export encountered an error on /search/page: /search, exiting the build.
+ ⨯ Next.js build worker exited with code: 1 and signal: null
