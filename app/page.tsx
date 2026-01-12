@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { StructuredData } from "./components/SEO";
 import { formatPrice } from "../lib/priceConfig";
+import WhatsAppLink from "./components/WhatsAppLink";
 import {
   Truck,
   Clock,
@@ -171,15 +172,12 @@ export default function Home() {
               <p className="mt-6 text-xl lg:text-2xl text-gray-200 max-w-5xl mx-auto">
                 Juragan Travel melayani perjalanan antar kota dari Banyuwangi ke Surabaya, Malang, Denpasar, dan kota-kota lain di Jawa–Bali. Kami menyediakan layanan door-to-door, jadwal fleksibel setiap hari, serta kenyamanan armada terbaik dengan sopir berpengalaman. Pesan travel Banyuwangi hari ini dan nikmati perjalanan tanpa repot!
               </p>
-              <a
-                href="https://wa.me/6282143258744"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
                 title="Pesan travel Banyuwangi via WhatsApp - Respon cepat 24 jam"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Pesan Sekarang via WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
 

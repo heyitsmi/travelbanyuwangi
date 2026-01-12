@@ -16,6 +16,7 @@ import {
   ChevronDown,
   Bus,
 } from "lucide-react";
+import WhatsAppLink from "../components/WhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Layanan Travel Banyuwangi Terlengkap | Juragan Travel",
@@ -416,15 +417,13 @@ export default function LayananPage() {
                 Pelayanan 24 jam dengan respon cepat.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="https://wa.me/6282143258744"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppLink
+                  message="Halo Admin, saya mau pesan layanan Juragan Travel."
                   title="Hubungi Juragan Travel via WhatsApp untuk booking layanan"
                   className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
                 >
                   Pesan Sekarang via WhatsApp
-                </a>
+                </WhatsAppLink>
                 <a
                   href="/kontak"
                   title="Lihat info kontak lengkap Juragan Travel"

@@ -6,6 +6,7 @@ import { StructuredData } from "../../components/SEO";
 import BookingForm from "../../components/BookingForm";
 import Image from "next/image";
 import Link from "next/link";
+import WhatsAppLink from "../../components/WhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Jember (PP) – Door to Door, Cepat & Nyaman | Juragan Travel",
@@ -245,15 +246,13 @@ export default function BanyuwangiJemberPage() {
                       <td className="p-4 text-gray-700">Pagi (07:00), Siang (13:00), Malam (19:00)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 150.000</td>
                       <td className="p-4">
-                        <a 
-                          href={whatsappLinks.toJember}
-                          target="_blank" 
-                          rel="noopener noreferrer"
+                        <WhatsAppLink
+                          message="Halo, saya mau pesan travel Banyuwangi ke Jember"
                           title="Pesan Travel Banyuwangi Jember via WhatsApp"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
-                        </a>
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
@@ -261,15 +260,13 @@ export default function BanyuwangiJemberPage() {
                       <td className="p-4 text-gray-700">Pagi (07:00), Siang (13:00), Malam (19:00)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 150.000</td>
                       <td className="p-4">
-                        <a 
-                          href={whatsappLinks.fromJember}
-                          target="_blank" 
-                          rel="noopener noreferrer"
+                        <WhatsAppLink
+                          message="Halo, saya mau pesan travel dari Jember ke Banyuwangi"
                           title="Pesan Travel Jember Banyuwangi via WhatsApp"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
-                        </a>
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     {/* <tr className="hover:bg-white transition-colors">
@@ -506,15 +503,13 @@ export default function BanyuwangiJemberPage() {
 
               <div className="text-center mt-10">
                 <p className="text-sm md:text-base text-gray-600 mb-6">Ingin jadi pelanggan berikutnya yang puas dengan travel Banyuwangi Jember kami?</p>
-                <a
-                  href={whatsappLinks.general}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppLink
+                  message="Halo Admin, saya mau pesan travel Banyuwangi-Jember."
                   title="Hubungi Admin untuk Pesan Travel Banyuwangi Jember"
                   className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                 >
                   Pesan Travel Banyuwangi Jember via WhatsApp
-                </a>
+                </WhatsAppLink>
               </div>
             </div>
 
@@ -685,15 +680,13 @@ export default function BanyuwangiJemberPage() {
               <strong>travel Banyuwangi Jember</strong> maupun{" "}
               <strong>travel Jember Banyuwangi</strong>.
             </p>
-            <a 
-              href={whatsappLinks.general}
-              target="_blank" 
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              message="Halo Admin, saya mau pesan travel Banyuwangi-Jember."
               title="Chat WhatsApp untuk Booking Travel Banyuwangi Jember"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
               Pesan Travel Banyuwangi Jember via WA
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
       </main>

@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import { StructuredData } from "../../components/SEO";
 import { Map, Home, Building, ChevronDown, Mountain } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
+import WhatsAppLink from "../../components/WhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Tulungagung (PP) – Jalur Selatan, Door to Door | Juragan Travel",
@@ -273,15 +274,13 @@ export default function BanyuwangiTulungagungPage() {
                           <td className="p-4 text-gray-700">{schedule.schedule}</td>
                           <td className="p-4 font-bold text-primary text-lg">{schedule.price}</td>
                           <td className="p-4">
-                            <a
-                              href="https://wa.me/6282143258744"
-                              target="_blank"
-                              rel="noopener noreferrer"
+                            <WhatsAppLink
+                              message={`Halo, saya mau pesan ${schedule.route}`}
                               title="Pesan Travel Banyuwangi Tulungagung via WhatsApp"
                               className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                             >
                               Pesan
-                            </a>
+                            </WhatsAppLink>
                           </td>
                         </tr>
                       ))}
@@ -564,15 +563,13 @@ export default function BanyuwangiTulungagungPage() {
 
                 <div className="text-center mt-10">
                   <p className="text-sm md:text-base text-gray-600 mb-6">Ingin jadi pelanggan berikutnya yang puas dengan travel Banyuwangi Tulungagung kami?</p>
-                  <a
-                    href="https://wa.me/6282143258744"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppLink
+                    message="Halo Admin, saya mau pesan travel Banyuwangi-Tulungagung."
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Tulungagung"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
                     Pesan Travel Banyuwangi Tulungagung via WhatsApp
-                  </a>
+                  </WhatsAppLink>
                 </div>
               </div>
 
@@ -709,15 +706,13 @@ export default function BanyuwangiTulungagungPage() {
                 Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
                 travel Banyuwangi Tulungagung hari ini, termasuk untuk rute ke Blitar dan Kediri.
               </p>
-              <a
-                href="https://wa.me/6282143258744"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
+                message="Halo Admin, saya mau pesan travel Banyuwangi-Tulungagung."
                 title="Chat WhatsApp untuk Booking Travel Banyuwangi Tulungagung"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Pesan Rute Tulungagung via WA
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
         </main>

@@ -6,6 +6,7 @@ import { StructuredData } from "../../components/SEO";
 import Image from "next/image";
 import Link from "next/link";
 import BookingForm from "../../components/BookingForm";
+import WhatsAppLink from "../../components/WhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Juanda (Bandara) – Door to Door Tepat Waktu | Juragan Travel",
@@ -248,15 +249,13 @@ export default function BanyuwangiJuandaPage() {
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Pesawat)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
-                        <a 
-                          href={whatsappLinks.toJuanda}
-                          target="_blank" 
-                          rel="noopener noreferrer"
+                        <WhatsAppLink
+                          message="Halo, saya mau pesan travel Banyuwangi ke Bandara Juanda"
                           title="Pesan Travel Banyuwangi Bandara Juanda via WhatsApp"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
-                        </a>
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
@@ -264,15 +263,13 @@ export default function BanyuwangiJuandaPage() {
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Landing)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
-                        <a 
-                          href={whatsappLinks.fromJuanda}
-                          target="_blank" 
-                          rel="noopener noreferrer"
+                        <WhatsAppLink
+                          message="Halo, saya mau pesan travel dari Bandara Juanda ke Banyuwangi"
                           title="Pesan Travel Bandara Juanda Banyuwangi via WhatsApp"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
-                        </a>
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
@@ -280,15 +277,13 @@ export default function BanyuwangiJuandaPage() {
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 1.200.000</td>
                       <td className="p-4">
-                        <a 
-                          href={whatsappLinks.carter}
-                          target="_blank" 
-                          rel="noopener noreferrer"
+                        <WhatsAppLink
+                          message="Halo, saya mau tanya harga carter Banyuwangi-Juanda"
                           title="Pesan Carter Sekali Jalan Banyuwangi Juanda via WhatsApp"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
-                        </a>
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
@@ -296,15 +291,13 @@ export default function BanyuwangiJuandaPage() {
                       <td className="p-4 text-gray-700">Fleksibel 24 Jam (Sesuai Pesanan)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 2.100.000</td>
                       <td className="p-4">
-                        <a 
-                          href={whatsappLinks.carter}
-                          target="_blank" 
-                          rel="noopener noreferrer"
+                        <WhatsAppLink
+                          message="Halo, saya mau tanya harga carter Banyuwangi-Juanda"
                           title="Pesan Carter PP Banyuwangi Juanda via WhatsApp"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
-                        </a>
+                        </WhatsAppLink>
                       </td>
                     </tr>
                   </tbody>
@@ -525,15 +518,13 @@ export default function BanyuwangiJuandaPage() {
 
               <div className="text-center mt-10">
                 <p className="text-sm md:text-base text-gray-600 mb-6">Ingin jadi pelanggan berikutnya yang puas dengan travel Banyuwangi Bandara Juanda kami?</p>
-                <a
-                  href={whatsappLinks.general}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppLink
+                  message="Halo Admin, saya mau pesan travel Banyuwangi-Juanda."
                   title="Hubungi Admin untuk Pesan Travel Banyuwangi Bandara Juanda"
                   className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                 >
                   Pesan Travel Banyuwangi Bandara Juanda via WhatsApp
-                </a>
+                </WhatsAppLink>
               </div>
             </div>
 
@@ -705,15 +696,13 @@ export default function BanyuwangiJuandaPage() {
               <strong>travel Bandara Juanda ke Banyuwangi</strong> sekarang. Hubungi admin kami
               via WhatsApp untuk booking cepat dan pengaturan jadwal yang tepat waktu.
             </p>
-            <a 
-              href={whatsappLinks.general}
-              target="_blank" 
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              message="Halo Admin, saya mau pesan travel Banyuwangi-Juanda."
               title="Chat WhatsApp untuk Booking Travel Banyuwangi Bandara Juanda"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
               Pesan Travel Banyuwangi Juanda via WA
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
       </main>

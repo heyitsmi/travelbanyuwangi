@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import BookingForm from "../../components/BookingForm";
+import WhatsAppLink from "../../components/WhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Travel Banyuwangi - Bandara Ngurah Rai (PP) | Jadwal & Harga | Juragan Travel",
@@ -122,14 +123,13 @@ export default function BanyuwangiNgurahRaiPage() {
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Pesawat)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
-                        <a 
-                          href={whatsappLinks.toNgurahRai}
-                          target="_blank" 
-                          rel="noopener noreferrer"
+                        <WhatsAppLink
+                          message="Halo, saya mau pesan travel Banyuwangi ke Bandara Ngurah Rai"
+                          title="Pesan Rute Ngurah Rai"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
-                        </a>
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
@@ -137,14 +137,13 @@ export default function BanyuwangiNgurahRaiPage() {
                       <td className="p-4 text-gray-700">Hubungi Admin (Menyesuaikan Jadwal Landing)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
-                        <a 
-                          href={whatsappLinks.fromNgurahRai}
-                          target="_blank" 
-                          rel="noopener noreferrer"
+                        <WhatsAppLink
+                          message="Halo, saya mau pesan travel dari Bandara Ngurah Rai ke Banyuwangi"
+                          title="Pesan Rute Banyuwangi"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
-                        </a>
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     {/* <tr className="hover:bg-white transition-colors">
@@ -276,14 +275,13 @@ export default function BanyuwangiNgurahRaiPage() {
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
               Jangan sampai ketinggalan pesawat. Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan penjemputan tepat waktu.
             </p>
-            <a 
-              href={whatsappLinks.general}
-              target="_blank" 
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              message="Halo Admin, saya mau pesan travel Banyuwangi-Ngurah Rai."
+              title="Pesan Rute Ngurah Rai via WA"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
               Pesan Rute Ngurah Rai via WA
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
       </main>

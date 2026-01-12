@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { StructuredData } from '../../components/SEO';
 import BookingForm from '../../components/BookingForm';
+import WhatsAppLink from "../../components/WhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Pasuruan (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel",
@@ -251,7 +252,13 @@ export default function BanyuwangiPasuruanPage() {
                       <td className="p-4 text-gray-700">Pagi (09:00), Siang (15:00), Malam (21:00)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
-                        <a href={whatsappLinks.toPasuruan} target="_blank" rel="noopener noreferrer" title="Pesan Travel Banyuwangi Pasuruan via WhatsApp" className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90">Pesan</a>
+                        <WhatsAppLink
+                          message="Halo, saya mau pesan travel Banyuwangi ke Pasuruan"
+                          title="Pesan Travel Banyuwangi Pasuruan via WhatsApp"
+                          className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
+                        >
+                          Pesan
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     <tr className="hover:bg-white transition-colors">
@@ -259,7 +266,13 @@ export default function BanyuwangiPasuruanPage() {
                       <td className="p-4 text-gray-700">Pagi (09:00), Siang (15:00), Malam (21:00)</td>
                       <td className="p-4 font-bold text-primary text-lg">Rp 200.000</td>
                       <td className="p-4">
-                        <a href={whatsappLinks.fromPasuruan} target="_blank" rel="noopener noreferrer" title="Pesan Travel Pasuruan Banyuwangi via WhatsApp" className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90">Pesan</a>
+                        <WhatsAppLink
+                          message="Halo, saya mau pesan travel dari Pasuruan ke Banyuwangi"
+                          title="Pesan Travel Pasuruan Banyuwangi via WhatsApp"
+                          className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
+                        >
+                          Pesan
+                        </WhatsAppLink>
                       </td>
                     </tr>
                     {/* <tr className="hover:bg-white transition-colors">
@@ -488,15 +501,13 @@ export default function BanyuwangiPasuruanPage() {
 
               <div className="text-center mt-10">
                 <p className="text-sm md:text-base text-gray-600 mb-6">Ingin jadi pelanggan berikutnya yang puas dengan travel Banyuwangi Pasuruan kami?</p>
-                <a
-                  href={whatsappLinks.general}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppLink
+                  message="Halo Admin, saya mau pesan travel Banyuwangi-Pasuruan."
                   title="Hubungi Admin untuk Pesan Travel Banyuwangi Pasuruan"
                   className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                 >
                   Pesan Travel Banyuwangi Pasuruan via WhatsApp
-                </a>
+                </WhatsAppLink>
               </div>
             </div>
 
@@ -635,11 +646,13 @@ export default function BanyuwangiPasuruanPage() {
               <strong>travel Pasuruan Banyuwangi</strong>.
               Amankan kursi Anda sekarang dan hubungi admin kami via WhatsApp untuk booking cepat.
             </p>
-            <a href={whatsappLinks.general} target="_blank" rel="noopener noreferrer"
-               title="Chat WhatsApp untuk Booking Travel Banyuwangi Pasuruan"
-               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1">
+            <WhatsAppLink
+              message="Halo Admin, saya mau pesan travel Banyuwangi-Pasuruan."
+              title="Chat WhatsApp untuk Booking Travel Banyuwangi Pasuruan"
+              className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
+            >
               Pesan Rute Pasuruan via WA
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
       </main>

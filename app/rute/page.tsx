@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { StructuredData } from "../components/SEO";
 import { ChevronDown, Search, X } from "lucide-react";
+import WhatsAppLink from "../components/WhatsAppLink";
 
 const itemListData = {
   "@context": "https://schema.org",
@@ -451,14 +452,13 @@ function SearchableRouteList() {
                 >
                   Lihat Semua Rute
                 </button>
-                <a
-                  href="https://wa.me/6282143258744"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppLink
+                  message="Halo Admin, saya mencari rute travel tapi tidak menemukannya di website."
+                  title="Hubungi Kami via WhatsApp"
                   className="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                 >
                   Hubungi Kami
-                </a>
+                </WhatsAppLink>
               </div>
             </div>
           ) : (
@@ -616,14 +616,13 @@ export default function RutePage() {
                 Tim kami siap membantu. Hubungi kami untuk permintaan rute khusus, carter mobil, atau perjalanan
                 rombongan ke seluruh Jawa & Bali.
               </p>
-              <a
-                href="https://wa.me/6282143258744"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
+                message="Halo Admin, saya mau tanya rute travel khusus."
+                title="Tanya rute travel via WhatsApp"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Tanya Rute via WA
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
         </main>

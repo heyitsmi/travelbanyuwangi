@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { CITIES, getPrice, formatPrice } from "@/lib/priceConfig";
 import { ChevronDown, Check } from "lucide-react";
+import WhatsAppLink from "./WhatsAppLink";
 
 export default function CekHargaForm() {
   const [asal, setAsal] = useState<string>("");
@@ -60,15 +61,7 @@ export default function CekHargaForm() {
     }, 500);
   };
 
-  const generateWhatsAppLink = () => {
-    if (result.type === "success" && result.price) {
-      const waText = `Halo Admin, saya mau pesan travel rute ${asal} ke ${tujuan} dengan harga estimasi ${formatPrice(
-        result.price
-      )}`;
-      return `https://wa.me/6282143258744?text=${encodeURIComponent(waText)}`;
-    }
-    return "https://wa.me/6282143258744";
-  };
+
 
   return (
     <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -155,15 +148,13 @@ export default function CekHargaForm() {
             Oops! Terjadi Kesalahan
           </h3>
           <p className="text-red-600 mt-2">{result.message}</p>
-          <a
-            href="https://wa.me/6282143258744"
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppLink
+            message="Halo Admin, saya mau tanya layanan travel."
             title="Hubungi admin Juragan Travel via WhatsApp"
             className="mt-4 inline-block bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all"
           >
             Hubungi Admin
-          </a>
+          </WhatsAppLink>
         </div>
       )}
 
@@ -187,15 +178,15 @@ export default function CekHargaForm() {
             Harga dapat berubah sewaktu-waktu tanpa pemberitahuan.
           </p>
 
-          <a
-            href={generateWhatsAppLink()}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppLink
+            message={`Halo Admin, saya mau pesan travel rute ${asal} ke ${tujuan} dengan harga estimasi ${
+              result.price ? formatPrice(result.price) : ""
+            }`}
             title="Pesan travel sekarang via WhatsApp"
             className="mt-6 inline-block bg-accent text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-all shadow-md"
           >
             Pesan Sekarang via WhatsApp
-          </a>
+          </WhatsAppLink>
         </div>
       )}
     </div>

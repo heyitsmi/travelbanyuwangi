@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import { StructuredData } from "../../components/SEO";
 import { Map, Home, Plane, ChevronDown, Mountain } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
+import WhatsAppLink from "../../components/WhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Surabaya via Tol – Jadwal, Harga & Door to Door | Juragan Travel",
@@ -294,15 +295,12 @@ export default function BanyuwangiSurabayaPage() {
                           <td className="p-2 md:p-4 text-xs md:text-base text-gray-700">{schedule.schedule}</td>
                           <td className="p-2 md:p-4 font-bold text-primary text-sm md:text-lg">{schedule.price}</td>
                           <td className="p-2 md:p-4">
-                            <a
-                              href="https://wa.me/6282143258744"
-                              target="_blank"
-                              rel="noopener noreferrer"
+                            <WhatsAppLink
                               title="Pesan Travel Banyuwangi Surabaya via WhatsApp"
-                              className="bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-base font-medium hover:bg-opacity-90"
+                              className="bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-base font-medium hover:bg-opacity-90 inline-block text-center"
                             >
                               Pesan
-                            </a>
+                            </WhatsAppLink>
                           </td>
                         </tr>
                       ))}
@@ -595,15 +593,12 @@ export default function BanyuwangiSurabayaPage() {
 
                 <div className="text-center mt-10">
                   <p className="text-sm md:text-base text-gray-600 mb-6">Ingin jadi pelanggan berikutnya yang puas dengan travel Banyuwangi Surabaya kami?</p>
-                  <a
-                    href="https://wa.me/6282143258744"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppLink
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Surabaya"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
                     Pesan Travel Banyuwangi Surabaya via WhatsApp
-                  </a>
+                  </WhatsAppLink>
                 </div>
               </div>
 
@@ -738,15 +733,12 @@ export default function BanyuwangiSurabayaPage() {
                 Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
                 travel Banyuwangi Surabaya hari ini.
               </p>
-              <a
-                href="https://wa.me/6282143258744"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
                 title="Chat WhatsApp untuk Booking Travel Banyuwangi Surabaya"
                 className="mt-10 inline-block bg-accent text-white px-6 py-2.5 md:px-10 md:py-3 rounded-lg font-bold text-sm md:text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Pesan Travel Banyuwangi Surabaya via WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
         </main>
