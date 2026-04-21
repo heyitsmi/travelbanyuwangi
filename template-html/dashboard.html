@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuraganTravel Admin | Dashboard</title>
+    
+    <!-- Google Fonts: Google Sans Flex -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Google Sans Flex"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            400: '#34d399',
+                            500: '#10b981', // Emerald Green
+                            600: '#059669', // Deep Emerald
+                            800: '#065f46',
+                            900: '#022c22', // Very Dark Green (Premium)
+                        },
+                        accent: {
+                            400: '#fbbf24', // Warm Gold
+                            500: '#f59e0b', 
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 25px -5px rgba(0,0,0,0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <style>
+        /* Smooth hiding for sidebar text */
+        .sidebar-text-wrap {
+            transition: max-width 0.3s ease, opacity 0.2s ease;
+            max-width: 200px; 
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .sidebar-collapsed .sidebar-text-wrap {
+            max-width: 0;
+            opacity: 0;
+            margin-left: 0 !important;
+        }
+
+        .sidebar-collapsed .logo-text {
+            display: none;
+        }
+
+        /* Adjust Sidebar Header on Collapse */
+        .sidebar-collapsed #sidebar-header {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            padding-right: 0;
+            gap: 6px;
+        }
+        
+        .sidebar-collapsed #sidebar-logo {
+            gap: 0;
+        }
+
+        /* Adjust Profile Menu on Collapse to pop out to the right */
+        .sidebar-collapsed #profile-menu {
+            left: calc(100% + 0.5rem);
+            bottom: 0;
+            width: 12rem;
+            right: auto;
+            margin-bottom: 0;
+        }
+
+        /* Hide scrollbar for a clean table look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-brand-500 selection:text-white flex h-screen overflow-hidden">
+
+    <!-- Mobile Overlay -->
+    <div id="mobile-overlay" class="fixed inset-0 bg-brand-900/60 backdrop-blur-sm z-20 hidden lg:hidden transition-opacity opacity-0 duration-300"></div>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="bg-brand-900 text-white flex flex-col transition-all duration-300 z-30 fixed lg:relative h-full w-64 -translate-x-full lg:translate-x-0 shadow-xl lg:shadow-none">
+        
+        <!-- Sidebar Header (Logo & Centered Border Toggle) -->
+        <div id="sidebar-header" class="relative h-20 flex items-center px-6 border-b border-brand-800/50 transition-all duration-300">
+            <a href="#" id="sidebar-logo" class="flex items-center gap-3 overflow-hidden">
+                <div class="bg-brand-500 text-white p-2 rounded-xl shrink-0 shadow-lg shadow-brand-500/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                </div>
+                <span class="font-bold text-xl tracking-tight logo-text sidebar-text-wrap">Juragan<span class="text-brand-400">Travel</span></span>
+            </a>
+
+            <!-- Desktop Collapse Toggle Button (Overlapping Border) -->
+            <button id="desktop-toggle-btn" class="hidden lg:flex absolute -right-3.5 top-1/2 -translate-y-1/2 w-7 h-7 items-center justify-center shrink-0 rounded-lg bg-brand-800 hover:bg-brand-700 text-brand-100 hover:text-white transition-colors focus:outline-none shadow-md z-50 border border-brand-900" title="Toggle Sidebar">
+                <svg id="toggle-icon" class="transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <div class="flex-1 overflow-y-auto py-6 px-4 no-scrollbar flex flex-col gap-2">
+            
+            <p class="text-xs font-bold text-brand-800 uppercase tracking-widest px-2 mb-2 sidebar-text-wrap">Main Menu</p>
+
+            <a href="#" class="flex items-center gap-3 px-3 py-3 rounded-xl bg-brand-500/20 text-brand-100 hover:bg-brand-500/30 transition-colors group relative" title="Dashboard">
+                <svg class="shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+                <span class="font-semibold text-sm sidebar-text-wrap">Dashboard</span>
+                <!-- Active indicator line -->
+                <div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-accent-400 rounded-r-full"></div>
+            </a>
+
+            <a href="#" class="flex items-center gap-3 px-3 py-3 rounded-xl text-gray-400 hover:text-white hover:bg-brand-800/50 transition-colors group" title="Bookings">
+                <svg class="shrink-0 group-hover:text-brand-400 transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <span class="font-semibold text-sm sidebar-text-wrap">Bookings</span>
+                <!-- Notification Badge -->
+                <span class="ml-auto bg-accent-500 text-brand-900 text-xs font-bold px-2 py-0.5 rounded-full sidebar-text-wrap">12</span>
+            </a>
+
+            <a href="#" class="flex items-center gap-3 px-3 py-3 rounded-xl text-gray-400 hover:text-white hover:bg-brand-800/50 transition-colors group" title="Schedule & Routes">
+                <svg class="shrink-0 group-hover:text-brand-400 transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                <span class="font-semibold text-sm sidebar-text-wrap">Schedule & Routes</span>
+            </a>
+
+            <a href="#" class="flex items-center gap-3 px-3 py-3 rounded-xl text-gray-400 hover:text-white hover:bg-brand-800/50 transition-colors group" title="Active Fleet">
+                <svg class="shrink-0 group-hover:text-brand-400 transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                <span class="font-semibold text-sm sidebar-text-wrap">Active Fleet</span>
+            </a>
+
+            <div class="h-px bg-brand-800/50 my-4"></div>
+            
+            <p class="text-xs font-bold text-brand-800 uppercase tracking-widest px-2 mb-2 sidebar-text-wrap">System</p>
+
+            <a href="#" class="flex items-center gap-3 px-3 py-3 rounded-xl text-gray-400 hover:text-white hover:bg-brand-800/50 transition-colors group" title="Reports">
+                <svg class="shrink-0 group-hover:text-brand-400 transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                <span class="font-semibold text-sm sidebar-text-wrap">Reports</span>
+            </a>
+            
+            <a href="#" class="flex items-center gap-3 px-3 py-3 rounded-xl text-gray-400 hover:text-white hover:bg-brand-800/50 transition-colors group" title="Settings">
+                <svg class="shrink-0 group-hover:text-brand-400 transition-colors" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                <span class="font-semibold text-sm sidebar-text-wrap">Settings</span>
+            </a>
+        </div>
+
+        <!-- Sidebar Footer / User Profile & Submenu -->
+        <div class="border-t border-brand-800/50 p-4 relative" id="profile-section">
+            <button id="profile-btn" class="w-full flex items-center justify-between px-2 py-2 hover:bg-brand-800/50 rounded-xl transition-colors text-left focus:outline-none group">
+                <div class="flex items-center gap-3 sidebar-text-wrap overflow-hidden">
+                    <img src="https://ui-avatars.com/api/?name=Admin+Budi&background=10b981&color=fff" alt="Admin" class="w-10 h-10 rounded-full border-2 border-brand-700 shrink-0">
+                    <div class="flex flex-col sidebar-text-wrap">
+                        <span class="text-sm font-bold text-white">Budi Santoso</span>
+                        <span class="text-xs font-medium text-brand-400">Super Admin</span>
+                    </div>
+                </div>
+                <!-- Up-Down Action Icon -->
+                <svg class="text-gray-400 group-hover:text-white transition-colors shrink-0 sidebar-text-wrap" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5"/><path d="m7 9 5-5 5 5"/></svg>
+            </button>
+
+            <!-- Profile Submenu Dropdown -->
+            <div id="profile-menu" class="hidden absolute bottom-full left-4 right-4 mb-2 bg-brand-800 border border-brand-700 rounded-xl shadow-lg shadow-black/20 overflow-hidden z-50 origin-bottom scale-95 opacity-0 transition-all duration-200">
+                <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-200 hover:bg-brand-700 hover:text-white font-bold transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    My Profile
+                </a>
+                <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-200 hover:bg-brand-700 hover:text-white font-bold transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                    Account Settings
+                </a>
+                <div class="h-px bg-brand-700/50"></div>
+                <a href="#" class="flex items-center gap-3 px-4 py-3 text-sm text-red-400 hover:bg-red-500/10 hover:text-red-300 font-bold transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+                    Logout
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="flex-1 flex flex-col min-w-0 bg-gray-50/50">
+        
+        <!-- Header -->
+        <header class="bg-white/80 backdrop-blur-lg h-20 px-6 sm:px-8 flex items-center justify-between z-10 border-b border-gray-200">
+            <!-- Left side: Mobile menu btn + Title -->
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-500 hover:text-brand-600 focus:outline-none p-2 bg-gray-100 rounded-xl hover:bg-brand-50 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+                <h1 class="text-xl sm:text-2xl font-extrabold text-gray-800 tracking-tight hidden sm:block">Overview</h1>
+            </div>
+
+            <!-- Right side: Search + Notifications -->
+            <div class="flex items-center gap-4 sm:gap-6">
+                <!-- Search Bar -->
+                <div class="hidden md:flex relative group">
+                    <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 group-hover:text-brand-500 transition-colors" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input type="text" placeholder="Search bookings..." class="bg-gray-100 text-sm font-medium text-gray-800 rounded-full pl-10 pr-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:bg-white w-64 transition-all">
+                </div>
+
+                <!-- Notification -->
+                <button class="relative p-2.5 text-gray-500 hover:text-brand-600 hover:bg-brand-50 rounded-full transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                    <span class="absolute top-2 right-2.5 w-2 h-2 bg-red-500 rounded-full animate-pulse border border-white"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Dashboard Scrollable Content -->
+        <main class="flex-1 overflow-y-auto p-6 sm:p-8 no-scrollbar">
+            
+            <h2 class="text-lg font-bold text-gray-800 mb-6 sm:hidden">Overview</h2>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- Stat Card 1 -->
+                <div class="bg-white p-6 rounded-3xl shadow-soft border border-gray-100 flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">Revenue (Today)</p>
+                            <h3 class="text-3xl font-extrabold text-gray-900 tracking-tight">Rp 8.4M</h3>
+                        </div>
+                        <div class="bg-brand-50 p-3 rounded-2xl text-brand-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="flex items-center text-brand-600 font-bold bg-brand-50 px-2 py-0.5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+                            12.5%
+                        </span>
+                        <span class="text-gray-400 font-medium">vs yesterday</span>
+                    </div>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="bg-white p-6 rounded-3xl shadow-soft border border-gray-100 flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">Tickets Sold</p>
+                            <h3 class="text-3xl font-extrabold text-gray-900 tracking-tight">142</h3>
+                        </div>
+                        <div class="bg-accent-50 p-3 rounded-2xl text-accent-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="flex items-center text-brand-600 font-bold bg-brand-50 px-2 py-0.5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+                            8.2%
+                        </span>
+                        <span class="text-gray-400 font-medium">vs yesterday</span>
+                    </div>
+                </div>
+
+                <!-- Stat Card 3 -->
+                <div class="bg-white p-6 rounded-3xl shadow-soft border border-gray-100 flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">Active Fleet</p>
+                            <h3 class="text-3xl font-extrabold text-gray-900 tracking-tight">18 <span class="text-lg text-gray-400 font-bold">/ 20</span></h3>
+                        </div>
+                        <div class="bg-blue-50 p-3 rounded-2xl text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="text-gray-500 font-medium">2 Fleet in maintenance</span>
+                    </div>
+                </div>
+
+                <!-- Stat Card 4 -->
+                <div class="bg-white p-6 rounded-3xl shadow-soft border border-gray-100 flex flex-col justify-between hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-1">Total Customers</p>
+                            <h3 class="text-3xl font-extrabold text-gray-900 tracking-tight">1,204</h3>
+                        </div>
+                        <div class="bg-purple-50 p-3 rounded-2xl text-purple-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="flex items-center text-brand-600 font-bold bg-brand-50 px-2 py-0.5 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+                            45 New
+                        </span>
+                        <span class="text-gray-400 font-medium">This month</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Bookings Table Section -->
+            <div class="bg-white rounded-[2rem] shadow-soft border border-gray-100 overflow-hidden flex flex-col">
+                <div class="p-6 sm:p-8 border-b border-gray-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900">Recent Bookings</h3>
+                        <p class="text-sm text-gray-500 font-medium mt-1">List of recently received ticket reservations.</p>
+                    </div>
+                    <button class="bg-brand-50 text-brand-600 font-bold px-4 py-2 rounded-xl text-sm hover:bg-brand-100 transition-colors border border-brand-100">
+                        View All
+                    </button>
+                </div>
+                
+                <div class="overflow-x-auto min-h-[350px]">
+                    <table class="w-full text-left border-collapse min-w-[800px]">
+                        <thead>
+                            <tr class="bg-gray-50/50">
+                                <th class="py-4 px-6 sm:px-8 text-xs font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100">Order ID</th>
+                                <th class="py-4 px-6 text-xs font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100">Customer</th>
+                                <th class="py-4 px-6 text-xs font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100">Route</th>
+                                <th class="py-4 px-6 text-xs font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100">Date & Time</th>
+                                <th class="py-4 px-6 text-xs font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100">Status</th>
+                                <th class="py-4 px-6 sm:px-8 text-xs font-bold text-gray-400 uppercase tracking-widest border-b border-gray-100 text-right">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-gray-100">
+                            <tr class="hover:bg-brand-50/30 transition-colors group">
+                                <td class="py-4 px-6 sm:px-8 font-bold text-brand-600">#JT-8472</td>
+                                <td class="py-4 px-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-600">A</div>
+                                        <span class="font-bold text-gray-800">Ahmad Faisal</span>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 font-semibold text-gray-700">Surabaya <span class="text-gray-400 mx-1">→</span> Banyuwangi</td>
+                                <td class="py-4 px-6 text-gray-500 font-medium">22 Apr 2026 <span class="text-gray-400 text-xs ml-1">09:00</span></td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-green-50 text-green-600 text-xs font-bold border border-green-100">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Success
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 sm:px-8 text-right relative">
+                                    <button class="action-btn text-gray-400 hover:text-brand-600 transition-colors p-2 bg-white rounded-lg border border-gray-100 shadow-sm group-hover:border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500/50 relative z-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+                                    </button>
+                                    <!-- Action Menu Dropdown -->
+                                    <div class="action-menu hidden absolute right-6 sm:right-8 top-12 w-48 bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 py-2 z-20 text-left transform opacity-0 scale-95 transition-all duration-200 origin-top-right">
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600 font-bold transition-colors">
+                                            <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                                            View Details
+                                        </a>
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600 font-bold transition-colors">
+                                            <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+                                            Edit Booking
+                                        </a>
+                                        <div class="h-px bg-gray-100 my-1.5"></div>
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 font-bold transition-colors">
+                                            <svg class="text-red-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                            Cancel
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-brand-50/30 transition-colors group">
+                                <td class="py-4 px-6 sm:px-8 font-bold text-brand-600">#JT-8471</td>
+                                <td class="py-4 px-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-600">S</div>
+                                        <span class="font-bold text-gray-800">Siti Nurhaliza</span>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 font-semibold text-gray-700">Banyuwangi <span class="text-gray-400 mx-1">→</span> Surabaya</td>
+                                <td class="py-4 px-6 text-gray-500 font-medium">22 Apr 2026 <span class="text-gray-400 text-xs ml-1">14:00</span></td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-accent-50 text-accent-600 text-xs font-bold border border-accent-100">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-accent-500 animate-pulse"></span> Pending
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 sm:px-8 text-right relative">
+                                    <button class="action-btn text-gray-400 hover:text-brand-600 transition-colors p-2 bg-white rounded-lg border border-gray-100 shadow-sm group-hover:border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500/50 relative z-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+                                    </button>
+                                    <div class="action-menu hidden absolute right-6 sm:right-8 top-12 w-48 bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 py-2 z-20 text-left transform opacity-0 scale-95 transition-all duration-200 origin-top-right">
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600 font-bold transition-colors">
+                                            <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                                            View Details
+                                        </a>
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600 font-bold transition-colors">
+                                            <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+                                            Edit Booking
+                                        </a>
+                                        <div class="h-px bg-gray-100 my-1.5"></div>
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 font-bold transition-colors">
+                                            <svg class="text-red-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                            Cancel
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-brand-50/30 transition-colors group">
+                                <td class="py-4 px-6 sm:px-8 font-bold text-brand-600">#JT-8470</td>
+                                <td class="py-4 px-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-xs font-bold text-purple-600">B</div>
+                                        <span class="font-bold text-gray-800">Bagus Setiawan</span>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 font-semibold text-gray-700">Sidoarjo <span class="text-gray-400 mx-1">→</span> Banyuwangi</td>
+                                <td class="py-4 px-6 text-gray-500 font-medium">21 Apr 2026 <span class="text-gray-400 text-xs ml-1">20:00</span></td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-green-50 text-green-600 text-xs font-bold border border-green-100">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Success
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 sm:px-8 text-right relative">
+                                    <button class="action-btn text-gray-400 hover:text-brand-600 transition-colors p-2 bg-white rounded-lg border border-gray-100 shadow-sm group-hover:border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500/50 relative z-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+                                    </button>
+                                    <div class="action-menu hidden absolute right-6 sm:right-8 top-12 w-48 bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 py-2 z-20 text-left transform opacity-0 scale-95 transition-all duration-200 origin-top-right">
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600 font-bold transition-colors">
+                                            <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                                            View Details
+                                        </a>
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600 font-bold transition-colors">
+                                            <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+                                            Edit Booking
+                                        </a>
+                                        <div class="h-px bg-gray-100 my-1.5"></div>
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 font-bold transition-colors">
+                                            <svg class="text-red-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                            Cancel
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-brand-50/30 transition-colors group">
+                                <td class="py-4 px-6 sm:px-8 font-bold text-brand-600">#JT-8469</td>
+                                <td class="py-4 px-6">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-xs font-bold text-red-600">D</div>
+                                        <span class="font-bold text-gray-800">Dian Pertiwi</span>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 font-semibold text-gray-700">Surabaya <span class="text-gray-400 mx-1">→</span> Jember</td>
+                                <td class="py-4 px-6 text-gray-500 font-medium">21 Apr 2026 <span class="text-gray-400 text-xs ml-1">09:00</span></td>
+                                <td class="py-4 px-6">
+                                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-red-50 text-red-600 text-xs font-bold border border-red-100">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Canceled
+                                    </span>
+                                </td>
+                                <td class="py-4 px-6 sm:px-8 text-right relative">
+                                    <button class="action-btn text-gray-400 hover:text-brand-600 transition-colors p-2 bg-white rounded-lg border border-gray-100 shadow-sm group-hover:border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500/50 relative z-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+                                    </button>
+                                    <div class="action-menu hidden absolute right-6 sm:right-8 top-12 w-48 bg-white rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 py-2 z-20 text-left transform opacity-0 scale-95 transition-all duration-200 origin-top-right">
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600 font-bold transition-colors">
+                                            <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                                            View Details
+                                        </a>
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600 font-bold transition-colors">
+                                            <svg class="text-gray-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+                                            Edit Booking
+                                        </a>
+                                        <div class="h-px bg-gray-100 my-1.5"></div>
+                                        <a href="#" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50 font-bold transition-colors">
+                                            <svg class="text-red-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+                                            Cancel
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Footer Area -->
+            <div class="mt-8 text-center sm:text-left text-sm font-medium text-gray-400 pb-4">
+                &copy; 2026 JuraganTravel Admin System. All rights reserved.
+            </div>
+
+        </main>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sidebar = document.getElementById('sidebar');
+            const desktopToggleBtn = document.getElementById('desktop-toggle-btn');
+            const toggleIcon = document.getElementById('toggle-icon');
+            
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileOverlay = document.getElementById('mobile-overlay');
+
+            // === Desktop Sidebar Toggle ===
+            desktopToggleBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('sidebar-collapsed');
+                
+                // Adjust width classes
+                if (sidebar.classList.contains('sidebar-collapsed')) {
+                    sidebar.classList.remove('w-64');
+                    sidebar.classList.add('w-20');
+                    toggleIcon.classList.add('rotate-180');
+                } else {
+                    sidebar.classList.remove('w-20');
+                    sidebar.classList.add('w-64');
+                    toggleIcon.classList.remove('rotate-180');
+                }
+            });
+
+            // === Mobile Sidebar Toggle ===
+            function openMobileSidebar() {
+                sidebar.classList.remove('-translate-x-full');
+                mobileOverlay.classList.remove('hidden');
+                // Small delay to allow display:block to apply before fading in
+                setTimeout(() => {
+                    mobileOverlay.classList.remove('opacity-0');
+                    mobileOverlay.classList.add('opacity-100');
+                }, 10);
+            }
+
+            function closeMobileSidebar() {
+                sidebar.classList.add('-translate-x-full');
+                mobileOverlay.classList.remove('opacity-100');
+                mobileOverlay.classList.add('opacity-0');
+                // Wait for fade out transition before hiding
+                setTimeout(() => {
+                    mobileOverlay.classList.add('hidden');
+                }, 300);
+            }
+
+            mobileMenuBtn.addEventListener('click', openMobileSidebar);
+            mobileOverlay.addEventListener('click', closeMobileSidebar);
+
+            // === Profile Submenu Logic ===
+            const profileBtn = document.getElementById('profile-btn');
+            const profileMenu = document.getElementById('profile-menu');
+
+            profileBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isHidden = profileMenu.classList.contains('hidden');
+                
+                closeAllActionMenus(); // Ensure table menus are closed
+                
+                if (isHidden) {
+                    profileMenu.classList.remove('hidden');
+                    setTimeout(() => {
+                        profileMenu.classList.remove('opacity-0', 'scale-95');
+                        profileMenu.classList.add('opacity-100', 'scale-100');
+                    }, 10);
+                } else {
+                    closeProfileMenu();
+                }
+            });
+
+            const closeProfileMenu = () => {
+                profileMenu.classList.remove('opacity-100', 'scale-100');
+                profileMenu.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    profileMenu.classList.add('hidden');
+                }, 200);
+            };
+            
+            // Prevent clicks inside the profile menu from closing it immediately
+            profileMenu.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+
+            // === Action Dropdown Menu Logic ===
+            const actionBtns = document.querySelectorAll('.action-btn');
+            const actionMenus = document.querySelectorAll('.action-menu');
+
+            // Allow passing the menu we want to keep open
+            const closeAllActionMenus = (exceptMenu = null) => {
+                actionMenus.forEach(menu => {
+                    if (menu !== exceptMenu && !menu.classList.contains('hidden')) {
+                        menu.classList.remove('opacity-100', 'scale-100');
+                        menu.classList.add('opacity-0', 'scale-95');
+                        
+                        setTimeout(() => {
+                            // Ensure it is still fading out and hasn't been reopened
+                            if (menu.classList.contains('opacity-0')) {
+                                menu.classList.add('hidden');
+                            }
+                        }, 200); 
+                    }
+                });
+            };
+
+            actionBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation(); 
+                    
+                    const menu = btn.nextElementSibling;
+                    const isHidden = menu.classList.contains('hidden');
+                    
+                    // Close all OTHER menus first
+                    closeAllActionMenus(menu);
+                    
+                    if (!profileMenu.classList.contains('hidden')) {
+                        closeProfileMenu();
+                    }
+
+                    if (isHidden) {
+                        menu.classList.remove('hidden');
+                        setTimeout(() => {
+                            menu.classList.remove('opacity-0', 'scale-95');
+                            menu.classList.add('opacity-100', 'scale-100');
+                        }, 10);
+                    } else {
+                        // Close the menu if we click the button while it is already open
+                        menu.classList.remove('opacity-100', 'scale-100');
+                        menu.classList.add('opacity-0', 'scale-95');
+                        setTimeout(() => {
+                            if (menu.classList.contains('opacity-0')) {
+                                menu.classList.add('hidden');
+                            }
+                        }, 200); 
+                    }
+                });
+            });
+
+            // Close any open menus when clicking outside
+            document.addEventListener('click', () => {
+                closeAllActionMenus();
+                if (!profileMenu.classList.contains('hidden')) {
+                    closeProfileMenu();
+                }
+            });
+            
+            actionMenus.forEach(menu => {
+                menu.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

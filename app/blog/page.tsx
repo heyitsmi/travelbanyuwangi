@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import WhatsAppLink from '../components/WhatsAppLink';
 import { getBlogPosts } from '@/lib/blog';
 
 export const metadata: Metadata = {
@@ -218,14 +219,11 @@ export default async function BlogPage() {
                   <p className="mt-2">
                     Berangkat setiap hari ke Surabaya, Malang, Denpasar.
                   </p>
-                  <a
-                    href="https://wa.me/6282143258744"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppLink
                     className="mt-4 inline-block bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all"
                   >
                     Pesan Sekarang
-                  </a>
+                  </WhatsAppLink>
                 </div>
               </aside>
             </div>
@@ -241,14 +239,11 @@ export default async function BlogPage() {
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
               Hubungi kami via WhatsApp untuk booking travel, sewa armada, atau konsultasi paket wisata dan umroh Anda.
             </p>
-            <a
-              href="https://wa.me/6282143258744"
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
               Hubungi Kami Sekarang
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
       </main>

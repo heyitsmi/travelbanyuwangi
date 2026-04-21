@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import WhatsAppLink from "../../components/WhatsAppLink";
 import { StructuredData } from "../../components/SEO";
 import { Shield, UserCheck, MessageCircle, ChevronDown } from "lucide-react";
 import { 
@@ -464,14 +465,11 @@ export default function TiketBusPage() {
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
                 Amankan kursi Anda untuk perjalanan jauh. Hubungi admin kami via WhatsApp untuk booking cepat dan konfirmasi jadwal terbaru.
               </p>
-              <a
-                href="https://wa.me/6282143258744"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Pesan Tiket Bus via WA
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
         </main>

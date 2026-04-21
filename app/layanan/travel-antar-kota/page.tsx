@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import WhatsAppLink from "../../components/WhatsAppLink";
 import { StructuredData } from "../../components/SEO";
 import { CheckCircle, Clock, Shield, Users, Star, Wifi } from "lucide-react";
 import BookingForm from "../../components/BookingForm";
@@ -666,14 +667,11 @@ export default function TravelAntarKotaPage() {
                 Jangan tunda perjalanan Anda. Hubungi admin kami via WhatsApp untuk booking kursi dan konfirmasi jadwal
                 jemput.
               </p>
-              <a
-                href="https://wa.me/6282143258744"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Booking via WhatsApp (Respon Cepat)
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
         </main>

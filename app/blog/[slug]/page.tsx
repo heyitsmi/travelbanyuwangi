@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import WhatsAppLink from '@/app/components/WhatsAppLink';
 import { getBlogPost, getBlogPosts } from '@/lib/blog';
 import ReactMarkdown from 'react-markdown';
 import { Facebook, MessageCircle, Twitter } from 'lucide-react';
@@ -298,14 +299,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   <p className="mt-2">
                     Berangkat setiap hari ke Surabaya, Malang, Denpasar.
                   </p>
-                  <a
-                    href="https://wa.me/6282143258744"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppLink
                     className="mt-4 inline-block bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all"
                   >
                     Pesan Sekarang
-                  </a>
+                  </WhatsAppLink>
                 </div>
               </aside>
             </div>

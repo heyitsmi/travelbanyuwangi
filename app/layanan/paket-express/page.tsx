@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import WhatsAppLink from "../../components/WhatsAppLink";
 import { StructuredData } from "../../components/SEO";
 import {
   PackageCheck,
@@ -296,14 +297,11 @@ export default function PaketExpressPage() {
                 Harga <strong>pengiriman paket cepat Banyuwangi</strong> kami ditentukan berdasarkan berat, ukuran
                 (dimensi), dan kota tujuan. Hubungi kami untuk mendapatkan penawaran harga terbaik.
               </p>
-              <a
-                href="https://wa.me/6282143258744"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
                 Cek Harga via WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
         </main>
