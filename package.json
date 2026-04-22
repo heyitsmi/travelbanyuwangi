@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "deepl-node": "^1.15.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.552.0",
     "next": "^16.2.4",

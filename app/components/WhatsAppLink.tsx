@@ -17,14 +17,24 @@ export default function WhatsAppLink({
   title = "",
 }: WhatsAppLinkProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     origin: "",
+    destination: "",
+    payment_method: "Transfer Bank",
+    source: "",
     date: "",
     passengers: "1",
     notes: "",
   });
+
+  useEffect(() => {
+    if (isOpen && typeof window !== 'undefined') {
+      setFormData(prev => ({ ...prev, source: window.location.pathname }));
+    }
+  }, [isOpen]);
 
   // Hydrate textarea specifically if the prop message exists
   useEffect(() => {
@@ -54,20 +64,33 @@ export default function WhatsAppLink({
 
   const handleClose = () => setIsOpen(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    
+    try {
+      await fetch('/api/leads', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+    } catch (error) {
+      console.error('Failed to submit lead to database', error);
+    }
+
     const phoneNumber = "6282143258744";
     
     // Construct predefine chat message
-    let finalMessage = `Halo Juragan Travel,\n\nNama: ${formData.name}\nNo WhatsApp: ${formData.phone}\nAsal/Tujuan: ${formData.origin || '-'}\nTgl Berangkat: ${formData.date || '-'}\nJumlah Pax: ${formData.passengers} Orang\n\nPesan:\n${formData.notes}`;
+    let finalMessage = `Halo Juragan Travel,\n\nNama: ${formData.name}\nNo WhatsApp: ${formData.phone}\nAsal (Jemput): ${formData.origin || '-'}\nTujuan (Antar): ${formData.destination || '-'}\nTgl Berangkat: ${formData.date || '-'}\nJumlah Pax: ${formData.passengers} Orang\nMetode Bayar: ${formData.payment_method}\nSumber: ${formData.source || 'Website'}\n\nPesan:\n${formData.notes}`;
     
     const encodedMessage = encodeURIComponent(finalMessage);
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
     setIsOpen(false);
+    setIsSubmitting(false);
     
     // Reset form after submit
-    setFormData({ name: "", phone: "", origin: "", date: "", passengers: "1", notes: "" });
+    setFormData({ name: "", phone: "", origin: "", destination: "", payment_method: "Transfer Bank", source: "", date: "", passengers: "1", notes: "" });
     
     window.open(url, "_blank");
   };
@@ -143,18 +166,33 @@ export default function WhatsAppLink({
                 />
               </div>
 
-              <div>
-                <label htmlFor="wa-origin" className="block text-sm font-bold text-gray-700 mb-1.5">
-                  Asal / Tujuan (Opsional)
-                </label>
-                <input 
-                  type="text" 
-                  id="wa-origin" 
-                  value={formData.origin}
-                  onChange={(e) => setFormData({...formData, origin: e.target.value})}
-                  className="w-full px-4 py-2.5 text-gray-900 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500/20 focus:border-green-500 outline-none transition-all"
-                  placeholder="Contoh: Surabaya ke Banyuwangi"
-                />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex flex-col">
+                  <label htmlFor="wa-origin" className="block text-sm font-bold text-gray-700 mb-1.5">
+                    Asal Jemput <span className="text-gray-400 font-normal text-xs">(Opsional)</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="wa-origin" 
+                    value={formData.origin}
+                    onChange={(e) => setFormData({...formData, origin: e.target.value})}
+                    className="w-full px-4 py-2.5 text-gray-900 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500/20 focus:border-green-500 outline-none transition-all"
+                    placeholder="Contoh: Surabaya"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <label htmlFor="wa-destination" className="block text-sm font-bold text-gray-700 mb-1.5">
+                    Tujuan Antar <span className="text-gray-400 font-normal text-xs">(Opsional)</span>
+                  </label>
+                  <input 
+                    type="text" 
+                    id="wa-destination" 
+                    value={formData.destination}
+                    onChange={(e) => setFormData({...formData, destination: e.target.value})}
+                    className="w-full px-4 py-2.5 text-gray-900 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500/20 focus:border-green-500 outline-none transition-all"
+                    placeholder="Contoh: Banyuwangi"
+                  />
+                </div>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
@@ -187,6 +225,22 @@ export default function WhatsAppLink({
               </div>
 
               <div>
+                <label htmlFor="wa-payment" className="block text-sm font-bold text-gray-700 mb-1.5">
+                  Metode Pembayaran
+                </label>
+                <select 
+                  id="wa-payment"
+                  value={formData.payment_method}
+                  onChange={(e) => setFormData({...formData, payment_method: e.target.value})}
+                  className="w-full px-4 py-2.5 text-gray-900 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500/20 focus:border-green-500 outline-none transition-all appearance-none bg-white"
+                >
+                  <option value="Transfer Bank">Transfer Bank</option>
+                  <option value="Cash ke Driver (COD)">Cash ke Driver (COD)</option>
+                  <option value="e-Wallet (OVO/Dana/Gopay)">e-Wallet (OVO/Dana/Gopay)</option>
+                </select>
+              </div>
+
+              <div>
                 <label htmlFor="wa-notes" className="block text-sm font-bold text-gray-700 mb-1.5">
                   Catatan / Pertanyaan <span className="text-red-500">*</span>
                 </label>
@@ -204,10 +258,11 @@ export default function WhatsAppLink({
               <div className="pt-2">
                 <button 
                   type="submit" 
-                  className="w-full py-3 bg-[#25D366] text-white font-bold rounded-xl hover:bg-[#1ebd5b] focus:ring-4 focus:ring-[#25D366]/30 transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-500/20"
+                  className="w-full py-3 bg-[#25D366] text-white font-bold rounded-xl hover:bg-[#1ebd5b] focus:ring-4 focus:ring-[#25D366]/30 transition-all flex items-center justify-center gap-2 shadow-lg shadow-green-500/20 disabled:opacity-70 disabled:cursor-not-allowed"
+                  disabled={isSubmitting}
                 >
-                  <MessageCircle className="w-5 h-5 fill-current" />
-                  Kirim ke WhatsApp
+                  <MessageCircle className={`w-5 h-5 fill-current ${isSubmitting ? 'animate-pulse' : ''}`} />
+                  {isSubmitting ? 'Memproses...' : 'Kirim ke WhatsApp'}
                 </button>
               </div>
             </form>

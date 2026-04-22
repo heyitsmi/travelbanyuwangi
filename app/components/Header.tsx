@@ -2,14 +2,16 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import WhatsAppLink from "./WhatsAppLink";
 
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -70,12 +72,16 @@ export default function Header() {
             </Link>
           </div>
 
-          <WhatsAppLink
-            title="Pesan travel Banyuwangi via WhatsApp - Hubungi kami sekarang"
-            className="hidden md:inline-block bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all"
-          >
-            Pesan via WA
-          </WhatsAppLink>
+          <div className="hidden md:flex items-center gap-4">
+
+
+            <WhatsAppLink
+              title="Pesan travel Banyuwangi via WhatsApp - Hubungi kami sekarang"
+              className="bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all"
+            >
+              Pesan via WA
+            </WhatsAppLink>
+          </div>
 
           <button
             className="md:hidden text-dark"
@@ -146,6 +152,7 @@ export default function Header() {
             >
               FAQ
             </Link>
+
             <WhatsAppLink
               title="Pesan travel Banyuwangi via WhatsApp - Hubungi kami sekarang"
               className="block w-full bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all text-center"

@@ -1276,15 +1276,12 @@ export default function Home() {
                       <span className="text-lg">Jam Operasional: 24 Jam Non-Stop</span>
                     </div>
                   </div>
-                  <a
-                    href="https://wa.me/6282143258744"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppLink
                     title="Pesan travel Banyuwangi sekarang via WhatsApp - Respon cepat 24 jam"
                     className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
                   >
                     Pesan via WhatsApp (Respon Cepat)
-                  </a>
+                  </WhatsAppLink>
                 </div>
 
                 <div className="relative">

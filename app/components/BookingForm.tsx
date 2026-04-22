@@ -18,28 +18,46 @@ export default function BookingForm({ routeName }: BookingFormProps) {
     pembayaran: "QRIS",
     catatan: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      // 1. Simpan ke Supabase via API route
+      await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.nama,
+          phone: formData.nohp,
+          origin: formData.asal,
+          destination: formData.tujuan,
+          payment_method: formData.pembayaran,
+          source: typeof window !== 'undefined' ? window.location.pathname : routeName,
+          date: formData.tanggal,
+          passengers: formData.jumlah,
+          notes: formData.catatan,
+        }),
+      });
+    } catch (error) {
+      console.error("Error saving lead:", error);
+      // Lanjutkan ke WA meskipun gagal simpan untuk mencegah user terblokir
+    }
 
     // Format pesan WhatsApp
-    const message = `Halo Juragan Travel 👋
-Saya ingin pesan travel:
-
-Nama: ${formData.nama}
-Rute: ${routeName}
-Tanggal: ${formData.tanggal}
-Jumlah: ${formData.jumlah} orang
-Titik Jemput: ${formData.asal}
-Titik Antar: ${formData.tujuan}
-Metode Pembayaran: ${formData.pembayaran}
-No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : ""}`;
+    const message = `Halo Juragan Travel 👋\nSaya ingin pesan travel:\n\nNama: ${formData.nama}\nRute: ${routeName}\nTanggal: ${formData.tanggal}\nJumlah: ${formData.jumlah} orang\nTitik Jemput: ${formData.asal}\nTitik Antar: ${formData.tujuan}\nMetode Pembayaran: ${formData.pembayaran}\nNo. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : ""}`;
 
     // Encode pesan untuk URL
     const encodedMessage = encodeURIComponent(message);
     
     // Nomor WhatsApp (ganti dengan nomor yang sesuai)
     const whatsappNumber = "6282143258744";
+    
+    setIsSubmitting(false);
     
     // Redirect ke WhatsApp
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
@@ -203,10 +221,15 @@ No. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : 
       <div className="mt-8 text-center">
         <button
           type="submit"
-          className="bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1 inline-flex items-center gap-2"
+          disabled={isSubmitting}
+          className="bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1 inline-flex items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
         >
-          <Phone className="w-5 h-5" />
-          Pesan via WhatsApp
+          {isSubmitting ? (
+            <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+          ) : (
+            <Phone className="w-5 h-5" />
+          )}
+          {isSubmitting ? 'Memproses...' : 'Pesan via WhatsApp'}
         </button>
         <p className="mt-4 text-sm text-gray-600">
           Dengan menekan tombol di atas, Anda akan diarahkan ke WhatsApp untuk konfirmasi pesanan

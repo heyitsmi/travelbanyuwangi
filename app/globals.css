@@ -17,6 +17,20 @@
   --color-accent: #F79E1B;
   --color-light: #F2F4F7;
   --color-dark: #1E293B;
+
+  /* Admin Template Colors */
+  --color-brand-50: #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-400: #34d399;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-800: #065f46;
+  --color-brand-900: #022c22;
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+
+  /* Shadows */
+  --shadow-soft: 0 10px 25px -5px rgba(0,0,0,0.05);
 }
 
 @media (prefers-color-scheme: dark) {
