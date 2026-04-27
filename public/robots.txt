@@ -30,6 +30,16 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
+# OpenAI bots
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Disallow:
+
 # Block bad bots (opsional)
 User-agent: AhrefsBot
 Crawl-delay: 10
