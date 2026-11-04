@@ -106,8 +106,7 @@ const faqData = {
       name: "Apa saja layanan utama yang tersedia di Juragan Travel?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Kirim permintaan melalui formulir online. Tim kami akan menghubungi Anda untuk membantu pemesanan travel, tiket bus, atau paket express.",
-        text: "Kami menyediakan 3 layanan utama: Travel Antar Kota door-to-door (Banyuwangi ke Surabaya, Malang, Denpasar, Solo, dll), Tiket Bus Executive VIP dan Sleeper (PO Handoyo & PO Gunung Harta), dan Paket Express (pengiriman barang one day service).",
+        text: "Kami menyediakan 3 layanan utama: Travel Antar Kota door-to-door (Banyuwangi ke Surabaya, Malang, Denpasar, Solo, dll), Tiket Bus Executive VIP dan Sleeper (PO Handoyo & PO Gunung Harta), dan Paket Express (pengiriman barang one day service). Kirim permintaan melalui formulir online dan tim kami akan membantu pemesanan.",
       },
     },
     {
