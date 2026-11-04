@@ -40,12 +40,22 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL('/admin/dashboard', request.url));
   }
 
+  const isComingSoonRoute = pathname === '/coming-soon';
+  const isLoginRoute = pathname === '/login';
+  if (
+    process.env.COMING_SOON === 'true' &&
+    !isProtected &&
+    !isLoginRoute &&
+    !isComingSoonRoute
+  ) {
+    return NextResponse.rewrite(new URL('/coming-soon', request.url));
+  }
+
   return NextResponse.next();
 }
 
 export const config = {
   matcher: [
-    '/admin/:path*',
-    '/login',
+    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)',
   ],
 };

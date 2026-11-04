@@ -4,6 +4,17 @@ import { getAllPromos } from '@/lib/promo'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = 'https://juragantravel.com'
+
+  if (process.env.COMING_SOON === 'true') {
+    return [
+      {
+        url: baseUrl,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 1,
+      },
+    ]
+  }
   
   // Get all blog posts
   const blogPosts = await getBlogPosts()
