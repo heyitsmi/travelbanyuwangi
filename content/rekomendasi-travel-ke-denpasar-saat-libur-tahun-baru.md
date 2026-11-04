@@ -125,7 +125,6 @@ Jika kamu berangkat dari **Banyuwangi, Jember, Malang, atau Surabaya**, gunakan 
 
 **Hubungi Kami:**
 
-* WhatsApp: 0821-4325-8744
 * Website: [juragantravel.com](https://juragantravel.com)
 
 Nikmati perjalanan akhir tahun yang aman dan nyaman ke Denpasar bersama Juragan Travel — solusi terbaik untuk liburan tanpa repot.

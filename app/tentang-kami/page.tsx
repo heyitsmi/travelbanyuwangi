@@ -45,7 +45,6 @@ const structuredData = {
     '@type': 'TravelAgency',
     name: 'Juragan Travel',
     description: 'Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.',
-    telephone: '+6282143258744',
     url: 'https://juragantravel.com/',
     image: '/img/about6.webp',
     address: {
@@ -231,7 +230,7 @@ export default function TentangKamiPage() {
               agen travel Banyuwangi terpercaya.
             </p>
             <a
-              href="https://wa.me/6282143258744"
+              href="/kontak#contact-form"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"

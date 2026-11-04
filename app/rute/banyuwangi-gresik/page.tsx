@@ -11,14 +11,14 @@ import WhatsAppLink from "../../components/WhatsAppLink";
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Gresik via Tol (PP) – Jadwal & Harga | Juragan Travel",
   description:
-    "Travel Banyuwangi Gresik (PP) via tol, door-to-door, berangkat setiap hari (pagi/siang/malam). Harga mulai Rp 350.000. Driver berpengalaman, armada nyaman. Pesan via WhatsApp.",
+    "Travel Banyuwangi Gresik (PP) via tol, door-to-door, berangkat setiap hari (pagi/siang/malam). Harga mulai Rp 350.000. Driver berpengalaman, armada nyaman. Kirim Permintaan.",
   keywords:
     "travel banyuwangi gresik, travel gresik banyuwangi, harga travel banyuwangi gresik, jadwal travel banyuwangi gresik, travel via tol, door to door, travel malam banyuwangi gresik",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Travel Banyuwangi Gresik via Tol – Jadwal & Harga | Juragan Travel",
     description:
-      "Rute travel Banyuwangi Gresik via tol, door-to-door. Berangkat setiap hari. Harga mulai Rp 350.000. Pesan cepat via WhatsApp.",
+      "Rute travel Banyuwangi Gresik via tol, door-to-door. Berangkat setiap hari. Harga mulai Rp 350.000. Pesan cepat melalui formulir kontak.",
     type: "article",
     url: "https://juragantravel.com/rute/banyuwangi-gresik",
     images: [
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi Gresik via Tol – Jadwal & Harga",
     description:
-      "Door-to-door, via tol, berangkat tiap hari. Harga mulai Rp 350.000. Pesan via WhatsApp.",
+      "Door-to-door, via tol, berangkat tiap hari. Harga mulai Rp 350.000. Kirim Permintaan.",
     images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
@@ -51,7 +51,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/hero.webp",
   },
   departureBusStop: {
@@ -204,7 +203,7 @@ const faqData = {
       "name": "Bagaimana cara pesan travel Banyuwangi Gresik?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Anda bisa memesan melalui WhatsApp di 0821-4325-8744 atau mengisi formulir pemesanan di halaman ini."
+        "text": "Kirim permintaan melalui formulir pemesanan di halaman ini. Tim kami akan membantu mengonfirmasi jadwal dan ketersediaan."
       }
     }
   ]
@@ -219,7 +218,6 @@ const serviceData = {
     "@type": "TravelAgency",
     "name": "Juragan Travel",
     "url": "https://juragantravel.com/",
-    "telephone": "+6282143258744",
     "image": "https://juragantravel.com/img/hero.webp",
     "areaServed": [
       { "@type": "City", "name": "Banyuwangi" },
@@ -240,9 +238,8 @@ const serviceData = {
     },
     {
       "@type": "ServiceChannel",
-      "name": "WhatsApp",
-      "servicePhone": { "@type": "ContactPoint", "telephone": "+6282143258744" },
-      "url": "https://wa.me/6282143258744"
+      "name": "Formulir Kontak",
+      "url": "https://juragantravel.com/kontak#contact-form"
     }
   ],
   "offers": {
@@ -362,7 +359,7 @@ export default function BanyuwangiGresikPage() {
                           <td className="p-4">
                             <WhatsAppLink
                               message={`Halo, saya mau pesan ${schedule.route}`}
-                              title="Pesan Travel Banyuwangi Gresik via WhatsApp"
+                              title="Pesan Travel Banyuwangi Gresik melalui formulir kontak"
                               className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -374,7 +371,7 @@ export default function BanyuwangiGresikPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600">
-                  *Harga dapat berubah sewaktu-waktu. Hubungi admin via WA untuk harga pasti dan promo terbaru.
+                  *Harga dapat berubah sewaktu-waktu. Hubungi admin melalui formulir kontak untuk harga pasti dan promo terbaru.
                 </p>
               </div>
 
@@ -658,7 +655,7 @@ export default function BanyuwangiGresikPage() {
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Gresik"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
-                    Pesan Travel Banyuwangi Gresik via WhatsApp
+                    Pesan Travel Banyuwangi Gresik melalui formulir kontak
                   </WhatsAppLink>
                 </div>
               </div>
@@ -759,15 +756,15 @@ export default function BanyuwangiGresikPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl md:text-4xl font-extrabold">Pesan Tiket Travel Banyuwangi Gresik Anda</h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
+                Amankan kursi Anda sekarang. Hubungi admin kami melalui formulir kontak untuk booking cepat dan informasi jadwal
                 travel Banyuwangi Gresik hari ini.
               </p>
               <WhatsAppLink
                 message="Halo Admin, saya mau pesan travel Banyuwangi-Gresik."
-                title="Chat WhatsApp untuk Booking Travel Banyuwangi Gresik"
+                title="Kirim Permintaan Booking Travel Banyuwangi Gresik"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Travel Banyuwangi Gresik via WhatsApp
+                Pesan Travel Banyuwangi Gresik melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

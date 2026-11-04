@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { Phone } from "lucide-react";
+import { Send } from "lucide-react";
 
 interface BookingFormProps {
   routeName: string;
@@ -19,14 +19,14 @@ export default function BookingForm({ routeName }: BookingFormProps) {
     catatan: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "sent" | "error">("idle");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // 1. Simpan ke Supabase via API route
-      await fetch('/api/leads', {
+      const response = await fetch('/api/leads', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,24 +43,14 @@ export default function BookingForm({ routeName }: BookingFormProps) {
           notes: formData.catatan,
         }),
       });
+      if (!response.ok) throw new Error("Lead submission failed");
+      setSubmitStatus("sent");
     } catch (error) {
       console.error("Error saving lead:", error);
-      // Lanjutkan ke WA meskipun gagal simpan untuk mencegah user terblokir
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
     }
-
-    // Format pesan WhatsApp
-    const message = `Halo Juragan Travel 👋\nSaya ingin pesan travel:\n\nNama: ${formData.nama}\nRute: ${routeName}\nTanggal: ${formData.tanggal}\nJumlah: ${formData.jumlah} orang\nTitik Jemput: ${formData.asal}\nTitik Antar: ${formData.tujuan}\nMetode Pembayaran: ${formData.pembayaran}\nNo. HP: ${formData.nohp}${formData.catatan ? `\nCatatan: ${formData.catatan}` : ""}`;
-
-    // Encode pesan untuk URL
-    const encodedMessage = encodeURIComponent(message);
-    
-    // Nomor WhatsApp (ganti dengan nomor yang sesuai)
-    const whatsappNumber = "6282143258744";
-    
-    setIsSubmitting(false);
-    
-    // Redirect ke WhatsApp
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -227,13 +217,18 @@ export default function BookingForm({ routeName }: BookingFormProps) {
           {isSubmitting ? (
             <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
           ) : (
-            <Phone className="w-5 h-5" />
+            <Send className="w-5 h-5" />
           )}
-          {isSubmitting ? 'Memproses...' : 'Pesan via WhatsApp'}
+          {isSubmitting ? 'Mengirim...' : 'Kirim Permintaan'}
         </button>
         <p className="mt-4 text-sm text-gray-600">
-          Dengan menekan tombol di atas, Anda akan diarahkan ke WhatsApp untuk konfirmasi pesanan
+          {submitStatus === "sent"
+            ? "Permintaan Anda terkirim. Tim kami akan menghubungi Anda untuk konfirmasi."
+            : "Tim kami akan menghubungi Anda untuk membantu permintaan pemesanan."}
         </p>
+        {submitStatus === "error" && (
+          <p role="alert" className="mt-2 text-sm text-red-600">Permintaan belum berhasil dikirim. Silakan coba lagi.</p>
+        )}
       </div>
 
       {/* Info Box */}

@@ -1,16 +1,17 @@
 import { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ContactForm from '../components/ContactForm';
 // Icons tidak digunakan lagi karena kolom informasi kontak dihapus
 
 export const metadata: Metadata = {
   title: 'Kontak Kami | Juragan Travel | Agen Travel Banyuwangi',
-  description: 'Hubungi kami untuk pemesanan travel Banyuwangi, paket wisata, atau layanan lainnya. Tersedia via WhatsApp 24 jam. Lihat lokasi kami di Google Maps.',
-  keywords: 'kontak travel banyuwangi, alamat travel banyuwangi, nomor wa travel banyuwangi, hubungi Juragan Travel',
+  description: 'Kirim pertanyaan atau permintaan pemesanan travel Banyuwangi, paket wisata, dan layanan lainnya melalui formulir kontak.',
+  keywords: 'kontak travel banyuwangi, alamat travel banyuwangi, hubungi Juragan Travel',
   authors: [{ name: 'Juragan Travel' }],
   openGraph: {
     title: 'Kontak Kami | Juragan Travel',
-    description: 'Hubungi kami untuk pemesanan travel, paket wisata, atau layanan lainnya. Tersedia via WhatsApp 24 jam.',
+    description: 'Kirim permintaan pemesanan travel, paket wisata, atau layanan lainnya melalui formulir kontak.',
     type: 'website',
     url: 'https://juragantravel.com/kontak',
     images: [
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Kontak Kami | Juragan Travel',
-    description: 'Hubungi kami untuk pemesanan travel, paket wisata, atau layanan lainnya. Tersedia via WhatsApp 24 jam.',
+    description: 'Kirim permintaan pemesanan travel, paket wisata, atau layanan lainnya melalui formulir kontak.',
     images: ['https://juragantravel.com/img/hero.webp'],
     creator: '@juragantravel',
     site: '@juragantravel',
@@ -47,12 +48,10 @@ const structuredData = {
   '@type': 'ContactPage',
   name: 'Kontak Kami',
   url: 'https://juragantravel.com/kontak',
-  description: 'Halaman kontak resmi Juragan Travel. Hubungi kami via WA, telepon, email, atau kunjungi kantor kami.',
+  description: 'Halaman kontak resmi Juragan Travel. Kirim pertanyaan atau permintaan melalui formulir kontak.',
   mainEntity: {
     '@type': 'TravelAgency',
     name: 'Juragan Travel',
-    telephone: '+6282143258744',
-    email: 'hi@juragantravel.com',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Jl. Raya Jember No. 1',
@@ -63,13 +62,6 @@ const structuredData = {
     },
     url: 'https://juragantravel.com/',
     logo: 'https://juragantravel.com/img/brand/logo-dark.webp',
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+6282143258744',
-      contactType: 'Customer Service',
-      areaServed: 'ID',
-      availableLanguage: 'Indonesian',
-    },
     openingHours: 'Mo-Su 00:00-23:59',
     sameAs: [
       'https://www.facebook.com/juragantravel.id',
@@ -145,87 +137,7 @@ export default function KontakPage() {
                 </p>
               </div>
 
-              <form action="#" method="POST" className="mt-8 space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Nama Lengkap
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      autoComplete="name"
-                      required
-                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border text-gray-900"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Email
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      autoComplete="email"
-                      required
-                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border text-gray-900"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Nomor Telepon/WA
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="phone"
-                      id="phone"
-                      autoComplete="tel"
-                      required
-                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border text-gray-900"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-gray-700"
-                  >
-                    Pesan
-                  </label>
-                  <div className="mt-1">
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      required
-                      className="w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary px-4 py-2 border text-gray-900"
-                    ></textarea>
-                  </div>
-                </div>
-                <div>
-                  <button
-                    type="submit"
-                    className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-lg font-bold text-white bg-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all"
-                  >
-                    Kirim Pesan
-                  </button>
-                </div>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </section>

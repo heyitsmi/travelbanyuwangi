@@ -65,7 +65,7 @@ export default function RootLayout({
               name: "Juragan Travel",
               alternateName: "JuraganTravel",
               url: "https://juragantravel.com",
-              description: "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari. Pesan via WhatsApp 24 jam.",
+              description: "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Kirim permintaan melalui formulir online.",
               publisher: {
                 "@type": "Organization",
                 name: "Juragan Travel",

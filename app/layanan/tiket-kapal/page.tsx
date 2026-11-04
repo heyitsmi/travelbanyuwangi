@@ -22,7 +22,7 @@ import {
 export const metadata: Metadata = {
   title: "Agen Tiket Kapal Banyuwangi - Bali (Ketapang-Gilimanuk) | Juragan Travel",
   description:
-    "Pesan tiket kapal Banyuwangi ke Bali (Ketapang - Gilimanuk) dengan mudah. Kami melayani tiket kapal laut online untuk penumpang, motor, dan mobil. Proses cepat via WA.",
+    "Pesan tiket kapal Banyuwangi ke Bali (Ketapang - Gilimanuk) dengan mudah. Kami melayani tiket kapal laut online untuk penumpang, motor, dan mobil. Proses cepat melalui formulir kontak.",
   keywords:
     "tiket kapal banyuwangi bali, tiket kapal ketapang gilimanuk, tiket kapal online banyuwangi, harga tiket kapal banyuwangi bali, agen tiket kapal banyuwangi, tiket ferry banyuwangi bali",
   authors: [{ name: "Juragan Travel" }],
@@ -145,7 +145,7 @@ const ticketTypes = [
 const benefits = [
   {
     icon: Smartphone,
-    title: "Pesan Cepat via WA",
+    title: "Pesan Cepat melalui formulir kontak",
     description: "Tidak perlu download aplikasi, cukup chat admin kami.",
   },
   {
@@ -232,7 +232,7 @@ export default function TiketKapalPage() {
                   </p>
                   <p className="mt-4 text-lg text-gray-700 leading-relaxed">
                     Hindari antrian panjang di pelabuhan. Pesan <strong>tiket kapal online</strong> Anda melalui kami.
-                    Proses cepat dan mudah via WhatsApp. Kami melayani tiket untuk penumpang, kendaraan roda 2 (motor),
+                    Proses cepat dan mudah melalui formulir kontak. Kami melayani tiket untuk penumpang, kendaraan roda 2 (motor),
                     dan kendaraan roda 4 (mobil pribadi/truk).
                   </p>
                 </div>
@@ -301,12 +301,12 @@ export default function TiketKapalPage() {
                 <strong>tiket kapal Banyuwangi Bali</strong> Anda sekarang juga, baik untuk penumpang maupun kendaraan.
               </p>
               <a
-                href="https://wa.me/6282143258744"
+                href="/kontak#contact-form"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Tiket Kapal via WA
+                Pesan Tiket Kapal melalui formulir kontak
               </a>
             </div>
           </section>

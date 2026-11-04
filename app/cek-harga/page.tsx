@@ -294,16 +294,16 @@ export default function CekHargaPage() {
               Butuh Informasi Lebih Lanjut?
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-              Tim kami siap membantu Anda 24 jam melalui WhatsApp untuk memberikan
+              Tim kami siap membantu Anda melalui formulir kontak untuk memberikan
               informasi harga terbaru, promo spesial, atau layanan custom sesuai
               kebutuhan Anda.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsAppLink
-                title="Hubungi Juragan Travel via WhatsApp"
+                title="Hubungi Juragan Travel melalui formulir kontak"
                 className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Hubungi Admin via WhatsApp
+                Hubungi Admin melalui formulir kontak
               </WhatsAppLink>
               <a
                 href="/kontak"

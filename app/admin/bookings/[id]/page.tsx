@@ -188,7 +188,7 @@ export default function BookingDetailsPage() {
               <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-soft border border-gray-100">
                 <h3 className="text-lg font-bold text-gray-900 mb-4">Booking Source</h3>
                 <p className="text-sm text-gray-600">
-                  This booking was initiated from: <span className="font-bold text-brand-600">{booking.source || 'Direct via WhatsApp'}</span>
+                  This booking was initiated from: <span className="font-bold text-brand-600">{booking.source || 'Direct melalui formulir kontak'}</span>
                 </p>
               </div>
           </div>

@@ -11,13 +11,13 @@ import BookingForm from "../../components/BookingForm";
 export const metadata: Metadata = {
   title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | Door to Door 24 Jam",
   description:
-    "Layanan travel antar kota Banyuwangi ke Surabaya, Malang, Denpasar (PP) dengan sistem door-to-door. Harga mulai Rp 150.000. Armada nyaman, berangkat setiap hari. Booking via WhatsApp 24 jam.",
+    "Layanan travel antar kota Banyuwangi ke Surabaya, Malang, Denpasar (PP) dengan sistem door-to-door. Harga mulai Rp 150.000. Armada nyaman, berangkat setiap hari. Booking melalui formulir kontak 24 jam.",
   keywords:
     "travel banyuwangi surabaya, travel banyuwangi malang, travel banyuwangi denpasar, travel surabaya banyuwangi, travel malang banyuwangi, travel denpasar banyuwangi, jadwal travel banyuwangi, harga travel banyuwangi, travel door to door banyuwangi, travel banyuwangi 24 jam",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Travel Banyuwangi - Surabaya, Malang, Denpasar (PP) | Door to Door 24 Jam",
-    description: "Layanan travel antar kota door-to-door dari Banyuwangi. Harga mulai Rp 150.000. Armada nyaman, berangkat setiap hari. Booking mudah via WhatsApp.",
+    description: "Layanan travel antar kota door-to-door dari Banyuwangi. Harga mulai Rp 150.000. Armada nyaman, berangkat setiap hari. Booking mudah melalui formulir kontak.",
     type: "website",
     url: "https://juragantravel.com/layanan/travel-antar-kota",
     images: [
@@ -515,9 +515,9 @@ export default function TravelAntarKotaPage() {
                           1
                         </span>
                         <div>
-                          <strong>Hubungi WhatsApp Kami</strong>
+                          <strong>Hubungi kami melalui formulir online</strong>
                           <p className="text-gray-600 mt-1">
-                            Klik tombol WhatsApp atau hubungi 0821-4325-8744. Tim kami siap melayani 24 jam.
+                            Sampaikan kebutuhan perjalanan Anda melalui formulir kontak. Tim kami siap membantu.
                           </p>
                         </div>
                       </li>
@@ -588,7 +588,7 @@ export default function TravelAntarKotaPage() {
                       </summary>
                       <p className="mt-4 text-gray-700">
                         Tentu bisa! Kami melayani booking dadakan dengan ketersediaan armada. Silakan hubungi 
-                        WhatsApp kami segera untuk cek ketersediaan mobil pada hari yang Anda inginkan.
+                        Kirim permintaan melalui formulir kontak untuk mengecek ketersediaan mobil pada hari yang Anda inginkan.
                       </p>
                     </details>
                     <details className="bg-light p-6 rounded-lg group">
@@ -664,13 +664,13 @@ export default function TravelAntarKotaPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl md:text-4xl font-extrabold">Pesan Tiket Travel Anda Sekarang!</h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Jangan tunda perjalanan Anda. Hubungi admin kami via WhatsApp untuk booking kursi dan konfirmasi jadwal
+                Jangan tunda perjalanan Anda. Hubungi admin kami melalui formulir kontak untuk booking kursi dan konfirmasi jadwal
                 jemput.
               </p>
               <WhatsAppLink
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Booking via WhatsApp (Respon Cepat)
+                Booking melalui formulir kontak (Respon Cepat)
               </WhatsAppLink>
             </div>
           </section>

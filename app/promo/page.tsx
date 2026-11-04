@@ -141,8 +141,8 @@ export default function PromoPage() {
               {/* Langkah 1 */}
               <div className="flex flex-col items-center">
                 <Smartphone className="w-16 h-16 text-primary" />
-                <h3 className="mt-4 text-xl font-bold text-dark">1. Hubungi via WhatsApp</h3>
-                <p className="mt-2 text-gray-600">Hubungi admin kami melalui tombol WhatsApp di website ini.</p>
+                <h3 className="mt-4 text-xl font-bold text-dark">1. Hubungi melalui formulir kontak</h3>
+                <p className="mt-2 text-gray-600">Hubungi admin kami melalui formulir kontak di website ini.</p>
               </div>
 
               {/* Langkah 2 */}
@@ -168,7 +168,7 @@ export default function PromoPage() {
             {/* CTA */}
             <div className="text-center mt-16">
               <a
-                href="https://wa.me/6282143258744"
+                href="/kontak#contact-form"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"

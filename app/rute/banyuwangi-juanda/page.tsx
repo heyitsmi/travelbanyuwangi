@@ -52,7 +52,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/hero.webp",
   },
   departureBusStop: {
@@ -155,13 +154,11 @@ const faqSchema = {
 };
 
 export default function BanyuwangiJuandaPage() {
-  const whatsappNumber = "6282143258744";
-  
   const whatsappLinks = {
-    toJuanda: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20Banyuwangi%20ke%20Bandara%20Juanda`,
-    fromJuanda: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20dari%20Bandara%20Juanda%20ke%20Banyuwangi`,
-    carter: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20tanya%20harga%20carter%20Banyuwangi-Juanda`,
-    general: `https://wa.me/${whatsappNumber}?text=Halo%20Admin,%20saya%20mau%20pesan%20travel%20Banyuwangi-Juanda.`
+    toJuanda: `/kontak#contact-form`,
+    fromJuanda: `/kontak#contact-form`,
+    carter: `/kontak#contact-form`,
+    general: `/kontak#contact-form`
   };
 
   return (
@@ -251,7 +248,7 @@ export default function BanyuwangiJuandaPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau pesan travel Banyuwangi ke Bandara Juanda"
-                          title="Pesan Travel Banyuwangi Bandara Juanda via WhatsApp"
+                          title="Pesan Travel Banyuwangi Bandara Juanda melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -265,7 +262,7 @@ export default function BanyuwangiJuandaPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau pesan travel dari Bandara Juanda ke Banyuwangi"
-                          title="Pesan Travel Bandara Juanda Banyuwangi via WhatsApp"
+                          title="Pesan Travel Bandara Juanda Banyuwangi melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -279,7 +276,7 @@ export default function BanyuwangiJuandaPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau tanya harga carter Banyuwangi-Juanda"
-                          title="Pesan Carter Sekali Jalan Banyuwangi Juanda via WhatsApp"
+                          title="Pesan Carter Sekali Jalan Banyuwangi Juanda melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -293,7 +290,7 @@ export default function BanyuwangiJuandaPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau tanya harga carter Banyuwangi-Juanda"
-                          title="Pesan Carter PP Banyuwangi Juanda via WhatsApp"
+                          title="Pesan Carter PP Banyuwangi Juanda melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -307,7 +304,7 @@ export default function BanyuwangiJuandaPage() {
                 *Harga <strong>travel Banyuwangi ke Bandara Juanda</strong> dan{" "}
                 <strong>travel Bandara Juanda ke Banyuwangi</strong> mulai Rp 200.000 per orang.
                 Harga dapat berubah sewaktu-waktu tergantung titik penjemputan, tujuan, dan jadwal
-                penerbangan. Hubungi admin via WhatsApp untuk harga pasti dan promo terbaru.
+                penerbangan. Hubungi admin melalui formulir kontak untuk harga pasti dan promo terbaru.
               </p>
             </div>
 
@@ -523,7 +520,7 @@ export default function BanyuwangiJuandaPage() {
                   title="Hubungi Admin untuk Pesan Travel Banyuwangi Bandara Juanda"
                   className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                 >
-                  Pesan Travel Banyuwangi Bandara Juanda via WhatsApp
+                  Pesan Travel Banyuwangi Bandara Juanda melalui formulir kontak
                 </WhatsAppLink>
               </div>
             </div>
@@ -694,14 +691,14 @@ export default function BanyuwangiJuandaPage() {
               Jangan sampai ketinggalan pesawat. Amankan kursi{" "}
               <strong>travel Banyuwangi ke Bandara Juanda</strong> atau{" "}
               <strong>travel Bandara Juanda ke Banyuwangi</strong> sekarang. Hubungi admin kami
-              via WhatsApp untuk booking cepat dan pengaturan jadwal yang tepat waktu.
+              melalui formulir kontak untuk booking cepat dan pengaturan jadwal yang tepat waktu.
             </p>
             <WhatsAppLink
               message="Halo Admin, saya mau pesan travel Banyuwangi-Juanda."
-              title="Chat WhatsApp untuk Booking Travel Banyuwangi Bandara Juanda"
+              title="Kirim Permintaan Booking Travel Banyuwangi Bandara Juanda"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
-              Pesan Travel Banyuwangi Juanda via WA
+              Pesan Travel Banyuwangi Juanda melalui formulir kontak
             </WhatsAppLink>
           </div>
         </section>

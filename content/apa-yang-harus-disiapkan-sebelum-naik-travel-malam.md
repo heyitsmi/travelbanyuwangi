@@ -128,7 +128,6 @@ Gunakan layanan travel terpercaya seperti **Juragan Travel**, yang melayani rute
 - ✅ Layanan antar jemput ke alamat
 
 **Hubungi kami sekarang:**
-- **WhatsApp:** 0821-4325-8744
 - **Website:** [juragantravel.com](https://juragantravel.com)
 
 *Perjalanan malam yang nyaman dimulai dari persiapan yang tepat!* 🚐💤

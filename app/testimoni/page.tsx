@@ -45,7 +45,6 @@ const organizationData = {
   url: "https://juragantravel.com",
   logo: "https://juragantravel.com/img/brand/logo.webp",
   description: "Agen travel terpercaya di Banyuwangi untuk perjalanan antar kota, wisata religi, dan layanan perjalanan lainnya.",
-  telephone: "+6282143258744",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Kec. Bangorejo",
@@ -219,7 +218,7 @@ const organizationData = {
         bestRating: "5",
       },
       reviewBody:
-        "Pesan tiket bus Handoyo ke Jakarta di sini, prosesnya mudah dan cepat. Admin responsif banget. E-ticket langsung dikirim via WA. Mantap!",
+        "Pesan tiket bus Handoyo ke Jakarta di sini, prosesnya mudah dan cepat. Admin responsif banget. E-ticket langsung dikirim melalui formulir kontak. Mantap!",
     },
     {
       "@type": "Review",
@@ -435,7 +434,7 @@ const testimonials = [
   },
   {
     rating: 5,
-    text: "Pesan tiket bus Handoyo ke Jakarta di sini, prosesnya mudah dan cepat. Admin responsif banget. E-ticket langsung dikirim via WA. Mantap!",
+    text: "Pesan tiket bus Handoyo ke Jakarta di sini, prosesnya mudah dan cepat. Admin responsif banget. E-ticket langsung dikirim melalui formulir kontak. Mantap!",
     avatar: "/avatar.webp",
     name: "Rini Anggraini",
     service: "Pelanggan, Tiket Bus Handoyo",
@@ -555,15 +554,15 @@ export default function TestimoniPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl md:text-4xl font-extrabold">Siap Menjadi Pelanggan Puas Kami Berikutnya?</h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Hubungi kami via WhatsApp untuk booking cepat dan rasakan layanan travel terbaik di Banyuwangi.
+                Hubungi kami melalui formulir kontak untuk booking cepat dan rasakan layanan travel terbaik di Banyuwangi.
               </p>
               <a
-                href="https://wa.me/6282143258744"
+                href="/kontak#contact-form"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Sekarang via WA
+                Pesan Sekarang melalui formulir kontak
               </a>
             </div>
           </section>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Travel Banyuwangi Pasuruan (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel",
     description:
-      "Jadwal & harga travel Banyuwangi Pasuruan (PP) via tol dengan layanan door to door. Berangkat setiap hari, armada nyaman, booking cepat via WhatsApp.",
+      "Jadwal & harga travel Banyuwangi Pasuruan (PP) via tol dengan layanan door to door. Berangkat setiap hari, armada nyaman, booking cepat melalui formulir kontak.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-pasuruan",
     images: [
@@ -54,7 +54,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/hero.webp",
   },
   departureBusStop: {
@@ -159,13 +158,11 @@ const faqSchema = {
 
 
 export default function BanyuwangiPasuruanPage() {
-  const whatsappNumber = '6282143258744';
-  
   const whatsappLinks = {
-    toPasuruan: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20Banyuwangi%20ke%20Pasuruan`,
-    fromPasuruan: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20dari%20Pasuruan%20ke%20Banyuwangi`,
-    carter: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20tanya%20harga%20carter%20Banyuwangi-Pasuruan`,
-    general: `https://wa.me/${whatsappNumber}?text=Halo%20Admin,%20saya%20mau%20pesan%20travel%20Banyuwangi-Pasuruan.`
+    toPasuruan: `/kontak#contact-form`,
+    fromPasuruan: `/kontak#contact-form`,
+    carter: `/kontak#contact-form`,
+    general: `/kontak#contact-form`
   };
 
   return (
@@ -254,7 +251,7 @@ export default function BanyuwangiPasuruanPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau pesan travel Banyuwangi ke Pasuruan"
-                          title="Pesan Travel Banyuwangi Pasuruan via WhatsApp"
+                          title="Pesan Travel Banyuwangi Pasuruan melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -268,7 +265,7 @@ export default function BanyuwangiPasuruanPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau pesan travel dari Pasuruan ke Banyuwangi"
-                          title="Pesan Travel Pasuruan Banyuwangi via WhatsApp"
+                          title="Pesan Travel Pasuruan Banyuwangi melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -288,7 +285,7 @@ export default function BanyuwangiPasuruanPage() {
               </div>
               <p className="text-center mt-6 text-sm text-gray-600 max-w-4xl mx-auto">
                 *Harga <strong>travel Banyuwangi Pasuruan</strong> mulai Rp 200.000 per orang per sekali jalan.
-                Harga dapat berubah sewaktu-waktu tergantung titik jemput dan tujuan. Hubungi admin via WhatsApp
+                Harga dapat berubah sewaktu-waktu tergantung titik jemput dan tujuan. Hubungi admin melalui formulir kontak
                 untuk info harga terbaru atau konfirmasi jadwal.
               </p>
             </div>
@@ -506,7 +503,7 @@ export default function BanyuwangiPasuruanPage() {
                   title="Hubungi Admin untuk Pesan Travel Banyuwangi Pasuruan"
                   className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                 >
-                  Pesan Travel Banyuwangi Pasuruan via WhatsApp
+                  Pesan Travel Banyuwangi Pasuruan melalui formulir kontak
                 </WhatsAppLink>
               </div>
             </div>
@@ -644,14 +641,14 @@ export default function BanyuwangiPasuruanPage() {
               Perjalanan nyaman dan cepat via tol untuk rute{" "}
               <strong>travel Banyuwangi Pasuruan</strong> maupun{" "}
               <strong>travel Pasuruan Banyuwangi</strong>.
-              Amankan kursi Anda sekarang dan hubungi admin kami via WhatsApp untuk booking cepat.
+              Amankan kursi Anda sekarang dan hubungi admin kami melalui formulir kontak untuk booking cepat.
             </p>
             <WhatsAppLink
               message="Halo Admin, saya mau pesan travel Banyuwangi-Pasuruan."
-              title="Chat WhatsApp untuk Booking Travel Banyuwangi Pasuruan"
+              title="Kirim Permintaan Booking Travel Banyuwangi Pasuruan"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
-              Pesan Rute Pasuruan via WA
+              Pesan Rute Pasuruan melalui formulir kontak
             </WhatsAppLink>
           </div>
         </section>

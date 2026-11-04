@@ -7,14 +7,14 @@ import { Phone, FileText, CheckCircle, Truck } from "lucide-react";
 export const metadata: Metadata = {
   title: "Cara Pemesanan | Juragan Travel",
   description:
-    "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah via WhatsApp. Cepat, aman, dan responsif 24 jam.",
+    "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah melalui formulir kontak. Cepat, aman, dan responsif 24 jam.",
   keywords:
     "cara pesan travel banyuwangi, cara booking travel banyuwangi, format pemesanan travel, cara order travel banyuwangi",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Cara Pemesanan | Juragan Travel",
     description:
-      "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah via WhatsApp.",
+      "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah melalui formulir kontak.",
     type: "website",
     url: "https://juragantravel.com/cara-pemesanan",
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cara Pemesanan | Juragan Travel",
     description:
-      "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah via WhatsApp.",
+      "Cara mudah memesan layanan travel Banyuwangi, wisata, dan tiket di Juragan Travel. Cukup 3 langkah mudah melalui formulir kontak.",
     images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
@@ -65,7 +65,7 @@ export default function CaraPemesananPage() {
         <section id="langkah-pemesanan" className="py-20 bg-white">
           <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-dark">Cara Booking via WhatsApp (Respon Cepat)</h2>
+              <h2 className="text-3xl font-bold text-dark">Cara Booking melalui formulir kontak (Respon Cepat)</h2>
               <p className="mt-3 text-lg text-gray-600">
                 Ini adalah cara tercepat dan paling kami rekomendasikan.
               </p>
@@ -81,9 +81,7 @@ export default function CaraPemesananPage() {
                   <span className="text-sm font-semibold uppercase text-primary">LANGKAH 1</span>
                   <h3 className="text-2xl font-bold text-dark mt-1">Hubungi Admin Kami</h3>
                   <p className="mt-2 text-lg text-gray-700">
-                    Klik tombol WhatsApp di website ini untuk langsung terhubung dengan admin kami yang siaga 24 jam.
-                    Anda juga bisa menelepon langsung ke nomor{" "}
-                    <strong className="text-dark">0821-4325-8744</strong>.
+                    Kirim permintaan melalui formulir online dan tim kami akan membantu proses pemesanan Anda.
                   </p>
                 </div>
               </div>
@@ -165,12 +163,12 @@ export default function CaraPemesananPage() {
             {/* CTA */}
             <div className="text-center mt-20">
               <a
-                href="https://wa.me/6282143258744"
+                href="/kontak#contact-form"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Sekarang via WhatsApp
+                Pesan Sekarang
               </a>
             </div>
 

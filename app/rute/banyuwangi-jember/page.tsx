@@ -52,7 +52,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/hero.webp",
   },
   departureBusStop: {
@@ -155,13 +154,11 @@ const faqSchema = {
 };
 
 export default function BanyuwangiJemberPage() {
-  const whatsappNumber = "6282143258744";
-  
   const whatsappLinks = {
-    toJember: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20Banyuwangi%20ke%20Jember`,
-    fromJember: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20dari%20Jember%20ke%20Banyuwangi`,
-    carter: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20tanya%20harga%20carter%20Banyuwangi-Jember`,
-    general: `https://wa.me/${whatsappNumber}?text=Halo%20Admin,%20saya%20mau%20pesan%20travel%20Banyuwangi-Jember.`
+    toJember: `/kontak#contact-form`,
+    fromJember: `/kontak#contact-form`,
+    carter: `/kontak#contact-form`,
+    general: `/kontak#contact-form`
   };
 
   return (
@@ -248,7 +245,7 @@ export default function BanyuwangiJemberPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau pesan travel Banyuwangi ke Jember"
-                          title="Pesan Travel Banyuwangi Jember via WhatsApp"
+                          title="Pesan Travel Banyuwangi Jember melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -262,7 +259,7 @@ export default function BanyuwangiJemberPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau pesan travel dari Jember ke Banyuwangi"
-                          title="Pesan Travel Jember Banyuwangi via WhatsApp"
+                          title="Pesan Travel Jember Banyuwangi melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -291,7 +288,7 @@ export default function BanyuwangiJemberPage() {
                 *Harga <strong>travel Banyuwangi Jember</strong> dan{" "}
                 <strong>travel Jember Banyuwangi</strong> mulai Rp 150.000 per orang per sekali jalan.
                 Harga dapat berubah sewaktu-waktu tergantung titik penjemputan dan pengantaran.
-                Silakan hubungi admin via WhatsApp untuk konfirmasi harga dan jadwal terbaru.
+                Silakan hubungi admin melalui formulir kontak untuk konfirmasi harga dan jadwal terbaru.
               </p>
             </div>
 
@@ -508,7 +505,7 @@ export default function BanyuwangiJemberPage() {
                   title="Hubungi Admin untuk Pesan Travel Banyuwangi Jember"
                   className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                 >
-                  Pesan Travel Banyuwangi Jember via WhatsApp
+                  Pesan Travel Banyuwangi Jember melalui formulir kontak
                 </WhatsAppLink>
               </div>
             </div>
@@ -676,16 +673,16 @@ export default function BanyuwangiJemberPage() {
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
               Baik untuk kuliah, kerja, atau pulang kampung. Amankan kursi Anda sekarang.
-              Hubungi admin kami via WhatsApp untuk booking cepat rute{" "}
+              Hubungi admin kami melalui formulir kontak untuk booking cepat rute{" "}
               <strong>travel Banyuwangi Jember</strong> maupun{" "}
               <strong>travel Jember Banyuwangi</strong>.
             </p>
             <WhatsAppLink
               message="Halo Admin, saya mau pesan travel Banyuwangi-Jember."
-              title="Chat WhatsApp untuk Booking Travel Banyuwangi Jember"
+              title="Kirim Permintaan Booking Travel Banyuwangi Jember"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
-              Pesan Travel Banyuwangi Jember via WA
+              Pesan Travel Banyuwangi Jember melalui formulir kontak
             </WhatsAppLink>
           </div>
         </section>

@@ -22,7 +22,7 @@ import {
 export const metadata: Metadata = {
   title: "Jasa Pengurusan Visa & Paspor Banyuwangi | Juragan Travel",
   description:
-    "Biro jasa pengurusan visa dan paspor di Banyuwangi. Layanan cepat & terpercaya untuk visa turis, visa umroh, paspor baru, dan perpanjangan paspor. Hubungi via WA.",
+    "Biro jasa pengurusan visa dan paspor di Banyuwangi. Layanan cepat & terpercaya untuk visa turis, visa umroh, paspor baru, dan perpanjangan paspor. Hubungi melalui formulir kontak.",
   keywords:
     "jasa pengurusan visa banyuwangi, jasa pembuatan paspor banyuwangi, biro jasa paspor banyuwangi, biro jasa visa banyuwangi, jasa visa turis banyuwangi, jasa visa umroh banyuwangi",
   authors: [{ name: "Juragan Travel" }],
@@ -161,7 +161,7 @@ const benefits = [
   {
     icon: Smartphone,
     title: "Konsultasi Gratis",
-    description: "Tanya-tanya dulu via WA? Boleh. Kami siap bantu kebutuhan Anda.",
+    description: "Tanya-tanya dulu melalui formulir kontak? Boleh. Kami siap bantu kebutuhan Anda.",
   },
   {
     icon: Timer,
@@ -298,12 +298,12 @@ export default function VisaPasporPage() {
                 kebutuhan <strong>jasa pengurusan visa Banyuwangi</strong> atau paspor Anda.
               </p>
               <a
-                href="https://wa.me/6282143258744"
+                href="/kontak#contact-form"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Konsultasi Visa/Paspor via WA
+                Konsultasi Visa/Paspor melalui formulir kontak
               </a>
             </div>
           </section>

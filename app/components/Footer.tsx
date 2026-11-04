@@ -1,6 +1,6 @@
 'use client';
 
-import { Facebook, Instagram, Music2, MapPin, Phone, CheckCircle } from "lucide-react";
+import { Facebook, Instagram, Music2, MapPin, MessageCircle, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -153,9 +153,11 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 mr-3 mt-1 shrink-0 text-accent" />
                 <span>Kec. Bangorejo, Banyuwangi, Jawa Timur</span>
               </li>
-              <li className="flex items-center">
-                <Phone className="w-5 h-5 mr-3 shrink-0 text-accent" />
-                <span>0821-4325-8744</span>
+              <li>
+                <Link href="/kontak#contact-form" className="flex items-center hover:text-white transition-colors">
+                  <MessageCircle className="w-5 h-5 mr-3 shrink-0 text-accent" />
+                  <span>Kirim pesan kepada kami</span>
+                </Link>
               </li>
             </ul>
             

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Travel Banyuwangi Tulungagung (PP) – Jalur Selatan, Door to Door | Juragan Travel",
     description:
-      "Travel Banyuwangi Tulungagung via jalur selatan dengan layanan door to door, armada nyaman, dan keberangkatan setiap hari. Booking cepat via WhatsApp.",
+      "Travel Banyuwangi Tulungagung via jalur selatan dengan layanan door to door, armada nyaman, dan keberangkatan setiap hari. Booking cepat melalui formulir kontak.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-tulungagung",
     images: [
@@ -49,7 +49,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/rute/banyuwangi-tulungagung.webp",
   },
   departureBusStop: {
@@ -276,7 +275,7 @@ export default function BanyuwangiTulungagungPage() {
                           <td className="p-4">
                             <WhatsAppLink
                               message={`Halo, saya mau pesan ${schedule.route}`}
-                              title="Pesan Travel Banyuwangi Tulungagung via WhatsApp"
+                              title="Pesan Travel Banyuwangi Tulungagung melalui formulir kontak"
                               className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -289,7 +288,7 @@ export default function BanyuwangiTulungagungPage() {
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600 max-w-4xl mx-auto">
                   *Harga travel Banyuwangi Tulungagung mulai Rp 400.000 untuk sekali jalan dengan jadwal keberangkatan pagi
-                  dan malam. Harga dapat berubah sewaktu-waktu, hubungi admin via WA untuk harga terbaru atau{" "}
+                  dan malam. Harga dapat berubah sewaktu-waktu, hubungi admin melalui formulir kontak untuk harga terbaru atau{" "}
                   <a href="#form-pemesanan" className="text-primary font-semibold underline">
                     pesan travel Banyuwangi Tulungagung melalui formulir pemesanan
                   </a>.
@@ -568,7 +567,7 @@ export default function BanyuwangiTulungagungPage() {
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Tulungagung"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
-                    Pesan Travel Banyuwangi Tulungagung via WhatsApp
+                    Pesan Travel Banyuwangi Tulungagung melalui formulir kontak
                   </WhatsAppLink>
                 </div>
               </div>
@@ -703,15 +702,15 @@ export default function BanyuwangiTulungagungPage() {
                 Pesan Tiket Travel Banyuwangi Tulungagung Anda
               </h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
+                Amankan kursi Anda sekarang. Hubungi admin kami melalui formulir kontak untuk booking cepat dan informasi jadwal
                 travel Banyuwangi Tulungagung hari ini, termasuk untuk rute ke Blitar dan Kediri.
               </p>
               <WhatsAppLink
                 message="Halo Admin, saya mau pesan travel Banyuwangi-Tulungagung."
-                title="Chat WhatsApp untuk Booking Travel Banyuwangi Tulungagung"
+                title="Kirim Permintaan Booking Travel Banyuwangi Tulungagung"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Rute Tulungagung via WA
+                Pesan Rute Tulungagung melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

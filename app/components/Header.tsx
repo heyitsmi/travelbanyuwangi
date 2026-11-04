@@ -76,10 +76,10 @@ export default function Header() {
 
 
             <WhatsAppLink
-              title="Pesan travel Banyuwangi via WhatsApp - Hubungi kami sekarang"
+              title="Pesan travel Banyuwangi melalui formulir kontak - Hubungi kami sekarang"
               className="bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all"
             >
-              Pesan via WA
+              Pesan melalui formulir kontak
             </WhatsAppLink>
           </div>
 
@@ -154,10 +154,10 @@ export default function Header() {
             </Link>
 
             <WhatsAppLink
-              title="Pesan travel Banyuwangi via WhatsApp - Hubungi kami sekarang"
+              title="Pesan travel Banyuwangi melalui formulir kontak - Hubungi kami sekarang"
               className="block w-full bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all text-center"
             >
-              Pesan via WA
+              Pesan melalui formulir kontak
             </WhatsAppLink>
           </div>
         )}

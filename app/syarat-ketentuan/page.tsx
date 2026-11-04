@@ -258,12 +258,12 @@ export default function SyaratKetentuanPage() {
                     Jika Anda memiliki pertanyaan mengenai syarat dan ketentuan ini, silakan hubungi kami.
                   </p>
                   <a
-                    href="https://wa.me/6282143258744"
+                    href="/kontak#contact-form"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-secondary text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all transform hover:-translate-y-1 shadow-lg"
                   >
-                    Hubungi Kami via WhatsApp
+                    Hubungi Kami melalui formulir kontak
                   </a>
                 </div>
               </div>

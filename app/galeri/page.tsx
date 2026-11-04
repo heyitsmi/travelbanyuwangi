@@ -308,10 +308,10 @@ export default function GaleriPage() {
               Tertarik dengan Fasilitas Kami?
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-              Hubungi kami via WhatsApp untuk booking travel, sewa armada, atau konsultasi paket wisata dan umroh Anda.
+              Hubungi kami melalui formulir kontak untuk booking travel, sewa armada, atau konsultasi paket wisata dan umroh Anda.
             </p>
             <a
-              href="https://wa.me/6282143258744"
+              href="/kontak#contact-form"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"

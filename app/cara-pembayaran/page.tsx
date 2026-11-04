@@ -158,7 +158,7 @@ export default function CaraPembayaranPage() {
                 pembayaran.
               </p>
               <a
-                href="https://wa.me/6282143258744"
+                href="/kontak#contact-form"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-8 bg-primary text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"

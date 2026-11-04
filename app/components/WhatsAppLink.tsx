@@ -18,6 +18,8 @@ export default function WhatsAppLink({
 }: WhatsAppLinkProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -62,37 +64,30 @@ export default function WhatsAppLink({
     setIsOpen(true);
   };
 
-  const handleClose = () => setIsOpen(false);
+  const handleClose = () => {
+    setIsOpen(false);
+    setIsSubmitted(false);
+    setSubmitError(false);
+  };
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
     try {
-      await fetch('/api/leads', {
+      const response = await fetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
+      if (!response.ok) throw new Error('Lead submission failed');
+      setIsSubmitted(true);
     } catch (error) {
       console.error('Failed to submit lead to database', error);
+      setSubmitError(true);
+    } finally {
+      setIsSubmitting(false);
     }
-
-    const phoneNumber = "6282143258744";
-    
-    // Construct predefine chat message
-    let finalMessage = `Halo Juragan Travel,\n\nNama: ${formData.name}\nNo WhatsApp: ${formData.phone}\nAsal (Jemput): ${formData.origin || '-'}\nTujuan (Antar): ${formData.destination || '-'}\nTgl Berangkat: ${formData.date || '-'}\nJumlah Pax: ${formData.passengers} Orang\nMetode Bayar: ${formData.payment_method}\nSumber: ${formData.source || 'Website'}\n\nPesan:\n${formData.notes}`;
-    
-    const encodedMessage = encodeURIComponent(finalMessage);
-    const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-    
-    setIsOpen(false);
-    setIsSubmitting(false);
-    
-    // Reset form after submit
-    setFormData({ name: "", phone: "", origin: "", destination: "", payment_method: "Transfer Bank", source: "", date: "", passengers: "1", notes: "" });
-    
-    window.open(url, "_blank");
   };
 
   return (
@@ -102,7 +97,7 @@ export default function WhatsAppLink({
         onClick={handleClick}
         className={`cursor-pointer ${className}`}
         title={title}
-        aria-label={title || "Hubungi via WhatsApp"}
+        aria-label={title || "Kirim permintaan pemesanan"}
       >
         {children}
       </button>
@@ -133,7 +128,11 @@ export default function WhatsAppLink({
               </button>
             </div>
 
-            {/* Form Content */}
+            {isSubmitted ? (
+              <p role="status" className="p-8 text-center text-gray-700">
+                Terima kasih. Permintaan Anda sudah terkirim dan tim kami akan menindaklanjutinya.
+              </p>
+            ) : (
             <form onSubmit={handleSubmit} className="p-6 space-y-4 text-left">
               <div>
                 <label htmlFor="wa-name" className="block text-sm font-bold text-gray-700 mb-1.5">
@@ -153,7 +152,7 @@ export default function WhatsAppLink({
 
               <div>
                 <label htmlFor="wa-phone" className="block text-sm font-bold text-gray-700 mb-1.5">
-                  Nomor HP / WhatsApp <span className="text-red-500">*</span>
+                  Nomor HP Anda <span className="text-red-500">*</span>
                 </label>
                 <input 
                   type="tel" 
@@ -262,10 +261,16 @@ export default function WhatsAppLink({
                   disabled={isSubmitting}
                 >
                   <MessageCircle className={`w-5 h-5 fill-current ${isSubmitting ? 'animate-pulse' : ''}`} />
-                  {isSubmitting ? 'Memproses...' : 'Kirim ke WhatsApp'}
+                  {isSubmitting ? 'Mengirim...' : 'Kirim Permintaan'}
                 </button>
               </div>
+              {submitError && (
+                <p role="alert" className="text-sm text-red-600">
+                  Permintaan belum berhasil dikirim. Silakan coba lagi.
+                </p>
+              )}
             </form>
+            )}
           </div>
           
           <style dangerouslySetInnerHTML={{__html: `

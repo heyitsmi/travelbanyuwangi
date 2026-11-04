@@ -106,6 +106,7 @@ const faqData = {
       name: "Apa saja layanan utama yang tersedia di Juragan Travel?",
       acceptedAnswer: {
         "@type": "Answer",
+        text: "Kirim permintaan melalui formulir online. Tim kami akan menghubungi Anda untuk membantu pemesanan travel, tiket bus, atau paket express.",
         text: "Kami menyediakan 3 layanan utama: Travel Antar Kota door-to-door (Banyuwangi ke Surabaya, Malang, Denpasar, Solo, dll), Tiket Bus Executive VIP dan Sleeper (PO Handoyo & PO Gunung Harta), dan Paket Express (pengiriman barang one day service).",
       },
     },
@@ -122,7 +123,7 @@ const faqData = {
       name: "Bagaimana cara memesan layanan travel atau tiket bus?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Anda dapat memesan melalui WhatsApp di 0821-4325-8744. Tim kami siap melayani 24 jam untuk booking travel, pemesanan tiket bus, atau layanan paket express.",
+        text: "Kirim permintaan melalui formulir online. Tim kami akan membantu pemesanan travel, tiket bus, atau paket express.",
       },
     },
     {
@@ -281,7 +282,7 @@ export default function LayananPage() {
                   </div>
                   <h3 className="text-xl font-bold text-dark mb-3">Pelayanan 24 Jam</h3>
                   <p className="text-gray-600">
-                    Customer service kami siap melayani Anda kapan saja melalui WhatsApp untuk booking dan konsultasi layanan.
+                    Customer service kami siap membantu booking dan konsultasi layanan melalui formulir kontak.
                   </p>
                 </div>
 
@@ -321,7 +322,7 @@ export default function LayananPage() {
                   </div>
                   <h3 className="text-xl font-bold text-dark mb-3">Proses Cepat</h3>
                   <p className="text-gray-600">
-                    Booking travel mudah via WhatsApp, pengurusan visa paspor dengan waktu proses yang kompetitif dan transparan.
+                    Booking travel mudah melalui formulir kontak, pengurusan visa paspor dengan waktu proses yang kompetitif dan transparan.
                   </p>
                 </div>
 
@@ -377,8 +378,7 @@ export default function LayananPage() {
                     <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                    Anda dapat memesan melalui WhatsApp di 0821-4325-8744. Tim kami siap melayani 24 jam untuk booking travel, 
-                    pemesanan tiket bus, atau layanan paket express.
+                    Kirim permintaan melalui formulir online. Tim kami akan membantu pemesanan tiket bus atau layanan paket express.
                   </p>
                 </details>
 
@@ -413,16 +413,16 @@ export default function LayananPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl md:text-4xl font-extrabold">Siap Memesan Layanan Kami?</h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Hubungi tim kami melalui WhatsApp untuk booking travel, pemesanan tiket bus, atau paket express. 
+                Hubungi tim kami melalui formulir kontak untuk booking travel, pemesanan tiket bus, atau paket express.
                 Pelayanan 24 jam dengan respon cepat.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                 <WhatsAppLink
                   message="Halo Admin, saya mau pesan layanan Juragan Travel."
-                  title="Hubungi Juragan Travel via WhatsApp untuk booking layanan"
+                  title="Hubungi Juragan Travel melalui formulir kontak untuk booking layanan"
                   className="inline-block bg-accent text-white px-8 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
                 >
-                  Pesan Sekarang via WhatsApp
+                  Pesan Sekarang
                 </WhatsAppLink>
                 <a
                   href="/kontak"

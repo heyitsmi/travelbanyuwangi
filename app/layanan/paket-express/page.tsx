@@ -171,7 +171,7 @@ const benefits = [
   {
     icon: Smartphone,
     title: "Booking Mudah",
-    description: "Cukup foto barang dan kirim alamat via WhatsApp ke admin kami.",
+    description: "Cukup foto barang dan kirim alamat melalui formulir kontak ke admin kami.",
   },
 ];
 
@@ -300,7 +300,7 @@ export default function PaketExpressPage() {
               <WhatsAppLink
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Cek Harga via WhatsApp
+                Cek Harga melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

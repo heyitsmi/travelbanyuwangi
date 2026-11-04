@@ -55,7 +55,6 @@ const serviceData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
   },
   name: "Tiket Bus Executive PO. Handoyo & PO. Gunung Harta dari Banyuwangi",
   description:
@@ -84,7 +83,7 @@ const faqData = {
       name: "Bagaimana cara memesan tiket bus Handoyo atau Gunung Harta di sini?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Cara termudah adalah dengan menghubungi admin kami via WhatsApp. Informasikan rute (misal: Banyuwangi - Jakarta), tanggal berangkat, dan jumlah penumpang. Admin kami akan mengecek ketersediaan kursi dan harga terbaru untuk Anda.",
+        text: "Cara termudah adalah dengan menghubungi admin kami melalui formulir kontak. Informasikan rute (misal: Banyuwangi - Jakarta), tanggal berangkat, dan jumlah penumpang. Admin kami akan mengecek ketersediaan kursi dan harga terbaru untuk Anda.",
       },
     },
     {
@@ -152,7 +151,7 @@ const benefits = [
   },
   {
     icon: MessageCircle,
-    title: "Proses Cepat via WA",
+    title: "Proses Cepat melalui formulir kontak",
     description: "Tidak perlu aplikasi, pesan langsung, bayar, dan e-ticket dikirim ke WhatsApp Anda.",
   },
 ];
@@ -161,7 +160,7 @@ const faqs = [
   {
     question: "Bagaimana cara memesan tiket bus Handoyo atau Gunung Harta di sini?",
     answer:
-      "Cara termudah adalah dengan menghubungi admin kami via WhatsApp. Informasikan rute (misal: Banyuwangi - Jakarta), tanggal berangkat, dan jumlah penumpang. Admin kami akan mengecek ketersediaan kursi dan harga terbaru untuk Anda.",
+      "Cara termudah adalah dengan menghubungi admin kami melalui formulir kontak. Informasikan rute (misal: Banyuwangi - Jakarta), tanggal berangkat, dan jumlah penumpang. Admin kami akan mengecek ketersediaan kursi dan harga terbaru untuk Anda.",
     defaultOpen: true,
   },
   {
@@ -215,7 +214,7 @@ export default function TiketBusPage() {
               {/* Deskripsi */}
               <div className="max-w-3xl mx-auto text-center mb-12">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Kami adalah agen resmi yang melayani pemesanan tiket bus <strong>PO. Handoyo</strong> dan <strong>PO. Gunung Harta</strong> dari Banyuwangi. Pesan tiket Anda dengan mudah melalui WhatsApp kami untuk rute Jawa hingga Sumatera.
+                  Kami adalah agen resmi yang melayani pemesanan tiket bus <strong>PO. Handoyo</strong> dan <strong>PO. Gunung Harta</strong> dari Banyuwangi. Kirim permintaan pemesanan melalui formulir kontak untuk rute Jawa hingga Sumatera.
                 </p>
                 <p className="mt-4 text-md text-gray-500">
                   Catatan: Harga di bawah ini adalah estimasi dan dapat berubah sewaktu-waktu.
@@ -463,12 +462,12 @@ export default function TiketBusPage() {
                 Pesan Tiket Bus Anda Sekarang
               </h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-                Amankan kursi Anda untuk perjalanan jauh. Hubungi admin kami via WhatsApp untuk booking cepat dan konfirmasi jadwal terbaru.
+                Amankan kursi Anda untuk perjalanan jauh. Hubungi admin kami melalui formulir kontak untuk booking cepat dan konfirmasi jadwal terbaru.
               </p>
               <WhatsAppLink
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Tiket Bus via WA
+                Pesan Tiket Bus melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

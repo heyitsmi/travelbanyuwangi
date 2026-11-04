@@ -41,13 +41,11 @@ export const metadata: Metadata = {
 };
 
 export default function BanyuwangiNgurahRaiPage() {
-  const whatsappNumber = "6282143258744";
-  
   const whatsappLinks = {
-    toNgurahRai: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20Banyuwangi%20ke%20Bandara%20Ngurah%20Rai`,
-    fromNgurahRai: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20dari%20Bandara%20Ngurah%20Rai%20ke%20Banyuwangi`,
-    carter: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20tanya%20harga%20carter%20Banyuwangi-Ngurah%20Rai`,
-    general: `https://wa.me/${whatsappNumber}?text=Halo%20Admin,%20saya%20mau%20pesan%20travel%20Banyuwangi-Ngurah%20Rai.`
+    toNgurahRai: `/kontak#contact-form`,
+    fromNgurahRai: `/kontak#contact-form`,
+    carter: `/kontak#contact-form`,
+    general: `/kontak#contact-form`
   };
 
   return (
@@ -273,14 +271,14 @@ export default function BanyuwangiNgurahRaiPage() {
               Pesan Travel ke Bandara Ngurah Rai Sekarang
             </h2>
             <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
-              Jangan sampai ketinggalan pesawat. Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan penjemputan tepat waktu.
+              Jangan sampai ketinggalan pesawat. Amankan kursi Anda sekarang. Hubungi admin kami melalui formulir kontak untuk booking cepat dan penjemputan tepat waktu.
             </p>
             <WhatsAppLink
               message="Halo Admin, saya mau pesan travel Banyuwangi-Ngurah Rai."
-              title="Pesan Rute Ngurah Rai via WA"
+              title="Pesan Rute Ngurah Rai melalui formulir kontak"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
-              Pesan Rute Ngurah Rai via WA
+              Pesan Rute Ngurah Rai melalui formulir kontak
             </WhatsAppLink>
           </div>
         </section>
@@ -299,7 +297,6 @@ export default function BanyuwangiNgurahRaiPage() {
               "@type": "TravelAgency",
               "name": "Juragan Travel",
               "url": "https://juragantravel.com/",
-              "telephone": "+6282143258744",
               "image": "https://juragantravel.com/img/hero.webp"
             },
             "departureBusStop": {

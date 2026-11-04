@@ -150,7 +150,7 @@ export default function CekHargaForm() {
           <p className="text-red-600 mt-2">{result.message}</p>
           <WhatsAppLink
             message="Halo Admin, saya mau tanya layanan travel."
-            title="Hubungi admin Juragan Travel via WhatsApp"
+            title="Hubungi admin Juragan Travel melalui formulir kontak"
             className="mt-4 inline-block bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all"
           >
             Hubungi Admin
@@ -182,10 +182,10 @@ export default function CekHargaForm() {
             message={`Halo Admin, saya mau pesan travel rute ${asal} ke ${tujuan} dengan harga estimasi ${
               result.price ? formatPrice(result.price) : ""
             }`}
-            title="Pesan travel sekarang via WhatsApp"
+            title="Pesan travel sekarang melalui formulir kontak"
             className="mt-6 inline-block bg-accent text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-opacity-90 transition-all shadow-md"
           >
-            Pesan Sekarang via WhatsApp
+            Pesan Sekarang
           </WhatsAppLink>
         </div>
       )}

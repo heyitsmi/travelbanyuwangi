@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Travel Banyuwangi - Surabaya, Malang, Denpasar | Juragan Travel",
   description:
-    "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari. Pesan via WhatsApp 24 jam.",
+    "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari. Kirim permintaan melalui formulir online.",
   keywords:
     "travel banyuwangi, travel banyuwangi surabaya, travel banyuwangi malang, travel banyuwangi denpasar, travel banyuwangi solo, agen travel banyuwangi",
   authors: [{ name: "Juragan Travel" }],
@@ -67,7 +67,6 @@ const travelAgencyData = {
   name: "Juragan Travel",
   description:
     "Layanan travel antar kota aman & nyaman dari Banyuwangi ke Surabaya, Malang, Denpasar, dan seluruh Jawa Bali. Berangkat setiap hari.",
-  telephone: "+6282143258744",
   url: "https://juragantravel.com/",
   image: "/img/hero.webp",
   address: {
@@ -114,15 +113,15 @@ const faqData = {
       name: "Apakah ada jadwal travel Banyuwangi – Surabaya setiap hari?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya, kami memiliki jadwal keberangkatan setiap hari untuk rute Banyuwangi ke Surabaya dan sebaliknya. Kami ada jadwal pagi, siang, dan malam. Silakan hubungi admin kami via WhatsApp untuk detail jam keberangkatan.",
+        text: "Ya, kami memiliki jadwal keberangkatan setiap hari untuk rute Banyuwangi ke Surabaya dan sebaliknya. Kami ada jadwal pagi, siang, dan malam. Silakan hubungi admin kami melalui formulir kontak untuk detail jam keberangkatan.",
       },
     },
     {
       "@type": "Question",
-      name: "Bagaimana cara pesan travel via WhatsApp?",
+      name: "Bagaimana cara pesan travel melalui formulir kontak?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sangat mudah. Cukup klik tombol 'Pesan Sekarang via WhatsApp' di website ini. Anda akan langsung terhubung dengan admin kami. Informasikan nama, jumlah penumpang, rute (misal: Banyuwangi ke Malang), tanggal berangkat, dan alamat jemput.",
+        text: "Cukup klik tombol Pesan Sekarang dan isi data perjalanan Anda. Tim kami akan menindaklanjuti permintaan melalui kontak yang Anda berikan.",
       },
     },
     {
@@ -173,10 +172,10 @@ export default function Home() {
                 Juragan Travel melayani perjalanan antar kota dari Banyuwangi ke Surabaya, Malang, Denpasar, dan kota-kota lain di Jawa–Bali. Kami menyediakan layanan door-to-door, jadwal fleksibel setiap hari, serta kenyamanan armada terbaik dengan sopir berpengalaman. Pesan travel Banyuwangi hari ini dan nikmati perjalanan tanpa repot!
               </p>
               <WhatsAppLink
-                title="Pesan travel Banyuwangi via WhatsApp - Respon cepat 24 jam"
+                title="Pesan travel Banyuwangi melalui formulir kontak - Respon cepat 24 jam"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Sekarang via WhatsApp
+                Pesan Sekarang
               </WhatsAppLink>
             </div>
           </section>
@@ -222,13 +221,13 @@ export default function Home() {
                   <p className="text-gray-600">Driver kami profesional, ramah, dan menguasai rute, menjamin perjalanan aman.</p>
                 </div>
 
-                {/* Keunggulan 4: Booking Cepat via WA */}
+                {/* Keunggulan 4: Pemesanan cepat */}
                 <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
                   <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary mb-6">
                     <Smartphone className="w-8 h-8" />
                   </div>
-                  <h3 className="text-2xl font-bold text-dark mb-2">Booking Cepat via WA</h3>
-                  <p className="text-gray-600">Pesan kursi Anda dengan mudah dan respons cepat melalui WhatsApp kami.</p>
+                  <h3 className="text-2xl font-bold text-dark mb-2">Pemesanan cepat</h3>
+                  <p className="text-gray-600">Kirim permintaan pemesanan dengan mudah melalui formulir kontak.</p>
                 </div>
 
                 {/* Keunggulan 5: Aman & Terpercaya */}
@@ -1077,20 +1076,18 @@ export default function Home() {
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
                     Ya, kami memiliki jadwal keberangkatan setiap hari untuk rute Banyuwangi ke Surabaya dan
-                    sebaliknya. Kami ada jadwal pagi, siang, dan malam. Silakan hubungi admin kami via WhatsApp untuk
+                    sebaliknya. Kami ada jadwal pagi, siang, dan malam. Silakan hubungi admin kami melalui formulir kontak untuk
                     detail jam keberangkatan.
                   </p>
                 </details>
 
                 <details className="bg-white p-6 rounded-lg shadow-md group">
                   <summary className="flex justify-between items-center font-semibold text-lg text-primary cursor-pointer">
-                    Bagaimana cara pesan travel via WhatsApp?
+                    Bagaimana cara pesan travel melalui formulir kontak?
                     <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                    Sangat mudah. Cukup klik tombol &quot;Pesan Sekarang via WhatsApp&quot; di website ini. Anda akan
-                    langsung terhubung dengan admin kami. Informasikan nama, jumlah penumpang, rute (misal: Banyuwangi
-                    ke Malang), tanggal berangkat, dan alamat jemput.
+                    Klik tombol Pesan Sekarang dan isi data perjalanan, jumlah penumpang, tanggal, serta alamat jemput dan tujuan. Tim kami akan menindaklanjuti permintaan melalui kontak yang Anda berikan.
                   </p>
                 </details>
 
@@ -1267,20 +1264,20 @@ export default function Home() {
                       <MapPin className="w-6 h-6 mr-3 text-accent" />
                       <span className="text-lg">Kec. Bangorejo, Banyuwangi, Jawa Timur</span>
                     </div>
-                    <div className="flex items-center">
+                    <Link href="/kontak#contact-form" className="flex items-center hover:text-primary">
                       <Phone className="w-6 h-6 mr-3 text-accent" />
-                      <span className="text-lg">0821-4325-8744 (WhatsApp 24 Jam)</span>
-                    </div>
+                      <span className="text-lg">Hubungi kami</span>
+                    </Link>
                     <div className="flex items-center">
                       <Clock className="w-6 h-6 mr-3 text-accent" />
                       <span className="text-lg">Jam Operasional: 24 Jam Non-Stop</span>
                     </div>
                   </div>
                   <WhatsAppLink
-                    title="Pesan travel Banyuwangi sekarang via WhatsApp - Respon cepat 24 jam"
+                    title="Pesan travel Banyuwangi sekarang melalui formulir kontak - Respon cepat 24 jam"
                     className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
                   >
-                    Pesan via WhatsApp (Respon Cepat)
+                    Kirim Permintaan (Respon Cepat)
                   </WhatsAppLink>
                 </div>
 

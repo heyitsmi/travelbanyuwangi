@@ -60,7 +60,6 @@ export default function HalamanTravel() {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     description: "Deskripsi travel agency",
-    telephone: "+6282143258744",
     url: "https://juragantravel.com/",
     // ... data lainnya
   };
@@ -86,7 +85,6 @@ export default function HalamanTravel() {
   "@type": "TravelAgency",
   "name": "Juragan Travel",
   "description": "Layanan travel...",
-  "telephone": "+6282143258744",
   "url": "https://juragantravel.com/",
   "address": {
     "@type": "PostalAddress",
@@ -249,7 +247,7 @@ import { StructuredData } from "../components/SEO";
 // SEO Metadata
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Surabaya - Booking Online 24 Jam | Juragan Travel",
-  description: "Layanan travel Banyuwangi Surabaya door-to-door. Berangkat setiap hari, armada nyaman, harga terjangkau. Booking via WhatsApp 24 jam.",
+  description: "Layanan travel Banyuwangi Surabaya door-to-door. Berangkat setiap hari, armada nyaman, harga terjangkau. Ajukan pemesanan melalui formulir online.",
   keywords: "travel banyuwangi surabaya, travel banyuwangi ke surabaya, agen travel banyuwangi surabaya",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
@@ -283,7 +281,6 @@ const serviceData = {
   "provider": {
     "@type": "TravelAgency",
     "name": "Juragan Travel",
-    "telephone": "+6282143258744"
   },
   "areaServed": [
     {

@@ -42,10 +42,12 @@ export async function middleware(request: NextRequest) {
 
   const isComingSoonRoute = pathname === '/coming-soon';
   const isLoginRoute = pathname === '/login';
+  const isContactRoute = pathname === '/kontak';
   if (
     process.env.COMING_SOON === 'true' &&
     !isProtected &&
     !isLoginRoute &&
+    !isContactRoute &&
     !isComingSoonRoute
   ) {
     return NextResponse.rewrite(new URL('/coming-soon', request.url));

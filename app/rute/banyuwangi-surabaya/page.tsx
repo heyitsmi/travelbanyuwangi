@@ -11,14 +11,14 @@ import WhatsAppLink from "../../components/WhatsAppLink";
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Surabaya via Tol – Jadwal, Harga & Door to Door | Juragan Travel",
   description:
-    "Travel Banyuwangi Surabaya via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Surabaya, Sidoarjo, Bandara Juanda. Booking cepat via WhatsApp.",
+    "Travel Banyuwangi Surabaya via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Surabaya, Sidoarjo, Bandara Juanda. Booking cepat melalui formulir kontak.",
   keywords:
     "travel banyuwangi surabaya, travel surabaya banyuwangi, harga travel banyuwangi surabaya, jadwal travel banyuwangi surabaya, travel banyuwangi juanda, travel banyuwangi surabaya via tol, travel banyuwangi surabaya pagi, travel banyuwangi surabaya malam",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Travel Banyuwangi Surabaya via Tol – Jadwal, Harga & Door to Door | Juragan Travel",
     description:
-      "Travel Banyuwangi Surabaya via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Surabaya, Sidoarjo, Bandara Juanda. Booking cepat via WhatsApp.",
+      "Travel Banyuwangi Surabaya via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Surabaya, Sidoarjo, Bandara Juanda. Booking cepat melalui formulir kontak.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-surabaya",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi Surabaya via Tol – Jadwal, Harga & Door to Door | Juragan Travel",
     description:
-      "Travel Banyuwangi Surabaya via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Surabaya, Sidoarjo, Bandara Juanda. Booking cepat via WhatsApp.",
+      "Travel Banyuwangi Surabaya via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Surabaya, Sidoarjo, Bandara Juanda. Booking cepat melalui formulir kontak.",
     images: ["/img/rute/banyuwangi-surabaya.webp"],
   },
   alternates: {
@@ -49,7 +49,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/rute/banyuwangi-surabaya.webp",
   },
   departureBusStop: {
@@ -179,8 +178,8 @@ const faqs = [
   },
   {
     question: "Bagaimana cara pesan travel Banyuwangi Surabaya?",
-    answer: 
-      "Anda dapat memesan travel Banyuwangi Surabaya dengan menghubungi admin kami via WhatsApp di +6282143258744 atau menggunakan formulir booking online di website kami. Silakan informasikan detail penjemputan, pengantaran, tanggal, dan jumlah penumpang.",
+    answer:
+      "Kirim permintaan melalui formulir booking online di website kami. Sertakan detail penjemputan, pengantaran, tanggal, dan jumlah penumpang.",
     defaultOpen: false,
   },
   {
@@ -296,7 +295,7 @@ export default function BanyuwangiSurabayaPage() {
                           <td className="p-2 md:p-4 font-bold text-primary text-sm md:text-lg">{schedule.price}</td>
                           <td className="p-2 md:p-4">
                             <WhatsAppLink
-                              title="Pesan Travel Banyuwangi Surabaya via WhatsApp"
+                              title="Pesan Travel Banyuwangi Surabaya melalui formulir kontak"
                               className="bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-base font-medium hover:bg-opacity-90 inline-block text-center"
                             >
                               Pesan
@@ -308,7 +307,7 @@ export default function BanyuwangiSurabayaPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600 max-w-4xl mx-auto">
-                  *Harga travel Banyuwangi Surabaya mulai Rp 200.000 dengan jadwal keberangkatan pagi, siang, dan malam setiap hari. Harga travel Banyuwangi Surabaya dapat berubah sewaktu-waktu, hubungi kami via WA untuk info harga terbaru.
+                  *Harga travel Banyuwangi Surabaya mulai Rp 200.000 dengan jadwal keberangkatan pagi, siang, dan malam setiap hari. Harga travel Banyuwangi Surabaya dapat berubah sewaktu-waktu, hubungi kami melalui formulir kontak untuk info harga terbaru.
                 </p>
               </div>
 
@@ -597,7 +596,7 @@ export default function BanyuwangiSurabayaPage() {
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Surabaya"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
-                    Pesan Travel Banyuwangi Surabaya via WhatsApp
+                    Pesan Travel Banyuwangi Surabaya melalui formulir kontak
                   </WhatsAppLink>
                 </div>
               </div>
@@ -730,14 +729,14 @@ export default function BanyuwangiSurabayaPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-xl md:text-4xl font-extrabold">Pesan Tiket Travel Banyuwangi Surabaya Anda</h2>
               <p className="mt-4 text-sm md:text-lg text-gray-200 max-w-2xl mx-auto">
-                Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
+                Amankan kursi Anda sekarang. Hubungi admin kami melalui formulir kontak untuk booking cepat dan informasi jadwal
                 travel Banyuwangi Surabaya hari ini.
               </p>
               <WhatsAppLink
-                title="Chat WhatsApp untuk Booking Travel Banyuwangi Surabaya"
+                title="Kirim Permintaan Booking Travel Banyuwangi Surabaya"
                 className="mt-10 inline-block bg-accent text-white px-6 py-2.5 md:px-10 md:py-3 rounded-lg font-bold text-sm md:text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Travel Banyuwangi Surabaya via WhatsApp
+                Pesan Travel Banyuwangi Surabaya melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

@@ -158,7 +158,6 @@ Gunakan layanan travel terpercaya seperti **Juragan Travel**, melayani rute:
 - Harga kompetitif untuk liburan akhir tahun
 
 **Hubungi kami sekarang:**
-- **WhatsApp:** 0821-4325-8744
 - **Website:** [juragantravel.com](https://juragantravel.com)
 
 *Nikmati libur Tahun Baru 2026 dengan aman dan hemat bersama Juragan Travel!* ✨

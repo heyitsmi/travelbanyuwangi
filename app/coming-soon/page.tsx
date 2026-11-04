@@ -11,22 +11,20 @@ import {
 import styles from "./coming-soon.module.css";
 
 const siteUrl = "https://juragantravel.com";
-const whatsappNumber = "6282143258744";
-
-function whatsappLink(message: string) {
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+function contactLink() {
+  return `/kontak#contact-form`;
 }
 
 export const metadata: Metadata = {
   title: "Juragan Travel - Travel Banyuwangi, Surabaya, Malang & Bali",
   description:
-    "Juragan Travel melayani perjalanan antar kota dari Banyuwangi ke Surabaya, Malang, dan Bali. Tersedia travel, tiket bus, dan paket express. Pesan tetap bisa melalui WhatsApp.",
+    "Juragan Travel melayani perjalanan antar kota dari Banyuwangi ke Surabaya, Malang, dan Bali. Tersedia travel, tiket bus, dan paket express. Kirim permintaan melalui formulir kontak.",
   alternates: { canonical: siteUrl },
   robots: { index: true, follow: true },
   openGraph: {
     title: "Perjalanan Lebih Nyaman, Segera Hadir | Juragan Travel",
     description:
-      "Website Juragan Travel sedang diperbarui. Layanan travel, tiket bus, dan paket express tetap tersedia melalui WhatsApp.",
+      "Website Juragan Travel sedang diperbarui. Layanan travel, tiket bus, dan paket express tetap tersedia melalui formulir kontak.",
     url: siteUrl,
     siteName: "Juragan Travel",
     locale: "id_ID",
@@ -85,7 +83,6 @@ const travelAgencyData = {
   url: siteUrl,
   description:
     "Penyedia layanan travel antar kota dari Banyuwangi, Jawa Timur, serta pemesanan tiket bus dan paket express.",
-  telephone: "+6282143258744",
   logo: `${siteUrl}/img/brand/juragantravel-dark.webp`,
   image: `${siteUrl}/img/hero.webp`,
   address: {
@@ -115,9 +112,7 @@ export default function ComingSoonPage() {
           </a>
           <a
             className={styles.headerCta}
-            href={whatsappLink("Halo Juragan Travel, saya ingin bertanya tentang layanan.")}
-            target="_blank"
-            rel="noreferrer"
+            href={contactLink()}
           >
             <MessageCircle size={17} strokeWidth={1.8} aria-hidden="true" />
             Hubungi kami
@@ -133,16 +128,14 @@ export default function ComingSoonPage() {
               <h1 id="hero-title">Perjalanan lebih nyaman, segera hadir.</h1>
               <p className={styles.heroDescription}>
                 Kami sedang menyiapkan pengalaman digital baru untuk Juragan Travel.
-                Selama pembaruan website, layanan dan pemesanan tetap tersedia melalui WhatsApp.
+                Selama pembaruan website, layanan dan pemesanan tetap tersedia melalui formulir kontak.
               </p>
               <div className={styles.heroActions}>
                 <a
                   className={styles.primaryCta}
-                  href={whatsappLink("Halo Juragan Travel, saya ingin melakukan pemesanan.")}
-                  target="_blank"
-                  rel="noreferrer"
+                  href={contactLink()}
                 >
-                  Hubungi via WhatsApp <ArrowUpRight size={18} aria-hidden="true" />
+                  Kirim permintaan <ArrowUpRight size={18} aria-hidden="true" />
                 </a>
                 <span className={styles.availability}>
                   <span className={styles.availabilityDot} aria-hidden="true" />
@@ -237,16 +230,14 @@ export default function ComingSoonPage() {
             <h2 id="contact-title">Perjalanan Anda, kami siapkan.</h2>
             <p>
               Butuh informasi jadwal, tarif, atau ingin memesan? Tim Juragan Travel siap
-              membantu Anda melalui WhatsApp.
+              membantu Anda melalui formulir kontak.
             </p>
           </div>
           <a
             className={styles.contactCta}
-            href={whatsappLink("Halo Juragan Travel, saya ingin bertanya tentang jadwal dan tarif.")}
-            target="_blank"
-            rel="noreferrer"
+            href={contactLink()}
           >
-            Chat via WhatsApp <ArrowUpRight size={18} aria-hidden="true" />
+            Hubungi kami <ArrowUpRight size={18} aria-hidden="true" />
           </a>
         </section>
       </main>
@@ -265,9 +256,6 @@ export default function ComingSoonPage() {
           Layanan travel antar kota dari Banyuwangi, Jawa Timur.
           <span> © {new Date().getFullYear()} Juragan Travel</span>
         </p>
-        <a className={styles.footerPhone} href="tel:+6282143258744">
-          +62 821-4325-8744
-        </a>
       </footer>
       <script
         type="application/ld+json"

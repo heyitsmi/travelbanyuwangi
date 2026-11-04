@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Travel Banyuwangi Malang (PP) – Jadwal, Harga & Door to Door | Juragan Travel",
     description:
-      "Travel Banyuwangi Malang (PP) dengan layanan door-to-door. Jemput di rumah, antar sampai Malang/Kota Batu dan area kampus UB, UM, UIN. Cek jadwal & pesan via WhatsApp sekarang.",
+      "Travel Banyuwangi Malang (PP) dengan layanan door-to-door. Jemput di rumah, antar sampai Malang/Kota Batu dan area kampus UB, UM, UIN. Cek jadwal & pesan melalui formulir kontak sekarang.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-malang",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi Malang (PP) – Jadwal, Harga & Door to Door | Juragan Travel",
     description:
-      "Travel Banyuwangi Malang (PP) via layanan door-to-door. Jemput di rumah, antar sampai Malang/Kota Batu. Cek jadwal & pesan via WhatsApp sekarang.",
+      "Travel Banyuwangi Malang (PP) via layanan door-to-door. Jemput di rumah, antar sampai Malang/Kota Batu. Cek jadwal & pesan melalui formulir kontak sekarang.",
     images: ["https://juragantravel.com/img/rute/banyuwangi-malang.webp"],
   },
   alternates: {
@@ -49,7 +49,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/rute/banyuwangi-malang.webp",
   },
   departureBusStop: {
@@ -279,7 +278,7 @@ export default function BanyuwangiMalangPage() {
                           <td className="p-2 md:p-4">
                             <WhatsAppLink
                               message={`Halo, saya mau pesan ${schedule.route}`}
-                              title="Pesan Travel Banyuwangi Malang via WhatsApp"
+                              title="Pesan Travel Banyuwangi Malang melalui formulir kontak"
                               className="bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-base font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -291,7 +290,7 @@ export default function BanyuwangiMalangPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600 max-w-3xl mx-auto">
-                  *Jadwal travel Banyuwangi Malang tersedia pagi, siang, dan malam dengan harga mulai Rp 200.000 per orang. Harga dapat berubah sewaktu-waktu. Hubungi admin via WA untuk harga pasti dan promo terbaru.
+                  *Jadwal travel Banyuwangi Malang tersedia pagi, siang, dan malam dengan harga mulai Rp 200.000 per orang. Harga dapat berubah sewaktu-waktu. Hubungi admin melalui formulir kontak untuk harga pasti dan promo terbaru.
                 </p>
               </div>
 
@@ -661,7 +660,7 @@ export default function BanyuwangiMalangPage() {
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Malang"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
-                    Pesan Travel Banyuwangi Malang via WhatsApp
+                    Pesan Travel Banyuwangi Malang melalui formulir kontak
                   </WhatsAppLink>
                 </div>
               </div>
@@ -794,15 +793,15 @@ export default function BanyuwangiMalangPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-xl md:text-4xl font-extrabold">Pesan Tiket Travel Banyuwangi Malang Anda</h2>
               <p className="mt-4 text-sm md:text-lg text-gray-200 max-w-2xl mx-auto">
-                Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
+                Amankan kursi Anda sekarang. Hubungi admin kami melalui formulir kontak untuk booking cepat dan informasi jadwal
                 travel Banyuwangi Malang hari ini.
               </p>
               <WhatsAppLink
                 message="Halo Admin, saya mau pesan travel Banyuwangi-Malang."
-                title="Chat WhatsApp untuk Booking Travel Banyuwangi Malang"
+                title="Kirim Permintaan Booking Travel Banyuwangi Malang"
                 className="mt-10 inline-block bg-accent text-white px-6 py-2.5 md:px-10 md:py-3 rounded-lg font-bold text-sm md:text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Travel Banyuwangi Malang via WhatsApp
+                Pesan Travel Banyuwangi Malang melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

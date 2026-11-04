@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { Metadata } from "next";
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -25,6 +24,9 @@ export default function PemesananPage() {
     alamatJemput: false,
     alamatTujuan: false,
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "sent" | "error">("idle");
 
   const handleLayananChange = (value: string) => {
     setFormData((prev) => ({ ...prev, layanan: value }));
@@ -71,39 +73,27 @@ export default function PemesananPage() {
     setVisibleFields(newVisibility);
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    // Format pesan WhatsApp
-    let message = `Halo Juragan Travel 👋
-Saya ingin memesan layanan:
+    const response = await fetch("/api/leads", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.nama,
+        phone: formData.whatsapp,
+        origin: visibleFields.alamatJemput ? formData.alamatJemput : "",
+        destination: visibleFields.alamatTujuan ? formData.alamatTujuan : "",
+        source: typeof window !== "undefined" ? window.location.pathname : "/pemesanan",
+        date: visibleFields.tanggal ? formData.tanggal : "",
+        passengers: visibleFields.penumpang ? formData.penumpang : "1",
+        notes: `Layanan: ${formData.layanan}${formData.catatan ? `\nCatatan: ${formData.catatan}` : ""}`,
+      }),
+    }).catch(() => null);
 
-Layanan: ${formData.layanan}
-Nama: ${formData.nama}
-No. WhatsApp: ${formData.whatsapp}`;
-
-    if (visibleFields.tanggal && formData.tanggal) {
-      message += `\nTanggal: ${formData.tanggal}`;
-    }
-    if (visibleFields.penumpang && formData.penumpang) {
-      message += `\nJumlah Penumpang: ${formData.penumpang} orang`;
-    }
-    if (visibleFields.alamatJemput && formData.alamatJemput) {
-      message += `\nAlamat Jemput: ${formData.alamatJemput}`;
-    }
-    if (visibleFields.alamatTujuan && formData.alamatTujuan) {
-      message += `\nAlamat Tujuan: ${formData.alamatTujuan}`;
-    }
-    if (formData.catatan) {
-      message += `\nCatatan: ${formData.catatan}`;
-    }
-
-    // Encode pesan untuk URL
-    const encodedMessage = encodeURIComponent(message);
-    const whatsappNumber = "6282143258744";
-
-    // Redirect ke WhatsApp
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+    setIsSubmitting(false);
+    setSubmitStatus(response?.ok ? "sent" : "error");
   };
 
   const handleChange = (
@@ -221,10 +211,10 @@ No. WhatsApp: ${formData.whatsapp}`;
                       />
                     </div>
 
-                    {/* Nomor WhatsApp */}
+                    {/* Nomor yang dapat dihubungi */}
                     <div>
                       <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700">
-                        Nomor WhatsApp Aktif <span className="text-red-500">*</span>
+                        Nomor HP yang bisa dihubungi <span className="text-red-500">*</span>
                       </label>
                       <input
                         type="tel"
@@ -337,13 +327,19 @@ No. WhatsApp: ${formData.whatsapp}`;
                   <div>
                     <button
                       type="submit"
+                      disabled={isSubmitting}
                       className="w-full flex justify-center py-3 px-6 border border-transparent rounded-lg shadow-sm text-lg font-bold text-white bg-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all"
                     >
-                      Kirim Permintaan Booking
+                      {isSubmitting ? "Mengirim..." : "Kirim Permintaan Booking"}
                     </button>
                     <p className="mt-4 text-sm text-gray-500 text-center">
-                      Tim kami akan segera menghubungi Anda via WhatsApp untuk konfirmasi pesanan.
+                      {submitStatus === "sent"
+                        ? "Permintaan terkirim. Tim kami akan segera menghubungi Anda untuk konfirmasi."
+                        : "Tim kami akan segera menghubungi Anda untuk konfirmasi pesanan."}
                     </p>
+                    {submitStatus === "error" && (
+                      <p role="alert" className="mt-2 text-sm text-red-600 text-center">Permintaan belum berhasil dikirim. Silakan coba lagi.</p>
+                    )}
                   </div>
                 </form>
               </div>
@@ -351,17 +347,15 @@ No. WhatsApp: ${formData.whatsapp}`;
               {/* Kolom Info (Sidebar) */}
               <div className="md:col-span-1">
                 <div className="bg-light p-8 rounded-lg shadow-md sticky top-24">
-                  <h3 className="text-2xl font-bold text-dark">Booking via WhatsApp?</h3>
+                  <h3 className="text-2xl font-bold text-dark">Butuh bantuan?</h3>
                   <p className="mt-3 text-lg text-gray-700">
-                    Lebih cepat dan mendapatkan respon instan dari admin kami 24 jam.
+                    Kirim pertanyaan melalui formulir kontak dan tim kami akan membantu Anda.
                   </p>
                   <a
-                    href="https://wa.me/6282143258744"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/kontak#contact-form"
                     className="mt-6 inline-block w-full text-center bg-secondary text-white px-6 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all"
                   >
-                    Chat Admin via WhatsApp
+                    Hubungi kami
                   </a>
 
                   <ul className="mt-8 space-y-4">

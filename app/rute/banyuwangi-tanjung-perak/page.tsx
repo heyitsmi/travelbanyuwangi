@@ -52,7 +52,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/hero.webp",
   },
   departureBusStop: {
@@ -155,13 +154,11 @@ const faqSchema = {
 };
 
 export default function BanyuwangiTanjungPerakPage() {
-  const whatsappNumber = "6282143258744";
-  
   const whatsappLinks = {
-    toTanjungPerak: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20Banyuwangi%20ke%20Pelabuhan%20Tanjung%20Perak`,
-    fromTanjungPerak: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20pesan%20travel%20dari%20Pelabuhan%20Tanjung%20Perak%20ke%20Banyuwangi`,
-    carter: `https://wa.me/${whatsappNumber}?text=Halo%2C%20saya%20mau%20tanya%20harga%20carter%20Banyuwangi-Tanjung%20Perak`,
-    general: `https://wa.me/${whatsappNumber}?text=Halo%20Admin,%20saya%20mau%20pesan%20travel%20Banyuwangi-Tanjung%20Perak.`
+    toTanjungPerak: `/kontak#contact-form`,
+    fromTanjungPerak: `/kontak#contact-form`,
+    carter: `/kontak#contact-form`,
+    general: `/kontak#contact-form`
   };
 
   return (
@@ -252,7 +249,7 @@ export default function BanyuwangiTanjungPerakPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau pesan travel Banyuwangi ke Pelabuhan Tanjung Perak"
-                          title="Pesan Travel Banyuwangi Tanjung Perak via WhatsApp"
+                          title="Pesan Travel Banyuwangi Tanjung Perak melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -266,7 +263,7 @@ export default function BanyuwangiTanjungPerakPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau pesan travel dari Pelabuhan Tanjung Perak ke Banyuwangi"
-                          title="Pesan Travel Tanjung Perak Banyuwangi via WhatsApp"
+                          title="Pesan Travel Tanjung Perak Banyuwangi melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -280,7 +277,7 @@ export default function BanyuwangiTanjungPerakPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau tanya harga carter Banyuwangi-Tanjung Perak"
-                          title="Pesan Carter Sekali Jalan Banyuwangi Tanjung Perak via WhatsApp"
+                          title="Pesan Carter Sekali Jalan Banyuwangi Tanjung Perak melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -294,7 +291,7 @@ export default function BanyuwangiTanjungPerakPage() {
                       <td className="p-4">
                         <WhatsAppLink
                           message="Halo, saya mau tanya harga carter Banyuwangi-Tanjung Perak"
-                          title="Pesan Carter PP Banyuwangi Tanjung Perak via WhatsApp"
+                          title="Pesan Carter PP Banyuwangi Tanjung Perak melalui formulir kontak"
                           className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                         >
                           Pesan
@@ -535,7 +532,7 @@ export default function BanyuwangiTanjungPerakPage() {
                   title="Hubungi Admin untuk Pesan Travel Banyuwangi Tanjung Perak"
                   className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                 >
-                  Pesan Travel Banyuwangi Tanjung Perak via WhatsApp
+                  Pesan Travel Banyuwangi Tanjung Perak melalui formulir kontak
                 </WhatsAppLink>
               </div>
             </div>
@@ -695,15 +692,15 @@ export default function BanyuwangiTanjungPerakPage() {
               Jangan sampai ketinggalan kapal. Amankan kursi{" "}
               <strong>travel Banyuwangi ke Pelabuhan Tanjung Perak</strong> atau{" "}
               <strong>travel Pelabuhan Tanjung Perak ke Banyuwangi</strong> sekarang. Hubungi
-              admin via WhatsApp untuk booking cepat dan pengaturan jadwal penjemputan yang
+              admin melalui formulir kontak untuk booking cepat dan pengaturan jadwal penjemputan yang
               tepat waktu.
             </p>
             <WhatsAppLink
               message="Halo Admin, saya mau pesan travel Banyuwangi-Tanjung Perak."
-              title="Chat WhatsApp untuk Booking Travel Banyuwangi Tanjung Perak"
+              title="Kirim Permintaan Booking Travel Banyuwangi Tanjung Perak"
               className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
             >
-              Pesan Travel Banyuwangi Tanjung Perak via WA
+              Pesan Travel Banyuwangi Tanjung Perak melalui formulir kontak
             </WhatsAppLink>
           </div>
         </section>

@@ -87,7 +87,7 @@ Promo berlaku untuk semua jadwal keberangkatan!
 
 ## Cara Klaim
 
-1. Hubungi admin kami via WhatsApp
+1. Hubungi admin kami melalui formulir kontak
 2. Sebutkan kode promo: **MALANG20**
 3. Pilih jadwal keberangkatan
 4. Diskon otomatis dipotong dari total tagihan

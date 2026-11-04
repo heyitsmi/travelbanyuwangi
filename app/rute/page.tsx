@@ -190,7 +190,7 @@ const faqData = {
       name: "Bagaimana jika rute tujuan saya tidak ada di daftar?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jika rute tujuan Anda tidak ada di daftar rute reguler kami, silakan hubungi admin melalui WhatsApp. Kami melayani layanan carter mobil dan drop off ke seluruh tujuan di Jawa dan Bali dengan harga yang kompetitif.",
+        text: "Jika rute tujuan Anda tidak ada di daftar rute reguler kami, silakan hubungi admin melalui formulir kontak. Kami melayani carter mobil dan drop off ke seluruh tujuan di Jawa dan Bali dengan harga kompetitif.",
       },
     },
     {
@@ -454,7 +454,7 @@ function SearchableRouteList() {
                 </button>
                 <WhatsAppLink
                   message="Halo Admin, saya mencari rute travel tapi tidak menemukannya di website."
-                  title="Hubungi Kami via WhatsApp"
+                  title="Hubungi Kami melalui formulir kontak"
                   className="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors"
                 >
                   Hubungi Kami
@@ -586,7 +586,7 @@ export default function RutePage() {
                     <ChevronDown className="w-5 h-5 transition-transform duration-300 group-open:rotate-180" />
                   </summary>
                   <p className="mt-4 text-gray-700 leading-relaxed">
-                    Jika rute tujuan Anda tidak ada di daftar rute reguler kami, silakan hubungi admin melalui WhatsApp. 
+                    Jika rute tujuan Anda tidak ada di daftar rute reguler kami, silakan hubungi admin melalui formulir kontak.
                     Kami melayani <strong>layanan carter mobil dan drop off</strong> ke seluruh tujuan di Jawa dan Bali 
                     dengan harga yang kompetitif.
                   </p>
@@ -618,10 +618,10 @@ export default function RutePage() {
               </p>
               <WhatsAppLink
                 message="Halo Admin, saya mau tanya rute travel khusus."
-                title="Tanya rute travel via WhatsApp"
+                title="Tanya rute travel melalui formulir kontak"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Tanya Rute via WA
+                Tanya Rute melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

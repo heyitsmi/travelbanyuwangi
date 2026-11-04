@@ -125,7 +125,7 @@ export default async function PromoDetailPage({ params }: PromoPageProps) {
                 </p>
                 <p className="text-3xl font-extrabold text-white">{promo.frontmatter.promoCode}</p>
                 <p className="mt-3 text-sm text-gray-600">
-                  Sebutkan kode ini saat melakukan pemesanan via WhatsApp
+                  Sebutkan kode ini saat melakukan pemesanan melalui formulir kontak
                 </p>
               </div>
             </div>
@@ -159,12 +159,12 @@ export default async function PromoDetailPage({ params }: PromoPageProps) {
                 Hubungi admin kami sekarang dan sebutkan kode promo: <strong>{promo.frontmatter.promoCode}</strong>
               </p>
               <a
-                href={`https://wa.me/6282143258744?text=Halo,%20saya%20ingin%20klaim%20promo%20${encodeURIComponent(promo.frontmatter.promoCode)}`}
+                href={`/kontak?promo=${encodeURIComponent(promo.frontmatter.promoCode)}#contact-form`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-accent text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Klaim via WhatsApp
+                Klaim melalui formulir kontak
               </a>
             </div>
 

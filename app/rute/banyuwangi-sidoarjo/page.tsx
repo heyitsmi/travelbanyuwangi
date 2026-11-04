@@ -11,14 +11,14 @@ import WhatsAppLink from "../../components/WhatsAppLink";
 export const metadata: Metadata = {
   title: "Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel",
   description:
-    "Butuh travel Banyuwangi Sidoarjo via tol? Juragan Travel melayani travel Banyuwangi Sidoarjo dan Sidoarjo Banyuwangi setiap hari dengan layanan door to door, armada nyaman, dan booking cepat via WhatsApp.",
+    "Butuh travel Banyuwangi Sidoarjo via tol? Juragan Travel melayani travel Banyuwangi Sidoarjo dan Sidoarjo Banyuwangi setiap hari dengan layanan door to door, armada nyaman, dan booking cepat melalui formulir kontak.",
   keywords:
     "travel banyuwangi sidoarjo, travel sidoarjo banyuwangi, harga travel banyuwangi sidoarjo, jadwal travel banyuwangi sidoarjo, travel banyuwangi sidoarjo via tol, travel banyuwangi sidoarjo malam, travel banyuwangi sidoarjo pagi, travel banyuwangi sidoarjo murah",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel",
     description:
-      "Travel Banyuwangi Sidoarjo via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Sidoarjo. Booking cepat via WhatsApp.",
+      "Travel Banyuwangi Sidoarjo via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Sidoarjo. Booking cepat melalui formulir kontak.",
     type: "website",
     url: "https://juragantravel.com/rute/banyuwangi-sidoarjo",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi Sidoarjo (PP) – Via Tol, Door to Door & Nyaman | Juragan Travel",
     description:
-      "Travel Banyuwangi Sidoarjo via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Sidoarjo. Booking cepat via WhatsApp.",
+      "Travel Banyuwangi Sidoarjo via tol, berangkat tiap hari, jemput di rumah dan antar sampai tujuan Sidoarjo. Booking cepat melalui formulir kontak.",
     images: ["/img/rute/banyuwangi-surabaya.webp"],
   },
   alternates: {
@@ -49,7 +49,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/rute/banyuwangi-surabaya.webp",
   },
   departureBusStop: {
@@ -273,7 +272,7 @@ export default function BanyuwangiSidoarjoPage() {
                           <td className="p-2 md:p-4">
                             <WhatsAppLink
                               message={`Halo, saya mau pesan ${schedule.route}`}
-                              title="Pesan Travel Banyuwangi Sidoarjo via WhatsApp"
+                              title="Pesan Travel Banyuwangi Sidoarjo melalui formulir kontak"
                               className="bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-base font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -285,7 +284,7 @@ export default function BanyuwangiSidoarjoPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600 max-w-4xl mx-auto">
-                  *Harga travel Banyuwangi Sidoarjo mulai Rp 200.000 dengan jadwal keberangkatan pagi, siang, dan malam setiap hari. Harga dapat berubah sewaktu-waktu, hubungi kami via WA untuk info harga terbaru atau{" "}
+                  *Harga travel Banyuwangi Sidoarjo mulai Rp 200.000 dengan jadwal keberangkatan pagi, siang, dan malam setiap hari. Harga dapat berubah sewaktu-waktu, hubungi kami melalui formulir kontak untuk info harga terbaru atau{" "}
                   <a href="#form-pemesanan" className="text-primary font-semibold underline" title="Isi Formulir Pemesanan Travel Banyuwangi Sidoarjo">
                     pesan travel Banyuwangi Sidoarjo melalui formulir pemesanan
                   </a>.
@@ -510,7 +509,7 @@ export default function BanyuwangiSidoarjoPage() {
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Sidoarjo"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
-                    Pesan Travel Banyuwangi Sidoarjo via WhatsApp
+                    Pesan Travel Banyuwangi Sidoarjo melalui formulir kontak
                   </WhatsAppLink>
                 </div>
               </div>
@@ -643,15 +642,15 @@ export default function BanyuwangiSidoarjoPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-xl md:text-4xl font-extrabold">Pesan Tiket Travel Banyuwangi Sidoarjo Anda</h2>
               <p className="mt-4 text-sm md:text-lg text-gray-200 max-w-2xl mx-auto">
-                Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
+                Amankan kursi Anda sekarang. Hubungi admin kami melalui formulir kontak untuk booking cepat dan informasi jadwal
                 travel Banyuwangi Sidoarjo hari ini.
               </p>
               <WhatsAppLink
                 message="Halo Admin, saya mau pesan travel Banyuwangi-Sidoarjo."
-                title="Chat WhatsApp untuk Booking Travel Banyuwangi Sidoarjo"
+                title="Kirim Permintaan Booking Travel Banyuwangi Sidoarjo"
                 className="mt-10 inline-block bg-accent text-white px-6 py-2.5 md:px-10 md:py-3 rounded-lg font-bold text-sm md:text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Travel Banyuwangi Sidoarjo via WhatsApp
+                Pesan Travel Banyuwangi Sidoarjo melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

@@ -96,7 +96,7 @@ WhatsApp link dengan automatic tracking:
 import { TrackedWhatsAppLink } from '@/app/components/RouteTracking'
 
 <TrackedWhatsAppLink
-  href="https://wa.me/6282143258744?text=Hello"
+  href="/kontak#contact-form"
   routeName="Banyuwangi-Surabaya"
   type="booking"
   className="btn btn-primary"
@@ -137,7 +137,7 @@ export default function BanyuwangiSurabayaPage() {
       <div>
         {/* Route content */}
         <TrackedWhatsAppLink
-          href="https://wa.me/6282143258744?text=Booking Surabaya"
+          href="/kontak#contact-form"
           routeName="Banyuwangi-Surabaya"
           type="booking"
         >

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Travel Banyuwangi Denpasar (PP) – Termasuk Tiket Kapal Ferry | Juragan Travel",
     description:
-      "Travel Banyuwangi Denpasar dengan layanan door-to-door dan sudah termasuk tiket kapal ferry Ketapang–Gilimanuk. Cek jadwal & pesan via WhatsApp.",
+      "Travel Banyuwangi Denpasar dengan layanan door-to-door dan sudah termasuk tiket kapal ferry Ketapang–Gilimanuk. Cek jadwal & pesan melalui formulir kontak.",
     images: ["https://juragantravel.com/img/rute/banyuwangi-denpasar.webp"],
   },
   alternates: {
@@ -49,7 +49,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/rute/banyuwangi-denpasar.webp",
   },
   departureBusStop: {
@@ -287,7 +286,7 @@ export default function BanyuwangiDenpasarPage() {
                           <td className="p-2 md:p-4">
                             <WhatsAppLink
                               message={`Halo, saya mau pesan ${schedule.route}`}
-                              title="Pesan Travel Banyuwangi Denpasar via WhatsApp"
+                              title="Pesan Travel Banyuwangi Denpasar melalui formulir kontak"
                               className="bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-lg text-xs md:text-base font-medium hover:bg-opacity-90 inline-block text-center"
                             >
                               Pesan
@@ -299,7 +298,7 @@ export default function BanyuwangiDenpasarPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600">
-                  *Jadwal travel Banyuwangi Denpasar dapat berubah sesuai kondisi penyeberangan Ketapang–Gilimanuk, hubungi admin untuk konfirmasi jam terbaru. Harga travel Banyuwangi Denpasar dapat berubah sewaktu-waktu, silakan hubungi admin via WA untuk harga pasti dan promo terbaru.
+                  *Jadwal travel Banyuwangi Denpasar dapat berubah sesuai kondisi penyeberangan Ketapang–Gilimanuk, hubungi admin untuk konfirmasi jam terbaru. Harga travel Banyuwangi Denpasar dapat berubah sewaktu-waktu, silakan hubungi admin melalui formulir kontak untuk harga pasti dan promo terbaru.
                 </p>
               </div>
 
@@ -550,7 +549,7 @@ export default function BanyuwangiDenpasarPage() {
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Denpasar"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
-                    Pesan Travel Banyuwangi Denpasar via WhatsApp
+                    Pesan Travel Banyuwangi Denpasar melalui formulir kontak
                   </WhatsAppLink>
                 </div>
               </div>
@@ -684,15 +683,15 @@ export default function BanyuwangiDenpasarPage() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-xl md:text-4xl font-extrabold">Pesan Tiket Travel Banyuwangi Denpasar Anda</h2>
               <p className="mt-4 text-sm md:text-lg text-gray-200 max-w-2xl mx-auto">
-                Amankan kursi Anda sekarang. Hubungi admin kami via WhatsApp untuk booking cepat dan informasi jadwal
+                Amankan kursi Anda sekarang. Hubungi admin kami melalui formulir kontak untuk booking cepat dan informasi jadwal
                 travel Banyuwangi Denpasar hari ini.
               </p>
               <WhatsAppLink
                 message="Halo Admin, saya mau pesan travel Banyuwangi-Denpasar."
-                title="Chat WhatsApp untuk Booking Travel Banyuwangi Denpasar"
+                title="Kirim Permintaan Booking Travel Banyuwangi Denpasar"
                 className="mt-10 inline-block bg-accent text-white px-6 py-2.5 md:px-10 md:py-3 rounded-lg font-bold text-sm md:text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Travel Banyuwangi Denpasar via WhatsApp
+                Pesan Travel Banyuwangi Denpasar melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

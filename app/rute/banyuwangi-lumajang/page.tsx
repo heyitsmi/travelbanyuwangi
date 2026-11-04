@@ -44,7 +44,6 @@ const busTripData = {
     "@type": "TravelAgency",
     name: "Juragan Travel",
     url: "https://juragantravel.com/",
-    telephone: "+6282143258744",
     image: "https://juragantravel.com/img/hero.webp"
   },
   departureBusStop: {
@@ -290,7 +289,7 @@ export default function BanyuwangiLumajangPage() {
                           <td className="p-4">
                             <WhatsAppLink
                               message={`Halo, saya mau pesan ${schedule.route}`}
-                              title="Pesan Travel Banyuwangi Lumajang via WhatsApp"
+                              title="Pesan Travel Banyuwangi Lumajang melalui formulir kontak"
                               className="bg-secondary text-white px-4 py-2 rounded-lg font-medium hover:bg-opacity-90"
                             >
                               Pesan
@@ -302,7 +301,7 @@ export default function BanyuwangiLumajangPage() {
                   </table>
                 </div>
                 <p className="text-center mt-6 text-sm text-gray-600">
-                  *Harga dapat berubah sewaktu-waktu. Hubungi admin via WA untuk harga pasti dan promo terbaru.
+                  *Harga dapat berubah sewaktu-waktu. Hubungi admin melalui formulir kontak untuk harga pasti dan promo terbaru.
                 </p>
               </div>
 
@@ -565,7 +564,7 @@ export default function BanyuwangiLumajangPage() {
                     title="Hubungi Admin untuk Pesan Travel Banyuwangi Lumajang"
                     className="inline-block bg-accent text-white px-6 py-2.5 md:px-8 md:py-3 rounded-lg text-sm md:text-base font-semibold shadow-lg hover:bg-opacity-90 transition-all"
                   >
-                    Pesan Travel Banyuwangi Lumajang via WhatsApp
+                    Pesan Travel Banyuwangi Lumajang melalui formulir kontak
                   </WhatsAppLink>
                 </div>
               </div>
@@ -686,14 +685,14 @@ export default function BanyuwangiLumajangPage() {
               </h2>
               <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">
                 Amankan kursi <strong>travel Banyuwangi ke Lumajang</strong> atau{" "}
-                <strong>travel Lumajang ke Banyuwangi</strong>. Booking cepat via WhatsApp—kami jemput di alamat Anda.
+                <strong>travel Lumajang ke Banyuwangi</strong>. Booking cepat melalui formulir kontak—kami jemput di alamat Anda.
               </p>
               <WhatsAppLink
                 message="Halo Admin, saya mau pesan travel Banyuwangi-Lumajang."
-                title="Chat WhatsApp untuk Booking Travel Banyuwangi Lumajang"
+                title="Kirim Permintaan Booking Travel Banyuwangi Lumajang"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Pesan Travel Banyuwangi Lumajang via WA
+                Pesan Travel Banyuwangi Lumajang melalui formulir kontak
               </WhatsAppLink>
             </div>
           </section>

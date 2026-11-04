@@ -17,13 +17,13 @@ import {
 export const metadata: Metadata = {
   title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | Juragan Travel",
   description:
-    "Cari tiket pesawat Banyuwangi? Kami agen resmi tiket pesawat domestik (Garuda, Citilink, Lion) & internasional. Pesan mudah via WA, harga resmi.",
+    "Cari tiket pesawat Banyuwangi? Kami agen resmi tiket pesawat domestik (Garuda, Citilink, Lion) & internasional. Pesan mudah melalui formulir kontak, harga resmi.",
   keywords:
     "tiket pesawat banyuwangi, agen tiket pesawat banyuwangi, harga tiket pesawat banyuwangi, pesan tiket pesawat banyuwangi, tiket pesawat banyuwangi jakarta, tiket pesawat banyuwangi surabaya, tiket pesawat bwx",
   authors: [{ name: "Juragan Travel" }],
   openGraph: {
     title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | Juragan Travel",
-    description: "Agen resmi tiket pesawat domestik & internasional dari Banyuwangi (BWX). Pesan mudah via WA.",
+    description: "Agen resmi tiket pesawat domestik & internasional dari Banyuwangi (BWX). Pesan mudah melalui formulir kontak.",
     type: "website",
     url: "https://juragantravel.com/layanan/tiket-pesawat",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Agen Tiket Pesawat Banyuwangi (Domestik & Internasional) | Juragan Travel",
-    description: "Agen resmi tiket pesawat domestik & internasional dari Banyuwangi (BWX). Pesan mudah via WA.",
+    description: "Agen resmi tiket pesawat domestik & internasional dari Banyuwangi (BWX). Pesan mudah melalui formulir kontak.",
     images: ["https://juragantravel.com/img/hero.webp"],
   },
   alternates: {
@@ -110,7 +110,7 @@ const benefits = [
   },
   {
     icon: Smartphone,
-    title: "Proses Cepat via WA",
+    title: "Proses Cepat melalui formulir kontak",
     description: "Pesan tanpa aplikasi. Cukup chat, bayar, e-ticket terkirim.",
   },
   {
@@ -160,7 +160,7 @@ export default function TiketPesawatPage() {
               </nav>
               <h1 className="text-4xl md:text-5xl font-extrabold text-dark">Agen Tiket Pesawat Banyuwangi</h1>
               <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-                Pesan tiket pesawat domestik & internasional. Agen resmi, harga jujur, proses cepat via WhatsApp.
+                Pesan tiket pesawat domestik & internasional. Agen resmi, harga jujur, proses cepat melalui formulir kontak.
               </p>
             </div>
           </section>
@@ -186,7 +186,7 @@ export default function TiketPesawatPage() {
                   </h2>
                   <p className="mt-4 text-lg text-gray-700 leading-relaxed">
                     Kami adalah <strong>agen tiket pesawat Banyuwangi</strong> tepercaya yang siap membantu Anda. Tidak
-                    perlu repot membandingkan harga di banyak aplikasi. Hubungi kami via WA, dan tim kami akan
+                    perlu repot membandingkan harga di banyak aplikasi. Hubungi kami melalui formulir kontak, dan tim kami akan
                     mencarikan harga tiket pesawat terbaik untuk Anda.
                   </p>
                   <p className="mt-4 text-lg text-gray-700 leading-relaxed">
@@ -257,12 +257,12 @@ export default function TiketPesawatPage() {
                 <strong>tiket pesawat Banyuwangi</strong> terbaik hari ini.
               </p>
               <a
-                href="https://wa.me/6282143258744"
+                href="/kontak#contact-form"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-10 inline-block bg-accent text-white px-10 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all transform hover:-translate-y-1"
               >
-                Tanya Harga Tiket via WA
+                Tanya Harga Tiket melalui formulir kontak
               </a>
             </div>
           </section>

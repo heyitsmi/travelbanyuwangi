@@ -80,7 +80,7 @@ const structuredData = {
       name: 'Bagaimana cara memesan travel?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Cara termudah dan tercepat adalah dengan menekan tombol \'Pesan via WA\' di website ini. Anda akan langsung terhubung dengan admin kami. Cukup informasikan: Nama, Jumlah Penumpang, Rute (misal: Banyuwangi ke Surabaya), Tanggal Berangkat, dan Alamat Jemput & Tujuan.',
+        text: 'Isi formulir permintaan pemesanan di website ini dengan nama, jumlah penumpang, rute, tanggal berangkat, serta alamat jemput dan tujuan. Tim kami akan menindaklanjuti permintaan Anda.',
       },
     },
     {
@@ -143,7 +143,7 @@ const faqItems = [
   {
     id: 5,
     question: 'Bagaimana cara memesan travel?',
-    answer: 'Cara termudah dan tercepat adalah dengan menekan tombol \'Pesan via WA\' di website ini. Anda akan langsung terhubung dengan admin kami. Cukup informasikan: Nama, Jumlah Penumpang, Rute (misal: Banyuwangi ke Surabaya), Tanggal Berangkat, dan Alamat Jemput & Tujuan.',
+    answer: 'Isi formulir permintaan pemesanan di website ini dengan nama, jumlah penumpang, rute, tanggal berangkat, serta alamat jemput dan tujuan. Tim kami akan menindaklanjuti permintaan Anda.',
     defaultOpen: false,
   },
   {
@@ -218,12 +218,12 @@ export default function FAQPage() {
                 Tim admin kami siap membantu Anda 24 jam. Jangan ragu untuk bertanya!
               </p>
               <a
-                href="https://wa.me/6282143258744"
+                href="/kontak#contact-form"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-block bg-secondary text-white px-8 py-3 rounded-lg font-bold text-lg shadow-lg hover:bg-opacity-90 transition-all"
               >
-                Hubungi via WhatsApp
+                Hubungi melalui formulir kontak
               </a>
             </div>
           </div>
